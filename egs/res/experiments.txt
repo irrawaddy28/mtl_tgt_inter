@@ -1,0 +1,310 @@
+Slides:
+1. Multilingual WER for DBN SBS 5 vs DBN SBS 40
+2. Things that we tried for DNN adaptation (xent + xentMCE + learning rate, eta_mce, early stopping as a regularizer)
+3. Plot of Tr loss vs CV loss (1-hot) vs CV loss (soft)
+4. SNRs w/o rescoring, w/ unigram rescoring, w/ bigram rescoring
+5. WER with L2 regularization ( xent  + (lambda/2) * W^2) helps mitigate overfitting to the noisy data, penalizes high valued wt vectors, wt decay linear)
+6. WER with L1 regularization (generates sparse weights ... weights that are not useful are set to 0)
+7. Still not done yet: L2 + Semisup learning
+8. Will do: Learn projection matrix
+
+ws15-pt-data (training on 5 SBS langs, SW unseen. SBS 5 langs = MD AR DT HG UR)
+
+0. exp/tri3b
+ a) Train: Done
+ b) Test: Done [SW: dev 66.14, eval  64.10] 
+ %WER 60.28 [ 4948 / 8208, 218 ins, 2826 del, 1904 sub ] exp/tri3b/decode_dev_oracle_LG_AR/wer_9_0.0
+ %WER 56.36 [ 3913 / 6943, 209 ins, 2239 del, 1465 sub ] exp/tri3b/decode_dev_oracle_LG_DT/wer_9_0.0
+ %WER 42.17 [ 3320 / 7873, 428 ins, 1336 del, 1556 sub ] exp/tri3b/decode_dev_oracle_LG_HG/wer_9_0.0
+ %WER 31.26 [ 2577 / 8244, 251 ins, 1260 del, 1066 sub ] exp/tri3b/decode_dev_oracle_LG_MD/wer_9_0.0
+ %WER 66.14 [ 5065 / 7658, 125 ins, 3065 del, 1875 sub ] exp/tri3b/decode_dev_oracle_LG_SW/wer_9_0.0
+ %WER 54.37 [ 3158 / 5808, 480 ins, 1286 del, 1392 sub ] exp/tri3b/decode_dev_oracle_LG_UR/wer_9_0.0
+ 
+ %WER 60.54 [ 4959 / 8191, 204 ins, 2950 del, 1805 sub ] exp/tri3b/decode_eval_oracle_LG_AR/wer_9_0.0
+ %WER 57.52 [ 3786 / 6582, 243 ins, 2015 del, 1528 sub ] exp/tri3b/decode_eval_oracle_LG_DT/wer_9_0.0
+ %WER 41.05 [ 3068 / 7474, 423 ins, 1347 del, 1298 sub ] exp/tri3b/decode_eval_oracle_LG_HG/wer_10_0.0
+ %WER 33.57 [ 2362 / 7035, 180 ins, 1230 del, 952 sub ] exp/tri3b/decode_eval_oracle_LG_MD/wer_9_0.0
+ %WER 64.10 [ 4770 / 7441, 237 ins, 2665 del, 1868 sub ] exp/tri3b/decode_eval_oracle_LG_SW/wer_9_0.0
+ %WER 58.66 [ 2164 / 3689, 356 ins, 860 del, 948 sub ] exp/tri3b/decode_eval_oracle_LG_UR/wer_9_0.0
+ 
+1. SHL from Babel + softmax from SBS 5 langs
+ a) Train:  Done
+ b) Test using oracle LG: Done [SW: dev 66.26, eval 66.03]
+ %WER 58.04 [ 4764 / 8208, 411 ins, 1877 del, 2476 sub ] exp/dnn4_pretrain-outdnn_dnn/decode_dev_oracle_LG_AR/wer_3_0.0
+ %WER 53.82 [ 3737 / 6943, 460 ins, 1393 del, 1884 sub ] exp/dnn4_pretrain-outdnn_dnn/decode_dev_oracle_LG_DT/wer_3_0.0
+ %WER 41.18 [ 3242 / 7873, 386 ins, 1194 del, 1662 sub ] exp/dnn4_pretrain-outdnn_dnn/decode_dev_oracle_LG_HG/wer_5_0.0
+ %WER 29.60 [ 2440 / 8244, 431 ins, 769 del, 1240 sub ]  exp/dnn4_pretrain-outdnn_dnn/decode_dev_oracle_LG_MD/wer_2_0.0
+ %WER 66.26 [ 5074 / 7658, 193 ins, 2270 del, 2611 sub ] exp/dnn4_pretrain-outdnn_dnn/decode_dev_oracle_LG_SW/wer_5_0.0
+ %WER 56.37 [ 3274 / 5808, 412 ins, 1380 del, 1482 sub ] exp/dnn4_pretrain-outdnn_dnn/decode_dev_oracle_LG_UR/wer_7_0.0
+ 
+ %WER 57.38 [ 4700 / 8191, 369 ins, 1969 del, 2362 sub ] exp/dnn4_pretrain-outdnn_dnn/decode_eval_oracle_LG_AR/wer_3_0.0
+ %WER 54.07 [ 3559 / 6582, 453 ins, 1284 del, 1822 sub ] exp/dnn4_pretrain-outdnn_dnn/decode_eval_oracle_LG_DT/wer_4_0.0
+ %WER 40.15 [ 3001 / 7474, 404 ins, 1120 del, 1477 sub ] exp/dnn4_pretrain-outdnn_dnn/decode_eval_oracle_LG_HG/wer_5_0.0
+ %WER 32.81 [ 2308 / 7035, 323 ins, 822 del, 1163 sub ]  exp/dnn4_pretrain-outdnn_dnn/decode_eval_oracle_LG_MD/wer_3_0.0
+ %WER 66.03 [ 4913 / 7441, 375 ins, 2060 del, 2478 sub ] exp/dnn4_pretrain-outdnn_dnn/decode_eval_oracle_LG_SW/wer_5_0.0
+ %WER 60.97 [ 2249 / 3689, 328 ins, 929 del, 992 sub ]   exp/dnn4_pretrain-outdnn_dnn/decode_eval_oracle_LG_UR/wer_7_0.0
+ 
+2. DBN from SBS 5 langs + softmax from SBS 5 langs
+ a) Train: Done
+ b) Test using oracle LG: Done [SW: dev 65.89, eval 65.88] 
+ %WER 56.85 [ 4666 / 8208, 385 ins, 1954 del, 2327 sub ] exp/dnn4_pretrain-indbn_dnn/decode_dev_oracle_LG_AR/wer_3_0.0
+ %WER 50.76 [ 3524 / 6943, 468 ins, 1312 del, 1744 sub ] exp/dnn4_pretrain-indbn_dnn/decode_dev_oracle_LG_DT/wer_3_0.0
+ %WER 38.47 [ 3029 / 7873, 430 ins, 1019 del, 1580 sub ] exp/dnn4_pretrain-indbn_dnn/decode_dev_oracle_LG_HG/wer_4_0.0
+ %WER 27.27 [ 2248 / 8244, 357 ins, 808 del, 1083 sub ]  exp/dnn4_pretrain-indbn_dnn/decode_dev_oracle_LG_MD/wer_3_0.0
+ %WER 65.89 [ 5046 / 7658, 231 ins, 2303 del, 2512 sub ] exp/dnn4_pretrain-indbn_dnn/decode_dev_oracle_LG_SW/wer_5_0.0
+ %WER 54.70 [ 3177 / 5808, 527 ins, 1192 del, 1458 sub ] exp/dnn4_pretrain-indbn_dnn/decode_dev_oracle_LG_UR/wer_6_0.0
+ 
+ %WER 55.51 [ 4547 / 8191, 346 ins, 1931 del, 2270 sub ] exp/dnn4_pretrain-indbn_dnn/decode_eval_oracle_LG_AR/wer_3_0.0
+ %WER 51.38 [ 3382 / 6582, 491 ins, 1218 del, 1673 sub ] exp/dnn4_pretrain-indbn_dnn/decode_eval_oracle_LG_DT/wer_4_0.0
+ %WER 38.47 [ 2875 / 7474, 447 ins, 977 del, 1451 sub ] exp/dnn4_pretrain-indbn_dnn/decode_eval_oracle_LG_HG/wer_3_1.0
+ %WER 29.88 [ 2102 / 7035, 238 ins, 850 del, 1014 sub ] exp/dnn4_pretrain-indbn_dnn/decode_eval_oracle_LG_MD/wer_4_0.0
+ %WER 65.88 [ 4902 / 7441, 297 ins, 2334 del, 2271 sub ] exp/dnn4_pretrain-indbn_dnn/decode_eval_oracle_LG_SW/wer_6_0.0
+ %WER 58.72 [ 2166 / 3689, 402 ins, 786 del, 978 sub ] exp/dnn4_pretrain-indbn_dnn/decode_eval_oracle_LG_UR/wer_6_0.0
+
+3. DBN from SBS 40 langs + softmax from SBS 5 langs
+ a) Train: 
+ b) Test using oracle LG:
+
+
+ws15-pt-data2 (training on all 6 SBS languages. SBS 6 langs = MD AR DT HG UR + SW)
+
+0. exp/tri3b
+ a) Train: Done
+ b) Test: Done [SW: dev 41.75, eval 38.22]
+ %WER 60.82 [ 4992 / 8208, 205 ins, 2903 del, 1884 sub ] exp/tri3b/decode_dev_oracle_LG_AR/wer_9_0.0
+ %WER 58.23 [ 4043 / 6943, 181 ins, 2382 del, 1480 sub ] exp/tri3b/decode_dev_oracle_LG_DT/wer_9_0.0
+ %WER 42.75 [ 3366 / 7873, 413 ins, 1339 del, 1614 sub ] exp/tri3b/decode_dev_oracle_LG_HG/wer_9_0.0
+ %WER 32.56 [ 2684 / 8244, 235 ins, 1303 del, 1146 sub ] exp/tri3b/decode_dev_oracle_LG_MD/wer_9_0.0
+ %WER 41.75 [ 3197 / 7658, 308 ins, 1702 del, 1187 sub ] exp/tri3b/decode_dev_oracle_LG_SW/wer_9_0.0
+ %WER 54.51 [ 3166 / 5808, 373 ins, 1493 del, 1300 sub ] exp/tri3b/decode_dev_oracle_LG_UR/wer_10_0.0
+
+ %WER 60.75 [ 4976 / 8191, 201 ins, 2938 del, 1837 sub ] exp/tri3b/decode_eval_oracle_LG_AR/wer_9_0.0
+ %WER 57.93 [ 3813 / 6582, 200 ins, 2111 del, 1502 sub ] exp/tri3b/decode_eval_oracle_LG_DT/wer_9_0.0
+ %WER 41.13 [ 3074 / 7474, 435 ins, 1246 del, 1393 sub ] exp/tri3b/decode_eval_oracle_LG_HG/wer_9_0.0
+ %WER 35.71 [ 2512 / 7035, 179 ins, 1271 del, 1062 sub ] exp/tri3b/decode_eval_oracle_LG_MD/wer_9_0.0
+ %WER 38.22 [ 2844 / 7441, 475 ins, 1227 del, 1142 sub ] exp/tri3b/decode_eval_oracle_LG_SW/wer_9_0.0
+ %WER 58.34 [ 2152 / 3689, 354 ins, 907 del, 891 sub ] exp/tri3b/decode_eval_oracle_LG_UR/wer_9_0.0
+
+1. SHL from Babel + softmax from SBS 6 langs
+ a) Train: Done
+ b) Test using oracle LG: Done [SW: dev 41.06, eval 37.49]
+ %WER 58.14 [ 4772 / 8208, 388 ins, 1846 del, 2538 sub ] exp/dnn4_pretrain-outdnn_dnn/decode_dev_oracle_LG_AR/wer_3_0.0
+ %WER 53.75 [ 3732 / 6943, 346 ins, 1608 del, 1778 sub ] exp/dnn4_pretrain-outdnn_dnn/decode_dev_oracle_LG_DT/wer_4_0.0
+ %WER 41.37 [ 3257 / 7873, 374 ins, 1164 del, 1719 sub ] exp/dnn4_pretrain-outdnn_dnn/decode_dev_oracle_LG_HG/wer_4_0.5
+ %WER 31.17 [ 2570 / 8244, 362 ins, 880 del, 1328 sub ] exp/dnn4_pretrain-outdnn_dnn/decode_dev_oracle_LG_MD/wer_3_0.0
+ %WER 41.06 [ 3144 / 7658, 488 ins, 996 del, 1660 sub ] exp/dnn4_pretrain-outdnn_dnn/decode_dev_oracle_LG_SW/wer_3_0.0
+ %WER 58.75 [ 3412 / 5808, 396 ins, 1458 del, 1558 sub ] exp/dnn4_pretrain-outdnn_dnn/decode_dev_oracle_LG_UR/wer_7_0.0
+
+ %WER 57.78 [ 4733 / 8191, 484 ins, 1782 del, 2467 sub ] exp/dnn4_pretrain-outdnn_dnn/decode_eval_oracle_LG_AR/wer_2_0.0
+ %WER 54.53 [ 3589 / 6582, 413 ins, 1345 del, 1831 sub ] exp/dnn4_pretrain-outdnn_dnn/decode_eval_oracle_LG_DT/wer_4_0.0
+ %WER 40.14 [ 3000 / 7474, 384 ins, 1118 del, 1498 sub ] exp/dnn4_pretrain-outdnn_dnn/decode_eval_oracle_LG_HG/wer_5_0.0
+ %WER 33.67 [ 2369 / 7035, 243 ins, 890 del, 1236 sub ] exp/dnn4_pretrain-outdnn_dnn/decode_eval_oracle_LG_MD/wer_4_0.0
+ %WER 37.49 [ 2790 / 7441, 551 ins, 956 del, 1283 sub ] exp/dnn4_pretrain-outdnn_dnn/decode_eval_oracle_LG_SW/wer_4_0.0
+ %WER 61.02 [ 2251 / 3689, 314 ins, 995 del, 942 sub ] exp/dnn4_pretrain-outdnn_dnn/decode_eval_oracle_LG_UR/wer_7_0.0
+ 
+ 
+2. DBN from SBS 6 langs + softmax from SBS 6 langs
+ a) Train: Done 
+ b) Test using oracle LG: Done
+ %WER 57.57 [ 4725 / 8208, 364 ins, 1942 del, 2419 sub ] exp/dnn4_pretrain-indbn_dnn/decode_dev_oracle_LG_AR/wer_3_0.0
+ %WER 51.71 [ 3590 / 6943, 437 ins, 1402 del, 1751 sub ] exp/dnn4_pretrain-indbn_dnn/decode_dev_oracle_LG_DT/wer_3_0.0
+ %WER 39.50 [ 3110 / 7873, 427 ins, 1024 del, 1659 sub ] exp/dnn4_pretrain-indbn_dnn/decode_dev_oracle_LG_HG/wer_4_0.0
+ %WER 28.85 [ 2378 / 8244, 385 ins, 822 del, 1171 sub ] exp/dnn4_pretrain-indbn_dnn/decode_dev_oracle_LG_MD/wer_3_0.0
+ %WER 38.01 [ 2911 / 7658, 477 ins, 1003 del, 1431 sub ] exp/dnn4_pretrain-indbn_dnn/decode_dev_oracle_LG_SW/wer_3_0.5 
+ %WER 56.53 [ 3283 / 5808, 462 ins, 1361 del, 1460 sub ] exp/dnn4_pretrain-indbn_dnn/decode_dev_oracle_LG_UR/wer_6_0.0
+ 
+ %WER 56.81 [ 4653 / 8191, 442 ins, 1758 del, 2453 sub ] exp/dnn4_pretrain-indbn_dnn/decode_eval_oracle_LG_AR/wer_2_0.0
+ %WER 51.99 [ 3422 / 6582, 394 ins, 1332 del, 1696 sub ] exp/dnn4_pretrain-indbn_dnn/decode_eval_oracle_LG_DT/wer_4_0.0
+ %WER 39.11 [ 2923 / 7474, 358 ins, 1136 del, 1429 sub ] exp/dnn4_pretrain-indbn_dnn/decode_eval_oracle_LG_HG/wer_5_0.0
+ %WER 31.64 [ 2226 / 7035, 305 ins, 777 del, 1144 sub ] exp/dnn4_pretrain-indbn_dnn/decode_eval_oracle_LG_MD/wer_3_0.0
+ %WER 36.10 [ 2686 / 7441, 589 ins, 907 del, 1190 sub ] exp/dnn4_pretrain-indbn_dnn/decode_eval_oracle_LG_SW/wer_4_0.0
+ %WER 60.18 [ 2220 / 3689, 263 ins, 1013 del, 944 sub ] exp/dnn4_pretrain-indbn_dnn/decode_eval_oracle_LG_UR/wer_6_0.5
+ 
+
+3. DBN from SBS 40 langs + softmax from SBS 6 langs
+ a) Train: Done 
+ b) Test using oracle LG: Done
+ %WER 57.01 [ 4679 / 8208, 314 ins, 2085 del, 2280 sub ] exp/dnn4_pretrain-outdbn_dnn/decode_dev_oracle_LG_AR/wer_4_0.0
+ %WER 51.84 [ 3599 / 6943, 424 ins, 1398 del, 1777 sub ] exp/dnn4_pretrain-outdbn_dnn/decode_dev_oracle_LG_DT/wer_3_0.0
+ %WER 40.26 [ 3170 / 7873, 372 ins, 1206 del, 1592 sub ] exp/dnn4_pretrain-outdbn_dnn/decode_dev_oracle_LG_HG/wer_5_0.0
+ %WER 29.35 [ 2420 / 8244, 361 ins, 858 del, 1201 sub ] exp/dnn4_pretrain-outdbn_dnn/decode_dev_oracle_LG_MD/wer_3_0.0
+ %WER 39.25 [ 3006 / 7658, 438 ins, 1107 del, 1461 sub ] exp/dnn4_pretrain-outdbn_dnn/decode_dev_oracle_LG_SW/wer_4_0.0
+ %WER 56.71 [ 3294 / 5808, 359 ins, 1523 del, 1412 sub ] exp/dnn4_pretrain-outdbn_dnn/decode_dev_oracle_LG_UR/wer_7_0.0
+
+ %WER 55.83 [ 4573 / 8191, 452 ins, 1711 del, 2410 sub ] exp/dnn4_pretrain-outdbn_dnn/decode_eval_oracle_LG_AR/wer_2_0.0
+ %WER 53.43 [ 3517 / 6582, 416 ins, 1308 del, 1793 sub ] exp/dnn4_pretrain-outdbn_dnn/decode_eval_oracle_LG_DT/wer_4_0.0
+ %WER 38.33 [ 2865 / 7474, 424 ins, 967 del, 1474 sub ] exp/dnn4_pretrain-outdbn_dnn/decode_eval_oracle_LG_HG/wer_4_0.0
+ %WER 31.86 [ 2241 / 7035, 321 ins, 775 del, 1145 sub ] exp/dnn4_pretrain-outdbn_dnn/decode_eval_oracle_LG_MD/wer_3_0.0
+ %WER 36.84 [ 2741 / 7441, 577 ins, 921 del, 1243 sub ] exp/dnn4_pretrain-outdbn_dnn/decode_eval_oracle_LG_SW/wer_4_0.0
+ %WER 60.86 [ 2245 / 3689, 310 ins, 1021 del, 914 sub ] exp/dnn4_pretrain-outdbn_dnn/decode_eval_oracle_LG_UR/wer_7_0.0
+ 
+
+
+SNR of labels
+================ 
+Before SW unigram rescoring of PX lattices:
+get-phones-on-ali "ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz|" exp/tri3b_map_SW_pt/final.mdl "ark:gunzip -c /media/srv/ws15-pt-data2/amitdas/kaldi-trunk/egs/SBS-mul/exp/tri3b_ali/ali.*.gz|" /media/srv/ws15-pt-data2/amitdas/kaldi-trunk/egs/SBS-mul/exp/tri3b_ali/final.mdl ark,t:-
+Mean SNR = 0.594683, Mean Best SNR = 1.13077, Mean Signal Ratio = 0.262846, Mean Best Signal Ratio = 0.505954 over 441 utterances
+%WER 60.54 [ 4636 / 7658, 240 ins, 2641 del, 1755 sub ]  exp/tri3b_map_SW_pt/decode_dev_oracle_LG_SW/wer_9_0.0
+%WER 55.56 [ 4134 / 7441, 366 ins, 1897 del, 1871 sub ]  exp/tri3b_map_SW_pt/decode_eval_oracle_LG_SW/wer_9_0.0
+%WER 59.04 [ 4521 / 7658, 305 ins, 1939 del, 2277 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt/decode_dev_oracle_LG_SW/wer_4_0.0
+%WER 57.18 [ 4255 / 7441, 357 ins, 1943 del, 1955 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt/decode_eval_oracle_LG_SW/wer_5_0.0
+
+After SW unigram rescoring of PX lattices:
+get-phones-on-ali "ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz|" exp/tri3b_map_SW_pt/final.mdl "ark:gunzip -c /media/srv/ws15-pt-data2/amitdas/kaldi-trunk/egs/SBS-mul/exp/tri3b_ali/ali.*.gz|" /media/srv/ws15-pt-data2/amitdas/kaldi-trunk/egs/SBS-mul/exp/tri3b_ali/final.mdl ark,t:-
+Mean SNR = 1.28335, Mean Best SNR = 1.49225, Mean Signal Ratio = 0.493853, Mean Best Signal Ratio = 0.575058 over 441 utterances
+%WER 53.55 [ 4101 / 7658, 215 ins, 2539 del, 1347 sub ] exp/tri3b_map_SW_pt/decode_dev_oracle_LG_SW/wer_9_0.0
+%WER 48.74 [ 3627 / 7441, 338 ins, 1961 del, 1328 sub ] exp/tri3b_map_SW_pt/decode_eval_oracle_LG_SW/wer_9_0.0
+%WER 51.76 [ 3964 / 7658, 481 ins, 1467 del, 2016 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt/decode_dev_oracle_LG_SW/wer_2_0.0
+%WER 49.51 [ 3684 / 7441, 650 ins, 1317 del, 1717 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt/decode_eval_oracle_LG_SW/wer_2_0.0
+
+Afer SW bigram rescoring of PX lattices:
+get-phones-on-ali "ark:gunzip -c exp/tri3b_map_SW_g_pt_text_G_it12/post.*.gz|" exp/tri3b_map_SW_g_pt_text_G_it12/final.mdl "ark:gunzip -c /export/ws15-pt-data2/amitdas/kaldi-trunk/egs/SBS-mul/exp/tri3b_ali/ali.*.gz|" /export/ws15-pt-data2/amitdas/kaldi-trunk/egs/SBS-mul/exp/tri3b_ali/final.mdl ark,t:-
+Mean SNR = 1.57546, Mean Best SNR = 1.67913, Mean Signal Ratio = 0.566183, Mean Best Signal Ratio = 0.600902 over 441 utterances
+%WER 49.52 [ 3792 / 7658, 249 ins, 2255 del, 1288 sub ] exp/tri3b_map_SW_g_pt_text_G_it12/decode_dev_text_G_SW/wer_9_0.0
+%WER 44.66 [ 3323 / 7441, 401 ins, 1663 del, 1259 sub ] exp/tri3b_map_SW_g_pt_text_G_it12/decode_eval_text_G_SW/wer_9_0.0
+
+To Do:
+======
+1. Run mce script - once with 1 hot CV, next with soft CV. (in progress)
+2. Try w/ and w/o L2 regularization
+3. Try w/ and w/o replacing softmax
+
+tri3b + pt
+-----------
+%WER 53.55 [ 4101 / 7658, 215 ins, 2539 del, 1347 sub ] exp/tri3b_map_SW_pt/decode_dev_oracle_LG_SW/wer_9_0.0
+%WER 48.74 [ 3627 / 7441, 338 ins, 1961 del, 1328 sub ] exp/tri3b_map_SW_pt/decode_eval_oracle_LG_SW/wer_9_0.0
+
+DBN = SBS 5
+-------------		
+L2 Tuning:
+%WER 51.76 [ 3964 / 7658, 481 ins, 1467 del, 2016 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt_xentit_10_l2_-40/decode_dev_oracle_LG_SW/wer_2_0.0
+%WER 51.76 [ 3964 / 7658, 372 ins, 1703 del, 1889 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt_xentit_10_l2_-11.0/decode_dev_oracle_LG_SW/wer_3_0.0
+%WER 51.80 [ 3967 / 7658, 486 ins, 1454 del, 2027 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt_xentit_10_l2_-10.75/decode_dev_oracle_LG_SW/wer_2_0.0
+%WER 51.84 [ 3970 / 7658, 464 ins, 1480 del, 2026 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt_xentit_10_l2_-10.5/decode_dev_oracle_LG_SW/wer_2_0.0
+%WER 51.75 [ 3963 / 7658, 428 ins, 1571 del, 1964 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt_xentit_10_l2_-10.25/decode_dev_oracle_LG_SW/wer_2_0.5
+%WER 51.65 [ 3955 / 7658, 461 ins, 1458 del, 2036 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt_xentit_10_l2_-10.0/decode_dev_oracle_LG_SW/wer_2_0.0
+%WER 51.75 [ 3963 / 7658, 451 ins, 1467 del, 2045 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt_xentit_10_l2_-9.75/decode_dev_oracle_LG_SW/wer_2_0.0
+%WER 51.51 [ 3945 / 7658, 419 ins, 1543 del, 1983 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt_xentit_10_l2_-9.5/decode_dev_oracle_LG_SW/wer_2_0.5
+%WER 51.87 [ 3972 / 7658, 406 ins, 1547 del, 2019 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt_xentit_10_l2_-9.25/decode_dev_oracle_LG_SW/wer_2_0.5
+%WER 51.72 [ 3961 / 7658, 409 ins, 1563 del, 1989 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt_xentit_10_l2_-9.0/decode_dev_oracle_LG_SW/wer_2_0.5
+%WER 51.88 [ 3973 / 7658, 457 ins, 1472 del, 2044 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt_xentit_10_l2_-8.75/decode_dev_oracle_LG_SW/wer_2_0.0
+%WER 51.96 [ 3979 / 7658, 393 ins, 1589 del, 1997 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt_xentit_10_l2_-8.5/decode_dev_oracle_LG_SW/wer_2_0.5
+%WER 52.09 [ 3989 / 7658, 459 ins, 1495 del, 2035 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt_xentit_10_l2_-8.25/decode_dev_oracle_LG_SW/wer_2_0.0
+%WER 52.39 [ 4012 / 7658, 440 ins, 1518 del, 2054 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt_xentit_10_l2_-8.0/decode_dev_oracle_LG_SW/wer_2_0.0
+%WER 53.03 [ 4061 / 7658, 440 ins, 1534 del, 2087 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt_xentit_10_l2_-7.75/decode_dev_oracle_LG_SW/wer_2_0.0
+
+%WER 49.51 [ 3684 / 7441, 650 ins, 1317 del, 1717 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt_xentit_10_l2_-40/decode_eval_oracle_LG_SW/wer_2_0.0
+%WER 49.51 [ 3684 / 7441, 595 ins, 1392 del, 1697 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt_xentit_10_l2_-11.0/decode_eval_oracle_LG_SW/wer_2_0.5
+%WER 49.64 [ 3694 / 7441, 640 ins, 1314 del, 1740 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt_xentit_10_l2_-10.75/decode_eval_oracle_LG_SW/wer_2_0.0
+%WER 49.93 [ 3715 / 7441, 532 ins, 1544 del, 1639 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt_xentit_10_l2_-10.5/decode_eval_oracle_LG_SW/wer_3_0.0
+%WER 49.66 [ 3695 / 7441, 597 ins, 1386 del, 1712 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt_xentit_10_l2_-10.25/decode_eval_oracle_LG_SW/wer_2_0.5
+%WER 49.60 [ 3691 / 7441, 629 ins, 1311 del, 1751 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt_xentit_10_l2_-10.0/decode_eval_oracle_LG_SW/wer_2_0.0
+%WER 49.75 [ 3702 / 7441, 515 ins, 1539 del, 1648 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt_xentit_10_l2_-9.75/decode_eval_oracle_LG_SW/wer_3_0.0
+%WER 49.95 [ 3717 / 7441, 537 ins, 1477 del, 1703 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt_xentit_10_l2_-9.5/decode_eval_oracle_LG_SW/wer_2_1.0
+%WER 49.95 [ 3717 / 7441, 570 ins, 1408 del, 1739 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt_xentit_10_l2_-9.25/decode_eval_oracle_LG_SW/wer_2_0.5
+%WER 50.05 [ 3724 / 7441, 609 ins, 1332 del, 1783 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt_xentit_10_l2_-9.0/decode_eval_oracle_LG_SW/wer_2_0.0
+%WER 50.17 [ 3733 / 7441, 617 ins, 1325 del, 1791 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt_xentit_10_l2_-8.75/decode_eval_oracle_LG_SW/wer_2_0.0
+%WER 50.30 [ 3743 / 7441, 543 ins, 1425 del, 1775 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt_xentit_10_l2_-8.5/decode_eval_oracle_LG_SW/wer_2_0.5
+%WER 50.41 [ 3751 / 7441, 593 ins, 1343 del, 1815 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt_xentit_10_l2_-8.25/decode_eval_oracle_LG_SW/wer_2_0.0
+%WER 50.96 [ 3792 / 7441, 577 ins, 1382 del, 1833 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt_xentit_10_l2_-8.0/decode_eval_oracle_LG_SW/wer_2_0.0
+%WER 51.54 [ 3835 / 7441, 546 ins, 1424 del, 1865 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt_xentit_10_l2_-7.75/decode_eval_oracle_LG_SW/wer_2_0.0
+
+
+Optimize L2 reg = e^-8.5
+							   
+1. Replace softmax, no L2 reg
+run 10 iterations + no L2 regularization again
+%WER 51.76 [ 3964 / 7658, 481 ins, 1467 del, 2016 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt/decode_dev_oracle_LG_SW/wer_2_0.0
+%WER 49.51 [ 3684 / 7441, 650 ins, 1317 del, 1717 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt/decode_eval_oracle_LG_SW/wer_2_0.0
+
+2. Replace softmax, L2 reg (in progress)
+> set script to opt regularizer const
+>./run_dnn_adapt_to_pt.sh --stage 2 --replace-softmax "false"  "SW" exp/tri3b_map_SW_pt  exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt/nnet.init data-fmllr-tri3b exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt
+
+3. Use semisup on top of #2
+a) nnet-init as 6.dbn
+b) nnet-init as L2opt nnet
+
+
+4. Replace softmax, L1 reg (in progress)
+
+
+5. Use semisup on top of #4
+a) nnet-init as 6.dbn
+b) nnet-init as L1opt nnet
+
+
+
+
+5. No Replace softmax, L2 reg
+> set script to opt regularizer const
+>./run_dnn_adapt_to_pt.sh --stage 2 --replace-softmax "true"  "SW" exp/tri3b_map_SW_pt  exp/dnn4_pretrain-indbn_dnn/final.nnet data-fmllr-tri3b exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt
+
+
+6. No Replace softmax, no L2 reg
+
+
+DBN = SBS 40
+------------													   
+No replace softmax, no L2 reg
+
+
+
+No replace softmax, L2 reg
+%WER 53.62 [ 4106 / 7658, 363 ins, 1733 del, 2010 sub ] exp/dnn4_pretrain-indbn_dnn/nnet_SW_pt_xentit_5/decode_dev_oracle_LG_SW/wer_4_0.0
+%WER 100.00 [ 7658 / 7658, 0 ins, 7658 del, 0 sub ] exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-4.5/decode_dev_oracle_LG_SW/wer_2_0.0
+%WER 89.53 [ 6856 / 7658, 1 ins, 6776 del, 79 sub ] exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-5.0/decode_dev_oracle_LG_SW/wer_2_0.0
+%WER 71.05 [ 5441 / 7658, 58 ins, 3821 del, 1562 sub ] exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-5.5/decode_dev_oracle_LG_SW/wer_2_0.0
+%WER 64.60 [ 4947 / 7658, 111 ins, 3051 del, 1785 sub ] exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-6.0/decode_dev_oracle_LG_SW/wer_2_0.0
+%WER 60.47 [ 4631 / 7658, 212 ins, 2341 del, 2078 sub ] exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-6.5/decode_dev_oracle_LG_SW/wer_2_0.0
+%WER 54.26 [ 4155 / 7658, 392 ins, 1604 del, 2159 sub ] exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/decode_dev_oracle_LG_SW/wer_2_0.0
+%WER 53.94 [ 4131 / 7658, 430 ins, 1538 del, 2163 sub ] exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/decode_dev_oracle_LG_SW/wer_2_0.0
+%WER 52.40 [ 4013 / 7658, 389 ins, 1641 del, 1983 sub ] exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-8.0/decode_dev_oracle_LG_SW/wer_3_0.0
+
+
+%WER 100.00 [ 7441 / 7441, 0 ins, 7441 del, 0 sub ] exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-4.5/decode_eval_oracle_LG_SW/wer_2_0.0
+%WER 89.67 [ 6672 / 7441, 2 ins, 6562 del, 108 sub ] exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-5.0/decode_eval_oracle_LG_SW/wer_2_0.0
+%WER 71.58 [ 5326 / 7441, 98 ins, 3656 del, 1572 sub ] exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-5.5/decode_eval_oracle_LG_SW/wer_2_0.0
+%WER 64.61 [ 4808 / 7441, 187 ins, 2844 del, 1777 sub ] exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-6.0/decode_eval_oracle_LG_SW/wer_2_0.0
+%WER 60.21 [ 4480 / 7441, 333 ins, 2101 del, 2046 sub ] exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-6.5/decode_eval_oracle_LG_SW/wer_2_0.0
+%WER 53.21 [ 3959 / 7441, 480 ins, 1603 del, 1876 sub ] exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/decode_eval_oracle_LG_SW/wer_2_0.5
+%WER 52.73 [ 3924 / 7441, 566 ins, 1376 del, 1982 sub ] exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/decode_eval_oracle_LG_SW/wer_2_0.0
+%WER 51.35 [ 3821 / 7441, 599 ins, 1357 del, 1865 sub ] exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-8.0/decode_eval_oracle_LG_SW/wer_2_0.5
+
+
+
+Replace softmax, L2 reg
+
+
+Replace softmax, no L2 reg
+
+
+L2 regularization constant: e.^[-6.5 -6 -5.5 -5 -4.5 -4] = [0.0015034   0.0024788   0.0040868   0.0067379   0.0111090   0.0183156]
+
+L1 regularization:
+The L1 regularization has the intriguing property that it leads the weight vectors to 
+become sparse during optimization (i.e. very close to exactly zero). In other words, 
+neurons with L1 regularization end up using only a sparse subset of their most 
+important inputs and become nearly invariant to the "noisy" inputs.
+
+- penalizes high valued wt vectors
+- weight decay occurs linearly (since gradient is linear in W)
+
+The most common type of regularization is L2 regularization. 
+It can be implemented by augmenting the error function with the 
+squared magnitude of all weights in the neural network. In other words, 
+for every weight w in the neural network, we add 1/2 λw^2 to the error function. 
+The L2 regularization has the intuitive interpretation of heavily penalizing 
+"peaky" weight vectors and preferring diffuse weight vectors. 
+This has the appealing property of encouraging the network to use all 
+of its inputs a little rather than using only some of its inputs a lot. 
+Of particular note is that during the gradient descent update, using the L2 regularization 
+ultimately means that every weight is decayed linearly to zero. Because of this phenomenon, 
+L2 regularization is also commonly referred to as weight decay. 
+
+
+In comparison, weight vectors from L2 regularization are usually diffuse, small numbers. 
+L1 regularization is very useful when you want to understand exactly which features are 
+contributing to a decision. If this level of feature analysis isn't necessary, 
+we prefer to use L2 regularization because it empirically performs better. 

@@ -1,0 +1,32 @@
+Definitions:
+"5 SBS languages": Arabic+Urdu+Dutch+Hungarian+Mandarin
+"MHMM-SW" is a MHMM trained on 5 SBS langs minus SW
+"MHMM+SW" is a MHMM trained on 5 SBS langs plus SW ... which is essentially all 6 SBS languages.
+
+Steps:
+Step 1: Monolingual SW Baseline or MHMM+SW Baseline:
+> run_mono.sh (SW)
+OR
+> run.sh (MHMM+SW)
+
+Step 2: Multilingual minus Swahili Baselines (MHMM-SW, MDNN-SW):
+> run.sh (MHMM-SW: build MHMM-SW up to the MHMM-SW/exp/tri3b stage)
+> run_dnn_adapt_to_sbs.sh (MDNN-SW: Adapt a pre-trained DBN or DNN to 5 SBS using the alignments from MHMM-SW/exp/tri3b)
+
+
+Step 3: Adapt MHMM-SW to PT (This is for creating soft alignments for the SW training set)
+> run-pt-map.sh  (adapt MHMM-SW to SW pt. This generates MHMM-SW/exp/{tri3b_ali_SW_pt,tri3b_map_SW_pt})
+
+
+Step 4: Add SW on top of MHMM-SW Baseline (This is for creating 1-hot alignments for the SW CV set)
+> run_retrain_hmm.sh (set $olddir inside the script to your SW monolingual or MHMM+SW baseline. This generates MHMM-SW/exp/{tri4b_ali, tri5b, tri5b_ali} 
+                      which is an HMM obtained by doing (a) + (b). 
+                      (a) MHMM-SW model (b) good 1-hot alignments of SW obtained from SW monolingual or MHMM+SW HMM)
+
+Step 5: Adapt MDNN-SW to SW pt:
+> run_dnn_adapt_to_pt_debug.sh (dependencies: steps/nnet/train_pt_debug.sh, steps/nnet/train_scheduler_mce.sh) 
+
+
+
+
+

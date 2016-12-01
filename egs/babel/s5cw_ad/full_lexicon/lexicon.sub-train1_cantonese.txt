@@ -1,0 +1,5108 @@
+<hes>	<hes>	a: _6	6 m _6	m _5	ej _6
+A	ei1	ej _1
+A_B_钙	ei1bi1koi3	ej _1 . b i: _1 . k O:j _3
+B	bi1	b i: _1
+B_B	bi2bi1	b i: _2 . b i: _1
+B_B_油	bi3bi1yau4	b i: _3 . b i: _1 . j 6w _4	b i: _3 . b i: _1 . j 6w _2
+B_R_T	bi1a1lou6ti1	b i: _1 . a: _1 . l ow _6 . t i: _1
+B_十二	bi1sap6yi6	b i: _1 . s 6 p _6 . j i: _6
+C	si1	s i: _1
+C_D	si1di1	s i: _1 . d i: _1
+D	di1	d i: _1
+D_H_C	di1ei1chu3si1	d i: _1 . ej _1 . ts u: _3 . s i: _1
+E	yi1	j i: _1
+F	e1fu4	E: _1 . f u: _4
+G	ji1	dz i: _1
+G_P_S	ji1pi1e1si4	dz i: _1 . p i: _1 . E: _1 . s i: _4
+H	ei1chu3	ej _1 . ts u: _3
+I	aai1	a:j _1
+L_G	e1lou4ji1	E: _1 . l ow _4 . dz i: _1
+May	mei1	m ej _1
+Michelle	mai5syut3	m 6j _5 . s y: t _3
+N	en1	E: n _1
+O	ou1	ow _1
+Q	kiu1	k iw _1
+Q_Q	kiu1kiu1	k iw _1 . k iw _1
+Q_Q_九仙	kiu1kiu1gau2sin1	k iw _1 . k iw _1 . g 6w _2 . s i: n _1
+Q_Q_酒仙	kiu1kiu1jau2sin1	k iw _1 . k iw _1 . dz 6w _2 . s i: n _1
+R	a1lou4	a: _1 . l ow _4
+S	e1si4	E: _1 . s i: _4
+Sam	saam1mou5	s a: m _1 . m ow _5
+T	ti1	t i: _1
+V	wi1	w i: _1
+WiFi	waai1faai1	w a:j _1 . f a:j _1
+cut	kaat1	k a: t _1
+iPhone	aai1fung1	a:j _1 . f u: N _1
+okay	ou1kei1	ow _1 . k ej _1
+㗎	ga1	g a: _1
+㗎	ga4	g a: _4
+㗎	ga3	g a: _3
+㗎吗	ga3ma3	g a: _3 . m a: _3
+䀫	gaap3	g a: p _3
+䟴䟴脚	ngan3ngan3geuk3	N 6 n _3 . N 6 n _3 . g 9: k _3
+一	yat1	j 6 t _1
+一万	yat1maan6	j 6 t _1 . m a: n _6
+一下	yat1ha5	j 6 t _1 . h a: _5
+一下子	yat1ha5ji2	j 6 t _1 . h a: _5 . dz i: _2
+一世	yat1sai3	j 6 t _1 . s 6j _3
+一两围	yat1leung5wai4	j 6 t _1 . l 9: N _5 . w 6j _4
+一个	yat1go3	j 6 t _1 . g O: _3	j 6 t _1 . gw O: _3
+一个圈	yat1go3hyun1	j 6 t _1 . g O: _3 . h y: n _1	j 6 t _1 . gw O: _3 . h y: n _1
+一串过	yat1chyun3go3	j 6 t _1 . ts y: n _3 . g O: _3
+一买	yat1maai5	j 6 t _1 . m a:j _5
+一于	yat1yu1	j 6 t _1 . j y: _1
+一五几	yat1m5gei1	j 6 t _1 . m _5 . g ej _1	j 6 t _1 . N _5 . g ej _2
+一人	yat1yan4	j 6 t _1 . j 6 n _4
+一亿	yat1yik1	j 6 t _1 . j i: k _1
+一六五	yat1luk6m5	j 6 t _1 . l u: k _6 . m _5	j 6 t _1 . l u: k _6 . N _5
+一共	yat1gung6	j 6 t _1 . g u: N _6
+一劈	yat1pek3	j 6 t _1 . p E: k _3
+一千	yat1chin1	j 6 t _1 . ts i: n _1
+一半	yat1bun3	j 6 t _1 . b u: n _3
+一号	yat1hou6	j 6 t _1 . h ow _6
+一吐苦水	yat1tou3fu2seui2	j 6 t _1 . t ow _3 . f u: _2 . s 9y _2
+一味	yat1mei2	j 6 t _1 . m ej _2
+一啲	yat1di1	j 6 t _1 . d i: _1
+一啲啲	yat1di1di1	j 6 t _1 . d i: _1 . d i: _1
+一嚟	yat1lai4	j 6 t _1 . l 6j _4
+一嚿水	yat1gau6seui2	j 6 t _1 . g 6w _6 . s 9y _2
+一场	yat1cheung4	j 6 t _1 . ts 9: N _4
+一大半	yat1daai6bun3	j 6 t _1 . d a:j _6 . b u: n _3
+一大把	yat1daai6ba2	j 6 t _1 . d a:j _6 . b a: _2
+一姐	yat1je2	j 6 t _1 . dz E: _2
+一定	yat1ding6	j 6 t _1 . d i: N _6
+一家	yat1ga1	j 6 t _1 . g a: _1
+一家大细	yat1ga1daai6sai3	j 6 t _1 . g a: _1 . d a:j _6 . s 6j _3
+一年半载	yat1lin4bun3joi2	j 6 t _1 . l i: n _4 . b u: n _3 . dz O:j _2	j 6 t _1 . n i: n _4 . b u: n _3 . dz O:j _2
+一德路	yat1dak1lou6	j 6 t _1 . d 6 k _1 . l ow _6
+一於	yat1yu1	j 6 t _1 . j y: _1
+一日	yat1yat6	j 6 t _1 . j 6 t _6
+一日游	yat1yat6yau4	j 6 t _1 . j 6 t _6 . j 6w _4
+一早	yat1jou2	j 6 t _1 . dz ow _2
+一时	yat1si4	j 6 t _1 . s i: _4
+一月	yat1yut6	j 6 t _1 . j y: t _6
+一月份	yat1yut6fan6	j 6 t _1 . j y: t _6 . f 6 n _6
+一朝早	yat1jiu1jou2	j 6 t _1 . dz iw _1 . dz ow _2
+一样	yat1yeung6	j 6 t _1 . j 9: N _6
+一楼	yat1lau5	j 6 t _1 . l 6w _5
+一模一样	yat1mou2yat1yeung6	j 6 t _1 . m ow _2 . j 6 t _1 . j 9: N _6
+一次	yat1chi3	j 6 t _1 . ts i: _3
+一步	yat1bou6	j 6 t _1 . b ow _6
+一步步	yat1bou6bou6	j 6 t _1 . b ow _6 . b ow _6
+一生	yat1sang1	j 6 t _1 . s 6 N _1
+一百	yat1baak3	j 6 t _1 . b a: k _3
+一直	yat1jik6	j 6 t _1 . dz i: k _6
+一眼	yat1aan5	j 6 t _1 . a: n _5	j 6 t _1 . N a: n _5
+一种	yat1jung2	j 6 t _1 . dz u: N _2
+一穿	yat1chyun1	j 6 t _1 . ts y: n _1
+一系	yat1hai6	j 6 t _1 . h 6j _6
+一脚	yat1geuk3	j 6 t _1 . g 9: k _3
+一般	yat1bun1	j 6 t _1 . b u: n _1
+一般般	yat1bun1bun1	j 6 t _1 . b u: n _1 . b u: n _1
+一落	yat1lok6	j 6 t _1 . l O: k _6
+一起	yat1hei2	j 6 t _1 . h ej _2
+一路	yat1lou6	j 6 t _1 . l ow _6
+一身上	yat1san1seung6	j 6 t _1 . s 6 n _1 . s 9: N _6	j 6 t _1 . s 6 n _1 . s 9: N _5
+一轮	yat1leun4	j 6 t _1 . l 9: n _4
+一边	yat1bin1	j 6 t _1 . b i: n _1
+一遇到	yat1yu6dou2	j 6 t _1 . j y: _6 . d ow _2	j 6 t _1 . j y: _6 . d ow _3
+一遍	yat1pin3	j 6 t _1 . p i: n _3
+一遍死寂	yat1pin3sei2jik6	j 6 t _1 . p i: n _3 . s ej _2 . dz i: k _6
+一部份	yat1bou6fan6	j 6 t _1 . b ow _6 . f 6 n _6
+一间	yat1gaan1	j 6 t _1 . g a: n _1
+一阵	yat1jan6	j 6 t _1 . dz 6 n _6
+一阵先	yat1jan6sin1	j 6 t _1 . dz 6 n _6 . s i: n _1
+一阵间	yat1jan6gaan1	j 6 t _1 . dz 6 n _6 . g a: n _1
+一阵阵	yat1jan6jan6	j 6 t _1 . dz 6 n _6 . dz 6 n _6
+一齐	yat1chai4	j 6 t _1 . ts 6j _4
+丁丁车	ding1ding1che1	d i: N _1 . d i: N _1 . ts E: _1
+七	chat1	ts 6 t _1
+七十	chat1sap6	ts 6 t _1 . s 6 p _6
+七十几	chat1a6gei2	ts 6 t _1 . a: _6 . g ej _2	ts 6 t _1 . s 6 p _6 . g ej _2
+七号	chat1hou6	ts 6 t _1 . h ow _6
+七星岩	chat1sing1aam4	ts 6 t _1 . s i: N _1 . a: m _4	ts 6 t _1 . s i: N _1 . N a: m _4
+七楼	chat1lau5	ts 6 t _1 . l 6w _5	ts 6 t _1 . l 6w _2
+七百	chat1baak3	ts 6 t _1 . b a: k _3
+万	maan6	m a: n _6
+万圣节	maan6sing3jit3	m a: n _6 . s i: N _3 . dz i: t _3
+万恶淫为首	maan6ok3yam4wai4sau2	m a: n _6 . O: k _3 . j 6 m _4 . w 6j _4 . s 6w _2	m a: n _6 . N O: k _3 . j 6 m _4 . w 6j _4 . s 6w _2
+万科	maan6fo1	m a: n _6 . f O: _1
+万绿湖	maan6luk6wu4	m a: n _6 . l u: k _6 . w u: _4
+三	saam1	s a: m _1
+三_A	saam1ei1	s a: m _1 . ej _1
+三_D	saam1di1	s a: m _1 . d i: _1
+三_G	saam1ji1	s a: m _1 . dz i: _1
+三中	saam1jung1	s a: m _1 . dz u: N _1
+三十	saam1sap6	s a: m _1 . s 6 p _6
+三十一号	saam1a6yat1hou6	s a: m _1 . a: _6 . j 6 t _1 . h ow _6	s a: m _1 . s 6 p _6 . j 6 t _1 . h ow _6
+三十万	saam1a6maan6	s a: m _1 . a: _6 . m a: n _6	s a: m _1 . s 6 p _6 . m a: n _6
+三十五	saam1a6m5	s a: m _1 . a: _6 . m _5	s a: m _1 . s 6 p _6 . m _5	s a: m _1 . s 6 p _6 . N _5
+三十份	saam1sap6fan6	s a: m _1 . s 6 p _6 . f 6 n _6
+三十八	saam1a6baat3	s a: m _1 . a: _6 . b a: t _3	s a: m _1 . s 6 p _6 . b a: t _3
+三千	saam1chin1	s a: m _1 . ts i: n _1
+三千元	saam1chin1yun4	s a: m _1 . ts i: n _1 . j y: n _4
+三号	saam1hou6	s a: m _1 . h ow _6	s a: m _1 . h ow _2
+三好	saam1hou2	s a: m _1 . h ow _2
+三好学生	saam1hou2hok6sang1	s a: m _1 . h ow _2 . h O: k _6 . s 6 N _1
+三姐	saam1je2	s a: m _1 . dz E: _2
+三姨	saam1yi1	s a: m _1 . j i: _1
+三少	saam1siu2	s a: m _1 . s iw _2	s a: m _1 . s iw _3
+三更	saam1gang1	s a: m _1 . g 6 N _1	s a: m _1 . g E: N _3
+三水	saam1seui2	s a: m _1 . s 9y _2
+三百	saam1baak3	s a: m _1 . b a: k _3
+三金	saam1gam1	s a: m _1 . g 6 m _1
+三餐	saam1chaan1	s a: m _1 . ts a: n _1
+上	seung6	s 9: N _6	s 9: N _5
+上一	seung6yat1	s 9: N _6 . j 6 t _1
+上下	seung6ha6	s 9: N _6 . h a: _6
+上下九	seung6ha6gau2	s 9: N _6 . h a: _6 . g 6w _2
+上下网	seung6ha6mong5	s 9: N _6 . h a: _6 . m O: N _5
+上到	seung6dou3	s 9: N _6 . d ow _3	s 9: N _6 . d ow _2	s 9: N _5 . d ow _3	s 9: N _5 . d ow _2
+上到去	seung5dou3heui3	s 9: N _5 . d ow _3 . h 9y _3
+上到嚟	seung5dou2lai4	s 9: N _5 . d ow _2 . l 6j _4	s 9: N _6 . d ow _3 . l ej _4
+上午	seung6ng5	s 9: N _6 . N _5
+上去	seung5heui3	s 9: N _5 . h 9y _3
+上嚟	seung5lei4	s 9: N _5 . l ej _4
+上埋	seung5maai4	s 9: N _5 . m a:j _4
+上学	seung5hok6	s 9: N _5 . h O: k _6
+上左去	seung5jo2heui3	s 9: N _5 . dz O: _2 . h 9y _3	s 9: N _6 . dz O: _2 . h 9y _3
+上年	seung6lin2	s 9: N _6 . l i: n _2	s 9: N _6 . n i: n _2
+上得	seung5dak1	s 9: N _5 . d 6 k _1	s 9: N _6 . d 6 k _1
+上排	seung5paai4	s 9: N _5 . p a:j _4	s 9: N _6 . p a:j _4
+上早	seung5jou2	s 9: N _5 . dz ow _2	s 9: N _6 . dz ow _2
+上昼	seung6jau3	s 9: N _6 . dz 6w _3
+上来	seung5lei4	s 9: N _5 . l ej _4
+上楼	seung5lau4	s 9: N _5 . l 6w _4
+上次	seung6chi3	s 9: N _6 . ts i: _3
+上海	seung6hoi2	s 9: N _6 . h O:j _2
+上班	seung5baan1	s 9: N _5 . b a: n _1
+上网	seung5mong5	s 9: N _5 . m O: N _5
+上网卡	seung5mong5ka1	s 9: N _5 . m O: N _5 . k a: _1
+上落班	seung5lok6baan1	s 9: N _5 . l O: k _6 . b a: n _1
+上课	seung5fo3	s 9: N _5 . f O: _3
+上车	seung5che1	s 9: N _5 . ts E: _1
+上边	seung6bin1	s 9: N _6 . b i: n _1
+上过网	seung5go3mong5	s 9: N _5 . g O: _3 . m O: N _5	s 9: N _6 . gw O: _3 . m O: N _5
+上门	seung6mun4	s 9: N _6 . m u: n _4	s 9: N _5 . m u: n _5	s 9: N _6 . m u: n _5
+上面	seung6min6	s 9: N _6 . m i: n _6
+上高	seung5gou1	s 9: N _5 . g ow _1	s 9: N _6 . g ow _1
+下	ha6	h a: _6
+下下	ha6ha6	h a: _6 . h a: _6
+下低	ha6dai1	h a: _6 . d 6j _1
+下午	ha6m5	h a: _6 . m _5	h a: _6 . N _5
+下去	ha6heui3	h a: _6 . h 9y _3
+下山	ha6saan1	h a: _6 . s a: n _1
+下岗	ha6gong1	h a: _6 . g O: N _1
+下年	ha6lin2	h a: _6 . l i: n _2	h a: _6 . n i: n _2
+下文	ha6man4	h a: _6 . m 6 n _4
+下昼	ha6jau3	h a: _6 . dz 6w _3
+下次	ha6chi3	h a: _6 . ts i: _3
+下课	ha6fo3	h a: _6 . f O: _3
+下边	ha6bin1	h a: _6 . b i: n _1
+下野	ha6ye5	h a: _6 . j E: _5
+下雨	ha6yu5	h a: _6 . j y: _5
+下面	ha6min6	h a: _6 . m i: n _6
+下龙湾	ha6lung4waan1	h a: _6 . l u: N _4 . w a: n _1
+不	bat1	b 6 t _1
+不停	bat1ting4	b 6 t _1 . t i: N _4
+不如	bat1yu4	b 6 t _1 . j y: _4
+不得了	bat1dak1liu5	b 6 t _1 . d 6 k _1 . l iw _5
+不断	bat1dyun6	b 6 t _1 . d y: n _6
+不流	bat1lau4	b 6 t _1 . l 6w _4
+不溜	bat1lau1	b 6 t _1 . l 6w _1	b 6 t _1 . l 6w _4
+不过	bat1go3	b 6 t _1 . g O: _3	b 6 t _1 . gw O: _3
+专	jyun1	dz y: n _1
+专业	jyun1yip6	dz y: n _1 . j i: p _6
+专业人士	jyun1yip6yan4si6	dz y: n _1 . j i: p _6 . j 6 n _4 . s i: _6
+专卖店	jyun1maai6dim3	dz y: n _1 . m a:j _6 . d i: m _3	d y: n _1 . m a:j _6 . d i: n _3
+专心	jyun1sam1	dz y: n _1 . s 6 m _1
+专权	jyun1kyun4	dz y: n _1 . k y: n _4
+专登	jyun1dang1	dz y: n _1 . d 6 N _1
+专科	jyun1fo1	dz y: n _1 . f O: _1
+世华	sai3wa4	s 6j _3 . w a: _4
+世界	sai3gaai5	s 6j _3 . g a:j _5
+业主	yip6jyu2	j i: p _6 . dz y: _2
+业务	yip6mou6	j i: p _6 . m ow _6
+东	dung1	d u: N _1
+东东	dung1dung1	d u: N _1 . d u: N _1
+东北	dung1bak1	d u: N _1 . b 6 k _1
+东北米	dung1bak1mai1	d u: N _1 . b 6 k _1 . m 6j _1
+东北菜	dung1bak1choi3	d u: N _1 . b 6 k _1 . ts O:j _3
+东南亚	dung1laam4a3	d u: N _1 . l a: m _4 . a: _3	d u: N _1 . n a: m _4 . a: _3	d u: N _1 . n a: m _4 . N a: _3
+东浦	dung1pou2	d u: N _1 . p ow _2
+东莞	dung1gun2	d u: N _1 . g u: n _2
+东菇	dung1gu1	d u: N _1 . g u: _1
+东门	dung1mun4	d u: N _1 . m u: n _4
+东风	dung1fung1	d u: N _1 . f u: N _1
+东风路	dung1fung1lou6	d u: N _1 . f u: N _1 . l ow _6
+丝	si1	s i: _1
+丢	diu1	d iw _1
+两	leung5	l 9: N _5
+两万	leung5maan6	l 9: N _5 . m a: n _6
+两个	leung5go3	l 9: N _5 . g O: _3
+两公婆	leung5gung1po2	l 9: N _5 . g u: N _1 . p O: _2
+两千	leung5chin1	l 9: N _5 . ts i: n _1
+两千几	leung5chin1gei2	l 9: N _5 . ts i: n _1 . g ej _2
+两季	leung5gwai3	l 9: N _5 . gw 6j _3
+两母女	leung5mou5leui5	l 9: N _5 . m ow _5 . l 9y _5	l 9: N _5 . m ow _5 . n 9y _5
+两百几	leung5baak3gei2	l 9: N _5 . b a: k _3 . g ej _2
+严	yim4	j i: m _4	j i: n _4
+严重	yim4jung6	j i: m _4 . dz u: N _6	j i: n _4 . dz u: N _6
+个	go3	g O: _3
+个人能力	go3yan4lang4lik6	g O: _3 . j 6 n _4 . l 6 N _4 . l i: k _6	g O: _3 . j 6 n _4 . n 6 N _4 . l i: k _6
+个女整咩	go3leui5jing2me1	g O: _3 . l 9y _5 . dz i: N _2 . m E: _1	g O: _3 . n 9y _5 . dz i: N _2 . m E: _1
+个底	go3dai2	g O: _3 . d 6j _2
+个性	go3sing3	g O: _3 . s i: N _3
+中	jung1	dz u: N _1	dz u: N _3
+中上	jung1seung6	dz u: N _1 . s 9: N _6
+中专	jung1jyun1	dz u: N _1 . dz y: n _1
+中二路口	jung1yi6lou6hau2	dz u: N _1 . j i: _6 . l ow _6 . h 6w _2
+中介	jung1gaai3	dz u: N _1 . g a:j _3
+中午	jung1m5	dz u: N _1 . m _5	dz u: N _1 . N _5
+中国	jung1gok3	dz u: N _1 . g O: k _3	dz u: N _1 . gw O: k _3
+中国人寿	jung1gok3yan4sau6	dz u: N _1 . g O: k _3 . j 6 n _4 . s 6w _6	dz u: N _1 . gw O: k _3 . j 6 n _4 . s 6w _6
+中国平安	jung1gok3ping4on1	dz u: N _1 . g O: k _3 . p i: N _4 . O: n _1	dz u: N _1 . gw O: k _3 . p i: N _4 . N O: n _1
+中国平安保险	jung1gok3ping4on1bou2him2	dz u: N _1 . g O: k _3 . p i: N _4 . O: n _1 . b ow _2 . h i: m _2	dz u: N _1 . gw O: k _3 . p i: N _4 . N O: n _1 . b ow _2 . h i: m _2
+中国移动	jung1gok3yi4dung6	dz u: N _1 . g O: k _3 . j i: _4 . d u: N _6	dz u: N _1 . gw O: k _3 . j i: _4 . d u: N _6
+中外	jung1oi6	dz u: N _1 . O:j _6	dz u: N _1 . N O:j _6
+中山	jung1saan1	dz u: N _1 . s a: n _1
+中山五	jung1saan1m5	dz u: N _1 . s a: n _1 . m _5	dz u: N _1 . s a: n _1 . N _5
+中山八	jung1saan1baat3	dz u: N _1 . s a: n _1 . b a: t _3
+中山公园	jung1saan1gung1yun2	dz u: N _1 . s a: n _1 . g u: N _1 . j y: n _2
+中山詹园	jung1saan1jim1yun2	dz u: N _1 . s a: n _1 . dz i: m _1 . j y: n _2	dz u: N _1 . s a: n _1 . dz i: n _1 . j y: n _4
+中心	jung1sam1	dz u: N _1 . s 6 m _1
+中悦楼	jung1yut6lau2	dz u: N _1 . j y: t _6 . l 6w _2
+中投证券	jung1tau4jing3gyun3	dz u: N _1 . t 6w _4 . dz i: N _3 . g y: n _3
+中文	jung1man4	dz u: N _1 . m 6 n _4
+中旬	jung1cheun4	dz u: N _1 . ts 9: n _4
+中海明都	jung1hoi2jeung1dou1	dz u: N _1 . h O:j _2 . dz 9: N _1 . d ow _1
+中石油	jung1sek6yau4	dz u: N _1 . s E: k _6 . j 6w _4
+中间	jung1gaan1	dz u: N _1 . g a: n _1
+丰富	fung1fu3	f u: N _1 . f u: _3
+串	chyun3	ts y: n _3
+串仔	chyun3jai2	ts y: n _3 . dz 6j _2
+临	lam4	l 6 m _4	l 6 n _4
+临时工	lam4si4gung1	l 6 m _4 . s i: _4 . g u: N _1	l 6 n _4 . s i: _4 . g u: N _1
+丹霞山	daan1ha4saan1	d a: n _1 . h a: _4 . s a: n _1
+为	wai4	w 6j _4	w 6j _6
+为止	wai4ji2	w 6j _4 . dz i: _2
+主力	jyu2lik6	dz y: _2 . l i: k _6
+主动	jyu2dung6	dz y: _2 . d u: N _6
+主席	jyu2jik6	dz y: _2 . dz i: k _6
+主张	jyu2jeung1	dz y: _2 . dz 9: N _1
+主板	jyu2baan2	dz y: _2 . b a: n _2
+主管	jyu2gun2	dz y: _2 . g u: n _2
+主要	jyu2yiu3	dz y: _2 . j iw _3
+主角	jyu2gok3	dz y: _2 . g O: k _3
+丽	lai6	l 6j _6
+举	geui2	g 9y _2
+举办	geui2baan6	g 9y _2 . b a: n _6
+久	gau2	g 6w _2
+么	mo1	m O: _1	j iw _1
+之	ji1	dz i: _1
+之前	ji1chin4	dz i: _1 . ts i: n _4
+之后	ji1hau6	dz i: _1 . h 6w _6
+之处	ji1chyu2	dz i: _1 . ts y: _2	dz i: _1 . ts y: _3
+之外	ji1oi6	dz i: _1 . O:j _6	dz i: _1 . N O:j _6
+之所以	ji1so2yi5	dz i: _1 . s O: _2 . j i: _5
+之类	ji1leui6	dz i: _1 . l 9y _6	dz i: _1 . l 9y _2
+乌	wu1	w u: _1
+乌蝇	wu1ying4	w u: _1 . j i: N _4
+乍醒	ja3sing2	dz a: _3 . s i: N _2
+乐趣	lok6cheui3	l O: k _6 . ts 9y _3
+乒乓波	bing1bam1bo1	b i: N _1 . b 6 m _1 . b O: _1	b i: N _1 . b 6 n _1 . b O: _1
+乖	gwaai1	gw a:j _1
+乖乖	gwaai1gwaai1	gw a:j _1 . gw a:j _1
+乘	sing4	s i: N _4
+乜	mat1	m 6 t _1	m E: _1
+乜嘢人	mat1ye5yan4	m 6 t _1 . j E: _5 . j 6 n _4
+乜野	mat1ye5	m 6 t _1 . j E: _5	m E: _1 . j E: _5
+乜鬼	mat1gwai2	m 6 t _1 . gw 6j _2
+九	gau2	g 6w _2
+九仙	gau2sin1	g 6w _2 . s i: n _1
+九十	gau2sap6	g 6w _2 . s 6 p _6
+九十九	gau2a6gau2	g 6w _2 . a: _6 . g 6w _2	g 6w _2 . s 6 p _6 . g 6w _2
+九十八	gau2a6baat3	g 6w _2 . a: _6 . b a: t _3	g 6w _2 . s 6 p _6 . b a: t _3
+九十几	gau2a6gei2	g 6w _2 . a: _6 . g ej _2	g 6w _2 . s 6 p _6 . g ej _2
+九叔	gau2suk1	g 6w _2 . s u: k _1
+九号	gau2hou2	g 6w _2 . h ow _2
+九月	gau2yut6	g 6w _2 . j y: t _6
+九洲	gau2jau1	g 6w _2 . dz 6w _1
+九百	gau2baak3	g 6w _2 . b a: k _3
+也	ya5	j a: _5
+习惯	jaap6gwaan3	dz a: p _6 . gw a: n _3
+乡	heung1	h 9: N _1
+乡下	heung1ha6	h 9: N _1 . h a: _6
+书	syu1	s y: _1
+买	maai5	m a:j _5
+买下	maai5ha2	m a:j _5 . h a: _2
+买下野	maai5ha2ye5	m a:j _5 . h a: _2 . j E: _5
+买到	maai5dou3	m a:j _5 . d ow _3	m a:j _5 . d ow _2
+买卖	maai5maai6	m a:j _5 . m a:j _6
+买完餸	maai5yun4sung3	m a:j _5 . j y: n _4 . s u: N _3
+买左肉	maai5jo2yuk6	m a:j _5 . dz O: _2 . j y: k _6
+买左菜	maai5jo2choi3	m a:j _5 . dz O: _2 . ts O:j _3
+买左野	maai5jo2ye5	m a:j _5 . dz O: _2 . j E: _5
+买得到	maai5dak1dou3	m a:j _5 . d 6 k _1 . d ow _3
+买菜	maai5choi3	m a:j _5 . ts O:j _3
+买货	maai5fo3	m a:j _5 . f O: _3
+买返	maai5faan1	m a:j _5 . f a: n _1
+买野	maai5ye5	m a:j _5 . j E: _5
+买餸	maai5sung3	m a:j _5 . s u: N _3
+乱	lyun6	l y: n _6
+乱七八糟	lyun6chat1baat3jou1	l y: n _6 . ts 6 t _1 . b a: t _3 . dz ow _1
+乱来	lyun6loi4	l y: n _6 . l O:j _4
+乱讲	lyun6gong2	l y: n _6 . g O: N _2
+乳猪	yu5jyu1	j y: _5 . dz y: _1
+乳鸽	yu5gap3	j y: _5 . g 6 p _3
+乸型	la2ying4	l a: _2 . j i: N _4	n a: _2 . j i: N _4
+乸型康	la2ying4hong1	l a: _2 . j i: N _4 . h O: N _1	n a: _2 . j i: N _4 . h O: N _1
+了	liu5	l iw _5
+了解	liu5gaai2	l iw _5 . g a:j _2
+了解下	liu5gaai2ha5	l iw _5 . g a:j _2 . h a: _5
+争	jang1	dz 6 N _1	dz a: N _1
+争到	jang1dou3	dz 6 N _1 . d ow _3	dz a: N _1 . d ow _3
+争扎	jang1jaat3	dz 6 N _1 . dz a: t _3	dz a: N _1 . dz a: t _3
+事	si6	s i: _6
+事先	si6sin1	s i: _6 . s i: n _1
+事实	si6sat6	s i: _6 . s 6 t _6
+事情	si6ching4	s i: _6 . ts i: N _4
+二	yi6	j i: _6
+二_A	yi6ei1	j i: _6 . ej _1
+二仔	yi6jai2	j i: _6 . dz 6j _2
+二十	yi6sap6	j i: _6 . s 6 p _6
+二十一	yi6a6yat1	j i: _6 . a: _6 . j 6 t _1	j i: _6 . s 6 p _6 . j 6 t _1
+二十万	yi6a6maan6	j i: _6 . a: _6 . m a: n _6	j i: _6 . s 6 p _6 . m a: n _6
+二十三支	yi6a6saam1ji1	j i: _6 . a: _6 . s a: m _1 . dz i: _1	j i: _6 . s 6 p _6 . s a: m _1 . dz i: _1
+二十六号	yi6a6luk6hou2	j i: _6 . a: _6 . l u: k _6 . h ow _2	j i: _6 . s 6 p _6 . l u: k _6 . h ow _2
+二十四号	yi6a6sei3hou2	j i: _6 . a: _6 . s ej _3 . h ow _2	j i: _6 . s 6 p _6 . s ej _3 . h ow _2
+二千	yi6chin1	j i: _6 . ts i: n _1
+二号	yi6hou2	j i: _6 . h ow _2
+二手	yi6sau2	j i: _6 . s 6w _2
+二月	yi6yut6	j i: _6 . j y: t _6
+二百	yi6baak3	j i: _6 . b a: k _3
+云	wan4	w 6 n _4
+云南台	wan4laam4toi4	w 6 n _4 . l a: m _4 . t O:j _4	w 6 n _4 . n a: m _4 . t O:j _4
+互相	wu6seung1	w u: _6 . s 9: N _1
+五	m5	m _5	N _5
+五十	m5sap6	m _5 . s 6 p _6	N _5 . s 6 p _6
+五十份	m5a6fan6	m _5 . a: _6 . f 6 n _6	N _5 . s 6 p _6 . f 6 n _6
+五十几	m5sap6gei2	m _5 . s 6 p _6 . g ej _2	m _5 . a: _6 . g ej _2	N _5 . s 6 p _6 . g ej _2
+五千	m5chin1	m _5 . ts i: n _1	N _5 . ts i: n _1
+五号	m5hou6	m _5 . h ow _6	N _5 . h ow _6
+五年级	m5lin4kap1	m _5 . l i: n _4 . k 6 p _1	N _5 . n i: n _4 . k 6 p _1
+五月	m5yut6	m _5 . j y: t _6	N _5 . j y: t _6
+五百	m5baak3	m _5 . b a: k _3	N _5 . b a: k _3
+五羊广场	m5yeung4gong2cheung4	m _5 . j 9: N _4 . g O: N _2 . ts 9: N _4	N _5 . j 9: N _4 . gw O: N _2 . ts 9: N _4
+五羊雕像	m5yeung4diu1jeung6	m _5 . j 9: N _4 . d iw _1 . dz 9: N _6	N _5 . j 9: N _4 . d iw _1 . dz 9: N _6
+五象广场	m5jeung6gong2cheung4	m _5 . dz 9: N _6 . g O: N _2 . ts 9: N _4	N _5 . dz 9: N _6 . gw O: N _2 . ts 9: N _4
+亚太	a3taai3	a: _3 . t a:j _3	N a: _3 . t a:j _3
+亚洲	a3jau1	a: _3 . dz 6w _1	N a: _3 . dz 6w _1
+亢	gong1	g O: N _1
+交	gaau1	g a:w _1
+交待	gaau1doi6	g a:w _1 . d O:j _6
+交易会	gaau1yik6wui2	g a:w _1 . j i: k _6 . w u:j _2
+交流	gaau1lau4	g a:w _1 . l 6w _4
+交流会	gaau1lau4wui5	g a:w _1 . l 6w _4 . w u:j _5
+交流电	gaau1lau4din6	g a:w _1 . l 6w _4 . d i: n _6
+交租	gaau1jou1	g a:w _1 . dz ow _1
+交管所	gaau1gun2so2	g a:w _1 . g u: n _2 . s O: _2
+交警	gaau1ging2	g a:w _1 . g i: N _2
+交费	gaau1fai3	g a:w _1 . f 6j _3
+交通	gaau1tung1	g a:w _1 . t u: N _1
+交钱	gaau1chin2	g a:w _1 . ts i: n _2
+亦	yik6	j i: k _6
+亦都	yik6dou1	j i: k _6 . d ow _1
+产业	chaan2yip6	ts a: n _2 . j i: p _6
+产品	chaan2ban2	ts a: n _2 . b 6 n _2
+亭台楼阁	ting4toi4lau5gok3	t i: N _4 . t O:j _4 . l 6w _5 . g O: k _3
+亲	chan1	ts 6 n _1
+亲戚	chan1chik1	ts 6 n _1 . ts i: k _1
+亲自	chan1ji6	ts 6 n _1 . dz i: _6
+人	yan4	j 6 n _4
+人事	yan4si6	j 6 n _4 . s i: _6
+人体	yan4tai2	j 6 n _4 . t 6j _2
+人力资源	yan4lik6ji1yun4	j 6 n _4 . l i: k _6 . dz i: _1 . j y: n _4
+人口	yan4hau2	j 6 n _4 . h 6w _2
+人名	yan4meng2	j 6 n _4 . m E: N _2
+人员	yan4yun4	j 6 n _4 . j y: n _4
+人地	yan4dei6	j 6 n _4 . d ej _6
+人士	yan4si6	j 6 n _4 . s i: _6
+人头	yan4tau4	j 6 n _4 . t 6w _4
+人妖	yan4yiu2	j 6 n _4 . j iw _2
+人家	yan4ga1	j 6 n _4 . g a: _1
+人工	yan4gung1	j 6 n _4 . g u: N _1
+人情	yan4ching4	j 6 n _4 . ts i: N _4
+人数	yan4sou3	j 6 n _4 . s ow _3
+人民	yan4man4	j 6 n _4 . m 6 n _4
+人民医院	yan4man4yi1yun2	j 6 n _4 . m 6 n _4 . j i: _1 . j y: n _2
+人民币	yan4man4bai6	j 6 n _4 . m 6 n _4 . b 6j _6
+人流量	yan4lau4leung6	j 6 n _4 . l 6w _4 . l 9: N _6
+人生	yan4sang1	j 6 n _4 . s 6 N _1
+人系	yan4hai6	j 6 n _4 . h 6j _6
+亿	yik1	j i: k _1
+仁和站	yan4wo4jaam6	j 6 n _4 . w O: _4 . dz a: m _6
+仁寿寺	yan4sau6ji6	j 6 n _4 . s 6w _6 . dz i: _6
+仁寿祠	yan4sau6chi4	j 6 n _4 . s 6w _6 . ts i: _4
+今	gam1	g 6 m _1
+今天	gam1tin1	g 6 m _1 . t i: n _1
+今年	gam1lin4	g 6 m _1 . l i: n _4	g 6 m _1 . l i: n _2	g 6 m _1 . n i: n _4	g 6 m _1 . n i: n _2
+今日	gam1yat6	g 6 m _1 . j 6 t _6
+今早	gam1jou2	g 6 m _1 . dz ow _2
+今晚	gam1maan5	g 6 m _1 . m a: n _5
+今晚黑	gam1maan5hak1	g 6 m _1 . m a: n _5 . h 6 k _1	g 6 m _1 . m a: n _1 . h 6 k _1
+今朝	gam1jiu1	g 6 m _1 . dz iw _1
+今朝早	gam1jiu1jou2	g 6 m _1 . dz iw _1 . dz ow _2
+今次	gam1chi3	g 6 m _1 . ts i: _3
+介	gaai3	g a:j _3
+介绍	gaai3siu6	g a:j _3 . s iw _6
+介绍下	gaai3siu6ha5	g a:j _3 . s iw _6 . h a: _5
+从	chung4	ts u: N _4
+从化	chung4fa3	ts u: N _4 . f a: _3
+从来	chung4loi4	ts u: N _4 . l O:j _4
+仓库	chong1fu3	ts O: N _1 . f u: _3
+仔	jai2	dz 6j _2
+仔仔	jai4jai2	dz 6j _4 . dz 6j _2
+仔女	jai2leui2	dz 6j _2 . l 9y _2	dz 6j _2 . n 9y _2
+他	ta1	t a: _1
+付	fu6	f u: _6
+仙	sin1	s i: n _1
+仙人	sin1yan4	s i: n _1 . j 6 n _4
+代	doi6	d O:j _6
+代班	doi6baan1	d O:j _6 . b a: n _1
+代表	doi6biu2	d O:j _6 . b iw _2
+以	yi5	j i: _5
+以上	yi5seung6	j i: _5 . s 9: N _6
+以下	yi5ha6	j i: _5 . h a: _6
+以为	yi5wai4	j i: _5 . w 6j _4
+以内	yi5loi6	j i: _5 . l O:j _6	j i: _5 . n O:j _6
+以前	yi5chin4	j i: _5 . ts i: n _4
+以后	yi5hau6	j i: _5 . h 6w _6
+仲	jung6	dz u: N _6
+仲加	jung6ga1	dz u: N _6 . g a: _1
+仲春	jung6cheun1	dz u: N _6 . ts 9: n _1
+仲有	jung6yau5	dz u: N _6 . j 6w _5
+仲未	jung6mei6	dz u: N _6 . m ej _6
+仲要	jung6yiu3	dz u: N _6 . j iw _3
+件	gin6	g i: n _6
+价	ga3	g a: _3
+价钱	ga3chin4	g a: _3 . ts i: n _4
+任	yam6	j 6 m _6
+任何	yam6ho4	j 6 m _6 . h O: _4
+任务	yam6mou6	j 6 m _6 . m ow _6
+任務	yam6mou6	j 6 m _6 . m ow _6
+份	fan6	f 6 n _6
+仿	fong2	f O: N _2
+企	kei5	k ej _5
+企业	kei5yip6	k ej _5 . j i: p _6
+企到	kei5dou3	k ej _5 . d ow _3
+企来	kei5loi4	k ej _5 . l O:j _4
+企理	kei5lei5	k ej _5 . l ej _5
+伏	fuk6	f u: k _6
+休	yau1	j 6w _1
+休唔休息	yau1m4yau1sik1	j 6w _1 . m _4 . j 6w _1 . s i: k _1	j 6w _1 . N _4 . j 6w _1 . s i: k _1
+休嗮息	yau1saai3sik1	j 6w _1 . s a:j _3 . s i: k _1
+休息	yau1sik1	j 6w _1 . s i: k _1
+休息日	yau1sik1yat6	j 6w _1 . s i: k _1 . j 6 t _6
+休整	yau1jing2	j 6w _1 . dz i: N _2
+休闲	yau1haan4	j 6w _1 . h a: n _4
+优惠	yau1wai6	j 6w _1 . w 6j _6	j 6w _1 . w 6j _3
+伙记	fo2gei3	f O: _2 . g ej _3
+伙食	fo2sik6	f O: _2 . s i: k _6
+会	wui5	w u:j _5
+会员	wui2yun4	w u:j _2 . j y: n _4
+会唔会	wui5m4wui5	w u:j _5 . m _4 . w u:j _5
+会计	wui6gai3	w u:j _6 . g 6j _3
+会计师	wui6gai3si1	w u:j _6 . g 6j _3 . s i: _1
+会计证	wui6gai3jing3	w u:j _6 . g 6j _3 . dz i: N _3
+伟哥	wai5go1	w 6j _5 . g O: _1
+伟科	wai5fo1	w 6j _5 . f O: _1
+伟雄	wai5hung4	w 6j _5 . h u: N _4
+传	chyun4	ts y: n _4	dz y: n _6	dz y: n _2
+传单	chyun4daan1	ts y: n _4 . d a: n _1
+传开	chyun4hoi1	ts y: n _4 . h O:j _1
+传染	chyun4yin5	ts y: n _4 . j i: n _5	ts y: n _4 . j i: m _5
+伦	leun4	l 9: n _4
+伯爷婆	baak3ye1po4	b a: k _3 . j E: _1 . p O: _4
+估	gu2	g u: _2
+估下	gu2ha2	g u: _2 . h a: _2
+估计	gu2gai3	g u: _2 . g 6j _3
+伴	bun6	b u: n _6
+伸展	san1jin2	s 6 n _1 . dz i: n _2
+似	chi5	ts i: _5
+似乎	chi5fu4	ts i: _5 . f u: _4
+但	daan6	d a: n _6
+但系	dan6hai6	d 6 n _6 . h 6j _6
+位	wai2	w 6j _2	w 6j _6
+位置	wai6ji3	w 6j _6 . dz i: _3
+低	dai1	d 6j _1
+低位	dai1wai2	d 6j _1 . w 6j _2	d 6j _1 . w 6j _6
+低迷	dai1mai4	d 6j _1 . m 6j _4
+住	jyu6	dz y: _6
+住宿	jyu6suk1	dz y: _6 . s u: k _1
+住房	jyu6fong2	dz y: _6 . f O: N _2	dz y: _6 . f O: N _4
+住租	jyu6jou1	dz y: _6 . dz ow _1
+住院	jyu6yun6	dz y: _6 . j y: n _6
+体育	tai2yuk6	t 6j _2 . j y: k _6
+体谅	tai2leung6	t 6j _2 . l 9: N _6
+何_B_B	ho4bi2bi1	h O: _4 . b i: _2 . b i: _1
+何予珍	ho4yu5jan1	h O: _4 . j y: _5 . dz 6 n _1
+何敏超	ho4man5chiu1	h O: _4 . m 6 n _5 . ts iw _1
+何止	ho4ji2	h O: _4 . dz i: _2
+余咏仪	yu4wing6yi4	j y: _4 . w i: N _6 . j i: _4
+佛山	fat6saan1	f 6 t _6 . s a: n _1
+佛山宾馆	fat6saan1ban1gun2	f 6 t _6 . s a: n _1 . b 6 n _1 . g u: n _2
+作	jok3	dz O: k _3
+作业	jok3yip6	dz O: k _3 . j i: p _6
+作为	jok3wai4	dz O: k _3 . w 6j _4
+作战	jok3jin3	dz O: k _3 . dz i: n _3
+作文	jok3man4	dz O: k _3 . m 6 n _4
+作用	jok3yung6	dz O: k _3 . j y: N _6
+你	lei5	l ej _5	n ej _5
+你地	lei5dei6	l ej _5 . d ej _6	n ej _5 . d ej _6
+你好	lei5hou2	l ej _5 . h ow _2	n ej _5 . h ow _2
+佢	keui5	k 9y _5	h 9y _5
+佢地	keui5dei6	k 9y _5 . d ej _6	h 9y _5 . d ej _6
+佬	lou2	l ow _2
+佳	gaai1	g a:j _1
+佳宁娜	gaai1ling4na4	g a:j _1 . l i: N _4 . n a: _4	g a:j _1 . n i: N _4 . n a: _4
+使	sai2	s 6j _2
+使	si5	s i: _5
+使到	si5dou3	s i: _5 . d ow _3
+使唔使	sai2m4sai2	s 6j _2 . m _4 . s 6j _2
+侄子	jat6ji2	dz 6 t _6 . dz i: _2
+侈	chi2	ts i: _2
+例如	lai6yu4	l 6j _6 . j y: _4
+例子	lai6ji2	l 6j _6 . dz i: _2
+供	gung1	g u: N _1
+供电	gung1din6	g u: N _1 . d i: n _6
+依	yi1	j i: _1
+侬	lung4	l u: N _4	n u: N _4
+侯清	hau6cheng1	h 6w _6 . ts E: N _1
+侹	ting5	t i: N _5
+便	bin3	b i: n _3
+便价	pin4ga3	p i: n _4 . g a: _3
+便便	bin6bin6	b i: n _6 . b i: n _6
+便宜	pin4yi4	p i: n _4 . j i: _4
+保	bou2	b ow _2
+保军	bou2gwan1	b ow _2 . gw 6 n _1
+保姆	bou2mou5	b ow _2 . m ow _5
+保婴丹	bou2ying1daan1	b ow _2 . j i: N _1 . d a: n _1
+保护	bou2wu6	b ow _2 . w u: _6
+保社	bou2se5	b ow _2 . s E: _5
+保证	bou2jing3	b ow _2 . dz i: N _3
+保险	bou2him2	b ow _2 . h i: m _2
+俠义	hap6yi6	h 6 p _6 . j i: _6
+信	seun3	s 9: n _3
+信号	seun3hou6	s 9: n _3 . h ow _6
+信和	seun3wo4	s 9: n _3 . w O: _4	s 9: n _3 . w O: _2
+信封	seun3fung1	s 9: n _3 . f u: N _1
+信息	seun3sik1	s 9: n _3 . s i: k _1
+信教	seun3gaau3	s 9: n _3 . g a:w _3
+信贷	seun3taai3	s 9: n _3 . t a:j _3
+修	sau1	s 6w _1
+修为	sau1wai4	s 6w _1 . w 6j _4
+修养	sau1yeung5	s 6w _1 . j 9: N _5
+俱乐部	keui1lok6bou6	k 9y _1 . l O: k _6 . b ow _6
+倍	pui5	p u:j _5
+倒	dou3	d ow _3
+倒霉	dou2mui4	d ow _2 . m u:j _4
+借	je3	dz E: _3
+借书	je3syu1	dz E: _3 . s y: _1
+借唔借钱	je3m4je3chin2	dz E: _3 . m _4 . dz E: _3 . ts i: n _2
+借钱	je3chin2	dz E: _3 . ts i: n _2	dz E: _3 . ts i: n _4
+债务	jaai3mou6	dz a:j _3 . m ow _6
+值	jik6	dz i: k _6
+值得	jik6dak1	dz i: k _6 . d 6 k _1
+值班	jik6baan1	dz i: k _6 . b a: n _1
+倾	king1	k i: N _1
+倾下	king1ha2	k i: N _1 . h a: _2
+倾下计	king1ha5gai2	k i: N _1 . h a: _5 . g 6j _2
+倾两句	king1leung5geui3	k i: N _1 . l 9: N _5 . g 9y _3
+倾倾计	king1king1gai3	k i: N _1 . k i: N _1 . g 6j _3
+倾完计	king1yun4gai2	k i: N _1 . j y: n _4 . g 6j _2
+倾电话	king1din6wa2	k i: N _1 . d i: n _6 . w a: _2
+倾计	king1gai2	k i: N _1 . g 6j _2
+假	ga3	g a: _3
+假假	ga3ga3	g a: _3 . g a: _3
+假如	ga2yu4	g a: _2 . j y: _4
+假日	ga3yat6	g a: _3 . j 6 t _6
+假日通	ga3yat6tung1	g a: _3 . j 6 t _6 . t u: N _1
+假期	ga3kei4	g a: _3 . k ej _4
+偏心	pin1sam1	p i: n _1 . s 6 m _1
+偏激	pin1gik1	p i: n _1 . g i: k _1
+偏离	pin1lei4	p i: n _1 . l ej _4
+做	jo6	dz O: _6	dz ow _6
+做下	jo6ha5	dz O: _6 . h a: _5
+做乜鬼	jou6mat1gwai2	dz ow _6 . m 6 t _1 . gw 6j _2
+做人	jou6yan4	dz ow _6 . j 6 n _4
+做做下	jou6jou6ha2	dz ow _6 . dz ow _6 . h a: _2
+做到	jou6dou3	dz ow _6 . d ow _3	dz ow _6 . d ow _2
+做到野	jou6dou3ye5	dz ow _6 . d ow _3 . j E: _5
+做唔做	jou6m4jou6	dz ow _6 . m _4 . dz ow _6
+做唔到	jou6m4dou3	dz ow _6 . m _4 . d ow _3
+做埋	jou6maai4	dz ow _6 . m a:j _4
+做工	jou6gung1	dz ow _6 . g u: N _1
+做开野	jo6hoi1ye5	dz O: _6 . h O:j _1 . j E: _5
+做得到	jou6dak1dou3	dz ow _6 . d 6 k _1 . d ow _3
+做野	jo6ye5	dz O: _6 . j E: _5
+停	ting4	t i: N _4
+停一停	ting4yat1ting4	t i: N _4 . j 6 t _1 . t i: N _4
+停市	ting4si5	t i: N _4 . s i: _5
+停机	ting4gei1	t i: N _4 . g ej _1
+停车	ting4che1	t i: N _4 . ts E: _1
+健力宝	gin6lik6bou2	g i: n _6 . l i: k _6 . b ow _2
+健康	gin6hong1	g i: n _6 . h O: N _1
+偷	tau1	t 6w _1
+偷偷	tau1tau1	t 6w _1 . t 6w _1
+偷唔到鸡	tau1m4dou3gai1	t 6w _1 . m _4 . d ow _3 . g 6j _1
+偷笑	tau1siu3	t 6w _1 . s iw _3
+傍	bong6	b O: N _6
+傍晚	pong4maan5	p O: N _4 . m a: n _5
+储备	chyu5bei6	ts y: _5 . b ej _6
+储起	chyu5hei2	ts y: _5 . h ej _2
+催	cheui1	ts 9y _1
+傻	so4	s O: _4
+傻下	so4ha2	s O: _4 . h a: _2
+傻佬	so4lou2	s O: _4 . l ow _2
+傻傻	so4so4	s O: _4 . s O: _4
+傻瓜	so4gwa1	s O: _4 . gw a: _1
+傻野	so4ye5	s O: _4 . j E: _5
+僆仔	leng1jai2	l E: N _1 . dz 6j _2
+僆妹	leng1mui1	l E: N _1 . m u:j _1
+元	yun4	j y: n _4
+元旦	yun4daan3	j y: n _4 . d a: n _3
+元朗	yun4long5	j y: n _4 . l O: N _5
+兄	hing1	h i: N _1
+兄弟	hing1dai6	h i: N _1 . d 6j _6
+充	chung1	ts u: N _1
+充电	chung1din6	ts u: N _1 . d i: n _6
+充足	chung1juk1	ts u: N _1 . dz u: k _1
+充足下	chung1juk1ha2	ts u: N _1 . dz u: k _1 . h a: _2
+兆	siu6	s iw _6
+先	sin1	s i: n _1
+先之	sin1ji1	s i: n _1 . dz i: _1
+先生	sin1saang1	s i: n _1 . s a: N _1
+先至	sin1ji3	s i: n _1 . dz i: _3
+光	gong1	g O: N _1	gw O: N _1
+光棍节	gong1gwan3jit3	g O: N _1 . gw 6 n _3 . dz i: t _3	gw O: N _1 . gw 6 n _3 . dz i: t _3
+光管	gong1gun2	g O: N _1 . g u: n _2	gw O: N _1 . g u: n _2
+光阴	gong1yam1	g O: N _1 . j 6 m _1	gw O: N _1 . j 6 m _1
+免	min5	m i: n _5
+免提	min5tai4	m i: n _5 . t 6j _4
+免费	min5fai3	m i: n _5 . f 6j _3
+兜	dau1	d 6w _1
+兜下	dau1ha2	d 6w _1 . h a: _2
+兜下圈	dau1ha2hyun1	d 6w _1 . h a: _2 . h y: n _1
+兜兜转转	dau1dau1jyun2jyun2	d 6w _1 . d 6w _1 . dz y: n _2 . dz y: n _2
+兜嚟兜去	dau1lai4dau1heui3	d 6w _1 . l 6j _4 . d 6w _1 . h 9y _3
+入	yap6	j 6 p _6
+入伙	yap6fo2	j 6 p _6 . f O: _2
+入住	yap6jyu6	j 6 p _6 . dz y: _6
+入到去	yap6dou3heui3	j 6 p _6 . d ow _3 . h 9y _3
+入厂	yap6chong2	j 6 p _6 . ts O: N _2
+入去	yap6heui3	j 6 p _6 . h 9y _3
+入嚟	yap6lai4	j 6 p _6 . l 6j _4
+入场	yap6cheung4	j 6 p _6 . ts 9: N _4
+入学	yap6hok6	j 6 p _6 . h O: k _6
+入左去	yap6jo2heui3	j 6 p _6 . dz O: _2 . h 9y _3
+入市	yap6si5	j 6 p _6 . s i: _5
+入来	yap6lei4	j 6 p _6 . l ej _4	j 6 p _6 . l O:j _4
+入边	yap6bin1	j 6 p _6 . b i: n _1
+入过去	yap6go3heui3	j 6 p _6 . g O: _3 . h 9y _3	j 6 p _6 . gw O: _3 . h 9y _3
+入院	yap6yun2	j 6 p _6 . j y: n _2
+入面	yap6min6	j 6 p _6 . m i: n _6
+內	loi6	l O:j _6	n O:j _6
+內伤	loi6seung1	l O:j _6 . s 9: N _1	n O:j _6 . s 9: N _1
+全	chyun4	ts y: n _4
+全家人	chyun4ga1yan4	ts y: n _4 . g a: _1 . j 6 n _4
+全部	chyun4bou6	ts y: n _4 . b ow _6
+八	baat3	b a: t _3
+八万	baat3maan6	b a: t _3 . m a: n _6	b a: t _3 . m a: N _6
+八十	baat3sap6	b a: t _3 . s 6 p _6
+八十八	baat3a6baat3	b a: t _3 . a: _6 . b a: t _3	b a: t _3 . s 6 p _6 . b a: t _3
+八千	baat3chin1	b a: t _3 . ts i: n _1
+八卦	baat3gwa3	b a: t _3 . gw a: _3
+八号	baat3hou2	b a: t _3 . h ow _2
+八宝粥	baat3bou2juk1	b a: t _3 . b ow _2 . dz u: k _1
+八百	baat3baak3	b a: t _3 . b a: k _3
+公	gung1	g u: N _1
+公交车	gung1gaau1che1	g u: N _1 . g a:w _1 . ts E: _1
+公交车站	gung1gaau1che1jaam6	g u: N _1 . g a:w _1 . ts E: _1 . dz a: m _6
+公共	gung1gung6	g u: N _1 . g u: N _6
+公务员	gung1mou6yun4	g u: N _1 . m ow _6 . j y: n _4
+公司	gung1si1	g u: N _1 . s i: _1
+公园	gung1yun2	g u: N _1 . j y: n _2
+公园前	gung1yun2chin4	g u: N _1 . j y: n _2 . ts i: n _4
+公安局	gung1on1guk6	g u: N _1 . O: n _1 . g u: k _6
+公开	gung1hoi1	g u: N _1 . h O:j _1
+公积金	gung1jik1gam1	g u: N _1 . dz i: k _1 . g 6 m _1
+公里	gung1lei5	g u: N _1 . l ej _5
+六	luk6	l u: k _6
+六十	luk6sap6	l u: k _6 . s 6 p _6
+六十二	luk6a6yi6	l u: k _6 . a: _6 . j i: _6	l u: k _6 . s 6 p _6 . j i: _6
+六十几	luk6sap6gei1	l u: k _6 . s 6 p _6 . g ej _1	l u: k _6 . a: _6 . g ej _2
+六千	luk6chin1	l u: k _6 . ts i: n _1
+六年级	luk6lin4kap1	l u: k _6 . l i: n _4 . k 6 p _1	l u: k _6 . n i: n _4 . k 6 p _1
+六月	luk6yut6	l u: k _6 . j y: t _6
+六月份	luk6yut6fan6	l u: k _6 . j y: t _6 . f 6 n _6
+六百	luk6baak3	l u: k _6 . b a: k _3
+六马路	luk6ma5lou6	l u: k _6 . m a: _5 . l ow _6
+共同	gung6tung4	g u: N _6 . t u: N _4
+关	gwaan1	gw a: n _1
+关事	gwaan1si6	gw a: n _1 . s i: _6
+关于	gwaan1yu1	gw a: n _1 . j y: _1
+关少	gwaan1siu2	gw a: n _1 . s iw _2
+关心	gwaan1sam1	gw a: n _1 . s 6 m _1
+关机	gwaan1gei1	gw a: n _1 . g ej _1
+关注	gwaan1jyu3	gw a: n _1 . dz y: _3
+关注下	gwaan1jyu3ha5	gw a: n _1 . dz y: _3 . h a: _5
+关照	gwaan1jiu3	gw a: n _1 . dz iw _3
+关系	gwaan1hai6	gw a: n _1 . h 6j _6
+兴	hing1	h i: N _1	h i: N _3
+兴趣	hing3cheui3	h i: N _3 . ts 9y _3
+兴趣班	hing3cheui3baan1	h i: N _3 . ts 9y _3 . b a: n _1
+其	kei4	k ej _4
+其中	kei4jung1	k ej _4 . dz u: N _1
+其他	kei4ta1	k ej _4 . t a: _1
+其它	kei4ta1	k ej _4 . t a: _1
+其实	kei4sat6	k ej _4 . s 6 t _6
+养	yeung5	j 9: N _5
+兼夹	gim1gaap3	g i: m _1 . g a: p _3
+兼职	gim1jik1	g i: m _1 . dz i: k _1
+兼课	gim1fo3	g i: m _1 . f O: _3
+内向	loi6heung3	l O:j _6 . h 9: N _3	n O:j _6 . h 9: N _3
+内忧外患	loi6yau1oi2waan6	l O:j _6 . j 6w _1 . O:j _2 . w a: n _6	n O:j _6 . j 6w _1 . N O:j _2 . w a: n _6
+冇	mou5	m ow _5
+冇所谓	mou5so2wai6	m ow _5 . s O: _2 . w 6j _6
+冇用	mou5yung6	m ow _5 . j y: N _6
+冇鸠用	mou5gau1yung6	m ow _5 . g 6w _1 . j y: N _6
+再	joi3	dz O:j _3
+再见	joi3gin3	dz O:j _3 . g i: n _3
+写	se2	s E: _2
+写到	se2dou3	s E: _2 . d ow _3
+冚唪唥	ham6baang6laang6	h 6 m _6 . b a: N _6 . l a: N _6
+冚家铲	ham6ga1chaan2	h 6 m _6 . g a: _1 . ts a: n _2
+军	gwan1	gw 6 n _1
+农村	lung4chyun1	l u: N _4 . ts y: n _1	n u: N _4 . ts y: n _1
+冬	dung1	d u: N _1
+冬天	dung1tin1	d u: N _1 . t i: n _1
+冬菇	dung1gu1	d u: N _1 . g u: _1
+冯	fung4	f u: N _4
+冲	chung1	ts u: N _1
+冲凉	chung1leung4	ts u: N _1 . l 9: N _4
+冲剂	chung1jai1	ts u: N _1 . dz 6j _1
+冲劲	chung1ging6	ts u: N _1 . g i: N _6
+冲完凉	chung1yun4leung4	ts u: N _1 . j y: n _4 . l 9: N _4
+冲左凉	chung1jo2leung4	ts u: N _1 . dz O: _2 . l 9: N _4
+冲级	chung1kap1	ts u: N _1 . k 6 p _1
+决定	kyut3ding6	k y: t _3 . d i: N _6
+冷	laan5	l a: n _5	l a: N _5
+冷缩热胀	laang1suk1yit6jeung3	l a: N _1 . s u: k _1 . j i: t _6 . dz 9: N _3	l a: n _1 . s u: k _1 . j i: t _6 . dz 9: N _3
+冷风	laang1fung1	l a: N _1 . f u: N _1	l a: n _1 . f u: N _1
+冷饭	laang1faan6	l a: N _1 . f a: n _6
+冻	dung3	d u: N _3
+冻一冻	dung3yat1dung3	d u: N _3 . j 6 t _1 . d u: N _3
+冻亲	dung3chan1	d u: N _3 . ts 6 n _1
+净	jing6	dz i: N _6
+净系	jing6hai6	dz i: N _6 . h 6j _6
+凄凉	chai1leung4	ts 6j _1 . l 9: N _4
+准	jeun2	dz 9: n _2
+准备	jeun2bei6	dz 9: n _2 . b ej _6
+准时	jeun2si4	dz 9: n _2 . s i: _4
+凉	leung4	l 9: N _4
+凉瓜	leung4gwa1	l 9: N _4 . gw a: _1
+凉瓜牛肉	leung4gwa1au4yuk6	l 9: N _4 . gw a: _1 . 6w _4 . j y: k _6	l 9: N _4 . gw a: _1 . N 6w _4 . j y: k _6
+凋零	diu1ling4	d iw _1 . l i: N _4
+减	gaam2	g a: m _2
+减下压	gaam2ha5aat3	g a: m _2 . h a: _5 . a: t _3	g a: m _2 . h a: _5 . N a: t _3
+减肥	gaam2fei4	g a: m _2 . f ej _4
+减轻	gaam2heng1	g a: m _2 . h E: N _1
+凑	chau3	ts 6w _3
+凑仔	chau3jai2	ts 6w _3 . dz 6j _2
+凑凑仔	chau3chau3jai2	ts 6w _3 . ts 6w _3 . dz 6j _2
+凑埋	chau3maai4	ts 6w _3 . m a:j _4
+几	gei1	g ej _1
+几	gei2	g ej _2
+几嚿水	gei2gau3seui2	g ej _2 . g 6w _3 . s 9y _2
+几多	gei2do1	g ej _2 . d O: _1
+几多号	gei2do1hou2	g ej _2 . d O: _1 . h ow _2
+几时	gei2si4	g ej _2 . s i: _4
+几钱	gei2chin2	g ej _2 . ts i: n _2
+凡	faan4	f a: n _4
+凤	fung6	f u: N _6
+凤凰	fung6wong4	f u: N _6 . w O: N _4
+凭	pang4	p 6 N _4
+凯悦酒店	hoi2yut6jau2dim3	h O:j _2 . j y: t _6 . dz 6w _2 . d i: m _3	h O:j _1 . j y: t _6 . dz 6w _2 . d i: n _3
+凯琪	hoi2kei4	h O:j _2 . k ej _4
+凳	dang3	d 6 N _3
+出	cheut1	ts 9: t _1
+出下境	cheut1ha2ging2	ts 9: t _1 . h a: _2 . g i: N _2
+出入境	cheut1yap6ging2	ts 9: t _1 . j 6 p _6 . g i: N _2
+出出入入	cheut1cheut1yap6yap6	ts 9: t _1 . ts 9: t _1 . j 6 p _6 . j 6 p _6
+出到嚟	cheut1dou3lai4	ts 9: t _1 . d ow _3 . l 6j _4	ts 9: t _1 . d ow _3 . l ej _4
+出动	cheut1dung6	ts 9: t _1 . d u: N _6
+出单	cheut1daan1	ts 9: t _1 . d a: n _1
+出去	cheut1heui2	ts 9: t _1 . h 9y _2
+出发	cheut1faat3	ts 9: t _1 . f a: t _3
+出口	cheut1hau2	ts 9: t _1 . h 6w _2
+出名	cheut1meng2	ts 9: t _1 . m E: N _2
+出唔出	cheut1m4cheut1	ts 9: t _1 . m _4 . ts 9: t _1
+出唔出去	cheut1m4cheut1heui3	ts 9: t _1 . m _4 . ts 9: t _1 . h 9y _3
+出嚟	cheut1lei4	ts 9: t _1 . l ej _4
+出国	cheut1gok3	ts 9: t _1 . g O: k _3	ts 9: t _1 . gw O: k _3
+出声	cheut1seng1	ts 9: t _1 . s E: N _1
+出头	cheut1tau4	ts 9: t _1 . t 6w _4
+出山	cheut1saan1	ts 9: t _1 . s a: n _1
+出工	cheut1gung1	ts 9: t _1 . g u: N _1
+出左单	cheut1jo2daan1	ts 9: t _1 . dz O: _2 . d a: n _1
+出左嚟	cheut1jo2lai4	ts 9: t _1 . dz O: _2 . l 6j _4	ts 9: t _1 . dz O: _2 . l ej _4
+出年	cheut1nin2	ts 9: t _1 . n i: n _2
+出开去	cheut1hoi1heui3	ts 9: t _1 . h O:j _1 . h 9y _3
+出得去	cheut1dak1heui3	ts 9: t _1 . d 6 k _1 . h 9y _3
+出来	cheut1loi4	ts 9: t _1 . l O:j _4
+出现	cheut1yin6	ts 9: t _1 . j i: n _6
+出粮	cheut1leung4	ts 9: t _1 . l 9: N _4
+出街	cheut1gaai1	ts 9: t _1 . g a:j _1
+出身	cheut1san1	ts 9: t _1 . s 6 n _1
+出边	cheut1bin3	ts 9: t _1 . b i: n _3	ts 9: t _1 . b i: n _1
+出钱	cheut1chin4	ts 9: t _1 . ts i: n _4
+出门	cheut1mun4	ts 9: t _1 . m u: n _4
+出面	cheut1min6	ts 9: t _1 . m i: n _6
+刀仔	dou1jai2	d ow _1 . dz 6j _2
+刁难	diu1laan6	d iw _1 . l a: n _6	d iw _1 . n a: n _6
+分	fan1	f 6 n _1	f 6 n _6
+分为	fan1wai4	f 6 n _1 . w 6j _4
+分别	fan1bit6	f 6 n _1 . b i: t _6
+分到	fan1dou3	f 6 n _1 . d ow _3
+分好	fan1hou2	f 6 n _1 . h ow _2
+分店	fan1din3	f 6 n _1 . d i: n _3	f 6 n _1 . d i: m _3
+分开	fan1hoi1	f 6 n _1 . h O:j _1
+分成	fan1sing4	f 6 n _1 . s i: N _4
+分散	fan1saan3	f 6 n _1 . s a: n _3	f 6 n _1 . s a: n _2
+分红	fan1hung4	f 6 n _1 . h u: N _4
+分身	fan1san1	f 6 n _1 . s 6 n _1
+分钟	fan1jung1	f 6 n _1 . dz u: N _1
+切	chit3	ts i: t _3
+刘峰	lau4fung1	l 6w _4 . f u: N _1
+刘师傅	lau4si1fu2	l 6w _4 . s i: _1 . f u: _2
+刘希	lau4hei1	l 6w _4 . h ej _1
+刚	gong1	g O: N _1
+刚刚	gong1gong1	g O: N _1 . g O: N _1
+创新	chong3san1	ts O: N _3 . s 6 n _1
+初	cho1	ts O: _1
+初一	cho1yat1	ts O: _1 . j 6 t _1
+初三	cho1saam1	ts O: _1 . s a: m _1
+初中	cho1jung1	ts O: _1 . dz u: N _1
+初初	cho1cho1	ts O: _1 . ts O: _1
+初十	cho1sap6	ts O: _1 . s 6 p _6
+初时	cho1si4	ts O: _1 . s i: _4
+初级	cho1kap1	ts O: _1 . k 6 p _1
+初赛	cho1choi3	ts O: _1 . ts O:j _3
+判	pun3	p u: n _3
+判决	pun3kyut3	p u: n _3 . k y: t _3
+刨	paau4	p a:w _4
+别墅	bit6seui5	b i: t _6 . s 9y _5	b i: t _6 . s 9y _6
+到	dou3	d ow _3
+到嚟	dou3lai4	d ow _3 . l 6j _4	d ow _3 . l ej _4
+到场	dou3cheung4	d ow _3 . ts 9: N _4
+到处	dou3chyu3	d ow _3 . ts y: _3
+到底	dou3dai2	d ow _3 . d 6j _2
+到时	dou3si4	d ow _3 . s i: _4
+到时候	dou3si4hau6	d ow _3 . s i: _4 . h 6w _6
+到時候	dou3si4hau6	d ow _3 . s i: _4 . h 6w _6
+到期	dou3kei4	d ow _3 . k ej _4
+制	jai3	dz 6j _3
+制度	jai3dou6	dz 6j _3 . d ow _6
+制药	jai3yeuk6	dz 6j _3 . j 9: k _6
+刺耳	chi3yi5	ts i: _3 . j i: _5
+剁	deuk3	d 9: k _3
+剂	jai1	dz 6j _1
+前	chin4	ts i: n _4
+前排	chin4paai4	ts i: n _4 . p a:j _4
+前日	chin4yat6	ts i: n _4 . j 6 t _6
+前期	chin4kei4	ts i: n _4 . k ej _4
+前来	chin4loi4	ts i: n _4 . l O:j _4
+前级	chin4kap1	ts i: n _4 . k 6 p _1
+前边	chin4bin1	ts i: n _4 . b i: n _1	ts i: n _4 . b i: n _6
+前途	chin4tou4	ts i: n _4 . t ow _4
+前面	chin4min6	ts i: n _4 . m i: n _6
+剧情	kek6ching4	k E: k _6 . ts i: N _4
+剧烈	kek6lit6	k E: k _6 . l i: t _6
+剩	jing6	dz i: N _6	s i: N _6
+剩低	jing6dai1	dz i: N _6 . d 6j _1
+剩返	jing6faan1	dz i: N _6 . f a: n _1
+剩饭	jing6faan6	dz i: N _6 . f a: n _6
+剪	jin2	dz i: n _2
+剪发	jin2faat3	dz i: n _2 . f a: t _3
+剪开	jin2hoi1	dz i: n _2 . h O:j _1
+剪碎	jin2seui3	dz i: n _2 . s 9y _3
+劝	hyun3	h y: n _3
+办	baan6	b a: n _6
+办公室	baan6gung1sat1	b a: n _6 . g u: N _1 . s 6 t _1
+办到	baan6dou3	b a: n _6 . d ow _3
+办到证	baan6dou3jing3	b a: n _6 . d ow _3 . dz i: N _3
+办唔到	baan6m4dou3	b a: n _6 . m _4 . d ow _3
+办好	baan6hou2	b a: n _6 . h ow _2
+办完证	baan6yun4jing3	b a: n _6 . j y: n _4 . dz i: N _3
+办得到	baan6dak1dou3	b a: n _6 . d 6 k _1 . d ow _3
+办手续	baan6sau2juk6	b a: n _6 . s 6w _2 . dz u: k _6
+办护照	baan6wu6jiu3	b a: n _6 . w u: _6 . dz iw _3
+办法	baan6faat3	b a: n _6 . f a: t _3
+办理	baan6lei5	b a: n _6 . l ej _5
+办签证	baan6chim1jing3	b a: n _6 . ts i: m _1 . dz i: N _3
+功能	gung1lang4	g u: N _1 . l 6 N _4	g u: N _1 . n 6 N _4
+功课	gung1fo3	g u: N _1 . f O: _3
+加	ga1	g a: _1
+加上	ga1seung6	g a: _1 . s 9: N _6
+加分	ga1fan1	g a: _1 . f 6 n _1
+加埋	ga1maai4	g a: _1 . m a:j _4
+加多	ga1do1	g a: _1 . d O: _1
+加油	ga1yau4	g a: _1 . j 6w _4
+加班	ga1baan1	g a: _1 . b a: n _1
+加班费	ga1baan1fai3	g a: _1 . b a: n _1 . f 6j _3
+加起上嚟	ga1hei2seung5lei4	g a: _1 . h ej _2 . s 9: N _5 . l ej _4
+动	dung6	d u: N _6
+动作	dung6jok3	d u: N _6 . dz O: k _3
+动漫	dung6maan6	d u: N _6 . m a: n _6
+动画片	dung6wa2pin3	d u: N _6 . w a: _2 . p i: n _3
+助	jo6	dz O: _6
+努力	lou5lik6	l ow _5 . l i: k _6	n ow _5 . l i: k _6
+劲	ging6	g i: N _6
+劲唔劲	ging6m4ging6	g i: N _6 . m _4 . g i: N _6
+劳作	lou4jok3	l ow _4 . dz O: k _3
+勇明	yung5ming4	j y: N _5 . m i: N _4
+勇表哥	yung5biu2go1	j y: N _5 . b iw _2 . g O: _1
+勉勉强强	min5min5keung5keung5	m i: n _5 . m i: n _5 . k 9: N _5 . k 9: N _5
+勉强	min5keung5	m i: n _5 . k 9: N _5
+勤	kan4	k 6 n _4
+勤力	kan4lik6	k 6 n _4 . l i: k _6
+勾杰文	gau1git6man2	g 6w _1 . g i: t _6 . m 6 n _2
+包	baau1	b a:w _1
+包住	baau1jyu6	b a:w _1 . dz y: _6
+包场	baau1cheung4	b a:w _1 . ts 9: N _4
+包埋	baau1maai4	b a:w _1 . m a:j _4
+包装	baau1jong1	b a:w _1 . dz O: N _1
+包车	baau1che1	b a:w _1 . ts E: _1
+化	fa3	f a: _3
+化到	fa3dou3	f a: _3 . d ow _3
+化验	fa3yim6	f a: _3 . j i: m _6
+北京	bak1ging1	b 6 k _1 . g i: N _1
+北大	bak1daai6	b 6 k _1 . d a:j _6
+北溪	bak1kai1	b 6 k _1 . k 6j _1
+区	keui1	k 9y _1	N 6w _1
+区别	keui1bit6	k 9y _1 . b i: t _6
+医	yi1	j i: _1
+医保	yi1bou2	j i: _1 . b ow _2
+医生	yi1sang1	j i: _1 . s 6 N _1
+医药	yi1yeuk6	j i: _1 . j 9: k _6
+医院	yi1yun2	j i: _1 . j y: n _2
+十	sap6	s 6 p _6
+十一	sap6yat1	s 6 p _6 . j 6 t _1
+十一号	sap6yat1hou6	s 6 p _6 . j 6 t _1 . h ow _6
+十一月	sap6yat1yut6	s 6 p _6 . j 6 t _1 . j y: t _6
+十七	sap6chat1	s 6 p _6 . ts 6 t _1
+十万	sap6maan6	s 6 p _6 . m a: n _6
+十三	sap6saam1	s 6 p _6 . s a: m _1
+十九	sap6gau2	s 6 p _6 . g 6w _2
+十九号	sap6gau2hou6	s 6 p _6 . g 6w _2 . h ow _6
+十二	sap6yi6	s 6 p _6 . j i: _6
+十二月	sap6yi6yut6	s 6 p _6 . j i: _6 . j y: t _6
+十二月份	sap6yi6yut6fan6	s 6 p _6 . j i: _6 . j y: t _6 . f 6 n _6
+十五	sap6m5	s 6 p _6 . m _5	s 6 p _6 . N _5
+十八	sap6baat3	s 6 p _6 . b a: t _3
+十六	sap6luk6	s 6 p _6 . l u: k _6
+十六_G	sap6luk6ji1	s 6 p _6 . l u: k _6 . dz i: _1
+十六号	sap6luk6hou6	s 6 p _6 . l u: k _6 . h ow _6
+十几	sap6gei2	s 6 p _6 . g ej _2
+十几号	sap6gei2hou6	s 6 p _6 . g ej _2 . h ow _6
+十号	sap6hou6	s 6 p _6 . h ow _6
+十四	sap6sei3	s 6 p _6 . s ej _3
+十年	sap6nin4	s 6 p _6 . n i: n _4
+十月	sap6yut6	s 6 p _6 . j y: t _6
+千	chin1	ts i: n _1
+千万	chin1maan6	ts i: n _1 . m a: n _6
+千亿	chin1yik1	ts i: n _1 . j i: k _1
+千其	chin1kei4	ts i: n _1 . k ej _4
+千色广场	chin1sik1gong2cheung4	ts i: n _1 . s i: k _1 . g O: N _2 . ts 9: N _4	ts i: n _1 . s i: k _1 . gw O: N _2 . ts 9: N _4
+卅	sa1	s a: _1
+卅份	sa1fan6	s a: _1 . f 6 n _6
+卅八	sa1baat3	s a: _1 . b a: t _3
+卅八万	sa1baat3maan6	s a: _1 . b a: t _3 . m a: n _6
+升	sing1	s i: N _1
+升停板	sing1ting4baan2	s i: N _1 . t i: N _4 . b a: n _2
+升学	sing1hok6	s i: N _1 . h O: k _6
+升左级	sing1jo2kap1	s i: N _1 . dz O: _2 . k 6 p _1
+升级	sing1kap1	s i: N _1 . k 6 p _1
+升高	sing1gou1	s i: N _1 . g ow _1
+午	m5	m _5	N _5
+半	bun3	b u: n _3
+半夜	bun3ye6	b u: n _3 . j E: _6
+半夜三更	bun3ye6saam1gang1	b u: n _3 . j E: _6 . s a: m _1 . g 6 N _1	b u: n _3 . j E: _6 . s a: m _1 . g a: N _1
+半次	bun3chi3	b u: n _3 . ts i: _3
+卌几	se3gei2	s E: _3 . g ej _2
+华	wa4	w a: _4
+华南	wa4laam4	w a: _4 . l a: m _4	w a: _4 . n a: m _4
+华尔街	wa4yi5gaai1	w a: _4 . j i: _5 . g a:j _1
+华强北	wa4keung5bak1	w a: _4 . k 9: N _5 . b 6 k _1
+协会	hip6wui2	h i: p _6 . w u:j _2	h i: p _6 . w u:j _6
+协助	hip3jo6	h i: p _3 . dz O: _6
+协商	hip6seung1	h i: p _6 . s 9: N _1
+卓	cheuk3	ts 9: k _3
+卓越	cheuk3yut6	ts 9: k _3 . j y: t _6
+卓远	cheuk3yun5	ts 9: k _3 . j y: n _5
+卓远国际大厦	cheuk3yun5gwok3jai3daai6ha6	ts 9: k _3 . j y: n _5 . gw O: k _3 . dz 6j _3 . d a:j _6 . h a: _6
+单	daan1	d a: n _1
+单位	daan1wai2	d a: n _1 . w 6j _2
+单单	daan1daan1	d a: n _1 . d a: n _1
+单词	daan1chi4	d a: n _1 . ts i: _4
+单车	daan1che1	d a: n _1 . ts E: _1
+卖	maai6	m a:j _6
+卖下	maai6ha6	m a:j _6 . h a: _6
+卖咸鸭蛋	maai6haam4aap3daan2	m a:j _6 . h a: m _4 . a: p _3 . d a: n _2	m a:j _6 . h a: m _4 . N a: p _3 . d a: n _2
+卖唔到	maai6m4dou3	m a:j _6 . m _4 . d ow _3
+卖场	maai6cheung4	m a:j _6 . ts 9: N _4
+卖材料	maai6choi4liu2	m a:j _6 . ts O:j _4 . l iw _2
+卖楼	maai6lau2	m a:j _6 . l 6w _2
+南	laam4	l a: m _4	n a: m _4
+南华寺	laam4wa4ji2	l a: m _4 . w a: _4 . dz i: _2	n a: m _4 . w a: _4 . dz i: _2
+南咩岛	laam4me1dou2	l a: m _4 . m E: _1 . d ow _2	n a: m _4 . m E: _1 . d ow _2
+南宁	laam4ling4	l a: m _4 . l i: N _4	l a: m _4 . n i: N _4	n a: m _4 . n i: N _4
+南宁百货	laam4ling4baak3fo3	l a: m _4 . l i: N _4 . b a: k _3 . f O: _3	n a: m _4 . n i: N _4 . b a: k _3 . f O: _3
+南山	laam4saan1	l a: m _4 . s a: n _1	n a: m _4 . s a: n _1
+南山岛	laam4saan1dou2	l a: m _4 . s a: n _1 . d ow _2	n a: m _4 . s a: n _1 . d ow _2
+南岗	laam4gong1	l a: m _4 . g O: N _1	n a: m _4 . g O: N _1
+南庄	laam4jong1	l a: m _4 . dz O: N _1	n a: m _4 . dz O: N _1
+南方大厦	laam4fong1daai6ha6	l a: m _4 . f O: N _1 . d a:j _6 . h a: _6	n a: m _4 . f O: N _1 . d a:j _6 . h a: _6
+南武英	laam4mou5ying1	l a: m _4 . m ow _5 . j i: N _1	n a: m _4 . m ow _5 . j i: N _1
+南航	laam4hong4	l a: m _4 . h O: N _4	n a: m _4 . h O: N _4
+南英	laam4ying1	l a: m _4 . j i: N _1	n a: m _4 . j i: N _1
+博	bok3	b O: k _3
+卡	ka1	k a: _1
+卢咏宜	lou4wing6yi4	l ow _4 . w i: N _6 . j i: _4
+卧龙岛	o6lung4dou2	O: _6 . l u: N _4 . d ow _2	N O: _5 . l u: N _4 . d ow _2
+卫星	wai6sing1	w 6j _6 . s i: N _1
+卫生	wai6sang1	w 6j _6 . s 6 N _1
+印度	yan3dou6	j 6 n _3 . d ow _6
+印象	yan3jeung6	j 6 n _3 . dz 9: N _6
+危机	ngai4gei1	N 6j _4 . g ej _1
+危险	ngai4him2	N 6j _4 . h i: m _2
+即	jik1	dz i: k _1
+即使	jik1sai2	dz i: k _1 . s 6j _2
+即刻	jik1hak1	dz i: k _1 . h 6 k _1
+即时	jik1si4	dz i: k _1 . s i: _4
+即系	jik1hai6	dz i: k _1 . h 6j _6
+即系话	jik1hai6wa6	dz i: k _1 . h 6j _6 . w a: _6
+即系话斋	jik1hai6wa6jaai1	dz i: k _1 . h 6j _6 . w a: _6 . dz a:j _1
+卷	gyun2	g y: n _2
+厂	chong2	ts O: N _2
+厂家	chong2ga1	ts O: N _2 . g a: _1
+厅	teng1	t E: N _1
+历史	lik6si2	l i: k _6 . s i: _2
+压力	aat3lik6	a: t _3 . l i: k _6	N a: t _3 . l i: k _6
+厌	yim3	j i: m _3	j i: n _3
+厌倦	yim3gyun6	j i: m _3 . g y: n _6
+厕所	chi3so2	ts i: _3 . s O: _2
+原來	yun4loi4	j y: n _4 . l O:j _4
+原先	yun4sin1	j y: n _4 . s i: n _1
+原嚟	yun4lai4	j y: n _4 . l 6j _4	j y: n _4 . l ej _4
+原本	yun4bun2	j y: n _4 . b u: n _2
+原来	yun4loi4	j y: n _4 . l O:j _4
+厨师	chyu4si1	ts y: _4 . s i: _1
+去	heui3	h 9y _3
+去下	heui3ha5	h 9y _3 . h a: _5
+去到	heui3dou3	h 9y _3 . d ow _3	h 9y _3 . d ow _2
+去唔到	heui3m4dou3	h 9y _3 . m _4 . d ow _3	h 9y _3 . m _4 . d ow _2
+去唔去	heui3m4heui3	h 9y _3 . m _4 . h 9y _3
+去唔去得	heui3m4heui3dak1	h 9y _3 . m _4 . h 9y _3 . d 6 k _1
+去唔去得到	heui3m4heui3dak1dou3	h 9y _3 . m _4 . h 9y _3 . d 6 k _1 . d ow _3
+去年	heui3lin2	h 9y _3 . l i: n _2	h 9y _3 . n i: n _2
+去街	heui3gaai1	h 9y _3 . g a:j _1
+去过	heui3go3	h 9y _3 . g O: _3	h 9y _3 . gw O: _3
+县城	yun2sing4	j y: n _2 . s i: N _4	j y: n _6 . s i: N _4
+参加	chaam1ga1	ts a: m _1 . g a: _1
+参展	chaam1jin2	ts a: m _1 . dz i: n _2
+参观	chaam1gun1	ts a: m _1 . g u: n _1
+参观下	chaam1gun1ha2	ts a: m _1 . g u: n _1 . h a: _2
+又	yau6	j 6w _6
+友	yau5	j 6w _5
+友仔	yau5jai2	j 6w _5 . dz 6j _2
+双休	seung1yau1	s 9: N _1 . j 6w _1
+双惠	seung1wai6	s 9: N _1 . w 6j _6
+反	faan2	f a: n _2
+反串	faan2chyun3	f a: n _2 . ts y: n _3
+反对	faan2deui3	f a: n _2 . d 9y _3
+反应	faan2ying3	f a: n _2 . j i: N _3
+反弹	faan2daan6	f a: n _2 . d a: n _6
+反正	faan2jing3	f a: n _2 . dz i: N _3
+反而	faan2yi4	f a: n _2 . j i: _4
+发	faat3	f a: t _3
+发信息	faat3seun3sik1	f a: t _3 . s 9: n _3 . s i: k _1
+发出	faat3cheut1	f a: t _3 . ts 9: t _1
+发吽哣	faat3au6dou6	f a: t _3 . 6w _6 . d ow _6	f a: t _3 . N 6w _6 . d ow _6
+发展	faat3jin2	f a: t _3 . dz i: n _2
+发左钱	faat3jo2chin2	f a: t _3 . dz O: _2 . ts i: n _2
+发挥	faat3fai1	f a: t _3 . f 6j _1
+发烧	faat3siu1	f a: t _3 . s iw _1
+发狂	faat3kong4	f a: t _3 . k O: N _4	f a: t _3 . kw O: N _4
+发现	faat3yin6	f a: t _3 . j i: n _6
+发生	faat3sang1	f a: t _3 . s 6 N _1
+发脾气	faat3pei4hei3	f a: t _3 . p ej _4 . h ej _3
+发觉	faat3gok3	f a: t _3 . g O: k _3	f a: t _3 . g a:w _3
+发言	faat3yin4	f a: t _3 . j i: n _4
+发达	faat3daat6	f a: t _3 . d a: t _6
+发颠	faat3din1	f a: t _3 . d i: n _1
+叔	suk1	s u: k _1
+取消	cheui2siu1	ts 9y _2 . s iw _1
+受	sau6	s 6w _6
+受得了	sau6dak1liu5	s 6w _6 . d 6 k _1 . l iw _5
+变	bin3	b i: n _3
+变化	bin3fa3	b i: n _3 . f a: _3
+变得	bin3dak1	b i: n _3 . d 6 k _1
+变态	bin3taai3	b i: n _3 . t a:j _3
+变性	bin3sing3	b i: n _3 . s i: N _3
+变成	bin3sing4	b i: n _3 . s i: N _4
+变更下	bin3gang1ha2	b i: n _3 . g 6 N _1 . h a: _2
+口	hau2	h 6w _2
+口岸	hau2on6	h 6w _2 . O: n _6	h 6w _2 . N O: n _6
+口水	hau2seui2	h 6w _2 . s 9y _2
+口语	hau2yu5	h 6w _2 . j y: _5
+古	gu2	g u: _2
+古典	gu2din2	g u: _2 . d i: n _2
+古老	gu2lou5	g u: _2 . l ow _5
+古色古香	gu2sik1gu2heung1	g u: _2 . s i: k _1 . g u: _2 . h 9: N _1
+句	geui3	g 9y _3
+另外	ling6oi6	l i: N _6 . O:j _6	l i: N _6 . N O:j _6
+另类	ling6leui6	l i: N _6 . l 9y _6
+只	ji2	dz i: _2
+只不过	ji2bat1go3	dz i: _2 . b 6 t _1 . g O: _3	dz i: _2 . b 6 t _1 . gw O: _3
+只系	ji2hai6	dz i: _2 . h 6j _6
+只能	ji2lang4	dz i: _2 . l 6 N _4	dz i: _2 . n 6 N _4
+只要	ji2yiu3	dz i: _2 . j iw _3
+叫	giu3	g iw _3
+叫做	giu3jou6	g iw _3 . dz ow _6
+叫唔叫	giu3m4giu3	g iw _3 . m _4 . g iw _3
+叫埋	giu3maai4	g iw _3 . m a:j _4
+叮叮车	ding1ding1che1	d i: N _1 . d i: N _1 . ts E: _1
+可	ho2	h O: _2
+可乐	ho2lok6	h O: _2 . l O: k _6
+可乐罐	ho2lok6gun3	h O: _2 . l O: k _6 . g u: n _3
+可以	ho2yi5	h O: _2 . j i: _5
+可唔可以	ho2m4ho2yi5	h O: _2 . m _4 . h O: _2 . j i: _5
+可惜	ho2sik1	h O: _2 . s i: k _1
+可能	ho2lang4	h O: _2 . l 6 N _4	h O: _2 . n 6 N _4
+台	toi4	t O:j _4
+右	yau6	j 6w _6
+叶	yip6	j i: p _6
+叶丽晶	yip6lai6jing1	j i: p _6 . l 6j _6 . dz i: N _1
+叶丽珍	yip6lai6jan1	j i: p _6 . l 6j _6 . dz 6 n _1
+号	hou2	h ow _2	h ow _6
+号码	hou6ma5	h ow _6 . m a: _5
+司庆	si1hing3	s i: _1 . h i: N _3
+司机	si1gei1	s i: _1 . g ej _1
+叻	lek1	l E: k _1
+叻唔叻	lek1m4lek1	l E: k _1 . m _4 . l E: k _1
+叻女	lek6leui5	l E: k _6 . l 9y _5	l E: k _6 . n 9y _5
+各	gok3	g O: k _3
+合	hap6	h 6 p _6
+合同	hap6tung4	h 6 p _6 . t u: N _4
+吉	gat1	g 6 t _1
+吉之岛	gat1ji1dou2	g 6 t _1 . dz i: _1 . d ow _2
+吉林化纤	gat1lam4fa3chim1	g 6 t _1 . l 6 m _4 . f a: _3 . ts i: m _1	g 6 t _1 . l 6 m _4 . f a: _3 . ts i: n _1
+吉林快天	gat1lam4faai3tin1	g 6 t _1 . l 6 m _4 . f a:j _3 . t i: n _1
+吉林花之郊	gat1lam4fa1ji1gaau1	g 6 t _1 . l 6 m _4 . f a: _1 . dz i: _1 . g a:w _1
+吊针	diu3jam1	d iw _3 . dz 6 m _1
+同	tung4	t u: N _4
+同事	tung4si6	t u: N _4 . s i: _6
+同唔同意	tung4m4tung4yi3	t u: N _4 . m _4 . t u: N _4 . j i: _3
+同埋	tung4maai4	t u: N _4 . m a:j _4
+同学	tung4hok6	t u: N _4 . h O: k _6
+同学仔	tung4hok6jai2	t u: N _4 . h O: k _6 . dz 6j _2
+同情心	tung4ching4sam1	t u: N _4 . ts i: N _4 . s 6 m _1
+同时	tung4si4	t u: N _4 . s i: _4
+名	meng2	m E: N _2
+名单	ming4daan1	m i: N _4 . d a: n _1
+后	hau6	h 6w _6
+后备辘	hau6bei6luk1	h 6w _6 . b ej _6 . l u: k _1
+后尾	hau6mei6	h 6w _6 . m ej _6	h 6w _6 . m ej _1
+后悔	hau6fui3	h 6w _6 . f u:j _3
+后日	hau6yat6	h 6w _6 . j 6 t _6
+后来	hau6loi4	h 6w _6 . l O:j _4
+后生	hau6sang1	h 6w _6 . s 6 N _1	h 6w _6 . s a: N _1
+后级	hau6kap1	h 6w _6 . k 6 p _1
+后背	hau6bui6	h 6w _6 . b u:j _6
+后街	hau6gaai1	h 6w _6 . g a:j _1
+后路	hau6lou6	h 6w _6 . l ow _6
+后边	hau6bin1	h 6w _6 . b i: n _1	h 6w _6 . b i: n _6
+后面	hau6min6	h 6w _6 . m i: n _6
+向	heung3	h 9: N _3
+向住	heung3jyu6	h 9: N _3 . dz y: _6
+吓	ha6	h a: _6
+吓得	ha6dak1	h a: _6 . d 6 k _1
+吗	ma3	m a: _3
+吞野	tan1ye5	t 6 n _1 . j E: _5
+吟吟沉沉	yam4yam4cham4cham4	j 6 m _4 . j 6 m _4 . ts 6 m _4 . ts 6 m _4
+吟沉	yam4cham4	j 6 m _4 . ts 6 m _4
+吧	ba1	b a: _1	b a: _3
+听	teng1	t E: N _1	t i: N _1
+听一听	teng1yat1teng1	t E: N _1 . j 6 t _1 . t E: N _1
+听下	teng1ha5	t E: N _1 . h a: _5
+听下歌	teng1ha5go1	t E: N _1 . h a: _5 . g O: _1
+听到	teng1dou2	t E: N _1 . d ow _2	t i: N _1 . d ow _2	t i: N _3 . d ow _2	t i: N _3 . d ow _3
+听到未	teng3dou3mei6	t E: N _3 . d ow _3 . m ej _6
+听唔到	teng1m4dou3	t E: N _1 . m _4 . d ow _3	t i: N _1 . m _4 . d ow _3
+听唔听	teng1m4teng1	t E: N _1 . m _4 . t E: N _1
+听唔听到	teng1m4ting3dou3	t E: N _1 . m _4 . t i: N _3 . d ow _3
+听唔听得	teng1m4teng1dak1	t E: N _1 . m _4 . t E: N _1 . d 6 k _1
+听唔听得到	teng1m4teng1dak1dou3	t E: N _1 . m _4 . t E: N _1 . d 6 k _1 . d ow _3
+听唔听见	teng1m4ting3gin3	t E: N _1 . m _4 . t i: N _3 . g i: n _3
+听唔听话	teng1m4teng1wa2	t E: N _1 . m _4 . t E: N _1 . w a: _2
+听唔明	teng1m4ming4	t E: N _1 . m _4 . m i: N _4
+听唔清滞	teng1m4ching1jai6	t E: N _1 . m _4 . ts i: N _1 . dz 6j _6
+听得	teng1dak1	t E: N _1 . d 6 k _1
+听得到	teng1dak1dou3	t E: N _1 . d 6 k _1 . d ow _3
+听我讲	teng1o5gong2	t E: N _1 . O: _5 . g O: N _2	t E: N _1 . N O: _5 . g O: N _2
+听日	ting1yat6	t i: N _1 . j 6 t _6
+听晚	ting1maan5	t i: N _1 . m a: n _5
+听朝	ting1jiu1	t i: N _1 . dz iw _1
+听朝早	ting1jiu1jou2	t i: N _1 . dz iw _1 . dz ow _2
+听歌	teng1go1	t E: N _1 . g O: _1
+听见	ting3gin3	t i: N _3 . g i: n _3
+听讲	teng1gong2	t E: N _1 . g O: N _2
+听讲话	teng1gong2wa2	t E: N _1 . g O: N _2 . w a: _2
+听话	teng1wa6	t E: N _1 . w a: _6
+听闻	teng1man4	t E: N _1 . m 6 n _4	t i: N _1 . m 6 n _4
+启动	kai2dung6	k 6j _2 . d u: N _6
+吴州	m4jau1	m _4 . dz 6w _1	N _4 . dz 6w _1
+吵	chaau2	ts a:w _2
+吸下	kap1ha3	k 6 p _1 . h a: _3	k 6 p _1 . h a: _2
+吸血鬼	kap1hyut3gwai2	k 6 p _1 . h y: t _3 . gw 6j _2
+吹	cheui1	ts 9y _1
+吹下水	cheui1ha2seui2	ts 9y _1 . h a: _2 . s 9y _2
+呀	a1	a: _1	a: _3	a: _4	a: _6
+呃	ak1	6 k _1
+呃	aak1	a: k _1	N a: k _1
+呐	laap6	l a: p _6	n a: p _6
+呕	au2	6w _2	6w _1	N 6w _2
+员工	yun4gung1	j y: n _4 . g u: N _1
+呢	ni1	n i: _1	n ej _1	n E: _2	l ej _1
+呢世	le1sai3	l E: _1 . s 6j _3	n ej _1 . s 6j _3	n i: _1 . s 6j _3
+呢啲	le1di1	l E: _1 . d i: _1	n ej _1 . d i: _1	n i: _1 . d i: _1
+呢处	le1chyu6	l E: _1 . ts y: _6	n ej _1 . ts y: _6	n i: _1 . ts y: _6
+呢度	le1dou6	l E: _1 . d ow _6	n ej _1 . d ow _6	n i: _1 . d ow _6
+呢排	le1paai4	l E: _1 . p a:j _4	n ej _1 . p a:j _4	n i: _1 . p a:j _4
+呢边	le4bin1	l E: _4 . b i: n _1	n ej _4 . b i: n _1	n i: _4 . b i: n _1
+周	jau1	dz 6w _1
+周伟	jau1wai5	dz 6w _1 . w 6j _5
+周勇	jau1yung5	dz 6w _1 . j y: N _5
+周围	jau1wai4	dz 6w _1 . w 6j _4
+周年	jau1lin4	dz 6w _1 . l i: n _4	dz 6w _1 . n i: n _4
+周柏豪	jau1paak3hou4	dz 6w _1 . p a: k _3 . h ow _4
+周耀辉	jau1yiu6fai1	dz 6w _1 . j iw _6 . f 6j _1
+周身	jau1san1	dz 6w _1 . s 6 n _1
+呱呱吵	gwa1gwa1chaau2	gw a: _1 . gw a: _1 . ts a:w _2
+呱呱嘈	gwa1gwa1chou4	gw a: _1 . gw a: _1 . ts ow _4
+味	mei6	m ej _6	m ej _2
+呵	ho1	h O: _1
+呵呵	ho1ho1	h O: _1 . h O: _1
+呻	san1	s 6 n _1
+咁	gam3	g 6 m _3
+咁	gam2	g 6 m _2
+咁㗎样	gam2ga3yeung2	g 6 m _2 . g a: _3 . j 9: N _2
+咁样	gam2yeung2	g 6 m _2 . j 9: N _2	g 6 n _2 . j 9: N _2
+咋	ja1	dz a: _1	dz a: _3	dz a: k _1
+咋咋	ja1ja1	dz a: _1 . dz a: _1
+咋咋声	ja1ja1seng1	dz a: _1 . dz a: _1 . s E: N _1
+咦	yi2	j i: _2
+咧	le1	l E: _1	l E: _2	l E: _4
+咨询	ji1seun1	dz i: _1 . s 9: n _1
+咩	me1	m E: _1
+咩野	me1ye5	m E: _1 . j E: _5
+咪	mai6	m 6j _6
+咪	mi1	m i: _1	m 6j _1
+咯	lo1	l O: _1	l O: k _3
+咯攞	lo2gan2	l O: _2 . g 6 n _2
+咳	kat1	k 6 t _1	h a:j _1
+咸水鱼	haam4seui2yu2	h a: m _4 . s 9y _2 . j y: _2
+咸酸菜	haam4syun1choi3	h a: m _4 . s y: n _1 . ts O:j _3
+咸鸭蛋	haam4aap3daan2	h a: m _4 . a: p _3 . d a: n _2	h a: m _4 . N a: p _3 . d a: n _2
+品	ban2	b 6 n _2
+品牌	ban2paai4	b 6 n _2 . p a:j _4
+品牌推广	ban2paai4teui1gong2	b 6 n _2 . p a:j _4 . t 9y _1 . g O: N _2	b 6 n _2 . p a:j _4 . t 9y _1 . gw O: N _2
+品牌营销	ban2paai4ying4siu1	b 6 n _2 . p a:j _4 . j i: N _4 . s iw _1
+哇	wa1	w a: _1	w a: _3
+哈	ha1	h a: _1
+哈尔滨	ha1yi5ban1	h a: _1 . j i: _5 . b 6 n _1
+哋	dei6	d ej _6
+响	heung2	h 9: N _2
+哎	aai1	a:j _1	6j _2
+哎呀	aai1a1	a:j _1 . a: _1	6j _1 . a: _3
+哎哟	aai1yo1	a:j _1 . j O: _1
+哟	yo1	j O: _1
+哥	go1	g O: _1
+哦	o1	O: _1	O: _4	O: _5	O: _6
+哩	le1	l E: _1	l ej _1	l i: _1
+哪	la3	l a: _3	l a: _5	n a: _3	n a: _5
+哭	huk1	h u: k _1
+哮喘	haau1chyun2	h a:w _1 . ts y: n _2
+哲	jit3	dz i: t _3
+哺	bou1	b ow _1
+哺卵	bou1leun2	b ow _1 . l 9: n _2
+哼	hang1	h 6 N _1
+唇粉	seun4fan2	s 9: n _4 . f 6 n _2
+唉	aai1	a:j _1	a:j _3
+唉呀	aai1a1	a:j _1 . a: _1	a:j _1 . a: _6
+唏	hei1	h ej _1
+唔	m4	m _4
+唔似	m4chi5	m _4 . ts i: _5
+唔好意思	m4hou2yi3si1	m _4 . h ow _2 . j i: _3 . s i: _1
+唔怪之	m4gwaai3ji1	m _4 . gw a:j _3 . dz i: _1
+唔怪得之	m4gwaai3dak1ji1	m _4 . gw a:j _3 . d 6 k _1 . dz i: _1
+唔知唔觉	m4ji1m4gok3	m _4 . dz i: _1 . m _4 . g O: k _3
+唔该	m4goi1	m _4 . g O:j _1
+唔通	m4tung1	m _4 . t u: N _1
+唞	tau2	t 6w _2
+售屋处	sau6uk1chyu2	s 6w _6 . u: k _1 . ts y: _2	s 6w _6 . N u: k _1 . ts y: _2
+售楼商	sau6lau2seung1	s 6w _6 . l 6w _2 . s 9: N _1
+售楼部	sau6lau2bou6	s 6w _6 . l 6w _2 . b ow _6
+唯一	wai4yat1	w 6j _4 . j 6 t _1
+唯有	wai4yau5	w 6j _4 . j 6w _5
+唱	cheung3	ts 9: N _3
+唱_K	cheung3kei1	ts 9: N _3 . k ej _1
+唱下_K	cheung3ha2kei1	ts 9: N _3 . h a: _2 . k ej _1
+唱歌	cheung3go1	ts 9: N _3 . g O: _1
+唸	lim6	l i: m _6	n i: m _6
+啃	hang2	h 6 N _2
+商务车	seung1mou6che1	s 9: N _1 . m ow _6 . ts E: _1
+商品	seung1ban2	s 9: N _1 . b 6 n _2
+商场	seung1cheung4	s 9: N _1 . ts 9: N _4
+商量	seung1leung4	s 9: N _1 . l 9: N _4
+商铺	seung1pou3	s 9: N _1 . p ow _3
+啊	a1	a: _1	a: _6
+啊啲	a1di1	a: _1 . d i: _1
+啑	dip6	d i: p _6	s a: p _3
+啖	daam6	d a: m _6
+啜下	jyut3ha2	dz y: t _3 . h a: _2
+啤酒	be1jau2	b E: _1 . dz 6w _2
+啦	la1	l a: _1	l a: _3
+啧	jaak3	dz a: k _3	dz i: k _3
+啩	gwa3	gw a: _3
+啫	je1	dz E: _1
+啰啰挛	lo2lo2lyun4	l O: _2 . l O: _2 . l y: n _4
+啱	aam1	a: m _1	N a: m _1
+啱先	aam1sin1	a: m _1 . s i: n _1	N a: m _1 . s i: n _1
+啱唔啱	aam1m4aam1	a: m _1 . m _4 . a: m _1	N a: m _1 . m _4 . N a: m _1
+啱啱	aam1aam1	a: m _1 . a: m _1	N a: m _1 . N a: m _1
+啱好	aam1hou2	a: m _1 . h ow _2	N a: m _1 . h ow _2
+啱心水	aam1sam1seui2	a: m _1 . s 6 m _1 . s 9y _2	N a: m _1 . s 6 m _1 . s 9y _2
+啲	di1	d i: _1
+啲啲仔	di1di1jai2	d i: _1 . d i: _1 . dz 6j _2
+啲啲野	di1di1ye5	d i: _1 . d i: _1 . j E: _5
+啲多	di1do1	d i: _1 . d O: _1
+啵	bo1	b O: _1	b O: _3
+喂	wai2	w 6j _2
+喂	wai3	w 6j _3
+善妍	sin6yin4	s i: n _6 . j i: n _4
+善长	sin6cheung4	s i: n _6 . ts 9: N _4
+喇	la1	l a: _1	l a: _3
+喇叭	la3ba1	l a: _3 . b a: _1
+喉	hau4	h 6w _4
+喉咙	hau4lung4	h 6w _4 . l u: N _4
+喉咙痛	hau4lung4tung3	h 6w _4 . l u: N _4 . t u: N _3
+喊	haam3	h a: m _3
+喔	o1	O: _1	O: _3
+喔	wo3	w O: _3
+喜欢	hei2fun1	h ej _2 . f u: n _1
+喝野	hot3ye5	h O: t _3 . j E: _5
+喫	hek3	h E: k _3
+喫力	hek3lik6	h E: k _3 . l i: k _6
+喳	ja1	dz a: _1
+喷	pan3	p 6 n _3
+喷水	pan3seui2	p 6 n _3 . s 9y _2
+喺	hai2	h 6j _2
+喺唔喺	hai2m4hai2	h 6j _2 . m _4 . h 6j _2
+喽	lau4	l 6w _4	l 6w _1
+嗌	aai3	a:j _3
+嗌交	aai3gaau1	a:j _3 . g a:w _1
+嗌唔嗌	aai3m4aai3	a:j _3 . m _4 . a:j _3
+嗌埋	aai3maai4	a:j _3 . m a:j _4
+嗦嗦地	so1so1dei6	s O: _1 . s O: _1 . d ej _6
+嗮	saai3	s a:j _3
+嗯	m6	m _6	N _6
+嗱	la4	l a: _4	n a: _4
+嗱利	la4lei6	l a: _4 . l ej _6	n a: _4 . l ej _6
+嗱嗱临	la4la4lam4	l a: _4 . l a: _4 . l 6 m _4	n a: _4 . n a: _4 . l 6 m _4
+嗱嗱声	la4la4seng1	l a: _4 . l a: _4 . s E: N _1	n a: _4 . n a: _4 . s E: N _1
+嗿	taam1	t a: m _1
+嘀	dik1	d i: k _1
+嘅	ge3	g E: _3
+嘅	ge2	g E: _2
+嘈	chou4	ts ow _4
+嘈交	chou4gaau1	ts ow _4 . g a:w _1
+嘈喧巴闭	chou4hyun1ba1bai3	ts ow _4 . h y: n _1 . b a: _1 . b 6j _3
+嘈嚟嘈去	chou4lai4chou4heui3	ts ow _4 . l 6j _4 . ts ow _4 . h 9y _3
+嘉	ga1	g a: _1
+嘉宾	ga1ban1	g a: _1 . b 6 n _1
+嘉年华	ga1lin4wa4	g a: _1 . l i: n _4 . w a: _4	g a: _1 . n i: n _4 . w a: _4
+嘉庭仔	ga1ting4jai2	g a: _1 . t i: N _4 . dz 6j _2
+嘘嘘撼撼	heui1heui1ham6ham6	h 9y _1 . h 9y _1 . h 6 m _6 . h 6 m _6
+嘘憾	heui1ham6	h 9y _1 . h 6 m _6
+嘛	ma3	m a: _3	m a: _5	m a: _4
+嘞	la3	l a: _3	l a: k _3	l E: _3
+嘟	dou1	d ow _1
+嘟嘟声	dou1dou1seng1	d ow _1 . d ow _1 . s E: N _1	d ow _1 . d ow _1 . s i: N _1
+嘥	saai1	s a:j _1
+嘥气	saai1hei3	s a:j _1 . h ej _3
+嘥钱	saai1chin2	s a:j _1 . ts i: n _2
+嘴巴	jeui2ba1	dz 9y _2 . b a: _1
+嘿	hei1	h ej _1
+噏	kap1	k 6 p _1
+噓	heui1	h 9y _1
+噜	lou1	l ow _1
+噢	o1	O: _1	O: _3
+器械	hei3haai6	h ej _3 . h a:j _6
+嚟	lai4	l 6j _4	l ej _4
+嚟到	lai4dou3	l 6j _4 . d ow _3	l ej _4 . d ow _3
+嚟真	lai4jan1	l 6j _4 . dz 6 n _1	l ej _4 . dz 6 n _1
+嚟讲	lai4gong2	l 6j _4 . g O: N _2	l ej _4 . g O: N _2
+嚿	gau6	g 6w _6
+四	sei3	s ej _3
+四_D	sei3di1	s ej _3 . d i: _1
+四十	sei3sap6	s ej _3 . s 6 p _6
+四千	sei3chin1	s ej _3 . ts i: n _1
+四川成	sei3chyun1sing4	s ej _3 . ts y: n _1 . s i: N _4
+四年级	sei3lin4kap1	s ej _3 . l i: n _4 . k 6 p _1	s ej _3 . n i: n _4 . k 6 p _1
+四月份	sei3yut6fan6	s ej _3 . j y: t _6 . f 6 n _6
+四眼	sei3aan5	s ej _3 . a: n _5	s ej _3 . N a: n _5
+回	wui4	w u:j _4
+回去	wui4heui3	w u:j _4 . h 9y _3
+回头鹿	wui4tau4luk6	w u:j _4 . t 6w _4 . l u: k _6
+回应	wui4ying3	w u:j _4 . j i: N _3
+回访	wui4fong2	w u:j _4 . f O: N _2
+因	yan1	j 6 n _1
+因为	yan1wai6	j 6 n _1 . w 6j _6
+因素	yan1sou3	j 6 n _1 . s ow _3
+团	tyun4	t y: n _4
+团购	tyun4kau3	t y: n _4 . k 6w _3
+困难	kwan3naan4	kw 6 n _3 . n a: n _4
+围	wai4	w 6j _4
+围住	wai4jyu6	w 6j _4 . dz y: _6
+围墙	wai4cheung4	w 6j _4 . ts 9: N _4
+围攻	wai4gung1	w 6j _4 . g u: N _1
+围起嚟	wai4hei2lei4	w 6j _4 . h ej _2 . l ej _4
+固话	gu3wa2	g u: _3 . w a: _2
+国	gok3	g O: k _3	gw O: k _3
+国内	gok3noi6	g O: k _3 . n O:j _6	gw O: k _3 . n O:j _6
+国外	gok3oi6	g O: k _3 . O:j _6	gw O: k _3 . N O:j _6
+国家	gok3ga1	g O: k _3 . g a: _1	gw O: k _3 . g a: _1
+国银	gok3an2	g O: k _3 . 6 n _2	g O: k _3 . 6 n _4	gw O: k _3 . N 6 n _4	gw O: k _3 . N 6 n _2
+国际	gok3jai3	g O: k _3 . dz 6j _3	gw O: k _3 . dz 6j _3
+图书馆	tou4syu1gun2	t ow _4 . s y: _1 . g u: n _2
+圆目	yun4muk6	j y: n _4 . m u: k _6
+圈	hyun1	h y: n _1
+土	tou2	t ow _2
+圣诞	sing3daan3	s i: N _3 . d a: n _3
+在	joi3	dz O:j _3
+在度	joi3dou6	dz O:j _3 . d ow _6
+地	dei6	d ej _6
+地下	dei6ha5	d ej _6 . h a: _5	d ej _6 . h a: _6
+地下室	dei6ha6sat1	d ej _6 . h a: _6 . s 6 t _1
+地产	dei6chaan2	d ej _6 . ts a: n _2
+地址	dei6ji2	d ej _6 . dz i: _2
+地底	dei6dai2	d ej _6 . d 6j _2
+地方	dei6fong1	d ej _6 . f O: N _1
+地步	dei6bou6	d ej _6 . b ow _6
+地点	dei6din2	d ej _6 . d i: n _2	d ej _6 . d i: m _2
+地铁	dei6tit3	d ej _6 . t i: t _3
+地铁站	dei6tit3jaam6	d ej _6 . t i: t _3 . dz a: m _6
+场	cheung4	ts 9: N _4
+场地	cheung4dei6	ts 9: N _4 . d ej _6
+场所	cheung4so2	ts 9: N _4 . s O: _2
+坏	waai6	w a:j _6
+坐	cho5	ts O: _5
+坐一坐	cho5yat1cho5	ts O: _5 . j 6 t _1 . ts O: _5
+坐下	cho5ha5	ts O: _5 . h a: _5	ts O: _5 . h a: _6
+坐低	cho5dai1	ts O: _5 . d 6j _1
+坐到	cho5dou3	ts O: _5 . d ow _3
+坐地铁	cho5dei6tit3	ts O: _5 . d ej _6 . t i: t _3
+坐埋	cho5maai4	ts O: _5 . m a:j _4
+坐攞车	cho5gan2che1	ts O: _5 . g 6 n _2 . ts E: _1
+坐车	cho5che1	ts O: _5 . ts E: _1	dz O: _4 . ts E: _1
+坐返	cho5faan1	ts O: _5 . f a: n _1
+块	faai3	f a:j _3
+垃圾	laap6saap3	l a: p _6 . s a: p _3
+型	ying4	j i: N _4
+型号	ying4hou6	j i: N _4 . h ow _6
+埋	maai4	m a:j _4
+埋嚟	maai4lai4	m a:j _4 . l 6j _4	m a:j _4 . l ej _4
+埋数	maai4sok3	m a:j _4 . s O: k _3
+城市	sing4si5	s i: N _4 . s i: _5
+城市人	sing4si5yan4	s i: N _4 . s i: _5 . j 6 n _4
+培养	pui4yeung5	p u:j _4 . j 9: N _5
+培正	pui4jing3	p u:j _4 . dz i: N _3
+培训	pui4fan3	p u:j _4 . f 6 n _3
+基宇	gei1yu5	g ej _1 . j y: _5
+基本上	gei1bun2seung6	g ej _1 . b u: n _2 . s 9: N _6
+基本面	gei1bun2min2	g ej _1 . b u: n _2 . m i: n _2
+基立下	gei1laap6ha2	g ej _1 . l a: p _6 . h a: _2
+基金	gei1gam1	g ej _1 . g 6 m _1
+堂	tong4	t O: N _4
+堂大佬	tong4daai6lou2	t O: N _4 . d a:j _6 . l ow _2
+堆	deui1	d 9y _1
+堆埋	deui1maai4	d 9y _1 . m a:j _4
+堪	ham1	h 6 m _1	k 6 m _1
+塞	choi3	ts O:j _3	s 6 k _1
+塞车	sak1che1	s 6 k _1 . ts E: _1
+墙	cheung4	ts 9: N _4
+墙边	cheung4bin1	ts 9: N _4 . b i: n _1
+增	jang1	dz 6 N _1
+增加	jang1ga1	dz 6 N _1 . g a: _1
+增长	jang1jeung2	dz 6 N _1 . dz 9: N _2
+士多店	si6do1dim3	s i: _6 . d O: _1 . d i: m _3	s i: _6 . d O: _1 . d i: n _3
+声	seng1	s E: N _1	s i: N _1
+声音	seng1yam1	s E: N _1 . j 6 m _1
+处	chyu2	ts y: _2	ts y: _5
+处处	chyu3chyu3	ts y: _3 . ts y: _3
+处理	chyu5lei5	ts y: _5 . l ej _5	ts y: _2 . l ej _5
+备	bei6	b ej _6
+备余	bei6yu4	b ej _6 . j y: _4
+复	fuk6	f u: k _6
+复杂	fuk1jaap6	f u: k _1 . dz a: p _6
+复诊	fuk6chan2	f u: k _6 . ts 6 n _2
+复试	fuk6si3	f u: k _6 . s i: _3
+夏天	ha6tin1	h a: _6 . t i: n _1
+外	oi2	O:j _2	N O:j _2
+外围	oi6wai4	O:j _6 . w 6j _4	N O:j _6 . w 6j _4
+外围市场	oi6wai4si5cheung4	O:j _6 . w 6j _4 . s i: _5 . ts 9: N _4	N O:j _6 . w 6j _4 . s i: _5 . ts 9: N _4
+外国	oi6gok3	O:j _6 . g O: k _3	O:j _6 . gw O: k _3	N O:j _6 . gw O: k _3
+外墙	oi6cheung4	O:j _6 . ts 9: N _4	N O:j _6 . ts 9: N _4
+外省	oi6saang2	O:j _6 . s a: N _2	N O:j _6 . s a: N _2	N O:j _6 . s i: N _2
+外省人	oi6saang2yan4	O:j _6 . s a: N _2 . j 6 n _4	N O:j _6 . s a: N _2 . j 6 n _4
+外贸	oi6mau6	O:j _6 . m 6w _6	N O:j _6 . m 6w _6
+外边	oi6bin1	O:j _6 . b i: n _1	N O:j _6 . b i: n _1	N O:j _6 . b i: n _4
+外面	oi6min6	O:j _6 . m i: n _6	N O:j _6 . m i: n _6
+多	do1	d O: _1
+多余	do1yu4	d O: _1 . j y: _4
+多唔多	do1m4do1	d O: _1 . m _4 . d O: _1
+多少	do1siu2	d O: _1 . s iw _2
+多数	do1sou3	d O: _1 . s ow _3
+夜	ye6	j E: _6
+夜晚	ye6maan5	j E: _6 . m a: n _5
+夜晚黑	ye6maan5hak1	j E: _6 . m a: n _5 . h 6 k _1
+夜景	ye6ging2	j E: _6 . g i: N _2
+夜来香	ye6loi4heung1	j E: _6 . l O:j _4 . h 9: N _1
+夜校	ye6haau6	j E: _6 . h a:w _6
+夜班	ye6baan1	j E: _6 . b a: n _1
+够	kau3	k 6w _3
+够唔够	kau3m4gau3	k 6w _3 . m _4 . g 6w _3
+够钟	gau3jung1	g 6w _3 . dz u: N _1
+大	daai6	d a:j _6
+大一	daai6yat1	d a:j _6 . j 6 t _1
+大专	daai6jyun1	d a:j _6 . dz y: n _1
+大个	daai6go3	d a:j _6 . g O: _3
+大事	daai6si6	d a:j _6 . s i: _6
+大人	daai6yan4	d a:j _6 . j 6 n _4
+大仔	daai6jai2	d a:j _6 . dz 6j _2
+大份	daai6fan6	d a:j _6 . f 6 n _6
+大佬	daai6lou2	d a:j _6 . l ow _2
+大力	daai6lik6	d a:j _6 . l i: k _6
+大包	daai6baau1	d a:j _6 . b a:w _1
+大半	daai6bun3	d a:j _6 . b u: n _3
+大厅	daai6teng1	d a:j _6 . t E: N _1
+大厦	daai6ha6	d a:j _6 . h a: _6
+大只	daai6jek3	d a:j _6 . dz E: k _3	d a:j _6 . dz i: k _1
+大只讲	daai6jek3gong2	d a:j _6 . dz E: k _3 . g O: N _2
+大后日	daai6hau6yat6	d a:j _6 . h 6w _6 . j 6 t _6
+大哥	daai6go1	d a:j _6 . g O: _1
+大哥三	daai6go1saam1	d a:j _6 . g O: _1 . s a: m _1
+大唔大声	daai6m4daai6seng1	d a:j _6 . m _4 . d a:j _6 . s E: N _1
+大声	daai6seng1	d a:j _6 . s E: N _1
+大大	daai6daai6	d a:j _6 . d a:j _6
+大夫山	daai6fu1saan1	d a:j _6 . f u: _1 . s a: n _1
+大好	daai6hou2	d a:j _6 . h ow _2
+大姐	daai6je2	d a:j _6 . dz E: _2
+大学	daai6hok6	d a:j _6 . h O: k _6
+大学城	daai6hok6sing4	d a:j _6 . h O: k _6 . s i: N _4
+大家	daai6ga1	d a:j _6 . g a: _1
+大康	daai6hong1	d a:j _6 . h O: N _1
+大把	daai6ba2	d a:j _6 . b a: _2
+大排档	daai6paai4dong3	d a:j _6 . p a:j _4 . d O: N _3
+大条	daai6tiu4	d a:j _6 . t iw _4
+大板	daai6baan2	d a:j _6 . b a: n _2
+大森林	daai6sam1lam4	d a:j _6 . s 6 m _1 . l 6 m _4
+大棵	daai6po1	d a:j _6 . p O: _1
+大概	daai6koi3	d a:j _6 . k O:j _3
+大牌	daai6paai4	d a:j _6 . p a:j _4
+大盘	daai6pun2	d a:j _6 . p u: n _2
+大石	daai6sek6	d a:j _6 . s E: k _6
+大米	daai6mai5	d a:j _6 . m 6j _5
+大胆	daai6daam2	d a:j _6 . d a: m _2
+大舅父	daai6kau3fu6	d a:j _6 . k 6w _3 . f u: _6
+大跌	daai6dit3	d a:j _6 . d i: t _3
+大路	daai6lou6	d a:j _6 . l ow _6
+大酒店	daai6jau2din3	d a:j _6 . dz 6w _2 . d i: n _3	d a:j _6 . dz 6w _2 . d i: m _3
+大银	daai6an4	d a:j _6 . 6 n _4	d a:j _6 . N 6 n _4
+大问题	daai6man6tai4	d a:j _6 . m 6 n _6 . t 6j _4
+大陆	daai6luk6	d a:j _6 . l u: k _6
+大院	daai6yun4	d a:j _6 . j y: n _4
+大雄	daai6hung4	d a:j _6 . h u: N _4
+大雨	daai6yu5	d a:j _6 . j y: _5
+大风	daai6fung1	d a:j _6 . f u: N _1
+大餐	daai6chaan1	d a:j _6 . ts a: n _1
+天	tin1	t i: n _1
+天光	tin1gong1	t i: n _1 . g O: N _1	t i: n _1 . gw O: N _1
+天冻	tin1dung3	t i: n _1 . d u: N _3
+天利星	tin1lei6sing1	t i: n _1 . l ej _6 . s i: N _1
+天气	tin1hei3	t i: n _1 . h ej _3
+天气预报	tin1hei3yu6bou3	t i: n _1 . h ej _3 . j y: _6 . b ow _3
+天河	tin1ho4	t i: n _1 . h O: _4
+天涯海角	tin1aai4hoi2gok3	t i: n _1 . a:j _4 . h O:j _2 . g O: k _3	t i: n _1 . N a:j _4 . h O:j _2 . g O: k _3
+天然	tin1yin4	t i: n _1 . j i: n _4
+天狗	tin1gau2	t i: n _1 . g 6w _2
+天生天养	tin1sang1tin1yeung5	t i: n _1 . s 6 N _1 . t i: n _1 . j 9: N _5
+天真	tin1jan1	t i: n _1 . dz 6 n _1
+天空	tin1hung1	t i: n _1 . h u: N _1
+天线	tin1sin3	t i: n _1 . s i: n _3
+天色	tin1sik1	t i: n _1 . s i: k _1
+天雄	tin1hung4	t i: n _1 . h u: N _4
+太	taai3	t a:j _3
+太和	taai3wo4	t a:j _3 . w O: _4
+太太	taai3taai2	t a:j _3 . t a:j _2
+太子	taai3ji2	t a:j _3 . dz i: _2
+太子茶	taai3ji2cha4	t a:j _3 . dz i: _2 . ts a: _4
+太极	taai3gik6	t a:j _3 . g i: k _6
+太阳	taai3yeung4	t a:j _3 . j 9: N _4
+失	sat1	s 6 t _1
+失恋三十三日	sat1lyun2saam1a6saam1yat6	s 6 t _1 . l y: n _2 . s a: m _1 . a: _6 . s a: m _1 . j 6 t _6	s 6 t _1 . l y: n _2 . s a: m _1 . s 6 p _6 . s a: m _1 . j 6 t _6
+失手	sat1sau2	s 6 t _1 . s 6w _2
+失落	sat1lok6	s 6 t _1 . l O: k _6
+失败	sat1baai6	s 6 t _1 . b a:j _6
+失踪	sat1jung1	s 6 t _1 . dz u: N _1
+头	tau4	t 6w _4
+头先	tau4sin1	t 6w _4 . s i: n _1
+头发	tau4faat3	t 6w _4 . f a: t _3
+头沊沊	tau4dam2dam2	t 6w _4 . d 6 m _2 . d 6 m _2
+夸张	kwa1jeung1	kw a: _1 . dz 9: N _1
+夹埋	gaap3maai4	g a: p _3 . m a:j _4
+奇	kei4	k ej _4
+奇怪	kei4gwaai3	k ej _4 . gw a:j _3
+契	kai3	k 6j _3
+契仔	kai3jai2	k 6j _3 . dz 6j _2
+契佬	kai3lou2	k 6j _3 . l ow _2
+奖	jeung2	dz 9: N _2
+奖励	jeung2lai6	dz 9: N _2 . l 6j _6
+奖励下	jeung2lai6ha2	dz 9: N _2 . l 6j _6 . h a: _2
+奖品	jeung2ban2	dz 9: N _2 . b 6 n _2
+奖状	jeung2jong6	dz 9: N _2 . dz O: N _6
+奖金	jeung2gam1	dz 9: N _2 . g 6 m _1
+套	tou3	t ow _3
+套餐	tou3chaan1	t ow _3 . ts a: n _1
+奢侈	che1chi2	ts E: _1 . ts i: _2
+奥数	ou3sou3	ow _3 . s ow _3
+奥龙堡	ou3lung4bou2	ow _3 . l u: N _4 . b ow _2
+女	leui5	l 9y _5	n 9y _5
+女人	leui5yan2	l 9y _5 . j 6 n _2	n 9y _5 . j 6 n _2
+女仔	leui5jai2	l 9y _5 . dz 6j _2	n 9y _5 . dz 6j _2
+女士	leui5si6	l 9y _5 . s i: _6	n 9y _5 . s i: _6
+女女	leui4leui2	l 9y _4 . l 9y _2	n 9y _4 . n 9y _2
+女孩子	leui5haai4ji2	l 9y _5 . h a:j _4 . dz i: _2	n 9y _5 . h a:j _4 . dz i: _2
+女朋友	leui5pang4yau5	l 9y _5 . p 6 N _4 . j 6w _5	n 9y _5 . p 6 N _4 . j 6w _5
+女步	leui5bou6	l 9y _5 . b ow _6	n 9y _5 . b ow _6
+女皇	leui5wong4	l 9y _5 . w O: N _4	n 9y _5 . w O: N _4
+奶	laai5	l a:j _5	n a:j _5
+奶奶	laai4laai2	l a:j _4 . l a:j _2	n a:j _4 . n a:j _2
+奶樽	laai5jeun1	l a:j _5 . dz 9: n _1	n a:j _5 . dz 9: n _1
+奶樽嘴	laai5jeun1jeui2	l a:j _5 . dz 9: n _1 . dz 9y _2	n a:j _5 . dz 9: n _1 . dz 9y _2
+奶粉	laai5fan2	l a:j _5 . f 6 n _2	n a:j _5 . f 6 n _2
+奶茶	laai5cha4	l a:j _5 . ts a: _4	n a:j _5 . ts a: _4
+好	hou2	h ow _2
+好	hou3	h ow _3
+好似	hou2chi3	h ow _2 . ts i: _3
+好动	hou3dung6	h ow _3 . d u: N _6
+好又多	hou2yau6do1	h ow _2 . j 6w _6 . d O: _1
+好听	hou2teng1	h ow _2 . t E: N _1
+好味	hou2mei2	h ow _2 . m ej _2
+好命	hou2ming6	h ow _2 . m i: N _6
+好唔好	hou2m4hou2	h ow _2 . m _4 . h ow _2
+好唔好玩	hou2m4hou2waan2	h ow _2 . m _4 . h ow _2 . w a: n _2
+好唔好睇	hou2m4hou2tai2	h ow _2 . m _4 . h ow _2 . t 6j _2
+好啲	hou2di1	h ow _2 . d i: _1
+好处	hou2chyu3	h ow _2 . ts y: _3	h ow _2 . ts y: _5
+好大部	hou2daai6bou6	h ow _2 . d a:j _6 . b ow _6
+好奢侈	hou2che1chi2	h ow _2 . ts E: _1 . ts i: _2
+好彩	hou2choi2	h ow _2 . ts O:j _2
+好心	hou2sam1	h ow _2 . s 6 m _1
+好死	hou2sei2	h ow _2 . s ej _2
+好睇	hou2tai2	h ow _2 . t 6j _2
+好赚	hou2jaan6	h ow _2 . dz a: n _6
+好食	hou2sik6	h ow _2 . s i: k _6	h ow _3 . s i: k _6
+好饮	hou2yam2	h ow _2 . j 6 m _2
+如	yu4	j y: _4
+如果	yu4go2	j y: _4 . g O: _2	j y: _4 . gw O: _2
+妈	ma1	m a: _1
+妈咪	ma1mi4	m a: _1 . m i: _4	m a: _1 . m i: _1
+妈妈	ma4ma1	m a: _4 . m a: _1
+妖	yiu1	j iw _1
+妥	to5	t O: _5
+妹	mui6	m u:j _6
+妹妹	mui4mui2	m u:j _4 . m u:j _2
+姊妹	ji2mui6	dz i: _2 . m u:j _6
+始	chi2	ts i: _2
+始终	chi2jung1	ts i: _2 . dz u: N _1
+姐	je2	dz E: _2
+姑姐	gu1je2	g u: _1 . dz E: _2
+委托	wai2tok3	w 6j _2 . t O: k _3
+姜	geung1	g 9: N _1
+姜醋	geung1chou3	g 9: N _1 . ts ow _3
+姣	haau4	h a:w _4
+娜燕	la4yin1	l a: _4 . j i: n _1	n a: _4 . j i: n _1
+娟姐	gyun1je2	g y: n _1 . dz E: _2	g y: n _1 . dz E: _1
+娥姐	o4je2	O: _4 . dz E: _2	N O: _4 . dz E: _2	O: _4 . dz E: _1	N O: _4 . dz E: _1
+娶	cheui2	ts 9y _2
+婆	po4	p O: _4
+婆婆	po4po4	p O: _4 . p O: _4	p O: _4 . p O: _2
+婚	fan1	f 6 n _1
+婚宴	fan1yin3	f 6 n _1 . j i: n _3
+婚礼	fan1lai5	f 6 n _1 . l 6j _5
+婷姐	ting4je2	t i: N _4 . dz E: _2	t i: N _4 . dz E: _1
+嫁	ga3	g a: _3
+嫌	yim4	j i: m _4	j i: n _4
+嫩	lyun6	l y: n _6	n y: n _6
+嫲	ma4	m a: _4
+嫲嫲	ma4ma4	m a: _4 . m a: _4
+嬲	lau1	l 6w _1	n 6w _1
+嬲唔嬲	lau1m4lau1	l 6w _1 . m _4 . l 6w _1	n 6w _1 . m _4 . n 6w _1
+子	ji2	dz i: _2
+子宫	ji2gung1	dz i: _2 . g u: N _1
+子弹	ji2daan2	dz i: _2 . d a: n _2
+孖	ma1	m a: _1
+字	ji6	dz i: _6
+存	chyun4	ts y: n _4
+存折	chyun4jit3	ts y: n _4 . dz i: t _3
+孙	syun1	s y: n _1
+季	gwai3	gw 6j _3
+孤	gu1	g u: _1
+孤独	gu1duk6	g u: _1 . d u: k _6
+孤身奋战	gu1san1fan5jin3	g u: _1 . s 6 n _1 . f 6 n _5 . dz i: n _3
+学	hok6	h O: k _6
+学下	hok6ha5	h O: k _6 . h a: _5
+学习	hok6jaap6	h O: k _6 . dz a: p _6
+学到	hok6dou3	h O: k _6 . d ow _3
+学前班	hok6chin4baan1	h O: k _6 . ts i: n _4 . b a: n _1
+学历	hok6lik6	h O: k _6 . l i: k _6
+学时	hok6si4	h O: k _6 . s i: _4
+学期	hok6kei4	h O: k _6 . k ej _4
+学校	hok6haau6	h O: k _6 . h a:w _6
+学生	hok6sang1	h O: k _6 . s 6 N _1
+学识	hok6sik1	h O: k _6 . s i: k _1
+学野	hok6ye5	h O: k _6 . j E: _5
+学院	hok6yun2	h O: k _6 . j y: n _2
+宁愿	ling4yun6	l i: N _4 . j y: n _6	n i: N _4 . j y: n _6
+宇航员	yu5hong4yun4	j y: _5 . h O: N _4 . j y: n _4
+安	on1	O: n _1	N O: n _1
+安全	on1chyun4	O: n _1 . ts y: n _4	N O: n _1 . ts y: n _4
+安利	on1lei6	O: n _1 . l ej _6	N O: n _1 . l ej _6
+安定	on1ding6	O: n _1 . d i: N _6	N O: n _1 . d i: N _6
+安慰	on1wai3	O: n _1 . w 6j _3	N O: n _1 . w 6j _3
+安排	on1paai4	O: n _1 . p a:j _4	N O: n _1 . p a:j _4
+安排下	on1paai4ha2	O: n _1 . p a:j _4 . h a: _2	N O: n _1 . p a:j _4 . h a: _2
+安装	on1jong1	O: n _1 . dz O: N _1	N O: n _1 . dz O: N _1
+完	yun4	j y: n _4
+完全	yun4chyun4	j y: n _4 . ts y: n _4
+完成	yun4sing4	j y: n _4 . s i: N _4
+宗	jung1	dz u: N _1
+宗旨	jung1ji2	dz u: N _1 . dz i: _2
+定	ding6	d i: N _6
+定期	ding6kei4	d i: N _6 . k ej _4
+定点	ding6din2	d i: N _6 . d i: n _2	d i: N _6 . d i: m _2
+定系	ding6hai6	d i: N _6 . h 6j _6
+宝利	bou2lei6	b ow _2 . l ej _6
+宝贵	bou2gwai3	b ow _2 . gw 6j _3
+实	sat6	s 6 t _6
+实习	sat6jaap6	s 6 t _6 . dz a: p _6	s 6 t _6 . dz 6 p _6
+实力	sat6lik6	s 6 t _6 . l i: k _6
+实在	sat6joi6	s 6 t _6 . dz O:j _6
+实惠	sat6wai6	s 6 t _6 . w 6j _6
+实正	sat6jing3	s 6 t _6 . dz i: N _3
+实质	sat6jat1	s 6 t _6 . dz 6 t _1
+实际	sat6jai3	s 6 t _6 . dz 6j _3
+审批	sam2pai1	s 6 m _2 . p 6j _1
+客	haak3	h a: k _3
+客户	haak3wu6	h a: k _3 . w u: _6
+客源	haak3yun4	h a: k _3 . j y: n _4
+宣讲会	syun1gong2wui5	s y: n _1 . g O: N _2 . w u:j _5
+室内	sat1loi6	s 6 t _1 . l O:j _6	s 6 t _1 . n O:j _6
+室外	sat1oi6	s 6 t _1 . O:j _6	s 6 t _1 . N O:j _6
+害	hoi6	h O:j _6
+宴	yin3	j i: n _3
+宴会	yin3wui6	j i: n _3 . w u:j _6
+宵夜	siu1ye6	s iw _1 . j E: _6
+家	ga1	g a: _1
+家下	ga1ha2	g a: _1 . h a: _2	g a: _1 . h a: _3
+家乡	ga1heung1	g a: _1 . h 9: N _1
+家人	ga1yan4	g a: _1 . j 6 n _4
+家具	ga1geui6	g a: _1 . g 9y _6
+家姐	ga1je1	g a: _1 . dz E: _1
+家婆	ga1po5	g a: _1 . p O: _5
+家庭	ga1ting4	g a: _1 . t i: N _4	g a: _1 . t i: n _4
+家族	ga1juk6	g a: _1 . dz u: k _6
+家长	ga1jeung2	g a: _1 . dz 9: N _2
+家阵	ga1jan2	g a: _1 . dz 6 n _2
+容乜易	yung4mat1yi6	j y: N _4 . m 6 t _1 . j i: _6
+容易	yung4yi6	j y: N _4 . j i: _6
+宽	fun1	f u: n _1
+宿舍	suk1se5	s u: k _1 . s E: _5	s u: k _1 . s E: _3
+宿舍友	suk1se3yau5	s u: k _1 . s E: _3 . j 6w _5
+寄	gei3	g ej _3
+富	fu3	f u: _3
+寒假	hon4ga3	h O: n _4 . g a: _3
+寒暑假	hon4syu2ga3	h O: n _4 . s y: _2 . g a: _3
+寡佬	gwa2lou2	gw a: _2 . l ow _2
+寸	chyun3	ts y: n _3
+寸步难行	chyun3bou6naan4haang4	ts y: n _3 . b ow _6 . n a: n _4 . h a: N _4	ts y: n _3 . b ow _6 . l a: n _4 . h a: N _4
+对	deui3	d 9y _3
+对住	deui3jyu6	d 9y _3 . dz y: _6
+对外	deui3oi6	d 9y _3 . O:j _6	d 9y _3 . N O:j _6
+对比起	deui3bei2hei2	d 9y _3 . b ej _2 . h ej _2
+对讲	deui3gong2	d 9y _3 . g O: N _2
+对面	deui3min6	d 9y _3 . m i: n _6
+对飞	deui3fei1	d 9y _3 . f ej _1
+寻	cham4	ts 6 m _4
+寻到	cham4dou3	ts 6 m _4 . d ow _3
+寻日	cham4yat6	ts 6 m _4 . j 6 t _6
+寻晚	cham4maan5	ts 6 m _4 . m a: n _5
+寻晚夜	cham4maan5ye6	ts 6 m _4 . m a: n _5 . j E: _6
+导游	dou6yau4	d ow _6 . j 6w _4
+寿司	sau6si1	s 6w _6 . s i: _1
+封	fung1	f u: N _1
+将	jeung1	dz 9: N _1
+将来	jeung1loi4	dz 9: N _1 . l O:j _4
+尊重	jyun1jung6	dz y: n _1 . dz u: N _6
+小	siu2	s iw _2
+小云	siu2wan4	s iw _2 . w 6 n _4
+小便	siu2bin3	s iw _2 . b i: n _3
+小区	siu2keui1	s iw _2 . k 9y _1
+小唐	siu2tong4	s iw _2 . t O: N _4
+小塘	siu2tong4	s iw _2 . t O: N _4
+小如	siu2yu4	s iw _2 . j y: _4
+小娥	siu2ngo4	s iw _2 . N O: _4	s iw _2 . O: _4
+小学	siu2hok6	s iw _2 . h O: k _6
+小小	siu2siu2	s iw _2 . s iw _2
+小巴	siu2ba1	s iw _2 . b a: _1
+小幅	siu2fuk1	s iw _2 . f u: k _1
+小康	siu2hong1	s iw _2 . h O: N _1
+小强	siu2keung5	s iw _2 . k 9: N _5
+小心	siu2sam1	s iw _2 . s 6 m _1
+小惠	siu2wai6	s iw _2 . w 6j _6
+小新	siu2san1	s iw _2 . s 6 n _1
+小朋友	siu2pang4yau5	s iw _2 . p 6 N _4 . j 6w _5
+小汪	siu2wong1	s iw _2 . w O: N _1
+小米	siu2mai1	s iw _2 . m 6j _1
+小组	siu2jou2	s iw _2 . dz ow _2
+小芬	siu2fan1	s iw _2 . f 6 n _1
+小谢	siu2je6	s iw _2 . dz E: _6
+小谭	siu2taam4	s iw _2 . t a: m _4
+小韵姐	siu2wan5je2	s iw _2 . w 6 n _5 . dz E: _2	s iw _2 . w 6 n _5 . dz E: _1
+小食	siu2sik6	s iw _2 . s i: k _6
+少	siu2	s iw _2	s iw _3
+少云	siu2wan4	s iw _2 . w 6 n _4
+少少	siu2siu2	s iw _2 . s iw _2
+少少地	siu2siu2dei2	s iw _2 . s iw _2 . d ej _2
+少年	siu3lin4	s iw _3 . l i: n _4	s iw _3 . n i: n _4
+尝试下	seung4si3ha2	s 9: N _4 . s i: _3 . h a: _2
+就	jau6	dz 6w _6
+尸体	si1tai2	s i: _1 . t 6j _2
+尺	chek3	ts E: k _3
+尻	haau1	h a:w _1	g a:w _1
+尽快	jeun6faai3	dz 9: n _6 . f a:j _3
+尽量	jeun6leung6	dz 9: n _6 . l 9: N _6
+尾	mei5	m ej _5
+尾后	mei5hau6	m ej _5 . h 6w _6
+尾姨	mei5yi1	m ej _5 . j i: _1
+尾班	mei5baan1	m ej _5 . b a: n _1
+层	chang4	ts 6 N _4
+屋	uk1	u: k _1	N u: k _1
+屋企	uk1kei2	u: k _1 . k ej _2	N u: k _1 . k ej _2
+屋企人	uk1kei2yan4	u: k _1 . k ej _2 . j 6 n _4	N u: k _1 . k ej _2 . j 6 n _4
+屋顶	uk1deng2	u: k _1 . d E: N _2	N u: k _1 . d E: N _2
+屌	diu2	d iw _2
+屌你个老星	diu2lei5go3lou5sing1	d iw _2 . l ej _5 . g O: _3 . l ow _5 . s i: N _1	d iw _2 . n ej _5 . g O: _3 . l ow _5 . s i: N _1
+屌佢老母	diu2keui5lou5mou5	d iw _2 . k 9y _5 . l ow _5 . m ow _5	d iw _2 . h 9y _5 . l ow _5 . m ow _5
+屎	si2	s i: _2
+屏	ping4	p i: N _4
+屙	o1	O: _1	N O: _1
+属于	suk6yu1	s u: k _6 . j y: _1
+屯门西	tyun4mun4sai1	t y: n _4 . m u: n _4 . s 6j _1
+山	saan1	s a: n _1
+山东	saan1dung1	s a: n _1 . d u: N _1
+山区	saan1keui1	s a: n _1 . k 9y _1
+山楂	saan1ja1	s a: n _1 . dz a: _1
+山水	saan1seui2	s a: n _1 . s 9y _2
+岁	seui3	s 9y _3
+岛	dou2	d ow _2
+岭南印象园	ling5laam4yan3jeung6yun2	l i: N _5 . l a: m _4 . j 6 n _3 . dz 9: N _6 . j y: n _2	l i: N _5 . n a: m _4 . j 6 n _3 . dz 9: N _6 . j y: n _2
+川菜	chyun1choi3	ts y: n _1 . ts O:j _3
+工	gung1	g u: N _1
+工业	gung1yip6	g u: N _1 . j i: p _6
+工仔	gung1jai2	g u: N _1 . dz 6j _2
+工价	gung1ga3	g u: N _1 . g a: _3
+工作	gung1jok3	g u: N _1 . dz O: k _3
+工具	gung1geui6	g u: N _1 . g 9y _6
+工具箱	gung1geui6seung1	g u: N _1 . g 9y _6 . s 9: N _1
+工厂	gung1chong2	g u: N _1 . ts O: N _2
+工友	gung1yau5	g u: N _1 . j 6w _5
+工商管理	gung1seung1gun2lei5	g u: N _1 . s 9: N _1 . g u: n _2 . l ej _5
+工地	gung1dei6	g u: N _1 . d ej _6
+工课	gung1fo3	g u: N _1 . f O: _3
+工资	gung1ji1	g u: N _1 . dz i: _1
+工龄	gung1ling4	g u: N _1 . l i: N _4
+左	jo2	dz O: _2
+左右	jo2yau6	dz O: _2 . j 6w _6
+差	cha1	ts a: _1	ts a:j _1
+差不多	cha1bat1do1	ts a: _1 . b 6 t _1 . d O: _1
+差价	cha1ga3	ts a: _1 . g a: _3
+差冇多	cha1mou5do1	ts a: _1 . m ow _5 . d O: _1
+差唔到	cha1m4dou2	ts a: _1 . m _4 . d ow _2
+差唔多	cha1m4do1	ts a: _1 . m _4 . d O: _1	ts a: _1 . N _4 . d O: _1
+差啲	cha1di1	ts a: _1 . d i: _1
+差啲啲	cha1di1di1	ts a: _1 . d i: _1 . d i: _1
+差好远	cha1hou2yun5	ts a: _1 . h ow _2 . j y: n _5
+己	gei2	g ej _2
+已	yi5	j i: _5
+已经	yi5ging1	j i: _5 . g i: N _1
+巴士	ba1si2	b a: _1 . s i: _2
+巴士仔	ba1si2jai2	b a: _1 . s i: _2 . dz 6j _2
+巴闭	ba1bai3	b a: _1 . b 6j _3
+市	si5	s i: _5
+市一宫	si5yat1gung1	s i: _5 . j 6 t _1 . g u: N _1
+市业	si5yip6	s i: _5 . j i: p _6
+市中心	si5jung1sam1	s i: _5 . dz u: N _1 . s 6 m _1
+市区	si5keui1	s i: _5 . k 9y _1
+市场	si5cheung4	s i: _5 . ts 9: N _4
+市场仔	si5cheung4jai2	s i: _5 . ts 9: N _4 . dz 6j _2
+市民	si5man4	s i: _5 . m 6 n _4
+市道	si5dou6	s i: _5 . d ow _6
+布置	bou3ji3	b ow _3 . dz i: _3
+师傅	si1fu2	s i: _1 . f u: _2
+师兄	si1hing1	s i: _1 . h i: N _1
+师奶	si1naai5	s i: _1 . n a:j _5
+希望	hei1mong6	h ej _1 . m O: N _6
+帐号	jeung3hou6	dz 9: N _3 . h ow _6
+帐额	jeung3aak3	dz 9: N _3 . a: k _3	dz 9: N _3 . N a: k _3
+带	daai3	d a:j _3
+带埋	daai3maai4	d a:j _3 . m a:j _4
+带返	daai3faan2	d a:j _3 . f a: n _2
+帮	bong1	b O: N _1
+帮下手	bong1ha5sau2	b O: N _1 . h a: _5 . s 6w _2
+帮到	bong1dou3	b O: N _1 . d ow _3
+帮助	bong1jo6	b O: N _1 . dz O: _6
+帮手	bong1sau2	b O: N _1 . s 6w _2
+干	gon1	g O: n _1	g O: n _3
+干嗮	gon1saai3	g O: n _1 . s a:j _3
+干脆	gon1cheui3	g O: n _1 . ts 9y _3
+平	peng4	p E: N _4
+平	ping4	p i: N _4
+平均	ping4gwan1	p i: N _4 . gw 6 n _1
+平方	ping4fong1	p i: N _4 . f O: N _1
+平时	ping4si4	p i: N _4 . s i: _4
+平时间	ping4si4gaan1	p i: N _4 . s i: _4 . g a: n _1
+平野	ping4ye5	p i: N _4 . j E: _5
+年	lin4	l i: n _4	l i: n _2	n i: n _4	n i: n _2
+年假	lin2ga3	l i: n _2 . g a: _3	n i: n _2 . g a: _3
+年初二	lin4cho1yi6	l i: n _4 . ts O: _1 . j i: _6	n i: n _4 . ts O: _1 . j i: _6
+年尾	lin2mei5	l i: n _2 . m ej _5	n i: n _2 . m ej _5
+年底	lin4dai2	l i: n _4 . d 6j _2	n i: n _4 . d 6j _2
+年廿几	lin4ya6gei1	l i: n _4 . j a: _6 . g ej _1	n i: n _4 . j a: _6 . g ej _2
+年级	lin4kap1	l i: n _4 . k 6 p _1	n i: n _4 . k 6 p _1
+年纪	lin4gei2	l i: n _4 . g ej _2	n i: n _4 . g ej _2
+年纪大	lin4gei2daai6	l i: n _4 . g ej _2 . d a:j _6	n i: n _4 . g ej _2 . d a:j _6
+年轻	lin4heng1	l i: n _4 . h E: N _1	n i: n _4 . h E: N _1
+年龄	lin4ling4	l i: n _4 . l i: N _4	n i: n _4 . l i: N _4
+幸福	hang6fuk1	h 6 N _6 . f u: k _1
+幸运	hang6wan6	h 6 N _6 . w 6 n _6
+幼儿园	yau3yi4yun2	j 6w _3 . j i: _4 . j y: n _2	j 6w _3 . j i: _4 . j y: n _4
+广东	gong2dung1	g O: N _2 . d u: N _1	gw O: N _2 . d u: N _1	k O: N _2 . d u: N _1
+广北大道	gong2bak1daai6dou6	g O: N _2 . b 6 k _1 . d a:j _6 . d ow _6	gw O: N _2 . b 6 k _1 . d a:j _6 . d ow _6
+广医	gong2yi1	g O: N _2 . j i: _1	gw O: N _2 . j i: _1
+广告牌	gong2gou3paai4	g O: N _2 . g ow _3 . p a:j _4	gw O: N _2 . g ow _3 . p a:j _4
+广场	gong2cheung4	g O: N _2 . ts 9: N _4	gw O: N _2 . ts 9: N _4	k O: N _2 . ts 9: N _4
+广安	gong2on1	g O: N _2 . O: n _1	g O: N _2 . N O: n _1	gw O: N _2 . O: n _1	k O: N _2 . O: n _1
+广州	gong2jau1	g O: N _2 . dz 6w _1	gw O: N _2 . dz 6w _1
+广州人	gong2jau1yan4	g O: N _2 . dz 6w _1 . j 6 n _4	gw O: N _2 . dz 6w _1 . j 6 n _4	k O: N _2 . dz 6w _1 . j 6 n _4
+广惠路	gong2wai6lou6	g O: N _2 . w 6j _6 . l ow _6	gw O: N _2 . w 6j _6 . l ow _6
+广汇路	gong2wui6lou6	g O: N _2 . w u:j _6 . l ow _6	gw O: N _2 . w u:j _6 . l ow _6
+广汕	gong2saan3	g O: N _2 . s a: n _3	gw O: N _2 . s a: n _3
+广汕线	gong2saan3sin3	g O: N _2 . s a: n _3 . s i: n _3	gw O: N _2 . s a: n _3 . s i: n _3
+广源楼	gong2yun4lau2	g O: N _2 . j y: n _4 . l 6w _2	gw O: N _2 . j y: n _4 . l 6w _2	g O: N _2 . j y: n _4 . l 6w _5	gw O: N _2 . j y: n _4 . l 6w _5
+广药	gong2yeuk6	g O: N _2 . j 9: k _6	gw O: N _2 . j 9: k _6	k O: N _2 . j 9: k _6
+广西	gong2sai1	g O: N _2 . s 6j _1	gw O: N _2 . s 6j _1	k O: N _2 . s 6j _1
+广西大学	gong2sai1daai6hok6	g O: N _2 . s 6j _1 . d a:j _6 . h O: k _6	gw O: N _2 . s 6j _1 . d a:j _6 . h O: k _6
+床	chong4	ts O: N _4
+应	ying1	j i: N _1	j i: N _3
+应急	ying3gap1	j i: N _3 . g 6 p _1
+应承	ying1sing4	j i: N _1 . s i: N _4	j i: N _3 . s i: N _4
+应用程序	ying3yung6ching4jeui6	j i: N _3 . j y: N _6 . ts i: N _4 . dz 9y _6
+应聘	ying3ping3	j i: N _3 . p i: N _3
+应该	ying1goi1	j i: N _1 . g O:j _1
+底	dai2	d 6j _2
+底薪	dai2san1	d 6j _2 . s 6 n _1
+店	din3	d i: n _3	d i: m _3
+废气	fai3hei3	f 6j _3 . h ej _3
+废话	fai3wa2	f 6j _3 . w a: _2	f 6j _3 . w a: _6
+度	dou6	d ow _6
+度假村	dou6ga3chyun1	d ow _6 . g a: _3 . ts y: n _1
+度度	dok6dok6	d O: k _6 . d O: k _6
+座	jo6	dz O: _6
+座位	jo6wai2	dz O: _6 . w 6j _2
+康哥	hong1go1	h O: N _1 . g O: _1
+康美	hong1mei5	h O: N _1 . m ej _5
+延	yin4	j i: n _4
+延迟	yin4chi4	j i: n _4 . ts i: _4
+建筑	gin3juk1	g i: n _3 . dz u: k _1
+建设	gin3chit3	g i: n _3 . ts i: t _3
+廿	ya6	j a: _6
+廿七	ya6chat1	j a: _6 . ts 6 t _1
+廿七号	ya6chat1hou2	j a: _6 . ts 6 t _1 . h ow _2
+廿万	ya6maan6	j a: _6 . m a: n _6
+廿三号	ya6saam1hou2	j a: _6 . s a: m _1 . h ow _2
+廿五	ya6m5	j a: _6 . m _5	j a: _6 . N _5
+廿五万	ya6m5maan6	j a: _6 . m _5 . m a: n _6	j a: _6 . N _5 . m a: n _6
+廿八	ya6baat3	j a: _6 . b a: t _3
+廿八号	ya6baat3hou2	j a: _6 . b a: t _3 . h ow _2
+廿六	ya6luk6	j a: _6 . l u: k _6
+廿六号	ya6luk6hou2	j a: _6 . l u: k _6 . h ow _2
+廿几	ya6gei2	j a: _6 . g ej _2
+廿几号	ya6gei2hou6	j a: _6 . g ej _2 . h ow _6
+廿四	ya6sei3	j a: _6 . s ej _3
+廿四号	ya6sei3hou2	j a: _6 . s ej _3 . h ow _2	j a: _6 . s ej _3 . h ow _6
+廿零万	ya6leng4maan6	j a: _6 . l E: N _4 . m a: n _6
+开	hoi1	h O:j _1
+开下心	hoi1ha5sam1	h O:j _1 . h a: _5 . s 6 m _1
+开下车	hoi1ha5che1	h O:j _1 . h a: _5 . ts E: _1
+开会	hoi1wui2	h O:j _1 . w u:j _2
+开关	hoi1gwaan1	h O:j _1 . gw a: n _1
+开出去	hoi1cheut1heui3	h O:j _1 . ts 9: t _1 . h 9y _3
+开刀	hoi1dou1	h O:j _1 . d ow _1
+开发商	hoi1faat3seung1	h O:j _1 . f a: t _3 . s 9: N _1
+开口	hoi1hau2	h O:j _1 . h 6w _2
+开台	hoi1toi4	h O:j _1 . t O:j _4
+开唔开到	hoi1m4hoi1dou3	h O:j _1 . m _4 . h O:j _1 . d ow _3
+开唔开心	hoi1m4hoi1sam1	h O:j _1 . m _4 . h O:j _1 . s 6 m _1
+开声	hoi1seng1	h O:j _1 . s E: N _1	h O:j _1 . s i: N _1
+开头	hoi1tau4	h O:j _1 . t 6w _4
+开始	hoi1chi2	h O:j _1 . ts i: _2
+开工	hoi1gung1	h O:j _1 . g u: N _1
+开庭	hoi1ting4	h O:j _1 . t i: N _4
+开心	hoi1sam1	h O:j _1 . s 6 m _1
+开户	hoi1wu6	h O:j _1 . w u: _6
+开攞车	hoi1gan2che1	h O:j _1 . g 6 n _2 . ts E: _1
+开放	hoi1fong3	h O:j _1 . f O: N _3
+开机	hoi1gei1	h O:j _1 . g ej _1
+开档	hoi1dong3	h O:j _1 . d O: N _3
+开次方	hoi1chi3fong1	h O:j _1 . ts i: _3 . f O: N _1
+开水	hoi1seui2	h O:j _1 . s 9y _2
+开灯	hoi1dang1	h O:j _1 . d 6 N _1
+开盘	hoi1pun2	h O:j _1 . p u: n _2	h O:j _1 . p u: n _4
+开盘价	hoi1pun2ga3	h O:j _1 . p u: n _2 . g a: _3	h O:j _1 . p u: n _4 . g a: _3
+开走	hoi1jau2	h O:j _1 . dz 6w _2
+开车	hoi1che1	h O:j _1 . ts E: _1
+开通	hoi1tung1	h O:j _1 . t u: N _1
+开餐	hoi1chaan1	h O:j _1 . ts a: n _1
+开饭	hoi1faan6	h O:j _1 . f a: n _6
+异光	yi6gong1	j i: _6 . g O: N _1	j i: _6 . gw O: N _1
+弄	lung6	l u: N _6	n u: N _6
+式	sik1	s i: k _1
+引得	yan5dak1	j 6 n _5 . d 6 k _1
+张	jeung1	dz 9: N _1
+张嘉玲	jeung1ga1ling4	dz 9: N _1 . g a: _1 . l i: N _4
+张学友	jeung1hok6yau5	dz 9: N _1 . h O: k _6 . j 6w _5
+张斌	jeung1ban1	dz 9: N _1 . b 6 n _1
+弱	yeuk6	j 9: k _6
+弹	daan6	d a: n _6	t a: n _4
+强制下	keung5jai3ha2	k 9: N _5 . dz 6j _3 . h a: _2	k 9: N _5 . dz 6j _3 . h a: _6
+强制性	keung4jai3sing3	k 9: N _4 . dz 6j _3 . s i: N _3
+归	gwai1	gw 6j _1
+当	dong1	d O: N _1	d O: N _3
+当时	dong1si4	d O: N _1 . s i: _4
+当正	dong1jing3	d O: N _1 . dz i: N _3
+当然	dong1yin4	d O: N _1 . j i: n _4
+录	luk6	l u: k _6
+录音	luk6yam1	l u: k _6 . j 6 m _1
+形容	ying4yung4	j i: N _4 . j y: N _4
+形式	ying4sik1	j i: N _4 . s i: k _1
+彩纸	choi2ji2	ts O:j _2 . dz i: _2
+彩色	choi2sik1	ts O:j _2 . s i: k _1
+影	ying2	j i: N _2
+影下	ying2ha2	j i: N _2 . h a: _2
+影响	ying2heung2	j i: N _2 . h 9: N _2
+影相	ying2seung2	j i: N _2 . s 9: N _2
+影碟	ying2dip2	j i: N _2 . d i: p _2
+往	wong5	w O: N _5
+律师	leut6si1	l 9: t _6 . s i: _1
+徐子珊	cheui4ji2saan1	ts 9y _4 . dz i: _2 . s a: n _1
+得	dak1	d 6 k _1
+得冇得	dak1mou5dak1	d 6 k _1 . m ow _5 . d 6 k _1
+得到	dak1dou3	d 6 k _1 . d ow _3
+得唔得	dak1m4dak1	d 6 k _1 . m _4 . d 6 k _1
+得唔得闲	dak1m4dak1haan4	d 6 k _1 . m _4 . d 6 k _1 . h a: n _4
+得意	dak1yi3	d 6 k _1 . j i: _3
+得未	dak1mei6	d 6 k _1 . m ej _6
+得滞	dak1jai6	d 6 k _1 . dz 6j _6
+得返	dak1faan1	d 6 k _1 . f a: n _1
+得闲	dak1haan4	d 6 k _1 . h a: n _4
+心	sam1	s 6 m _1
+心大心细	sam1daai6sam1sai3	s 6 m _1 . d a:j _6 . s 6 m _1 . s 6j _3
+心安理得	sam1on1lei5dak1	s 6 m _1 . O: n _1 . l ej _5 . d 6 k _1	s 6 m _1 . N O: n _1 . l ej _5 . d 6 k _1
+心情	sam1ching4	s 6 m _1 . ts i: N _4
+心机	sam1gei1	s 6 m _1 . g ej _1
+心水	sam1seui2	s 6 m _1 . s 9y _2
+心理	sam1lei5	s 6 m _1 . l ej _5
+心脏	sam1jong6	s 6 m _1 . dz O: N _6
+心谂	sam1lam2	s 6 m _1 . l 6 m _2
+必须	bit1seui1	b i: t _1 . s 9y _1
+忌	gei6	g ej _6
+忌廉	gei6lim1	g ej _6 . l i: m _1
+忍者村	yan2je2chyun1	j 6 n _2 . dz E: _2 . ts y: n _1
+志在	ji3joi3	dz i: _3 . dz O:j _3
+志成	ji3sing4	dz i: _3 . s i: N _4
+忘	mong5	m O: N _5
+忘记	mong4gei3	m O: N _4 . g ej _3
+忙	mong4	m O: N _4
+忙到	mong4dou3	m O: N _4 . d ow _3
+忙唔忙	mong4m4mong4	m O: N _4 . m _4 . m O: N _4
+忞憎	man4jang1	m 6 n _4 . dz 6 N _1
+忧	yau1	j 6w _1
+忧愁	yau1sau4	j 6w _1 . s 6w _4
+快	faai3	f a:j _3
+快唔快	faai3m4faai3	f a:j _3 . m _4 . f a:j _3
+快快	faai3faai3	f a:j _3 . f a:j _3
+快快脆脆	faai3faai3cheui3cheui3	f a:j _3 . f a:j _3 . ts 9y _3 . ts 9y _3
+快脆	faai3cheui3	f a:j _3 . ts 9y _3
+快递	faai3dai6	f a:j _3 . d 6j _6
+念	lim6	l i: m _6	n i: m _6
+怀旧	waai4gau6	w a:j _4 . g 6w _6
+怀疑	waai4yi4	w a:j _4 . j i: _4
+态度	taai3dou6	t a:j _3 . d ow _6
+怕	pa3	p a: _3
+思密达	si1mat6daat6	s i: _1 . m 6 t _6 . d a: t _6
+怡女	yi4leui5	j i: _4 . l 9y _5	j i: _4 . n 9y _5
+急	gap1	g 6 p _1
+性格	sing3gaak3	s i: N _3 . g a: k _3
+怪	gwaai3	gw a:j _3
+怪得知	gwaai3dak1ji1	gw a:j _3 . d 6 k _1 . dz i: _1
+总	jung2	dz u: N _2
+总之	jung2ji1	dz u: N _2 . dz i: _1
+总书记	jung2syu1gei3	dz u: N _2 . s y: _1 . g ej _3
+总体	jung2tai2	dz u: N _2 . t 6j _2
+总共	jung2gung6	dz u: N _2 . g u: N _6
+总理	jung2lei5	dz u: N _2 . l ej _5
+怼	deui6	d 9y _6
+恒宝	hang4bou2	h 6 N _4 . b ow _2	h 6 n _4 . b ow _2
+恨	han6	h 6 n _6
+恩	yan1	j 6 n _1
+恭喜	gung1hei2	g u: N _1 . h ej _2
+息	sik1	s i: k _1
+恶	ok3	O: k _3	N O: k _3
+悭	haan1	h a: n _1
+悭钱	haan1chin2	h a: n _1 . ts i: n _2
+情	ching4	ts i: N _4
+情况	ching4fong3	ts i: N _4 . f O: N _3
+情況	ching4fong3	ts i: N _4 . f O: N _3
+情绪	ching4seui5	ts i: N _4 . s 9y _5
+情调	ching4diu6	ts i: N _4 . d iw _6
+惊	geng1	g E: N _1	g i: N _1
+惊慌慌	ging1fong1fong1	g i: N _1 . f O: N _1 . f O: N _1
+惊醒	ging1seng2	g i: N _1 . s E: N _2
+惠	wai6	w 6j _6
+惠康	wai6hong1	w 6j _6 . h O: N _1
+惨	chaam2	ts a: m _2
+惯	gwaan3	gw a: n _3
+想	seung2	s 9: N _2	s 9: N _5
+想住	seung2jyu6	s 9: N _2 . dz y: _6
+想到	seung2dou3	s 9: N _2 . d ow _3
+想方设法	seung2fong1chit3faat3	s 9: N _2 . f O: N _1 . ts i: t _3 . f a: t _3
+惹	ye5	j E: _5
+意	yi3	j i: _3
+意义	yi3yi6	j i: _3 . j i: _6
+意外	yi3oi6	j i: _3 . O:j _6	j i: _3 . N O:j _6
+意思	yi3si1	j i: _3 . s i: _1
+感	gam2	g 6 m _2	g 6 n _2
+感冒	gam2mou6	g 6 m _2 . m ow _6	g 6 n _2 . m ow _6
+感冒通	gam2mou6tung1	g 6 m _2 . m ow _6 . t u: N _1
+感受	gam2sau6	g 6 m _2 . s 6w _6	g 6 n _2 . s 6w _6
+感官	gam2gun1	g 6 m _2 . g u: n _1
+感恩节	gam2yan1jit3	g 6 m _2 . j 6 n _1 . dz i: t _3
+感觉	gam2gok3	g 6 m _2 . g O: k _3	g 6 n _2 . g O: k _3
+愿	yun6	j y: n _6
+愿望	yun6mong6	j y: n _6 . m O: N _6
+慌	fong1	f O: N _1
+慢	maan6	m a: n _6
+慢慢	maan6maan2	m a: n _6 . m a: n _2
+懂	dung2	d u: N _2
+懒	laan5	l a: n _5
+懒人	laan5yan4	l a: n _5 . j 6 n _4
+懣	mun6	m u: n _6
+懵嚓嚓	mung4chaat3chaat3	m u: N _4 . ts a: t _3 . ts a: t _3
+懵懵懂懂	mung4mung4dung2dung2	m u: N _4 . m u: N _4 . d u: N _2 . d u: N _2
+戆	jong3	dz O: N _3
+戏	hei3	h ej _3
+成	sing4	s i: N _4
+成世	sing4sai3	s i: N _4 . s 6j _3	s E: N _4 . s 6j _3
+成交	sing4gaau1	s i: N _4 . g a:w _1
+成交量	sing4gaau1leung6	s i: N _4 . g a:w _1 . l 9: N _6
+成交额	sing4gaau1ngaak6	s i: N _4 . g a:w _1 . N a: k _6
+成功	sing4gung1	s i: N _4 . g u: N _1
+成大	sing4daai6	s i: N _4 . d a:j _6
+成日	sing4yat6	s i: N _4 . j 6 t _6
+成晚	sing4maan5	s i: N _4 . m a: n _5	s E: N _4 . m a: n _5
+成班	sing4baan1	s i: N _4 . b a: n _1	s E: N _4 . b a: n _1
+成绩	sing4jik1	s i: N _4 . dz i: k _1
+成身	sing4san1	s i: N _4 . s 6 n _1
+成都	sing4dou1	s i: N _4 . d ow _1
+成长	sing4jeung2	s i: N _4 . dz 9: N _2
+我	o5	O: _5	N O: _5
+我地	o5dei6	O: _5 . d ej _6	N O: _5 . d ej _6
+戒	gaai3	g a:j _3
+或	waak6	w a: k _6
+或者	waak6je2	w a: k _6 . dz E: _2
+截	jit6	dz i: t _6
+戴	daai3	d a:j _3
+戴到	daai3dou3	d a:j _3 . d ow _3
+戴得到	daai3dak1dou3	d a:j _3 . d 6 k _1 . d ow _3
+户	wu6	w u: _6
+户口	wu6hau2	w u: _6 . h 6w _2
+户口簿	wu6hau2bou2	w u: _6 . h 6w _2 . b ow _2
+房	fong2	f O: N _2
+房产证	fong4chaan2jing3	f O: N _4 . ts a: n _2 . dz i: N _3
+房地产	fong4dei6chaan2	f O: N _4 . d ej _6 . ts a: n _2
+房钱	fong2chin2	f O: N _2 . ts i: n _2
+房间	fong4gaan1	f O: N _4 . g a: n _1
+所	so2	s O: _2
+所以	so2yi5	s O: _2 . j i: _5
+所有	so2yau5	s O: _2 . j 6w _5
+所谓	so2wai6	s O: _2 . w 6j _6
+扁	bin2	b i: n _2
+手	sau2	s 6w _2
+手头	sau2tau4	s 6w _2 . t 6w _4
+手工	sau2gung1	s 6w _2 . g u: N _1
+手指公	sau2ji2gung1	s 6w _2 . dz i: _2 . g u: N _1
+手掌	sau2jeung2	s 6w _2 . dz 9: N _2
+手提	sau2tai4	s 6w _2 . t 6j _4
+手机	sau2gei1	s 6w _2 . g ej _1
+手段	sau2dyun6	s 6w _2 . d y: n _6
+手气	sau2hei3	s 6w _2 . h ej _3
+手甲	sau2gaap3	s 6w _2 . g a: p _3
+手续	sau2juk6	s 6w _2 . dz u: k _6
+手脚	sau2geuk3	s 6w _2 . g 9: k _3
+手腕	sau2wun2	s 6w _2 . w u: n _2
+手艺	sau2ai6	s 6w _2 . 6j _6	s 6w _2 . N 6j _6
+手表	sau2biu1	s 6w _2 . b iw _1
+手震	sau2jan3	s 6w _2 . dz 6 n _3
+才	choi4	ts O:j _4
+扎扎	jaat3jaat3	dz a: t _3 . dz a: t _3
+打	da1	d a: _1
+打下	da2ha2	d a: _2 . h a: _2
+打下机	da2ha2gei1	d a: _2 . h a: _2 . g ej _1
+打下球	da2ha2kau4	d a: _2 . h a: _2 . k 6w _4
+打下电话	da2ha2din6wa2	d a: _2 . h a: _2 . d i: n _6 . w a: _2
+打乞嗤	da2hat1chi1	d a: _2 . h 6 t _1 . ts i: _1
+打仔	da1jai2	d a: _1 . dz 6j _2
+打仗	da2jeung6	d a: _2 . dz 9: N _6
+打到	da1dou3	d a: _1 . d ow _3
+打听到	da2ting3dou3	d a: _2 . t i: N _3 . d ow _3
+打唔到	da2m4dou3	d a: _2 . m _4 . d ow _3
+打唔打	da2m4da1	d a: _2 . m _4 . d a: _1
+打唔打机	da2m4da2gei1	d a: _2 . m _4 . d a: _2 . g ej _1
+打太极	da2taai3gik6	d a: _2 . t a:j _3 . g i: k _6
+打完麻雀	da2yun4ma4jeuk3	d a: _2 . j y: n _4 . m a: _4 . dz 9: k _3
+打定	da2ding6	d a: _2 . d i: N _6
+打工	da2gung1	d a: _2 . g u: N _1
+打平	da2ping4	d a: _2 . p i: N _4
+打开	da2hoi1	d a: _2 . h O:j _1
+打得通	da2dak1tung1	d a: _2 . d 6 k _1 . t u: N _1
+打打	da2da2	d a: _2 . d a: _2
+打招呼	da2jiu1fu1	d a: _2 . dz iw _1 . f u: _1
+打搅	da2gaau2	d a: _2 . g a:w _2
+打搅到	da2gaau2dou3	d a: _2 . g a:w _2 . d ow _3
+打攞麻雀	da2gan2ma4jeuk3	d a: _2 . g 6 n _2 . m a: _4 . dz 9: k _3
+打机	da2gei1	d a: _2 . g ej _1
+打杂	da2jaap6	d a: _2 . dz a: p _6
+打桌球	da2cheuk3kau4	d a: _2 . ts 9: k _3 . k 6w _4
+打横	da2waang4	d a: _2 . w a: N _4
+打比喻	da2bei2yu6	d a: _2 . b ej _2 . j y: _6
+打波	da2bo1	d a: _2 . b O: _1	d a: _1 . b O: _1
+打火锅	da2fo2wo1	d a: _2 . f O: _2 . w O: _1
+打球	da2kau4	d a: _2 . k 6w _4
+打电话	da2din6wa2	d a: _2 . d i: n _6 . w a: _2
+打的	da2dik1	d a: _2 . d i: k _1
+打算	da2syun3	d a: _2 . s y: n _3
+打篮球	da2laam4kau4	d a: _2 . l a: m _4 . k 6w _4
+打羽毛球	da2yu5mou4kau4	d a: _2 . j y: _5 . m ow _4 . k 6w _4
+打车	da2che1	d a: _2 . ts E: _1
+打边炉	da2bin1lou4	d a: _2 . b i: n _1 . l ow _4
+打过	da2go3	d a: _2 . g O: _3	d a: _2 . gw O: _3
+打野战	da2ye5jin3	d a: _2 . j E: _5 . dz i: n _3
+打饭	da2faan6	d a: _2 . f a: n _6
+打麻将	da2ma4jeung3	d a: _2 . m a: _4 . dz 9: N _3
+打麻雀	da2ma4jeuk3	d a: _2 . m a: _4 . dz 9: k _3
+托运	tok3wan6	t O: k _3 . w 6 n _6
+扣	kau3	k 6w _3
+扣钱	kau3chin2	k 6w _3 . ts i: n _2
+执	jap1	dz 6 p _1
+执下	jap1ha2	dz 6 p _1 . h a: _2
+执到	jap1dou3	dz 6 p _1 . d ow _3
+执埋	jap1maai4	dz 6 p _1 . m a:j _4
+扫	sou3	s ow _3
+扫地	sou3dei6	s ow _3 . d ej _6
+扫把	sou3ba2	s ow _3 . b a: _2
+扭一阵	lau2yat1jan6	l 6w _2 . j 6 t _1 . dz 6 n _6	n 6w _2 . j 6 t _1 . dz 6 n _6
+扭计	lau2gai3	l 6w _2 . g 6j _3	n 6w _2 . g 6j _3
+扯	che2	ts E: _2
+批	pai1	p 6j _1
+批发市场	pai1faat3si5cheung4	p 6j _1 . f a: t _3 . s i: _5 . ts 9: N _4
+批唔批	pai1m4pai1	p 6j _1 . m _4 . p 6j _1
+批评	pai1ping4	p 6j _1 . p i: N _4
+找	jaau2	dz a:w _2
+找到	jaau2dou3	dz a:w _2 . d ow _3
+承受	sing4sau6	s i: N _4 . s 6w _6
+承唔承认	sing4m4sing4ying6	s i: N _4 . m _4 . s i: N _4 . j i: N _6
+承认	sing4ying6	s i: N _4 . j i: N _6
+承诺书	sing4nok6syu1	s i: N _4 . n O: k _6 . s y: _1
+技术	gei6seut6	g ej _6 . s 9: t _6
+技术类	gei6seut6leui6	g ej _6 . s 9: t _6 . l 9y _6
+抄	chaau1	ts a:w _1
+抆	man5	m 6 n _5
+把	ba2	b a: _2
+抌	dam2	d 6 m _2
+抑或	yik1waak6	j i: k _1 . w a: k _6
+抓	ja1	dz a: _1	dz a:w _2
+抔	pau4	p 6w _4
+投	tau4	t 6w _4
+投唔投诉	tau4m4tau4sou3	t 6w _4 . m _4 . t 6w _4 . s ow _3
+投埋	tau4maai4	t 6w _4 . m a:j _4
+投左票	tau4jo2piu3	t 6w _4 . dz O: _2 . p iw _3
+投诉	tau4sou3	t 6w _4 . s ow _3
+投资	tau4ji1	t 6w _4 . dz i: _1
+折	jit3	dz i: t _3
+折埋	jit3maai4	dz i: t _3 . m a:j _4
+折头	jit3tau4	dz i: t _3 . t 6w _4
+抢	cheung2	ts 9: N _2
+护照	wu6jiu3	w u: _6 . dz iw _3
+报	bou3	b ow _3
+报停	bou3ting4	b ow _3 . t i: N _4
+报到	bou3dou3	b ow _3 . d ow _3
+报名	bou3meng2	b ow _3 . m E: N _2
+报埋	bou3maai4	b ow _3 . m a:j _4
+报失	bou3sat1	b ow _3 . s 6 t _1
+报左名	bou3jo2meng2	b ow _3 . dz O: _2 . m E: N _2
+报纸	bou3ji2	b ow _3 . dz i: _2
+报道	bou3dou6	b ow _3 . d ow _6
+抦	bing2	b i: N _2
+抱	pou5	p ow _5
+抱埋	pou5maai4	p ow _5 . m a:j _4
+抵	dai2	d 6j _2
+抵力	dai2lik6	d 6j _2 . l i: k _6
+抵食	dai2sik6	d 6j _2 . s i: k _6
+抹	maat3	m a: t _3	m u: t _3
+抽	chau1	ts 6w _1
+抽下	chau1ha2	ts 6w _1 . h a: _2
+抽奖	chau1jeung2	ts 6w _1 . dz 9: N _2
+抽血	chau1hyut3	ts 6w _1 . h y: t _3
+担心	daam1sam1	d a: m _1 . s 6 m _1
+担担面	daam3daam3min3	d a: m _3 . d a: m _3 . m i: n _3
+拆	chaak3	ts a: k _3
+拆包	chaak3baau1	ts a: k _3 . b a:w _1
+拆散	chaak3saan3	ts a: k _3 . s a: n _3
+拉	laai1	l a:j _1	l a: _1
+拉到	laai1dou3	l a:j _1 . d ow _3
+拉线	laai1sin3	l a:j _1 . s i: n _3
+拉过线	laai1go3sin3	l a:j _1 . g O: _3 . s i: n _3	l a:j _1 . gw O: _3 . s i: n _3
+拍	paak3	p a: k _3
+拍档	paak3dong2	p a: k _3 . d O: N _2
+拍线	paak3sin3	p a: k _3 . s i: n _3
+拎	ling1	l i: N _1
+拎唔到	ling1m4dou3	l i: N _1 . m _4 . d ow _3
+拎埋	ling1maai4	l i: N _1 . m a:j _4
+拐带	gwaai2daai3	gw a:j _2 . d a:j _3
+拖	to1	t O: _1
+拗撬	aau3giu6	a:w _3 . g iw _6	N a:w _3 . g iw _6
+招	jiu1	dz iw _1
+招呼	jiu1fu1	dz iw _1 . f u: _1
+招唔招	jiu1m4jiu1	dz iw _1 . m _4 . dz iw _1
+招工	jiu1gung1	dz iw _1 . g u: N _1
+招揽	jiu1laam5	dz iw _1 . l a: m _5	dz iw _1 . l a: n _5
+招牌	jiu1paai4	dz iw _1 . p a:j _4
+拜	baai1	b a:j _1
+拜山	baai3saan1	b a:j _3 . s a: n _1
+拜年	baai3lin2	b a:j _3 . l i: n _2	b a:j _3 . n i: n _2
+拜拜	baai1baai3	b a:j _1 . b a:j _3	b a:j _2 . b a:j _3
+拢	lung5	l u: N _5	l 6 N _3
+拣	gaan2	g a: n _2
+拥	yung2	j y: N _2
+拧	ling2	l i: N _2
+拳	kyun4	k y: n _4
+拿	la4	l a: _4	n a: _4
+挂	gwa3	gw a: _3
+挂住	gwa3jyu6	gw a: _3 . dz y: _6
+挂历	gwa3lik6	gw a: _3 . l i: k _6
+挂机	gwa3gei1	gw a: _3 . g ej _1
+指	ji2	dz i: _2
+指明	ji2ming4	dz i: _2 . m i: N _4
+按	on3	O: n _3	N O: n _3
+按照	on3jiu3	O: n _3 . dz iw _3	N O: n _3 . dz iw _3
+挑	tiu1	t iw _1
+挞	taat3	t a: t _3
+挣	jaang1	dz a: N _1	dz 6 N _1
+挤	jai1	dz 6j _1
+挨	aai1	a:j _1
+挨饿	aai2o6	a:j _2 . O: _6	N a:j _2 . N O: _6
+捉	juk1	dz u: k _1
+捉下	juk1ha2	dz u: k _1 . h a: _2
+捉到	juk1dou3	dz u: k _1 . d ow _3
+捞	laau1	l a:w _1
+捞乱	lou1lyun6	l ow _1 . l y: n _6
+捞埋	lou1maai4	l ow _1 . m a:j _4
+损	syun2	s y: n _2
+捡	gim2	g i: m _2
+换	wun6	w u: n _6
+换下	wun6ha2	w u: n _6 . h a: _2	w u: n _6 . h a: _3
+换到	wun6dou3	w u: n _6 . d ow _3
+换手率	wun6sau2leut2	w u: n _6 . s 6w _2 . l 9: t _2
+换返	wun6faan1	w u: n _6 . f a: n _1
+捣到	dou2dou3	d ow _2 . d ow _3
+捨得	se2dak1	s E: _2 . d 6 k _1
+捱	aai4	a:j _4	N a:j _4
+捽	chyut3	ts y: t _3	dz 9: t _1
+掁	chaang4	ts a: N _4
+掂	din6	d i: n _6	d i: m _6
+掂档	dim6dong2	d i: m _6 . d O: N _2
+掂水	dim6seui2	d i: m _6 . s 9y _2
+掉	diu6	d iw _6
+掉落	diu6lok6	d iw _6 . l O: k _6
+掌柜	jeung2gwai2	dz 9: N _2 . gw 6j _2
+排	paai4	p a:j _4
+排班	paai4baan1	p a:j _4 . b a: n _1
+排线	paai4sin3	p a:j _4 . s i: n _3
+排队	paai4deui2	p a:j _4 . d 9y _2
+排骨粉	paai4gwat1fan2	p a:j _4 . gw 6 t _1 . f 6 n _2
+探	taam3	t a: m _3
+接	jip3	dz i: p _3
+接到	jip3dou3	dz i: p _3 . d ow _3
+接口	jip3hau2	dz i: p _3 . h 6w _2
+接听	jip3teng1	dz i: p _3 . t E: N _1	dz i: p _3 . t i: N _1
+接唔接	jip3m4jip3	dz i: p _3 . m _4 . dz i: p _3
+接唔接受	jip3m4jip3sau6	dz i: p _3 . m _4 . dz i: p _3 . s 6w _6
+接头	jip3tau4	dz i: p _3 . t 6w _4
+接收	jip3sau1	dz i: p _3 . s 6w _1
+接触	jip3juk1	dz i: p _3 . dz u: k _1	dz i: p _3 . ts u: k _1
+接触下	jip3juk1ha2	dz i: p _3 . dz u: k _1 . h a: _2	dz i: p _3 . ts u: k _1 . h a: _2
+接近	jip3gan6	dz i: p _3 . g 6 n _6
+接驳	jip3bok3	dz i: p _3 . b O: k _3
+控制	hung3jai3	h u: N _3 . dz 6j _3
+推	teui1	t 9y _1
+推出	teui1cheut1	t 9y _1 . ts 9: t _1
+推动	teui1dung6	t 9y _1 . d u: N _6
+推荐	teui1jin3	t 9y _1 . dz i: n _3
+掹	mang1	m 6 N _1	m a: N _1	m 6 N _3
+提	tai4	t 6j _4
+提供	tai4gung1	t 6j _4 . g u: N _1
+提出	tai4cheut1	t 6j _4 . ts 9: t _1
+提前	tai4chin4	t 6j _4 . ts i: n _4
+提早	tai4jou2	t 6j _4 . dz ow _2
+提示	tai4si6	t 6j _4 . s i: _6
+提醒	tai4seng2	t 6j _4 . s E: N _2
+插头	chaap3tau4	ts a: p _3 . t 6w _4
+插座	chaap3jo6	ts a: p _3 . dz O: _6
+揗嚟揗去	tan4lai4tan4heui3	t 6 n _4 . l 6j _4 . t 6 n _4 . h 9y _3	t 6 n _4 . l ej _4 . t 6 n _4 . h 9y _3
+揞	am2	6 m _2	N 6 m _2
+揦	la2	l a: _2
+揸	ja1	dz a: _1
+揸车	ja1che1	dz a: _1 . ts E: _1
+揾	wan2	w 6 n _2
+揾下	wan2ha2	w 6 n _2 . h a: _2
+揾到	wan2dou3	w 6 n _2 . d ow _3	w 6 n _2 . d ow _2
+揾唔到	wan2m4dou2	w 6 n _2 . m _4 . d ow _2	w 6 n _2 . m _4 . d ow _3
+揾野	wan2ye5	w 6 n _2 . j E: _5
+揾钱	wan2chin2	w 6 n _2 . ts i: n _2
+揾食	wan2sik6	w 6 n _2 . s i: k _6
+揿	gam6	g 6 m _6	g 6 n _6
+揿下	gam6ha2	g 6 m _6 . h a: _2
+搂	lau3	l 6w _3	l 6w _1
+搂埋	lau1maai4	l 6w _1 . m a:j _4
+搏	bok3	b O: k _3
+搏一搏	bok3yat1bok3	b O: k _3 . j 6 t _1 . b O: k _3
+搏命	bok3meng6	b O: k _3 . m E: N _6	b O: k _3 . m i: N _6
+搏死	bok3sei2	b O: k _3 . s ej _2
+搏老命	bok3lou5ming6	b O: k _3 . l ow _5 . m i: N _6
+搞	gaau2	g a:w _2
+搞下	gaau2ha5	g a:w _2 . h a: _5
+搞到	gaau2dou3	g a:w _2 . d ow _3
+搞卫生	gaau2wai6sang1	g a:w _2 . w 6j _6 . s 6 N _1
+搞唔掂	gaau2m4din6	g a:w _2 . m _4 . d i: n _6	g a:w _2 . m _4 . d i: m _6
+搞唔搞得到	gaau2m4gaau2dak1dou3	g a:w _2 . m _4 . g a:w _2 . d 6 k _1 . d ow _3
+搞埋	gaau2maai4	g a:w _2 . m a:j _4
+搞基	gaau2gei1	g a:w _2 . g ej _1
+搞得掂	gaau2dak1din6	g a:w _2 . d 6 k _1 . d i: n _6	g a:w _2 . d 6 k _1 . d i: m _6
+搞掂	gaau2din6	g a:w _2 . d i: n _6	g a:w _2 . d i: m _6
+搞笑	gaau2siu3	g a:w _2 . s iw _3
+搞野	gaau2ye5	g a:w _2 . j E: _5
+搞错	gaau2cho3	g a:w _2 . ts O: _3
+搬	bun1	b u: n _1
+搬屋	bun1uk1	b u: n _1 . u: k _1	b u: n _1 . N u: k _1
+搬运	bun1wan6	b u: n _1 . w 6 n _6
+搭	daap6	d a: p _6
+搭住	daap6jyu6	d a: p _6 . dz y: _6
+搭车	daap3che1	d a: p _3 . ts E: _1
+搲	we2	w E: _2
+搲下	we2ha2	w E: _2 . h a: _2
+搲唔到	we2m5dou3	w E: _2 . m _5 . d ow _3
+搲面	we2min6	w E: _2 . m i: n _6
+搽一搽	cha4yat1cha4	ts a: _4 . j 6 t _1 . ts a: _4
+摆	baai2	b a:j _2
+摆唔落	baai2m4lok6	b a:j _2 . m _4 . l O: k _6
+摆档	baai2dong3	b a:j _2 . d O: N _3
+摆酒	baai2jau2	b a:j _2 . dz 6w _2
+摙	lin5	l i: n _5
+摩托	mo1tok3	m O: _1 . t O: k _3
+摩托车	mo1tok3che1	m O: _1 . t O: k _3 . ts E: _1
+摩托车佬	mo1tok3che1lou2	m O: _1 . t O: k _3 . ts E: _1 . l ow _2
+摩登新人类	mo1dang1san1yan4leui6	m O: _1 . d 6 N _1 . s 6 n _1 . j 6 n _4 . l 9y _6
+撇	pit3	p i: t _3
+撇到	pit3dou3	p i: t _3 . d ow _3
+撇唔到	pit3m4dou3	p i: t _3 . m _4 . d ow _3
+撑起	chaang1hei2	ts a: N _1 . h ej _2
+撘	dap3	d 6 p _3
+撞	jong6	dz O: N _6
+撞到	jong6dou3	dz O: N _6 . d ow _3	dz O: N _6 . d ow _2
+撞埋	jong6maai4	dz O: N _6 . m a:j _4
+撞彩	jong6choi2	dz O: N _6 . ts O:j _2
+撤	chit3	ts i: t _3
+撤嗮去	chit3saai3heui3	ts i: t _3 . s a:j _3 . h 9y _3
+撩下	liu4ha2	l iw _4 . h a: _2
+撩到	liu4dou3	l iw _4 . d ow _3
+撩撩	liu4liu4	l iw _4 . l iw _4
+擁	yung2	j y: N _2
+操作	chou1jok3	ts ow _1 . dz O: k _3
+擘	maak3	m a: k _3	b a:j _1
+擘大眼	maak3daai6aan5	m a: k _3 . d a:j _6 . a: n _5
+擘开	baai1hoi1	b a:j _1 . h O:j _1
+擘擘	baai1baai1	b a:j _1 . b a:j _1
+擸擸埋埋	laap3laap3maai4maai4	l a: p _3 . l a: p _3 . m a:j _4 . m a:j _4
+攞	gan2	g 6 n _2
+攞	lo2	l O: _2
+攞假	lo2ga3	l O: _2 . g a: _3
+攞到	lo2dou3	l O: _2 . d ow _3	l O: _2 . d ow _2
+攞唔到	lo2m4dou3	l O: _2 . m _4 . d ow _3	l O: _2 . m _4 . d ow _2
+攞唔攞到	lo2m4lo2dou3	l O: _2 . m _4 . l O: _2 . d ow _3	l O: _2 . m _4 . l O: _2 . d ow _2
+攞唔攞要	gan2m4gan2yiu3	g 6 n _2 . m _4 . g 6 n _2 . j iw _3
+攞嚟	lo2lai4	l O: _2 . l 6j _4
+攞奖	lo2jeung2	l O: _2 . dz 9: N _2
+攞张	gan2jeung1	g 6 n _2 . dz 9: N _1
+攞得返	lo2dak1faan1	l O: _2 . d 6 k _1 . f a: n _1
+攞要	gan2yiu3	g 6 n _2 . j iw _3
+攞返	lo2faan1	l O: _2 . f a: n _1
+支	ji1	dz i: _1
+支出	ji1cheut1	dz i: _1 . ts 9: t _1
+支唔支持	ji1m4ji1chi4	dz i: _1 . m _4 . dz i: _1 . ts i: _4
+支持	ji1chi4	dz i: _1 . ts i: _4
+支持下	ji1chi4ha2	dz i: _1 . ts i: _4 . h a: _2
+攰	gui6	g u:j _6
+收	sau1	s 6w _1
+收信	sau1seun3	s 6w _1 . s 9: n _3
+收入	sau1yap6	s 6w _1 . j 6 p _6
+收到	sau1dou3	s 6w _1 . d ow _3
+收唔收	sau1m4sau1	s 6w _1 . m _4 . s 6w _1
+收埋	sau1maai4	s 6w _1 . m a:j _4
+收尾	sau1mei5	s 6w _1 . m ej _5
+收左租	sau1jo2jou1	s 6w _1 . dz O: _2 . dz ow _1
+收市	sau1si5	s 6w _1 . s i: _5
+收得到	sau1dak1dou3	s 6w _1 . d 6 k _1 . d ow _3
+收番	sau1faan1	s 6w _1 . f a: n _1
+收租	sau1jou1	s 6w _1 . dz ow _1
+收线	sau1sin3	s 6w _1 . s i: n _3
+收货	sau1fo3	s 6w _1 . f O: _3
+收费	sau1fai3	s 6w _1 . f 6j _3
+收钱	sau1chin2	s 6w _1 . ts i: n _2
+收集	sau1jaap6	s 6w _1 . dz a: p _6
+收音	sau1yam1	s 6w _1 . j 6 m _1
+改	goi2	g O:j _2
+改下	goi2ha2	g O:j _2 . h a: _2
+改为	goi2wai4	g O:j _2 . w 6j _4
+改左期	goi2jo2kei4	g O:j _2 . dz O: _2 . k ej _4
+改成	goi2sing4	g O:j _2 . s i: N _4
+改返	goi2faan1	g O:j _2 . f a: n _1
+改革	goi2gaak6	g O:j _2 . g a: k _6
+改革开放	goi2gaak6hoi1fong3	g O:j _2 . g a: k _6 . h O:j _1 . f O: N _3
+放	fong3	f O: N _3
+放下假	fong3ha6ga3	f O: N _3 . h a: _6 . g a: _3
+放低	fong3dai1	f O: N _3 . d 6j _1
+放假	fong3ga3	f O: N _3 . g a: _3
+放学	fong3hok6	f O: N _3 . h O: k _6
+放宽	fong3fun1	f O: N _3 . f u: n _1
+放寒假	fong3hon4ga3	f O: N _3 . h O: n _4 . g a: _3
+放屁	fong3pei3	f O: N _3 . p ej _3
+放工	fong3gung1	f O: N _3 . g u: N _1
+放开	fong3hoi1	f O: N _3 . h O:j _1
+放心	fong3sam1	f O: N _3 . s 6 m _1
+放数	fong3sou3	f O: N _3 . s ow _3
+放水	fong3seui2	f O: N _3 . s 9y _2
+放落	fong3lok6	f O: N _3 . l O: k _6
+放飞机	fong3fei1gei1	f O: N _3 . f ej _1 . g ej _1
+政府	jing3fu2	dz i: N _3 . f u: _2
+政策	jing3chaak3	dz i: N _3 . ts a: k _3
+故	gu3	g u: _3
+故居	gu3geui1	g u: _3 . g 9y _1
+效果	haau6go2	h a:w _6 . g O: _2	h a:w _6 . gw O: _2
+效益	haau6yik1	h a:w _6 . j i: k _1
+敏	man5	m 6 n _5
+敏华	man5wa4	m 6 n _5 . w a: _4
+敏感	man5gam2	m 6 n _5 . g 6 m _2	m 6 n _5 . g 6 n _2
+敏来	man5loi4	m 6 n _5 . l O:j _4
+救	gau3	g 6w _3
+教	gaau3	g a:w _3
+教一教	gaau3yat1gaau3	g a:w _3 . j 6 t _1 . g a:w _3
+教下	gaau3ha2	g a:w _3 . h a: _2	g a:w _3 . h a: _5
+教仔	gaau3jai2	g a:w _3 . dz 6j _2
+教台	gaau3toi4	g a:w _3 . t O:j _4
+教唔教	gaau3m4gaau3	g a:w _3 . m _4 . g a:w _3
+教育	gaau3yuk6	g a:w _3 . j y: k _6
+教育会	gaau3yuk6wui5	g a:w _3 . j y: k _6 . w u:j _5
+教育局	gaau3yuk6guk6	g a:w _3 . j y: k _6 . g u: k _6
+教识	gaau3sik1	g a:w _3 . s i: k _1
+敢	gam2	g 6 m _2	g 6 n _2
+散下	saan3ha2	s a: n _3 . h a: _2
+散下心	saan3ha2sam1	s a: n _3 . h a: _2 . s 6 m _1
+散步	saan3bou6	s a: n _3 . b ow _6
+散钟	saan3jung1	s a: n _3 . dz u: N _1
+数	sou2	s ow _2
+数	sou3	s ow _3	s O: k _3
+数学	sou3hok6	s ow _3 . h O: k _6
+数控	sok3hung3	s O: k _3 . h u: N _3
+整	jing2	dz i: N _2
+整下	jing2ha2	dz i: N _2 . h a: _2
+整两整	jing2leung5jing2	dz i: N _2 . l 9: N _5 . dz i: N _2
+整亲	jing2chan1	dz i: N _2 . ts 6 n _1
+整埋	jing2maai4	dz i: N _2 . m a:j _4
+整整	jing2jing2	dz i: N _2 . dz i: N _2
+整理箱	jing2lei5seung1	dz i: N _2 . l ej _5 . s 9: N _1
+整齐	jing2chai4	dz i: N _2 . ts 6j _4
+敷	fu1	f u: _1
+文具	man4geui6	m 6 n _4 . g 9y _6
+文凭	man4pang6	m 6 n _4 . p 6 N _6
+文化	man4fa3	m 6 n _4 . f a: _3
+文向路	man4heung3lou6	m 6 n _4 . h 9: N _3 . l ow _6
+斋	jaai1	dz a:j _1
+斗	dau3	d 6w _3
+斗智	dau3ji3	d 6w _3 . dz i: _3
+料到	liu6dou3	l iw _6 . d ow _3	l iw _6 . d ow _2
+斟	jam1	dz 6 m _1
+斤	gan1	g 6 n _1
+断	tyun5	t y: n _5
+断断续续	tyun5tyun5juk6juk6	t y: n _5 . t y: n _5 . dz u: k _6 . dz u: k _6
+断线	tyun5sin3	t y: n _5 . s i: n _3
+新	san1	s 6 n _1
+新一佳	san1yat1gaai1	s 6 n _1 . j 6 t _1 . g a:j _1
+新一街	san1yat1gaai1	s 6 n _1 . j 6 t _1 . g a:j _1
+新元	san1yun4	s 6 n _1 . j y: n _4
+新兴	san1hing1	s 6 n _1 . h i: N _1
+新嚟	san1lai4	s 6 n _1 . l 6j _4	s 6 n _1 . l ej _4
+新抱	san1pou5	s 6 n _1 . p ow _5
+新牌仔	san1paai4jai2	s 6 n _1 . p a:j _4 . dz 6j _2
+新货	san1fo3	s 6 n _1 . f O: _3
+新闻	san1man2	s 6 n _1 . m 6 n _2
+新鲜	san1sin1	s 6 n _1 . s i: n _1
+方	fong1	f O: N _1
+方便	fong1bin6	f O: N _1 . b i: n _6
+方向	fong1heung3	f O: N _1 . h 9: N _3
+方姐	fong1je2	f O: N _1 . dz E: _2
+方式	fong1sik1	f O: N _1 . s i: k _1
+方正银记	fong1jing3an4gei3	f O: N _1 . dz i: N _3 . 6 n _4 . g ej _3	f O: N _1 . dz i: N _3 . N 6 n _4 . g ej _3
+方洋	fong1yeung4	f O: N _1 . j 9: N _4
+方面	fong1min6	f O: N _1 . m i: n _6
+旁边	pong4bin1	p O: N _4 . b i: n _1
+旅游	leui5yau4	l 9y _5 . j 6w _4
+旅游月	leui5yau4yut6	l 9y _5 . j 6w _4 . j y: t _6
+旅行团	leui5hang4tyun4	l 9y _5 . h 6 N _4 . t y: n _4
+旅行社	leui5hang4se5	l 9y _5 . h 6 N _4 . s E: _5
+无	mou4	m ow _4
+无厘头	mou4lei4tau4	m ow _4 . l ej _4 . t 6w _4
+无喇喇	mou4la1la1	m ow _4 . l a: _1 . l a: _1
+无意	mou4yi3	m ow _4 . j i: _3
+无所事事	mou4so2si6si6	m ow _4 . s O: _2 . s i: _6 . s i: _6
+无线上网	mou4sin3seung5mong5	m ow _4 . s i: n _3 . s 9: N _5 . m O: N _5
+无线电	mou4sin3din6	m ow _4 . s i: n _3 . d i: n _6
+无聊	mou4liu4	m ow _4 . l iw _4
+无论	mou4leun6	m ow _4 . l 9: n _6
+无证	mou4jing3	m ow _4 . dz i: N _3
+无非	mou4fei1	m ow _4 . f ej _1
+既然	gei3yin4	g ej _3 . j i: n _4
+既系	gei3hai6	g ej _3 . h 6j _6
+日	yat6	j 6 t _6
+日出	yat6cheut1	j 6 t _6 . ts 9: t _1
+日头	yat6tau4	j 6 t _6 . t 6w _4	j 6 t _6 . t 6w _2
+日子	yat6ji2	j 6 t _6 . dz i: _2
+日日	yat6yat6	j 6 t _6 . j 6 t _6
+日更头	yat6gaang1tau4	j 6 t _6 . g a: N _1 . t 6w _4	j 6 t _6 . g a: n _1 . t 6w _4
+日期	yat6kei4	j 6 t _6 . k ej _4
+日本	yat6bun2	j 6 t _6 . b u: n _2
+日班	yat6baan1	j 6 t _6 . b a: n _1
+日用品	yat6yung6ban2	j 6 t _6 . j y: N _6 . b 6 n _2
+日语	yat6yu5	j 6 t _6 . j y: _5
+日间头	yat6gaan1tau4	j 6 t _6 . g a: n _1 . t 6w _4
+旧	gau6	g 6w _6
+旧年	gau6lin2	g 6w _6 . l i: n _2	g 6w _6 . l i: n _4	g 6w _6 . n i: n _2	g 6w _6 . n i: n _4
+旧阵时	gau6jan6si4	g 6w _6 . dz 6 n _6 . s i: _4
+早	jou2	dz ow _2
+早上	jou2seung6	dz ow _2 . s 9: N _6
+早排	jou2paai4	dz ow _2 . p a:j _4	dz ow _2 . p a:j _2
+早早	jou2jou2	dz ow _2 . dz ow _2
+早时候	jou2si4hau6	dz ow _2 . s i: _4 . h 6w _6
+早晨	jou2san4	dz ow _2 . s 6 n _4
+早期	jou2kei4	dz ow _2 . k ej _4
+早班	jou2baan1	dz ow _2 . b a: n _1
+早茶	jou2cha4	dz ow _2 . ts a: _4
+早退	jou2teui3	dz ow _2 . t 9y _3
+早餐	jou2chaan1	dz ow _2 . ts a: n _1
+时	si4	s i: _4
+时不时	si4bat1si4	s i: _4 . b 6 t _1 . s i: _4
+时事	si4si6	s i: _4 . s i: _6
+时代	si4doi6	s i: _4 . d O:j _6
+时代曲	si4doi6kuk1	s i: _4 . d O:j _6 . k u: k _1
+时候	si4hau6	s i: _4 . h 6w _6
+时时	si4si4	s i: _4 . s i: _4
+时段	si4dyun6	s i: _4 . d y: n _6
+时薪	si4san1	s i: _4 . s 6 n _1
+时装	si4jong1	s i: _4 . dz O: N _1
+时钟	si4jung1	s i: _4 . dz u: N _1
+时间	si4gaan3	s i: _4 . g a: n _3
+旺	wong6	w O: N _6
+旺唔旺	wong6m4wong6	w O: N _6 . m _4 . w O: N _6
+昆	kwan1	kw 6 n _1
+昌华	cheung1wa4	ts 9: N _1 . w a: _4
+明	ming4	m i: N _4
+明哥	ming4go1	m i: N _4 . g O: _1
+明唔明白	ming1m4ming4baak6	m i: N _1 . m _4 . m i: N _4 . b a: k _6
+明年	ming4lin2	m i: N _4 . l i: n _2	m i: N _4 . n i: n _2
+明显	ming4hin2	m i: N _4 . h i: n _2
+明白	ming4baak6	m i: N _4 . b a: k _6
+明线	ming4sin3	m i: N _4 . s i: n _3
+易	yi6	j i: _6
+易拉罐	yi6la1gun3	j i: _6 . l a: _1 . g u: n _3
+星包	sing1baau1	s i: N _1 . b a:w _1
+星期	sing1kei4	s i: N _1 . k ej _4
+星期一	sing1kei4yat1	s i: N _1 . k ej _4 . j 6 t _1
+星期三	sing1kei4saam1	s i: N _1 . k ej _4 . s a: m _1
+星期二	sing1kei4yi6	s i: N _1 . k ej _4 . j i: _6
+星期五	sing1kei4m5	s i: N _1 . k ej _4 . m _5	s i: N _1 . k ej _4 . N _5
+星期六	sing1kei4luk6	s i: N _1 . k ej _4 . l u: k _6
+星期几	sing1kei4gei2	s i: N _1 . k ej _4 . g ej _2
+星期四	sing1kei4sei3	s i: N _1 . k ej _4 . s ej _3
+星期天	sing1kei4tin1	s i: N _1 . k ej _4 . t i: n _1
+星期日	sing1kei4yat6	s i: N _1 . k ej _4 . j 6 t _6
+星级	sing1kap1	s i: N _1 . k 6 p _1
+星马泰	sing1ma5taai3	s i: N _1 . m a: _5 . t a:j _3
+春立	cheun1laap6	ts 9: n _1 . l a: p _6
+春节	cheun1jit3	ts 9: n _1 . dz i: t _3
+昨日	jok6yat6	dz O: k _6 . j 6 t _6
+是	si6	s i: _6
+是但	si6daan6	s i: _6 . d a: n _6
+晏	aan3	a: n _3
+晏昼	aan3jau3	a: n _3 . dz 6w _3
+晒	saai3	s a:j _3
+晒下	saai3ha2	s a:j _3 . h a: _2
+晒太阳	saai3taai3yeung4	s a:j _3 . t a:j _3 . j 9: N _4
+晕	wan4	w 6 n _4
+晕晕地	wan4wan4dei2	w 6 n _4 . w 6 n _4 . d ej _2
+晚	maan5	m a: n _5
+晚上	maan5seung6	m a: n _5 . s 9: N _6
+晚黑	maan5haak1	m a: n _5 . h a: k _1
+晨早	san4jou2	s 6 n _4 . dz ow _2
+普利	pou2lei6	p ow _2 . l ej _6
+普普通通	pou2pou2tung1tung1	p ow _2 . p ow _2 . t u: N _1 . t u: N _1
+普通	pou2tung1	p ow _2 . t u: N _1
+暂	jaam6	dz a: m _6
+暂停	jaam6ting4	dz a: m _6 . t i: N _4
+暂时	jaam6si4	dz a: m _6 . s i: _4
+暈酡酡	wan4to4to4	w 6 n _4 . t O: _4 . t O: _4
+暑	syu2	s y: _2
+暑假	syu2ga3	s y: _2 . g a: _3
+暴	bou6	b ow _6
+曝光	buk6gong1	b u: k _6 . g O: N _1	b u: k _6 . gw O: N _1
+曳	yai5	j 6j _5
+更	gang1	g 6 N _1
+更改	gang1goi2	g 6 N _1 . g O:j _2
+更新	gang1san1	g 6 N _1 . s 6 n _1
+曹	chou4	ts ow _4
+曾志刚	jang4ji3gong1	dz 6 N _4 . dz i: _3 . g O: N _1
+曾经	chang4ging1	ts 6 N _4 . g i: N _1
+最	jeui3	dz 9y _3
+最后	jeui3hau6	dz 9y _3 . h 6w _6
+最近	jeui3gan6	dz 9y _3 . g 6 n _6	dz 9y _3 . k 6 n _5
+月	yut6	j y: t _6
+月中	yut6jung1	j y: t _6 . dz u: N _1
+月份	yut6fan6	j y: t _6 . f 6 n _6
+月初	yut6cho1	j y: t _6 . ts O: _1
+月历	yut6lik6	j y: t _6 . l i: k _6
+月底	yut6dai2	j y: t _6 . d 6j _2
+有	yau5	j 6w _5	j 6w _6
+有冇	yau5mou5	j 6w _5 . m ow _5
+有啲	yau5di1	j 6w _5 . d i: _1
+有妇之夫	yau5fu5ji1fu1	j 6w _5 . f u: _5 . dz i: _1 . f u: _1
+有得	yau5dak1	j 6w _5 . d 6 k _1
+有所	yau5so2	j 6w _5 . s O: _2
+有所谓	yau5so2wai6	j 6w _5 . s O: _2 . w 6j _6
+有损	yau5syun2	j 6w _5 . s y: n _2
+有排	yau5paai4	j 6w _5 . p a:j _4
+有效	yau5haau6	j 6w _5 . h a:w _6
+有时	yau5si4	j 6w _5 . s i: _4
+有时候	yau5si4hau6	j 6w _5 . s i: _4 . h 6w _6
+有缘	yau5yun4	j 6w _5 . j y: n _4
+有钱	yau5chin2	j 6w _5 . ts i: n _2	j 6w _5 . ts i: n _4
+朋	pang4	p 6 N _4
+朋友	pang4yau5	p 6 N _4 . j 6w _5
+朋友仔	pang4yau5jai2	p 6 N _4 . j 6w _5 . dz 6j _2
+服	fuk6	f u: k _6
+服装	fuk6jong1	f u: k _6 . dz O: N _1
+望	mong6	m O: N _6
+望下	mong6ha5	m O: N _6 . h a: _5
+望到	mong6dou3	m O: N _6 . d ow _3	m O: N _6 . d ow _2
+望得到	mong6dak1dou2	m O: N _6 . d 6 k _1 . d ow _2
+望落	mong6lok6	m O: N _6 . l O: k _6
+朝	jiu1	dz iw _1
+朝天路	chiu4tin1lou6	ts iw _4 . t i: n _1 . l ow _6
+朝头早	jiu1tau4jou2	dz iw _1 . t 6w _4 . dz ow _2
+朝早	jiu1jou2	dz iw _1 . dz ow _2
+期	kei4	k ej _4
+期中试	kei4jung1si3	k ej _4 . dz u: N _1 . s i: _3
+期末试	kei4mut6si3	k ej _4 . m u: t _6 . s i: _3
+期间	kei4gaan1	k ej _4 . g a: n _1
+木	muk6	m u: k _6
+木瓜	muk6gwa1	m u: k _6 . gw a: _1
+木瓜糖水	muk6gwa1tong4seui2	m u: k _6 . gw a: _1 . t O: N _4 . s 9y _2
+木色	muk6sik1	m u: k _6 . s i: k _1
+未	mei6	m ej _6
+未必	mei6bit1	m ej _6 . b i: t _1
+末语	mut6yu5	m u: t _6 . j y: _5
+本	bun2	b u: n _2
+本人	bun2yan4	b u: n _2 . j 6 n _4
+本嚟	bun2lai4	b u: n _2 . l 6j _4
+本来	bun2loi4	b u: n _2 . l O:j _4
+本科	bun2fo1	b u: n _2 . f O: _1
+本身	bun2san1	b u: n _2 . s 6 n _1
+朱妈	jyu1ma1	dz y: _1 . m a: _1
+朱瑞	jyu1seui6	dz y: _1 . s 9y _6
+朵	do2	d O: _2
+机	gei1	g ej _1
+机会	gei1wui6	g ej _1 . w u:j _6
+机器	gei1hei3	g ej _1 . h ej _3
+机场	gei1cheung4	g ej _1 . ts 9: N _4
+机遇	gei1yu6	g ej _1 . j y: _6
+机顶盒	gei1deng2hap6	g ej _1 . d E: N _2 . h 6 p _6
+杀人	saat3yan4	s a: t _3 . j 6 n _4
+杂	jaap6	dz a: p _6
+杂志	jaap6ji3	dz a: p _6 . dz i: _3
+杂志社	jaap6ji3se5	dz a: p _6 . dz i: _3 . s E: _5
+杂校	jaap6haau6	dz a: p _6 . h a:w _6
+杂粮	jaap6leung4	dz a: p _6 . l 9: N _4
+李	lei5	l ej _5
+李俊贤	lei5jeun3yin4	l ej _5 . dz 9: n _3 . j i: n _4
+李婷	lei5ting4	l ej _5 . t i: N _4
+李广婷	lei5gong2ting4	l ej _5 . g O: N _2 . t i: N _4	l ej _5 . gw O: N _2 . t i: N _4
+李震源	lei5jan3yun4	l ej _5 . dz 6 n _3 . j y: n _4
+材料	choi4liu2	ts O:j _4 . l iw _2
+村	chyun1	ts y: n _1
+条	tiu4	t iw _4
+条件	tiu4gin2	t iw _4 . g i: n _2
+来	loi4	l O:j _4
+来回	loi4wui4	l O:j _4 . w u:j _4
+来源	loi4yun4	l O:j _4 . j y: n _4
+杯	bui1	b u:j _1
+松	sung1	s u: N _1
+松动	sung1dung6	s u: N _1 . d u: N _6
+松手	sung1sau2	s u: N _1 . s 6w _2
+松松地	sung1sung1dei6	s u: N _1 . s u: N _1 . d ej _6
+板	baan2	b a: n _2
+板块	baan2faai3	b a: n _2 . f a:j _3
+极	gik6	g i: k _6
+林力	lam4lik6	l 6 m _4 . l i: k _6
+林永	lam4wing5	l 6 m _4 . w i: N _5
+林泳	lam4wing6	l 6 m _4 . w i: N _6
+果	go2	g O: _2	gw O: _2
+果啲	go2di1	g O: _2 . d i: _1	gw O: _2 . d i: _1
+果度	go2dou6	g O: _2 . d ow _6	gw O: _2 . d ow _6
+果时	go2si4	g O: _2 . s i: _4	gw O: _2 . s i: _4
+果汁店	go3jap1dim3	g O: _3 . dz 6 p _1 . d i: m _3	gw O: _3 . dz 6 p _1 . d i: m _3	g O: _3 . dz 6 p _1 . d i: n _3
+果然	go2yin4	g O: _2 . j i: n _4	gw O: _2 . j i: n _4
+果轮	go2leun4	g O: _2 . l 9: n _4	gw O: _2 . l 9: n _4
+果边	go2bin6	g O: _2 . b i: n _6	gw O: _2 . b i: n _1
+果阵	go3jan6	g O: _3 . dz 6 n _6	gw O: _3 . dz 6 n _6
+果阵时	go2jan6si4	g O: _2 . dz 6 n _6 . s i: _4	gw O: _2 . dz 6 n _6 . s i: _4
+枪	cheung1	ts 9: N _1
+枱	toi4	t O:j _4
+架	ga3	g a: _3
+某	mau5	m 6w _5
+染	yim5	j i: m _5
+柜	gwai2	gw 6j _2
+查	cha4	ts a: _4
+查下	cha4ha2	ts a: _4 . h a: _2
+查实	cha4sat6	ts a: _4 . s 6 t _6
+柳州	lau5jau1	l 6w _5 . dz 6w _1
+标	biu1	b iw _1
+标准	biu1jeun2	b iw _1 . dz 9: n _2
+标志	biu1ji3	b iw _1 . dz i: _3
+标箱	biu1seung1	b iw _1 . s 9: N _1
+栋	dung6	d u: N _6
+栋笃企	dung6duk1kei5	d u: N _6 . d u: k _1 . k ej _5
+栏	laan4	l a: n _4
+树	syu6	s y: _6
+树叶	syu6yip6	s y: _6 . j i: p _6
+校	haau6	h a:w _6
+校园	haau6yun4	h a:w _6 . j y: n _4
+校巴	haau6ba1	h a:w _6 . b a: _1
+校巴车	haau6ba1che1	h a:w _6 . b a: _1 . ts E: _1
+校服	haau6fuk6	h a:w _6 . f u: k _6
+校运会	haau6wan6wui5	h a:w _6 . w 6 n _6 . w u:j _5
+样	yeung2	j 9: N _2
+样子	yeung6ji2	j 9: N _6 . dz i: _2
+核	wat6	w 6 t _6
+核突	wat6dat6	w 6 t _6 . d 6 t _6
+根	gan1	g 6 n _1
+根本	gan1bun2	g 6 n _1 . b u: n _2
+格	gaak3	g a: k _3
+桂	gwai3	gw 6j _3
+桂华五路	gwai3wa4m5lou6	gw 6j _3 . w a: _4 . m _5 . l ow _6
+桂华公司	gwai3wa4gung1si1	gw 6j _3 . w a: _4 . g u: N _1 . s i: _1
+桂华公园	gwai3wa4gung1yun2	gw 6j _3 . w a: _4 . g u: N _1 . j y: n _2
+桂华路	gwai3wa4lou6	gw 6j _3 . w a: _4 . l ow _6
+桂城	gwai3seng2	gw 6j _3 . s E: N _2
+桂林	gwai3lam4	gw 6j _3 . l 6 m _4
+桂林理工大学	gwai3lam4lei5gung1daai6hok6	gw 6j _3 . l 6 m _4 . l ej _5 . g u: N _1 . d a:j _6 . h O: k _6
+桃	tou4	t ow _4
+桌	jeuk3	dz 9: k _3	ts 9: k _3
+档	dong2	d O: N _2	d O: N _3
+档口	dong3hau2	d O: N _3 . h 6w _2
+档案	dong2on3	d O: N _2 . O: n _3	d O: N _2 . N O: n _3
+桥底	kiu4dai2	k iw _4 . d 6j _2
+桶	tung2	t u: N _2
+梁家恩	leung4ga1yan1	l 9: N _4 . g a: _1 . j 6 n _1
+梁广伟	leung4gong2wai5	l 9: N _4 . g O: N _2 . w 6j _5
+梁淑芬	leung4suk6fan1	l 9: N _4 . s u: k _6 . f 6 n _1
+梁雅	leung4a5	l 9: N _4 . a: _5	l 9: N _4 . N a: _5
+梅	mui4	m u:j _4
+梅县	gong1yun2	g O: N _1 . j y: n _2
+梅姐	mui4je2	m u:j _4 . dz E: _2	m u:j _4 . dz E: _1	m u:j _4 . dz E: _4
+梗	gang2	g 6 N _2
+梗系	gang2hai6	g 6 N _2 . h 6j _6
+梦	mung6	m u: N _6
+梳	so1	s O: _1
+检查	jim2cha4	dz i: m _2 . ts a: _4
+检测	gim2chak1	g i: m _2 . ts 6 k _1
+棉毛	min4mou4	m i: n _4 . m ow _4
+棉胎	min4toi1	m i: n _4 . t O:j _1
+森林	sam1lam4	s 6 m _1 . l 6 m _4
+森波拉	sam1bo1la1	s 6 m _1 . b O: _1 . l a: _1
+棵	po1	p O: _1	f O: _2	f O: _1
+楚	cho2	ts O: _2
+楼	lau2	l 6w _2
+楼上	lau5seung6	l 6w _5 . s 9: N _6
+楼下	lau4ha6	l 6w _4 . h a: _6
+楼价	lau4ga3	l 6w _4 . g a: _3
+楼市	lau4si5	l 6w _4 . s i: _5
+槽	chou4	ts ow _4
+模式	mou4sik1	m ow _4 . s i: k _1
+樱花	ying1fa1	j i: N _1 . f a: _1
+樵	chiu4	ts iw _4
+樵山	chiu4saan1	ts iw _4 . s a: n _1
+樽仔	jeun1jai2	dz 9: n _1 . dz 6j _2
+橡皮	jeung6pei4	dz 9: N _6 . p ej _4
+橫掂	waang4dim1	w a: N _4 . d i: m _1
+次	chi3	ts i: _3
+次方	chi3fong1	ts i: _3 . f O: N _1
+次次	chi3chi3	ts i: _3 . ts i: _3
+次货	chi3fo3	ts i: _3 . f O: _3
+欢	fun1	f u: n _1
+欢乐谷	fun1lok6guk1	f u: n _1 . l O: k _6 . g u: k _1
+欣	yan1	j 6 n _1
+欣慰	yan1wai3	j 6 n _1 . w 6j _3
+欣赏	yan1seung2	j 6 n _1 . s 9: N _2
+欧洲	au1jau1	6w _1 . dz 6w _1	N 6w _1 . dz 6w _1
+欧莱雅	au1loi4nga5	6w _1 . l O:j _4 . N a: _5	N 6w _1 . l O:j _4 . N a: _5
+欸欸声	aai2aai2seng1	a:j _2 . a:j _2 . s E: N _1
+款	fun2	f u: n _2
+款式	fun2sik1	f u: n _2 . s i: k _1
+歌	go1	g O: _1
+止	ji2	dz i: _2
+正	jing3	dz i: N _3
+正常	jing3seung4	dz i: N _3 . s 9: N _4
+正式	jing3sik1	dz i: N _3 . s i: k _1
+正比	jing3bei2	dz i: N _3 . b ej _2
+正经	jing3ging1	dz i: N _3 . g i: N _1
+正行	jing3haang4	dz i: N _3 . h a: N _4
+正话	jing3wa6	dz i: N _3 . w a: _6
+正野	jing3ye5	dz i: N _3 . j E: _5	dz E: N _3 . j E: _5
+正门口	jing3mun4hau2	dz i: N _3 . m u: n _4 . h 6w _2
+步	bou6	b ow _6
+步行街	bou6hang4gaai1	b ow _6 . h 6 N _4 . g a:j _1	b ow _6 . h a: N _4 . g a:j _1
+武则天	mou5jak1tin1	m ow _5 . dz 6 k _1 . t i: n _1
+武汉	mou5hon3	m ow _5 . h O: n _3
+歧视	kei4si6	k ej _4 . s i: _6
+死	sei2	s ej _2
+死人	sei2yan4	s ej _2 . j 6 n _4
+死人头	sei2yan4tau4	s ej _2 . j 6 n _4 . t 6w _4
+死人野	sei2yan4ye5	s ej _2 . j 6 n _4 . j E: _5
+死咕咕	sei2gu1gu1	s ej _2 . g u: _1 . g u: _1
+死读书	sei2duk6syu1	s ej _2 . d u: k _6 . s y: _1
+残	chaan4	ts a: n _4
+残骸	chaan4haai4	ts a: n _4 . h a:j _4
+段	tyun5	t y: n _5
+母	mou5	m ow _5
+每	mui5	m u:j _5
+毒	duk6	d u: k _6
+比	bei2	b ej _2
+比如	bei2yu4	b ej _2 . j y: _4
+比较	bei2gaau3	b ej _2 . g a:w _3
+毕业	bat1yip6	b 6 t _1 . j i: p _6
+毕业游	bat1yip6yau4	b 6 t _1 . j i: p _6 . j 6w _4
+毕业论文	bat1yip6leun6man2	b 6 t _1 . j i: p _6 . l 9: n _6 . m 6 n _2	b 6 t _1 . j i: p _6 . l 9: n _6 . m 6 n _4
+毕业证	bat1yip6jing3	b 6 t _1 . j i: p _6 . dz i: N _3
+毕左业	bat1jo2yip6	b 6 t _1 . dz O: _2 . j i: p _6
+毕竟	bat1ging2	b 6 t _1 . g i: N _2
+毛	mou4	m ow _4
+毛主席	mou4jyu2jik6	m ow _4 . dz y: _2 . dz i: k _6
+毛巾	mou4gan1	m ow _4 . g 6 n _1
+毫	hou4	h ow _4
+毫厘	hou4lei4	h ow _4 . l ej _4
+气	hei3	h ej _3
+气味	hei3mei6	h ej _3 . m ej _6
+气息	hei3sik1	h ej _3 . s i: k _1
+气氛	hei3fan1	h ej _3 . f 6 n _1
+气温	hei3wan1	h ej _3 . w 6 n _1
+水	seui2	s 9y _2
+水工价	seui2gung1ga3	s 9y _2 . g u: N _1 . g a: _3
+水机	seui2gei1	s 9y _2 . g ej _1
+水果	seui2go2	s 9y _2 . g O: _2	s 9y _2 . gw O: _2
+水泥	seui2lai4	s 9y _2 . l 6j _4	s 9y _2 . n 6j _4
+水泥工	seui2lai4gung1	s 9y _2 . l 6j _4 . g u: N _1	s 9y _2 . n 6j _4 . g u: N _1
+水荫路	seui2yam3lou6	s 9y _2 . j 6 m _3 . l ow _6
+永安通	wing5on1tung1	w i: N _5 . O: n _1 . t u: N _1	w i: N _5 . N O: n _1 . t u: N _1
+永泰	wing5taai3	w i: N _5 . t a:j _3
+求	kau4	k 6w _4
+求其	kau4kei4	k 6w _4 . k ej _4
+汕头	saan3tau4	s a: n _3 . t 6w _4
+汕尾	saan3mei6	s a: n _3 . m ej _6
+汗	hon6	h O: n _6
+江	gong1	g O: N _1
+江勇	gong1yung5	g O: N _1 . j y: N _5
+江晓	gong1hiu2	g O: N _1 . h iw _2
+江杰	gong1git6	g O: N _1 . g i: t _6
+江门	gong1mun4	g O: N _1 . m u: n _4
+污染	wu1yim5	w u: _1 . j i: m _5	w u: _1 . j i: n _5
+污糟	wu1jou1	w u: _1 . dz ow _1
+汤	tong1	t O: N _1
+汤粉	tong1fan2	t O: N _1 . f 6 n _2
+汽水	hei3seui2	h ej _3 . s 9y _2
+汽车	hei3che1	h ej _3 . ts E: _1
+沃尔玛	yuk1yi5ma5	j y: k _1 . j i: _5 . m a: _5	N O: _6 . j i: _5 . m a: _5
+沊	dam2	d 6 m _2
+沐浴露	muk6yuk6lou6	m u: k _6 . j y: k _6 . l ow _6
+沖	chung1	ts u: N _1
+沖涼	chung1leung4	ts u: N _1 . l 9: N _4
+沙发	sa1faat3	s a: _1 . f a: t _3
+沙面	sa1min2	s a: _1 . m i: n _2	s a: _1 . m i: n _6
+沟	gau1	g 6w _1	k 6w _1
+沟到	kau1dou2	k 6w _1 . d ow _2
+沟通	kau1tung1	k 6w _1 . t u: N _1
+没	mut6	m u: t _6
+没有	mut6yau5	m u: t _6 . j 6w _5
+没用	mut6yung6	m u: t _6 . j y: N _6
+河	ho4	h O: _4	h O: _2
+河北	ho4bak1	h O: _4 . b 6 k _1
+河北台	ho4bak1toi4	h O: _4 . b 6 k _1 . t O:j _4
+河南	ho4naam4	h O: _4 . n a: m _4
+河边街	ho4bin1gaai1	h O: _4 . b i: n _1 . g a:j _1
+油	yau2	j 6w _2	j 6w _4
+油价	yau4ga3	j 6w _4 . g a: _3
+油漆	yau4chat1	j 6w _4 . ts 6 t _1
+油费	yau4fai3	j 6w _4 . f 6j _3	j 6w _2 . f 6j _3
+治安	ji6on1	dz i: _6 . O: n _1	dz i: _6 . N O: n _1
+沿	yun4	j y: n _4
+沿路	yun4lou6	j y: n _4 . l ow _6
+沿途	yun4tou4	j y: n _4 . t ow _4
+法	faat3	f a: t _3
+法国	faat3gok3	f a: t _3 . g O: k _3	f a: t _3 . gw O: k _3
+法政厅	faat3jing3teng1	f a: t _3 . dz i: N _3 . t E: N _1
+法院	faat3yun2	f a: t _3 . j y: n _2
+波	bo1	b O: _1
+波动	bo1dung6	b O: _1 . d u: N _6
+波钟	bo1jung1	b O: _1 . dz u: N _1
+波鞋	bo1haai4	b O: _1 . h a:j _4
+泥墙	lai4cheung4	l 6j _4 . ts 9: N _4	n 6j _4 . ts 9: N _4
+泥头车	lai4tau4che1	l 6j _4 . t 6w _4 . ts E: _1	n 6j _4 . t 6w _4 . ts E: _1
+注	jyu3	dz y: _3
+注册	jyu3chaak3	dz y: _3 . ts a: k _3
+注明	jyu3ming4	dz y: _3 . m i: N _4
+泰国	taai3gok3	t a:j _3 . g O: k _3	t a:j _3 . gw O: k _3
+泰妹	taai3mui6	t a:j _3 . m u:j _6
+泳	wing6	w i: N _6
+泼下	put3ha6	p u: t _3 . h a: _6	p u: t _3 . h a: _5
+洗	sai2	s 6j _2	s i: n _2
+洗下	sai2ha2	s 6j _2 . h a: _2
+洗埋碗	sai2maai4wun2	s 6j _2 . m a:j _4 . w u: n _2
+洗头水	sai2tau4seui2	s 6j _2 . t 6w _4 . s 9y _2
+洗完碗	sai2yun4wun2	s 6j _2 . j y: n _4 . w u: n _2
+洗手间	sai2sau2gaan1	s 6j _2 . s 6w _2 . g a: n _1
+洗碗	sai2wun2	s 6j _2 . w u: n _2
+洗费	sai2fai3	s 6j _2 . f 6j _3
+洗钱	sai2chin2	s 6j _2 . ts i: n _2
+洪秀全	hung4sau3chyun4	h u: N _4 . s 6w _3 . ts y: n _4
+活动	wut6dung6	w u: t _6 . d u: N _6
+活动期	wut6dung6kei4	w u: t _6 . d u: N _6 . k ej _4
+活跃	wut6yeuk6	w u: t _6 . j 9: k _6
+派	paai3	p a:j _3
+派别	paai3bit6	p a:j _3 . b i: t _6
+派单	paai3daan1	p a:j _3 . d a: n _1
+流	lau4	l 6w _4
+流潺	lau4saan4	l 6w _4 . s a: n _4
+流潺仔	lau4saan4jai2	l 6w _4 . s a: n _4 . dz 6j _2
+浅	chin2	ts i: n _2
+浆	jeung1	dz 9: N _1
+浊	juk6	dz u: k _6
+浊亲	juk6chan1	dz u: k _6 . ts 6 n _1
+浪费	long6fai3	l O: N _6 . f 6j _3
+海	hoi2	h O:j _2
+海之湖	hoi2ji1wu4	h O:j _2 . dz i: _1 . w u: _4
+海产品	hoi2chaan2ban2	h O:j _2 . ts a: n _2 . b 6 n _2
+海南	hoi2laam4	h O:j _2 . l a: m _4	h O:j _2 . n a: m _4
+海南岛	hoi2naam4dou2	h O:j _2 . n a: m _4 . d ow _2
+海外	hoi2oi6	h O:j _2 . O:j _6	h O:j _2 . N O:j _6
+海带	hoi2daai3	h O:j _2 . d a:j _3
+海王	hoi2wong4	h O:j _2 . w O: N _4
+海珠桥	hoi2jyu1kiu4	h O:j _2 . dz y: _1 . k iw _4
+海田	hoi2tin4	h O:j _2 . t i: n _4
+海皇粥	hoi2wong4juk1	h O:j _2 . w O: N _4 . dz u: k _1
+海贼王	hoi2chaak6wong4	h O:j _2 . ts a: k _6 . w O: N _4
+海阔天空	hoi2fut3tin1hung1	h O:j _2 . f u: t _3 . t i: n _1 . h u: N _1
+海风	hoi2fung1	h O:j _2 . f u: N _1
+海食	hoi2sik6	h O:j _2 . s i: k _6
+海鲜	hoi2sin1	h O:j _2 . s i: n _1
+海鲜粥	hoi2sin1juk1	h O:j _2 . s i: n _1 . dz u: k _1
+浸	jam3	dz 6 m _3
+浸温泉	jam3wan1chyun4	dz 6 m _3 . w 6 n _1 . ts y: n _4
+消夜	siu1ye6	s iw _1 . j E: _6
+消息	siu1sik1	s iw _1 . s i: k _1
+消磨	siu1mo4	s iw _1 . m O: _4
+消费	siu1fai3	s iw _1 . f 6j _3
+消费者	siu1fai3je2	s iw _1 . f 6j _3 . dz E: _2
+涨	jeung2	dz 9: N _2	dz 9: N _3
+涼	leung4	l 9: N _4
+淡毛毛	daam6mou4mou4	d a: m _6 . m ow _4 . m ow _4
+淤	yu1	j y: _1
+深圳	sam1jan3	s 6 m _1 . dz 6 n _3	s 6 n _1 . dz 6 n _3
+深城指	sam1seng2ji2	s 6 m _1 . s E: N _2 . dz i: _2
+添	tim1	t i: m _1	t i: n _1
+清	cheng1	ts E: N _1	ts i: N _1
+清华	ching1wa4	ts i: N _1 . w a: _4
+清场	cheng1cheung4	ts E: N _1 . ts 9: N _4
+清大	cheng1daai6	ts E: N _1 . d a:j _6
+清新温矿泉	ching1san1wan1kong3chyun4	ts i: N _1 . s 6 n _1 . w 6 n _1 . k O: N _3 . ts y: n _4	ts i: N _1 . s 6 n _1 . w 6 n _1 . kw O: N _3 . ts y: n _4
+清明	ching1ming4	ts i: N _1 . m i: N _4
+清晰	ching1sik1	ts i: N _1 . s i: k _1
+清机	cheng1gei1	ts E: N _1 . g ej _1
+清楚	ching1cho2	ts i: N _1 . ts O: _2
+清洁	ching1git3	ts i: N _1 . g i: t _3
+清清地	cheng1cheng1dei5	ts E: N _1 . ts E: N _1 . d ej _5
+清远	ching1yun5	ts i: N _1 . j y: n _5
+清静	ching1jing6	ts i: N _1 . dz i: N _6
+渔人寿司	yu4yan4sau6si1	j y: _4 . j 6 n _4 . s 6w _6 . s i: _1
+減	gaam2	g a: m _2
+減到肥	gaam2dou2fei4	g a: m _2 . d ow _2 . f ej _4
+渠	keui4	k 9y _4
+渣	ja1	dz a: _1
+温习	wan1jaap6	w 6 n _1 . dz a: p _6
+温柔	wan1yau4	w 6 n _1 . j 6w _4
+温泉	wan1chyun4	w 6 n _1 . ts y: n _4
+温馨	wan1hing1	w 6 n _1 . h i: N _1
+港	gong2	g O: N _2
+港澳通行证	gong2ou3tung1hang4jing3	g O: N _2 . ow _3 . t u: N _1 . h 6 N _4 . dz i: N _3	g O: N _2 . N ow _3 . t u: N _1 . h 6 N _4 . dz i: N _3
+游	yau4	j 6w _4
+游下水	yau4ha2seui2	j 6w _4 . h a: _2 . s 9y _2
+游乐	yau4lok6	j 6w _4 . l O: k _6
+游戏	yau4hei3	j 6w _4 . h ej _3
+游水	yau4seui2	j 6w _4 . s 9y _2
+游泳	yau4wing6	j 6w _4 . w i: N _6
+游轮	yau4leun4	j 6w _4 . l 9: n _4
+湖北	wu4bak1	w u: _4 . b 6 k _1
+湖北台	wu4bak1toi4	w u: _4 . b 6 k _1 . t O:j _4
+湖南	wu4laam4	w u: _4 . l a: m _4	w u: _4 . n a: m _4
+湖南台	wu4naam4toi4	w u: _4 . n a: m _4 . t O:j _4
+湛师	jaam3si1	dz a: m _3 . s i: _1
+湛江	jaam3gong1	dz a: m _3 . g O: N _1
+湿	sap1	s 6 p _1
+滋润	ji1yeun6	dz i: _1 . j 9: n _6
+滑	waat6	w a: t _6
+滑雪	waat6syut3	w a: t _6 . s y: t _3
+滗	bei3	b ej _3
+滞	jai6	dz 6j _6
+滞后	jai6hau6	dz 6j _6 . h 6w _6
+满	mun5	m u: n _5
+漏	lou6	l ow _6
+演唱会	yin2cheung3wui2	j i: n _2 . ts 9: N _3 . w u:j _2
+漫游	maan6yau4	m a: n _6 . j 6w _4
+潜水	chim4seui2	ts i: m _4 . s 9y _2	ts i: n _4 . s 9y _2
+潮汕尾	chiu4saan3mei5	ts iw _4 . s a: n _3 . m ej _5
+澳	ou3	ow _3
+澳大利亚	ou3daai6lei6a3	ow _3 . d a:j _6 . l ej _6 . a: _3	ow _3 . d a:j _6 . l ej _6 . N a: _3	N ow _3 . d a:j _6 . l ej _6 . N a: _3
+澳币	ou3bai6	ow _3 . b 6j _6
+澳洲	ou3jau1	ow _3 . dz 6w _1	N ow _3 . dz 6w _1
+澳纸	ou3ji2	ow _3 . dz i: _2
+澳门	ou3mun2	ow _3 . m u: n _2	N ow _3 . m u: n _2
+激	gik1	g i: k _1
+激动	gik1dung6	g i: k _1 . d u: N _6
+激情	gik1ching4	g i: k _1 . ts i: N _4
+激死	gik1sei2	g i: k _1 . s ej _2
+灌	gun3	g u: n _3
+灌输下	gun3syu1ha5	g u: n _3 . s y: _1 . h a: _5
+火影	fo2ying2	f O: _2 . j i: N _2
+火影疾风传	fo2ying2jat6fung1chyun4	f O: _2 . j i: N _2 . dz 6 t _6 . f u: N _1 . ts y: n _4
+火炉山	fo2lou4saan1	f O: _2 . l ow _4 . s a: n _1
+火炬路	fo2geui6lou6	f O: _2 . g 9y _6 . l ow _6
+火烧云	fo2siu1wan4	f O: _2 . s iw _1 . w 6 n _4
+火车	fo2che1	f O: _2 . ts E: _1
+火车站	fo2che1jaam6	f O: _2 . ts E: _1 . dz a: m _6
+火锅	fo2wo1	f O: _2 . w O: _1
+灭	mit6	m i: t _6
+灯	dang1	d 6 N _1
+灯泡	dang1paau1	d 6 N _1 . p a:w _1
+灯管	dang1gun2	d 6 N _1 . g u: n _2
+灰奇路	fui1kei4lou6	f u:j _1 . k ej _4 . l ow _6
+灵活	ling4wut6	l i: N _4 . w u: t _6
+灵活下	ling4wut6ha5	l i: N _4 . w u: t _6 . h a: _5
+灵芝汤	ling4ji1tong1	l i: N _4 . dz i: _1 . t O: N _1
+炉	lou4	l ow _4
+炒	chaau2	ts a:w _2
+炒股	chaau2gu2	ts a:w _2 . g u: _2
+炖	dan6	d 6 n _6
+炳	bing2	b i: N _2
+点	din2	d i: n _2	d i: m _2
+点下	din2ha5	d i: n _2 . h a: _5	d i: m _2 . h a: _5
+点样	din2yeung2	d i: n _2 . j 9: N _2	d i: m _2 . j 9: N _2
+点样样	din2yeung2yeung2	d i: n _2 . j 9: N _2 . j 9: N _2	d i: m _2 . j 9: N _2 . j 9: N _2
+点算	din2syun3	d i: n _2 . s y: n _3	d i: m _2 . s y: n _3
+点解	din2gaai2	d i: n _2 . g a:j _2	d i: m _2 . g a:j _2
+点钟	din2jung1	d i: n _2 . dz u: N _1	d i: m _2 . dz u: N _1
+烂	laan6	l a: n _6
+烂烂吊吊	laan6laan6diu3diu3	l a: n _6 . l a: n _6 . d iw _3 . d iw _3
+烈士陵园	lit6si6ling4yun4	l i: t _6 . s i: _6 . l i: N _4 . j y: n _4
+烟	yin1	j i: n _1
+烦	faan4	f a: n _4
+烧	siu1	s iw _1
+烧烤	siu1haau2	s iw _1 . h a:w _2
+烧鸡	siu1gai1	s iw _1 . g 6j _1
+热	yit6	j i: t _6
+热一下	yit6yat1ha5	j i: t _6 . j 6 t _1 . h a: _5
+热情	yit6ching4	j i: t _6 . ts i: N _4
+热气	yit6hei3	j i: t _6 . h ej _3
+热水	yit6seui2	j i: t _6 . s 9y _2
+热水凉	yit6seui2leung4	j i: t _6 . s 9y _2 . l 9: N _4
+热点	yit6dim2	j i: t _6 . d i: m _2
+热辣辣	yit6laat6laat6	j i: t _6 . l a: t _6 . l a: t _6
+热野	yit6ye5	j i: t _6 . j E: _5
+热闹	yit6laau6	j i: t _6 . l a:w _6	j i: t _6 . n a:w _6
+焖	man1	m 6 n _1
+然之后	yin4ji1hau6	j i: n _4 . dz i: _1 . h 6w _6
+然后	yin4hau6	j i: n _4 . h 6w _6
+煎	jin1	dz i: n _1
+照	jiu3	dz iw _3
+照下	jiu3ha5	dz iw _3 . h a: _5
+照常	jiu3seung4	dz iw _3 . s 9: N _4
+照得	jiu3dak1	dz iw _3 . d 6 k _1
+照旧	jiu3gau6	dz iw _3 . g 6w _6
+照顾	jiu3gu3	dz iw _3 . g u: _3
+煮	jyu2	dz y: _2
+煮下饭	jyu2ha5faan6	dz y: _2 . h a: _5 . f a: n _6
+煮完饭	jyu2yun4faan6	dz y: _2 . j y: n _4 . f a: n _6
+煮菜	jyu2choi3	dz y: _2 . ts O:j _3
+煮野	jyu2ye5	dz y: _2 . j E: _5
+煮餸	jyu2sung3	dz y: _2 . s u: N _3
+煮饭	jyu2faan6	dz y: _2 . f a: n _6
+煲	bou1	b ow _1
+煲下	bou1ha5	b ow _1 . h a: _5
+煲到	bou1dou2	b ow _1 . d ow _2
+煲剧	bou1kek6	b ow _1 . k E: k _6
+煲汤	bou1tong1	b ow _1 . t O: N _1
+熟	suk6	s u: k _6
+熟唔熟	suk6m4suk6	s u: k _6 . m _4 . s u: k _6
+熟客	suk6haak3	s u: k _6 . h a: k _3
+熟熟地	suk6suk6dei5	s u: k _6 . s u: k _6 . d ej _5
+燕	yin1	j i: n _1	j i: n _3
+燕姐	yin3je2	j i: n _3 . dz E: _2
+燥热	chou3yit6	ts ow _3 . j i: t _6
+爬下山	pa4ha2saan1	p a: _4 . h a: _2 . s a: n _1
+爬唔到	pa4m4dou2	p a: _4 . m _4 . d ow _2
+爬唔到山	pa4m4dou3saan1	p a: _4 . m _4 . d ow _3 . s a: n _1
+爬山	pa4saan1	p a: _4 . s a: n _1
+爱	oi1	O:j _1	N O:j _3
+爱好	oi3hou3	O:j _3 . h ow _3	N O:j _3 . h ow _3
+爱情	oi3ching4	O:j _3 . ts i: N _4	N O:j _3 . ts i: N _4
+爱情连连看	oi3ching4lin4lin4hon3	O:j _3 . ts i: N _4 . l i: n _4 . l i: n _4 . h O: n _3	N O:j _3 . ts i: N _4 . l i: n _4 . l i: n _4 . h O: n _3
+爱情面面睇	oi3ching4min6min6tai2	O:j _3 . ts i: N _4 . m i: n _6 . m i: n _6 . t 6j _2	N O:j _3 . ts i: N _4 . m i: n _6 . m i: n _6 . t 6j _2
+爱情面面睇嚟	ngoi3ching4min6min6tai2lai4	N O:j _3 . ts i: N _4 . m i: n _6 . m i: n _6 . t 6j _2 . l 6j _4
+爱意	oi3yi3	O:j _3 . j i: _3	N O:j _3 . j i: _3
+爷	ye4	j E: _4
+爷爷	ye4ye2	j E: _4 . j E: _2	j E: _4 . j E: _4
+爸	ba1	b a: _1
+爸妈	ba1ma1	b a: _1 . m a: _1
+爸爸	ba1ba1	b a: _1 . b a: _1	b a: _4 . b a: _1
+爽	song2	s O: N _2
+爽唔爽	song2m4song2	s O: N _2 . m _4 . s O: N _2
+爽肤水	song2fu1seui2	s O: N _2 . f u: _1 . s 9y _2
+版	baan2	b a: n _2
+牌	paai4	p a:j _4
+牌子	paai4ji2	p a:j _4 . dz i: _2
+牙刷	a4chaat3	a: _4 . ts a: t _3	N a: _4 . ts a: t _3
+牙膏	a4gou1	a: _4 . g ow _1	N a: _4 . g ow _1
+牛仔	au4jai2	6w _4 . dz 6j _2	N 6w _4 . dz 6j _2
+牛奶	au4laai5	6w _4 . l a:j _5	6w _4 . n a:j _5	N 6w _4 . n a:j _5
+牛排	au4paai4	6w _4 . p a:j _4	N 6w _4 . p a:j _4
+牛肉	au4yuk6	6w _4 . j y: k _6	N 6w _4 . j y: k _6
+物	mat6	m 6 t _6
+物业	mat6yip6	m 6 t _6 . j i: p _6
+物价	mat6ga3	m 6 t _6 . g a: _3
+物归原主	mat6gwai1yun4jyu2	m 6 t _6 . gw 6j _1 . j y: n _4 . dz y: _2
+物流	mat6lau4	m 6 t _6 . l 6w _4
+物质	mat6jat1	m 6 t _6 . dz 6 t _1
+特价	dak6ga3	d 6 k _6 . g a: _3
+特价野	dak6ga3ye5	d 6 k _6 . g a: _3 . j E: _5
+特別	dak6bit6	d 6 k _6 . b i: t _6
+特务	dak6mou6	d 6 k _6 . m ow _6
+特定	dak6ding6	d 6 k _6 . d i: N _6
+特登	dak6dang1	d 6 k _6 . d 6 N _1
+特色	dak6sik1	d 6 k _6 . s i: k _1
+犀	sai1	s 6j _1
+犀利	sai1lei6	s 6j _1 . l ej _6
+犯法	faan6faat3	f a: n _6 . f a: t _3
+狠	han2	h 6 n _2
+狠心	han2sam1	h 6 n _2 . s 6 m _1
+独市	duk6si5	d u: k _6 . s i: _5
+狮	si1	s i: _1
+狮山	si1saan1	s i: _1 . s a: n _1
+猛	maang5	m a: N _5	m a: n _5
+猛料	maan5liu6	m a: n _5 . l iw _6
+猛风	maan5fung1	m a: n _5 . f u: N _1
+猜疑	chaai1yi4	ts a:j _1 . j i: _4
+猪	jyu1	dz y: _1
+猪唛	jyu1mak1	dz y: _1 . m 6 k _1
+猪笼入水	jyu1lung4yap6seui2	dz y: _1 . l u: N _4 . j 6 p _6 . s 9y _2
+猪肉	jyu1yuk6	dz y: _1 . j y: k _6
+猪脚	jyu1geuk3	dz y: _1 . g 9: k _3
+猫	maau1	m a:w _1
+玉	yuk6	j y: k _6
+玉兰油	yuk6laan4yau2	j y: k _6 . l a: n _4 . j 6w _2
+玉婵	yuk6sim4	j y: k _6 . s i: m _4
+王	wong4	w O: N _4
+王佳	wong4gaai1	w O: N _4 . g a:j _1
+王希婷	wong4hei1ting4	w O: N _4 . h ej _1 . t i: N _4
+王文勇	wong4man2yung2	w O: N _4 . m 6 n _2 . j y: N _2
+王文燕	wong4man2yin3	w O: N _4 . m 6 n _2 . j i: n _3
+王陈	wong4chan4	w O: N _4 . ts 6 n _4
+玩	waan2	w a: n _2	w a: n _5
+玩下	waan2ha5	w a: n _2 . h a: _5
+玩到	waan2dou3	w a: n _2 . d ow _3	w a: n _2 . d ow _2
+环境	waan4ging2	w a: n _4 . g i: N _2
+环市路	waan4si5lou6	w a: n _4 . s i: _5 . l ow _6
+现代	yin6doi6	j i: n _6 . d O:j _6
+现在	yin6joi6	j i: n _6 . dz O:j _6
+现场	yin6cheung4	j i: n _6 . ts 9: N _4
+现实	yin6sat6	j i: n _6 . s 6 t _6
+现金	yin6gam1	j i: n _6 . g 6 m _1
+珍	jan1	dz 6 n _1
+珠	jyu1	dz y: _1
+珠江卫视	jyu1gong1wai6si6	dz y: _1 . g O: N _1 . w 6j _6 . s i: _6
+珠江台	jyu1gong1toi4	dz y: _1 . g O: N _1 . t O:j _4
+班	baan1	b a: n _1
+球	kau4	k 6w _4
+球场	kau4cheung4	k 6w _4 . ts 9: N _4
+琅佳	long4gaai1	l O: N _4 . g a:j _1
+理	lei5	l ej _5
+理得	lei5dak1	l ej _5 . d 6 k _1
+理由	lei5yau4	l ej _5 . j 6w _4
+理财	lei5choi4	l ej _5 . ts O:j _4
+琪	kei4	k ej _4
+琳琳	lam4lam4	l 6 m _4 . l 6 m _4	l 6 n _4 . l 6 n _4
+琶洲	pa4jau1	p a: _4 . dz 6w _1
+瑜伽	yu4ga1	j y: _4 . g a: _1
+瑞士	seui6si6	s 9y _6 . s i: _6
+瑶柱白果粥	yiu4chyu5baak6go2juk1	j iw _4 . ts y: _5 . b a: k _6 . g O: _2 . dz u: k _1
+瓜	gwa1	gw a: _1
+甜	tim4	t i: m _4	t i: n _4
+生	saang1	s a: N _1	s 6 N _1
+生仔	saang1jai2	s a: N _1 . dz 6j _2
+生唔生到	saang1m4saang1dou3	s a: N _1 . m _4 . s a: N _1 . d ow _3
+生态园	sang1taai3yun4	s 6 N _1 . t a:j _3 . j y: n _4
+生意	saang1yi3	s a: N _1 . j i: _3
+生日	saang1yat6	s a: N _1 . j 6 t _6
+生果	saang1go2	s a: N _1 . g O: _2	s a: N _1 . gw O: _2
+生活	sang1wut6	s 6 N _1 . w u: t _6
+生活费	sang1wut6fai3	s 6 N _1 . w u: t _6 . f 6j _3
+生物	saang1mat6	s a: N _1 . m 6 t _6
+生痱滋	sang1fai2ji1	s 6 N _1 . f 6j _2 . dz i: _1	s a: N _1 . f 6j _2 . dz i: _1
+生虫	saang1chung4	s a: N _1 . ts u: N _4
+用	yung6	j y: N _6
+用于	yung6yu1	j y: N _6 . j y: _1
+用到	yung6dou3	j y: N _6 . d ow _3	j y: N _6 . d ow _2
+用唔到	yung6m4dou2	j y: N _6 . m _4 . d ow _2
+用用下	yung6yung6ha5	j y: N _6 . j y: N _6 . h a: _5
+用途	yung6tou4	j y: N _6 . t ow _4
+用钱	yung6chin2	j y: N _6 . ts i: n _2
+甩	lat1	l 6 t _1
+由	yau4	j 6w _4
+甲亢	gaap3kong3	g a: p _3 . k O: N _3
+甲块	gaap3faai3	g a: p _3 . f a:j _3
+申	san1	s 6 n _1
+电	din6	d i: n _6
+电信	din6seun3	d i: n _6 . s 9: n _3
+电器店	din6hei3dim3	d i: n _6 . h ej _3 . d i: m _3
+电影	din6ying2	d i: n _6 . j i: N _2
+电影票	din6ying2piu3	d i: n _6 . j i: N _2 . p iw _3
+电影院	din6ying2yun2	d i: n _6 . j i: N _2 . j y: n _2
+电梯	din6tai1	d i: n _6 . t 6j _1
+电梯口	din6tai1hau2	d i: n _6 . t 6j _1 . h 6w _2
+电池炉	din6chi4lou4	d i: n _6 . ts i: _4 . l ow _4
+电源	din6yun4	d i: n _6 . j y: n _4
+电脑	din6lou5	d i: n _6 . l ow _5	d i: n _6 . n ow _5
+电视	din6si6	d i: n _6 . s i: _6
+电视剧	din6si6kek6	d i: n _6 . s i: _6 . k E: k _6
+电视台	din6si6toi4	d i: n _6 . s i: _6 . t O:j _4
+电视机	din6si6gei1	d i: n _6 . s i: _6 . g ej _1
+电话	din6wa2	d i: n _6 . w a: _2
+电话号码	din6wa2hou6ma5	d i: n _6 . w a: _2 . h ow _6 . m a: _5
+电话录音	din6wa2luk6yam1	d i: n _6 . w a: _2 . l u: k _6 . j 6 m _1
+电话线	din6wa2sin3	d i: n _6 . w a: _2 . s i: n _3
+电路	din6lou6	d i: n _6 . l ow _6
+电阻	din6jo2	d i: n _6 . dz O: _2
+男	laam4	l a: m _4	n a: m _4
+男人	laam4yan2	l a: m _4 . j 6 n _2	n a: m _4 . j 6 n _2
+男仔	laam4jai2	l a: m _4 . dz 6j _2	n a: m _4 . dz 6j _2
+男仔头	laam4jai2tau4	l a: m _4 . dz 6j _2 . t 6w _4	n a: m _4 . dz 6j _2 . t 6w _4
+男士	laam4si6	l a: m _4 . s i: _6	n a: m _4 . s i: _6
+男步	laam4bou6	l a: m _4 . b ow _6	n a: m _4 . b ow _6
+男生	laam4sang1	l a: m _4 . s 6 N _1	n a: m _4 . s 6 N _1
+画	wa2	w a: _2	w a: _6	w a: k _6
+画壁	wa2bik1	w a: _2 . b i: k _1	w a: _6 . b i: k _1	w a: k _6 . b i: k _1
+畀	bei2	b ej _2
+畀唔畀	bei2m4bei2	b ej _2 . m _4 . b ej _2
+畀钱	bei2chin2	b ej _2 . ts i: n _2
+畅姐	cheung3je2	ts 9: N _3 . dz E: _2	ts 9: N _3 . dz E: _1
+畅顺	cheung3seun6	ts 9: N _3 . s 9: n _6
+留	lau4	l 6w _4
+留餸	lau4sung3	l 6w _4 . s u: N _3
+番	faan1	f a: n _1
+番禺	pun1yu4	p u: n _1 . j y: _4
+番薯	faan1syu4	f a: n _1 . s y: _4	f a: n _1 . s y: _2
+病	beng6	b E: N _6
+症状	jing1jong6	dz i: N _1 . dz O: N _6	dz i: N _3 . dz O: N _6
+痕	han4	h 6 n _4
+痛	tung3	t u: N _3
+痴	chi1	ts i: _1
+痴线	chi1sin3	ts i: _1 . s i: n _3
+瘦	sau3	s 6w _3
+瘦身	sau3san1	s 6w _3 . s 6 n _1
+癫	din1	d i: n _1
+登	dang1	d 6 N _1
+登山	dang1saan1	d 6 N _1 . s a: n _1
+登记	dang1gei3	d 6 N _1 . g ej _3
+白	baak6	b a: k _6
+白云	baak6wan4	b a: k _6 . w 6 n _4
+白云山	baak6wan4saan1	b a: k _6 . w 6 n _4 . s a: n _1
+白云湖	baak6wan4wu4	b a: k _6 . w 6 n _4 . w u: _4
+白天	baak6tin1	b a: k _6 . t i: n _1
+白燕	baak6yin3	b a: k _6 . j i: n _3
+白燕街	baak6yin3gaai1	b a: k _6 . j i: n _3 . g a:j _1
+白话	baak6wa2	b a: k _6 . w a: _2
+百	baak3	b a: k _3
+百佳	baak3gaai1	b a: k _3 . g a:j _1
+百分之	baak3fan6ji1	b a: k _3 . f 6 n _6 . dz i: _1
+百年糊涂	baak3lin4wu4tou4	b a: k _3 . l i: n _4 . w u: _4 . t ow _4
+百老汇	baak3lou5wui6	b a: k _3 . l ow _5 . w u:j _6
+百般	baak3bun1	b a: k _3 . b u: n _1
+的士	dik1si2	d i: k _1 . s i: _2
+的确	dik1kok3	d i: k _1 . k O: k _3
+皇城	wong4sing4	w O: N _4 . s i: N _4
+皇帝	wong4dai3	w O: N _4 . d 6j _3
+皮	pei4	p ej _4
+盆	pun4	p u: n _4
+盏	jaan2	dz a: n _2
+盐步	yim4bou6	j i: m _4 . b ow _6
+监控	gaam1hung3	g a: m _1 . h u: N _3
+盒	hap6	h 6 p _6
+盘	pun4	p u: n _4
+盛	sing6	s i: N _6
+目前	muk6chin4	m u: k _6 . ts i: n _4
+目录	muk6luk6	m u: k _6 . l u: k _6
+目标	muk6biu1	m u: k _6 . b iw _1
+目的	muk6dik1	m u: k _6 . d i: k _1
+直	jik6	dz i: k _6
+直升机	jik6sing1gei1	dz i: k _6 . s i: N _1 . g ej _1
+直升飞机	jik6sing1fei1gei1	dz i: k _6 . s i: N _1 . f ej _1 . g ej _1
+直头	jik6tau4	dz i: k _6 . t 6w _4
+直情	jik6ching4	dz i: k _6 . ts i: N _4
+直接	jik6jip3	dz i: k _6 . dz i: p _3
+直流	jik6lau4	dz i: k _6 . l 6w _4
+直流电	jik6lau4din6	dz i: k _6 . l 6w _4 . d i: n _6
+直程	jik6ching4	dz i: k _6 . ts i: N _4
+相	seung1	s 9: N _1
+相	seung2	s 9: N _2
+相信	seung1seun3	s 9: N _1 . s 9: n _3
+相对	seung1deui3	s 9: N _1 . d 9y _3
+相机	seung2gei1	s 9: N _2 . g ej _1
+相比	seung1bei2	s 9: N _1 . b ej _2
+相比之下	seung1bei2ji1ha6	s 9: N _1 . b ej _2 . dz i: _1 . h a: _6
+省内	saang2noi6	s a: N _2 . n O:j _6
+看铺	hon1pou3	h O: n _1 . p ow _3	h O: n _1 . p ow _2
+真	jan1	dz 6 n _1
+真人	jan1yan4	dz 6 n _1 . j 6 n _4
+真唔真	jan1m4jan1	dz 6 n _1 . m _4 . dz 6 n _1
+真正	jan1jing3	dz 6 n _1 . dz i: N _3
+真系	jan1hai6	dz 6 n _1 . h 6j _6
+真话	jan1wa2	dz 6 n _1 . w a: _2	dz 6 n _1 . w a: _6
+眨下眼	jaap6ha5aan5	dz a: p _6 . h a: _5 . a: n _5	dz a: m _2 . h a: _5 . a: n _5
+眼	aan5	a: n _5	N a: n _5
+眼望	aan5mong6	a: n _5 . m O: N _6	N a: n _5 . m O: N _6
+眼火爆	aan5fo2baau3	a: n _5 . f O: _2 . b a:w _3	N a: n _5 . f O: _2 . b a:w _3
+眼突	aan5dat6	a: n _5 . d 6 t _6	N a: n _5 . d 6 t _6
+眼训	aan5fan3	a: n _5 . f 6 n _3	N a: n _5 . f 6 n _3
+着	jeuk6	dz 9: k _6
+着唔到	jeuk6m4dou2	dz 9: k _6 . m _4 . d ow _2
+着埋	jeuk6maai4	dz 9: k _6 . m a:j _4
+着数	jeuk6sou3	dz 9: k _6 . s ow _3
+着落	jeuk6lok6	dz 9: k _6 . l O: k _6
+着衫	jeuk6saam1	dz 9: k _6 . s a: m _1
+睇	tai2	t 6j _2
+睇下	tai2ha5	t 6j _2 . h a: _5
+睇书	tai2syu1	t 6j _2 . s y: _1
+睇到	tai2dou3	t 6j _2 . d ow _3	t 6j _2 . d ow _2
+睇唔到	tai2m4dou2	t 6j _2 . m _4 . d ow _2	t 6j _2 . m _4 . d ow _3	t 6j _2 . N _4 . d ow _2	t 6j _2 . N _4 . d ow _3
+睇唔过眼	tai2m4go3aan5	t 6j _2 . m _4 . g O: _3 . a: n _5
+睇嚟	tai2lei4	t 6j _2 . l ej _4
+睇得出	tai2dak1cheut1	t 6j _2 . d 6 k _1 . ts 9: t _1
+睇得到	tai2dak1dou2	t 6j _2 . d 6 k _1 . d ow _2
+睇戏	tai2hei3	t 6j _2 . h ej _3
+睇来	tai2loi4	t 6j _2 . l O:j _4
+睇档	tai2dong3	t 6j _2 . d O: N _3
+睇睇下	tai2tai2ha5	t 6j _2 . t 6j _2 . h a: _5
+睇落	tai2lok6	t 6j _2 . l O: k _6
+睇见	tai2gin3	t 6j _2 . g i: n _3
+督	duk1	d u: k _1
+睬	choi2	ts O:j _2
+瞄	miu4	m iw _4
+瞌眼训	hap1aan5fan3	h 6 p _1 . a: n _5 . f 6 n _3
+知	ji1	dz i: _1	dz i: _3
+知唔知	ji1m4ji1	dz i: _1 . m _4 . dz i: _1
+知得到	ji1dak1dou2	dz i: _1 . d 6 k _1 . d ow _2
+知识	ji1sik1	dz i: _1 . s i: k _1	dz i: _3 . s i: k _1
+知识点	ji3sik1dim2	dz i: _3 . s i: k _1 . d i: m _2	dz i: _1 . s i: k _1 . d i: m _2
+知识面	ji3sik1min2	dz i: _3 . s i: k _1 . m i: n _2	dz i: _3 . s i: k _1 . m i: n _6	dz i: _1 . s i: k _1 . m i: n _2	dz i: _1 . s i: k _1 . m i: n _6
+知道	ji1dou3	dz i: _1 . d ow _3
+短	dyun2	d y: n _2
+短线	dyun2sin3	d y: n _2 . s i: n _3
+石围塘	sek6wai4tong4	s E: k _6 . w 6j _4 . t O: N _4
+石油	sek6yau4	s E: k _6 . j 6w _4
+石湾	sek6waan1	s E: k _6 . w a: n _1
+研究	yin4kau3	j i: n _4 . k 6w _3
+研究组	yin4gau3jou2	j i: n _4 . g 6w _3 . dz ow _2
+砧板	jam1baan2	dz 6 m _1 . b a: n _2
+砰	ping1	p i: N _1	p i: N _4
+硬	aang6	a: N _6	N a: N _6
+硬盘	aang6pun4	a: N _6 . p u: n _4
+硬系	aang6hai6	a: N _6 . h 6j _6	a: N _2 . h 6j _6	N a: N _6 . h 6j _6	N a: N _2 . h 6j _6
+确唔确认	kok3m4kok3ying6	k O: k _3 . m _4 . k O: k _3 . j i: N _6
+确定	kok3ding6	k O: k _3 . d i: N _6
+确实	kok3sat6	k O: k _3 . s 6 t _6
+确认	kok3ying6	k O: k _3 . j i: N _6
+确认下	kok3ying6ha5	k O: k _3 . j i: N _6 . h a: _5
+碌卡	luk1ka1	l u: k _1 . k a: _1
+碌唔到钱	luk1m4dou2chin2	l u: k _1 . m _4 . d ow _2 . ts i: n _2
+碎	seui3	s 9y _3
+碗	wun2	w u: n _2
+碘	din1	d i: n _1
+示范	si6faan6	s i: _6 . f a: n _6
+礼	lai5	l 6j _5
+礼拜	lai5baai3	l 6j _5 . b a:j _3
+礼拜一	lai5baai3yat1	l 6j _5 . b a:j _3 . j 6 t _1
+礼拜六	lai5baai3luk6	l 6j _5 . b a:j _3 . l u: k _6
+礼拜四	lai5baai3sei3	l 6j _5 . b a:j _3 . s ej _3
+礼拜日	lai5baai3yat6	l 6j _5 . b a:j _3 . j 6 t _6
+礼物	lai5mat6	l 6j _5 . m 6 t _6
+礼貌	lai5maau6	l 6j _5 . m a:w _6
+社会	se5wui2	s E: _5 . w u:j _2
+社保	se5bou2	s E: _5 . b ow _2
+社区	se5keui1	s E: _5 . k 9y _1
+神	san4	s 6 n _4
+神岗	san4gong1	s 6 n _4 . g O: N _1
+神岗镇	san4gong1jan3	s 6 n _4 . g O: N _1 . dz 6 n _3
+神神地	san4san4dei5	s 6 n _4 . s 6 n _4 . d ej _5
+神神秘秘	san4san4bei3bei3	s 6 n _4 . s 6 n _4 . b ej _3 . b ej _3
+祥婆	cheung4po4	ts 9: N _4 . p O: _4
+票	piu3	p iw _3
+禁	gam1	g 6 m _1
+禅城区	sim4sing4keui1	s i: m _4 . s i: N _4 . k 9y _1
+福	fuk1	f u: k _1
+福田	fuk1tin4	f u: k _1 . t i: n _4
+离	lei4	l ej _4
+离嗮谱	lei4saai3pou2	l ej _4 . s a:j _3 . p ow _2
+离婚	lei4fan1	l ej _4 . f 6 n _1
+离开	lei4hoi1	l ej _4 . h O:j _1
+离谱	lei4pou2	l ej _4 . p ow _2
+私下	si1ha6	s i: _1 . h a: _6
+私人	si1yan4	s i: _1 . j 6 n _4
+秋华	chau1wa4	ts 6w _1 . w a: _4
+秋华姐	chau1wa4je2	ts 6w _1 . w a: _4 . dz E: _2	ts 6w _1 . w a: _4 . dz E: _1
+种	jung2	dz u: N _2
+种	jung3	dz u: N _3
+科	fo1	f O: _1
+科代	fo1doi6	f O: _1 . d O:j _6
+租	jou1	dz ow _1
+租客	jou1haak3	dz ow _1 . h a: k _3
+租屋	jou1uk1	dz ow _1 . u: k _1
+租车	jou1che1	dz ow _1 . ts E: _1
+秦	cheun4	ts 9: n _4
+秦敏	cheun4man5	ts 9: n _4 . m 6 n _5
+积极性	jik1gik6sing3	dz i: k _1 . g i: k _6 . s i: N _3
+称	ching1	ts i: N _1
+称	ching3	ts i: N _3
+程	ching4	ts i: N _4
+程度	ching4dou6	ts i: N _4 . d ow _6
+税	seui3	s 9y _3
+税所	seui3so2	s 9y _3 . s O: _2
+稳	wan2	w 6 n _2
+稳定	wan2ding6	w 6 n _2 . d i: N _6
+稳阵	wan2jan6	w 6 n _2 . dz 6 n _6
+究竟	gau3ging2	g 6w _3 . g i: N _2
+穷	kung4	k u: N _4
+穷人	kung4yan4	k u: N _4 . j 6 n _4
+穷野	kung4ye5	k u: N _4 . j E: _5
+空	hung1	h u: N _1
+空中花园	hung1jung1fa1yun4	h u: N _1 . dz u: N _1 . f a: _1 . j y: n _4
+空气	hung1hei3	h u: N _1 . h ej _3
+空空辽辽	hung1hung1liu4liu4	h u: N _1 . h u: N _1 . l iw _4 . l iw _4
+空运	hung1wan6	h u: N _1 . w 6 n _6
+空间	hung1gaan1	h u: N _1 . g a: n _1
+穿	chyun1	ts y: n _1
+突	dat6	d 6 t _6
+突发	dat6faat3	d 6 t _6 . f a: t _3
+突唔破到	dat6m4po3dou2	d 6 t _6 . m _4 . p O: _3 . d ow _2
+突然	dat6yin4	d 6 t _6 . j i: n _4
+突然间	dat6yin4gaan1	d 6 t _6 . j i: n _4 . g a: n _1
+突破	dat6po3	d 6 t _6 . p O: _3
+突破唔到	dat6po3m4dou2	d 6 t _6 . p O: _3 . m _4 . d ow _2
+窒	jat6	dz 6 t _6
+窒下	jat6ha5	dz 6 t _6 . h a: _5	dz 6 t _6 . h a: _6
+窗	cheung1	ts 9: N _1
+窗口	cheung1hau2	ts 9: N _1 . h 6w _2
+窿	lung4	l u: N _4	l u: N _1
+立信	laap6seun3	l a: p _6 . s 9: n _3
+立左法	laap6jo2faat3	l a: p _6 . dz O: _2 . f a: t _3
+立方	laap6fong1	l a: p _6 . f O: N _1
+立法	laap6faat3	l a: p _6 . f a: t _3
+竖	syu6	s y: _6
+竖起	syu6hei2	s y: _6 . h ej _2
+站	jaam6	dz a: m _6
+竞争	ging3jang1	g i: N _3 . dz 6 N _1
+竟然	ging2yin4	g i: N _2 . j i: n _4
+竹丝鸡	juk1si1gai1	dz u: k _1 . s i: _1 . g 6j _1
+笃	duk1	d u: k _1
+笃波	duk1bo1	d u: k _1 . b O: _1
+笑	siu3	s iw _3
+笑容	siu3yung4	s iw _3 . j y: N _4
+笑死	siu3sei2	s iw _3 . s ej _2
+笔	bat1	b 6 t _1
+笔记	bat1gei3	b 6 t _1 . g ej _3
+笔记本	bat1gei3bun2	b 6 t _1 . g ej _3 . b u: n _2
+笔记簿	bat1gei3bou2	b 6 t _1 . g ej _3 . b ow _2
+笠乱	lap1lyun6	l 6 p _1 . l y: n _6
+第	dai6	d 6j _6
+第一	dai6yat1	d 6j _6 . j 6 t _1
+第三	dai6saam1	d 6j _6 . s a: m _1
+第二	dai6yi6	d 6j _6 . j i: _6
+第六	dai6luk6	d 6j _6 . l u: k _6
+第日	dai6yat6	d 6j _6 . j 6 t _6
+等	dang2	d 6 N _2
+等一阵	dang2yat1jan6	d 6 N _2 . j 6 t _1 . dz 6 n _6
+等下	dang2ha2	d 6 N _2 . h a: _2
+等于	dang2yu1	d 6 N _2 . j y: _1	d 6 N _2 . j y: _4
+等唔到	dang2m4dou3	d 6 N _2 . m _4 . d ow _3
+等埋	dang2maai4	d 6 N _2 . m a:j _4
+等等	dang2dang2	d 6 N _2 . d 6 N _2
+等阵	dang2jan6	d 6 N _2 . dz 6 n _6
+等阵间	dang2jan6gaan1	d 6 N _2 . dz 6 n _6 . g a: n _1
+筋	gan1	g 6 n _1
+答	daap3	d a: p _3
+答复	daap3fuk1	d a: p _3 . f u: k _1
+答非所问	daap3fei1so2man6	d a: p _3 . f ej _1 . s O: _2 . m 6 n _6
+筷子	faai3ji2	f a:j _3 . dz i: _2
+筹备	chau4bei6	ts 6w _4 . b ej _6
+筹备下	chau4bei6ha2	ts 6w _4 . b ej _6 . h a: _2
+签	chim1	ts i: m _1	ts i: n _1
+签下	chim1ha2	ts i: m _1 . h a: _2
+签个名	chim1go3meng2	ts i: m _1 . g O: _3 . m E: N _2
+签证	chim1jing3	ts i: m _1 . dz i: N _3	ts i: n _1 . dz i: N _3
+简介	gaan2gaai3	g a: n _2 . g a:j _3
+简单	gaan2daan1	g a: n _2 . d a: n _1
+简历	gaan2lik6	g a: n _2 . l i: k _6
+简陋	gaan2lau6	g a: n _2 . l 6w _6
+算	syun3	s y: n _3
+算不算数	syun3bat1syun3sok3	s y: n _3 . b 6 t _1 . s y: n _3 . s O: k _3
+算数	syun3sok3	s y: n _3 . s O: k _3
+管	gun2	g u: n _2
+管理	gun2lei5	g u: n _2 . l ej _5
+箩箩挛	lo1lo1lyun4	l O: _1 . l O: _1 . l y: n _4
+箭头	jin3tau4	dz i: n _3 . t 6w _4
+箱	seung1	s 9: N _1
+箱仔	seung1jai2	s 9: N _1 . dz 6j _2
+米	mai1	m 6j _1
+粉粉地	fan2fan2dei2	f 6 n _2 . f 6 n _2 . d ej _2
+粒	lap1	l 6 p _1
+粗	chou1	ts ow _1
+粘	jim1	dz i: m _1	n i: m _1
+粤剧	yut6kek6	j y: t _6 . k E: k _6
+粤语	yut6yu5	j y: t _6 . j y: _5
+粥	juk1	dz u: k _1
+粮	leung4	l 9: N _4
+精	jeng1	dz E: N _1
+精灵石	jing1leng4sek6	dz i: N _1 . l E: N _4 . s E: k _6
+精神	jing1san4	dz i: N _1 . s 6 n _4
+糖	tong2	t O: N _2	t O: N _4
+糖水	tong4seui2	t O: N _4 . s 9y _2
+系	hai6	h 6j _6
+系咁咦	hai6gam2yi2	h 6j _6 . g 6 m _2 . j i: _2
+系咪	hai6mai6	h 6j _6 . m 6j _6
+系唔系	hai6m4hai6	h 6j _6 . m _4 . h 6j _6
+系统	hai6tung2	h 6j _6 . t u: N _2
+紊	leun6	l 9: n _6	m 6 n _5	m 6 n _6
+索尼	sok3nei4	s O: k _3 . n ej _4
+索爱	sok3ngoi3	s O: k _3 . N O:j _3
+累	leui6	l 9y _6
+繁华	faan4wa4	f a: n _4 . w a: _4
+繁忙	faan4mong4	f a: n _4 . m O: N _4
+红	hung4	h u: N _4
+红簿仔	hung4bou2jai2	h u: N _4 . b ow _2 . dz 6j _2
+红色	hung4sik1	h u: N _4 . s i: k _1
+约	yeuk3	j 9: k _3
+约下	yeuk3ha5	j 9: k _3 . h a: _5
+约埋	yeuk3maai4	j 9: k _3 . m a:j _4
+级	kap1	k 6 p _1
+纪发	gei2faat3	g ej _2 . f a: t _3
+纪念	gei2lim6	g ej _2 . l i: m _6	g ej _2 . n i: m _6
+纯	seun4	s 9: n _4
+纯粹	seun4seui6	s 9: n _4 . s 9y _6
+纸	ji2	dz i: _2
+纸卷	ji2gyun2	dz i: _2 . g y: n _2
+纸巾	ji2gan1	dz i: _2 . g 6 n _1
+纸皮箱	ji2pei4seung1	dz i: _2 . p ej _4 . s 9: N _1
+线	sin3	s i: n _3
+线路	sin3lou6	s i: n _3 . l ow _6
+练	lin6	l i: n _6
+练下	lin6ha2	l i: n _6 . h a: _2
+练习	lin6jaap6	l i: n _6 . dz a: p _6
+练级	lin6kap1	l i: n _6 . k 6 p _1
+练车	lin6che1	l i: n _6 . ts E: _1
+组	jou2	dz ow _2
+组合	jou2hap6	dz ow _2 . h 6 p _6
+组织	jou2jik1	dz ow _2 . dz i: k _1
+组织唔起	jou2jik1m4hei2	dz ow _2 . dz i: k _1 . m _4 . h ej _2
+组长	jou2jeung2	dz ow _2 . dz 9: N _2
+细	sai3	s 6j _3
+细七	sai3chat1	s 6j _3 . ts 6 t _1
+细人	sai3yan4	s 6j _3 . j 6 n _4
+细佬	sai3lou2	s 6j _3 . l ow _2
+细声	sai3seng1	s 6j _3 . s E: N _1
+细妹	sai3mui6	s 6j _3 . m u:j _6
+细姨	sai3yi1	s 6j _3 . j i: _1
+细条	sai3tiu4	s 6j _3 . t iw _4
+细细	sai3sai3	s 6j _3 . s 6j _3
+细细只	sai3sai3jek3	s 6j _3 . s 6j _3 . dz E: k _3
+细舅母	sai3kau2mou5	s 6j _3 . k 6w _2 . m ow _5
+细蚊仔	sai3man1jai2	s 6j _3 . m 6 n _1 . dz 6j _2
+细路	sai3lou6	s 6j _3 . l ow _6
+细路仔	sai3lou6jai2	s 6j _3 . l ow _6 . dz 6j _2
+终于	jung1yu1	dz u: N _1 . j y: _1
+终归	jung1gwai1	dz u: N _1 . gw 6j _1
+经	ging1	g i: N _1
+经历	ging1lik6	g i: N _1 . l i: k _6
+经常	ging1seung4	g i: N _1 . s 9: N _4
+经济	ging1jai3	g i: N _1 . dz 6j _3
+经理	ging1lei5	g i: N _1 . l ej _5
+经纪	ging1gei2	g i: N _1 . g ej _2
+经营类	ging1ying4leui6	g i: N _1 . j i: N _4 . l 9y _6
+经过	ging1go3	g i: N _1 . g O: _3	g i: N _1 . gw O: _3
+经验	ging1yim6	g i: N _1 . j i: m _6	g i: N _1 . j i: n _6
+结	git3	g i: t _3
+结婚	git3fan1	g i: t _3 . f 6 n _1
+结局	git3guk6	g i: t _3 . g u: k _6
+结束	git3chuk1	g i: t _3 . ts u: k _1
+结果	git3go2	g i: t _3 . g O: _2	g i: t _3 . gw O: _2
+绔	kwa1	kw a: _1
+给	kap1	k 6 p _1
+绝对	jyut6deui3	dz y: t _6 . d 9y _3
+继续	gai3juk6	g 6j _3 . dz u: k _6
+续期	juk6kei4	dz u: k _6 . k ej _4
+绳	sing4	s i: N _4
+维京	wai4ging1	w 6j _4 . g i: N _1
+维持	wai4chi4	w 6j _4 . ts i: _4
+维持下	wai4chi4ha5	w 6j _4 . ts i: _4 . h a: _5
+维生素	wai4sang1sou3	w 6j _4 . s 6 N _1 . s ow _3
+绵胎	min4toi1	m i: n _4 . t O:j _1
+绷	bang1	b 6 N _1
+绷到	bang1dou2	b 6 N _1 . d ow _2	b 6 N _1 . d ow _3
+绿	luk6	l u: k _6
+绿盘	luk6pun4	l u: k _6 . p u: n _4
+绿豆	luk6dau2	l u: k _6 . d 6w _2
+缘份	yun4fan6	j y: n _4 . f 6 n _6
+缝	fung4	f u: N _4
+缩	suk1	s u: k _1
+缺	kyut3	k y: t _3
+缺乏	kyut3fat6	k y: t _3 . f 6 t _6
+缺少	kyut3siu2	k y: t _3 . s iw _2
+罐	gun3	g u: n _3
+网	mong5	m O: N _5
+网上	mong5seung6	m O: N _5 . s 9: N _6
+网吧	mong5ba1	m O: N _5 . b a: _1
+网络电话	mong5lok6din6wa2	m O: N _5 . l O: k _6 . d i: n _6 . w a: _2	m O: N _5 . l O: k _6 . d i: n _6 . w a: _6
+网速	mong5chuk1	m O: N _5 . ts u: k _1
+网页游戏	mong5yip6yau4hei3	m O: N _5 . j i: p _6 . j 6w _4 . h ej _3
+罗	lo1	l O: _1	l O: _4
+罗姨	lo1yi1	l O: _1 . j i: _1
+罗宾	lo4ban1	l O: _4 . b 6 n _1
+罗湖	lo4wu4	l O: _4 . w u: _4
+罗玲	lo4ling4	l O: _4 . l i: N _4
+罗美	lo4mei5	l O: _4 . m ej _5
+罚	fat6	f 6 t _6
+罢就	ba6jau6	b a: _6 . dz 6w _6
+美	mei5	m ej _5
+美丽	mei5lai6	m ej _5 . l 6j _6
+美包	mei5baau1	m ej _5 . b a:w _1
+美国	mei5gok3	m ej _5 . g O: k _3	m ej _5 . gw O: k _3
+美容	mei5yung4	m ej _5 . j y: N _4
+美术	mei5seut6	m ej _5 . s 9: t _6
+美金	mei5gam1	m ej _5 . g 6 m _1	m ej _5 . g 6 n _1
+美香	mei5heung1	m ej _5 . h 9: N _1
+羡慕	sin6mou6	s i: n _6 . m ow _6
+群	kwan4	kw 6 n _4
+群下	kwan4ha6	kw 6 n _4 . h a: _6
+羹	gang1	g 6 N _1
+羹仔	gang1jai2	g 6 N _1 . dz 6j _2
+羽	yu5	j y: _5
+羽毛球	yu5mou4kau4	j y: _5 . m ow _4 . k 6w _4
+羽毛球场	yu5mou4kau4cheung4	j y: _5 . m ow _4 . k 6w _4 . ts 9: N _4
+翡翠台	fei2cheui3toi4	f ej _2 . ts 9y _3 . t O:j _4
+翻	faan1	f a: n _1
+老	lou5	l ow _5
+老人	lou5yan4	l ow _5 . j 6 n _4
+老人家	lou5yan4ga1	l ow _5 . j 6 n _4 . g a: _1
+老公	lou5gung1	l ow _5 . g u: N _1
+老友	lou5yau5	l ow _5 . j 6w _5
+老周	lou5jau1	l ow _5 . dz 6w _1
+老大	lou5daai6	l ow _5 . d a:j _6	l ow _5 . d a:j _2
+老妈	lou5ma1	l ow _5 . m a: _1
+老妈子	lou5ma1ji2	l ow _5 . m a: _1 . dz i: _2
+老婆	lou5po4	l ow _5 . p O: _4
+老婆仔	lou5po4jai2	l ow _5 . p O: _4 . dz 6j _2
+老婆饼	lou5po4beng2	l ow _5 . p O: _4 . b E: N _2
+老字辈	lou5ji6bui3	l ow _5 . dz i: _6 . b u:j _3
+老实	lou5sat6	l ow _5 . s 6 t _6
+老客户	lou5haak3wu6	l ow _5 . h a: k _3 . w u: _6
+老师	lou5si1	l ow _5 . s i: _1
+老师傅	lou5si1fu5	l ow _5 . s i: _1 . f u: _5
+老弱病残	lou5yeuk6beng6chaan1	l ow _5 . j 9: k _6 . b E: N _6 . ts a: n _1
+老板娘	lou5baan2leung4	l ow _5 . b a: n _2 . l 9: N _4	l ow _5 . b a: n _2 . n 9: N _4
+老母	lou5mou5	l ow _5 . m ow _5
+老王	lou5wong2	l ow _5 . w O: N _2	l ow _5 . w O: N _4
+老细	lou5sai3	l ow _5 . s 6j _3
+老表	lou5biu2	l ow _5 . b iw _2
+老覃	lou5taam4	l ow _5 . t a: m _4
+老豆	lou5dau6	l ow _5 . d 6w _6
+老马	lou5ma5	l ow _5 . m a: _5
+老鼠街	lou5syu2gaai1	l ow _5 . s y: _2 . g a:j _1
+考	haau2	h a:w _2
+考好	haau2hou2	h a:w _2 . h ow _2
+考核	haau2hat6	h a:w _2 . h 6 t _6
+考牌	haau2paai4	h a:w _2 . p a:j _4
+考虑	haau2leui6	h a:w _2 . l 9y _6
+考试	haau2si5	h a:w _2 . s i: _5
+考验	haau2yim6	h a:w _2 . j i: m _6	h a:w _2 . j i: n _6
+而	yi4	j i: _4
+而且	yi4che2	j i: _4 . ts E: _2
+而家	yi4ga1	j i: _4 . g a: _1
+耍	sa2	s a: _2
+耐	loi6	l O:j _6	n O:j _6
+耳仔	yi5jai2	j i: _5 . dz 6j _2
+耶	ye4	j E: _4
+耷下	daap3ha2	d a: p _3 . h a: _2
+聊	liu4	l iw _4
+职	jik1	dz i: k _1
+职业	jik1yip6	dz i: k _1 . j i: p _6
+职业病	jik1yip6beng6	dz i: k _1 . j i: p _6 . b E: N _6
+职场	jik1cheung4	dz i: k _1 . ts 9: N _4
+联和	lyun4wo4	l y: n _4 . w O: _4
+联想	lyun4seung2	l y: n _4 . s 9: N _2
+联系	lyun4hai6	l y: n _4 . h 6j _6
+联系下	lyun4hai6ha2	l y: n _4 . h 6j _6 . h a: _2
+联络	lyun4lok3	l y: n _4 . l O: k _3
+聚下	jeui6ha2	dz 9y _6 . h a: _2
+聚会	jeui6wui6	dz 9y _6 . w u:j _6
+聪	chung1	ts u: N _1
+肉	yuk6	j y: k _6
+肋	laak6	l a: k _6
+肖康惠	siu1hong1wai6	s iw _1 . h O: N _1 . w 6j _6
+肚	tou5	t ow _5
+肚饿	tou5o6	t ow _5 . O: _6
+肠炎	cheung2yim4	ts 9: N _2 . j i: m _4
+股	gu2	g u: _2
+股市	gu2si5	g u: _2 . s i: _5
+股票	gu2piu3	g u: _2 . p iw _3
+肥	fei4	f ej _4
+肥仔	fei4jai2	f ej _4 . dz 6j _2
+肥佬	fei4lou2	f ej _4 . l ow _2
+肥妹	fei4mui1	f ej _4 . m u:j _1	f ej _4 . m u:j _2	f ej _4 . m u:j _6
+肥妹仔	fei4mui1jai2	f ej _4 . m u:j _1 . dz 6j _2
+肥姨	fei4yi1	f ej _4 . j i: _1
+肥比	fei4bei2	f ej _4 . b ej _2
+肥波	fei4bo1	f ej _4 . b O: _1
+肥羊王	fei4yeung4wong2	f ej _4 . j 9: N _4 . w O: N _2
+肯	hang2	h 6 N _2
+肯不肯	hang2bat1hang2	h 6 N _2 . b 6 t _1 . h 6 N _2
+肯定	hang2ding6	h 6 N _2 . d i: N _6
+肺	fai3	f 6j _3
+胃	wai6	w 6j _6
+胃食鬼	wai6sik6gwai2	w 6j _6 . s i: k _6 . gw 6j _2
+胆	daam2	d a: m _2
+胆固醇	daam2gu3seun4	d a: m _2 . g u: _3 . s 9: n _4
+背	bui6	b u:j _6
+背书	bui6syu1	b u:j _6 . s y: _1
+胎盘	toi1pun4	t O:j _1 . p u: n _4
+胡	wu4	w u: _4
+胡歌	wu4go1	w u: _4 . g O: _1
+胡玉	wu4yuk6	w u: _4 . j y: k _6
+胡玉英	wu4yuk6ying1	w u: _4 . j y: k _6 . j i: N _1
+胶	gaau1	g a:w _1
+胶囊	gaau1nong4	g a:w _1 . n O: N _4
+胶布	gaau1bou3	g a:w _1 . b ow _3
+胶水	gaau1seui2	g a:w _1 . s 9y _2
+胶箱	gaau1seung1	g a:w _1 . s 9: N _1
+胶纸凳	gaau1ji2dang3	g a:w _1 . dz i: _2 . d 6 N _3
+能力	lang4lik6	l 6 N _4 . l i: k _6	n 6 N _4 . l i: k _6
+能够	lang4kau3	l 6 N _4 . k 6w _3	n 6 N _4 . k 6w _3
+脆	cheui3	ts 9y _3
+脉动	mak6dung6	m 6 k _6 . d u: N _6
+脚	geuk3	g 9: k _3
+腊一腊	laap6yat1laap6	l a: p _6 . j 6 t _1 . l a: p _6
+腾腾转	tang4tang4jyun3	t 6 N _4 . t 6 N _4 . dz y: n _3	t 6 N _4 . t 6 N _2 . dz y: n _3	t 6 n _4 . t 6 n _4 . dz y: n _3	t 6 n _4 . t 6 n _2 . dz y: n _3
+膜	mou4	m ow _4	m O: _2
+膨	paang4	p a: N _4
+自从	ji6chung4	dz i: _6 . ts u: N _4
+自动	ji6dung6	dz i: _6 . d u: N _6
+自动机	ji6dung6gei1	dz i: _6 . d u: N _6 . g ej _1
+自在	ji6joi6	dz i: _6 . dz O:j _6
+自己	ji6gei2	dz i: _6 . g ej _2
+自我	ji6o5	dz i: _6 . O: _5	dz i: _6 . N O: _5
+自然	ji6yin4	dz i: _6 . j i: n _4
+自由	ji6yau4	dz i: _6 . j 6w _4
+自觉	ji6gok3	dz i: _6 . g O: k _3
+自费	ji6fai3	dz i: _6 . f 6j _3
+自闭	ji6bai3	dz i: _6 . b 6j _3
+自闭症	ji6bai3jing3	dz i: _6 . b 6j _3 . dz i: N _3
+臭味	chau3mei6	ts 6w _3 . m ej _6
+至	ji3	dz i: _3
+至到	ji3dou3	dz i: _3 . d ow _3
+至尊	ji3jeun1	dz i: _3 . dz 9: n _1
+至少	ji3siu2	dz i: _3 . s iw _2
+至弊	ji3bai6	dz i: _3 . b 6j _6
+至得	ji3dak1	dz i: _3 . d 6 k _1
+舅	kau5	k 6w _5	k 6w _2
+舅父	kau5fu2	k 6w _5 . f u: _2	k 6w _5 . f u: _6
+舅父仔	kau5fu2jai2	k 6w _5 . f u: _2 . dz 6j _2	k 6w _5 . f u: _6 . 6j _2
+舍友	se3yau5	s E: _3 . j 6w _5
+舍得	se2dak1	s E: _2 . d 6 k _1
+舍长	se3jeung2	s E: _3 . dz 9: N _2
+舒服	syu1fuk6	s y: _1 . f u: k _6
+舞一舞	mou5yat1mou5	m ow _5 . j 6 t _1 . m ow _5
+舞蹈	mou5dou6	m ow _5 . d ow _6
+船	syun4	s y: n _4
+艰难	gaan1naan4	g a: n _1 . n a: n _4
+色素	sik1sou3	s i: k _1 . s ow _3
+色纸卷	sik1ji2gyun2	s i: k _1 . dz i: _2 . g y: n _2
+节	jit3	dz i: t _3
+节目	jit3muk6	dz i: t _3 . m u: k _6
+芝斑	ji1baan1	dz i: _1 . b a: n _1
+芝麻	ji1ma4	dz i: _1 . m a: _4
+芬	fan1	f 6 n _1
+芭蕾舞	ba1leui4mou5	b a: _1 . l 9y _4 . m ow _5
+花	fa1	f a: _1
+花园	fa1yun4	f a: _1 . j y: n _4
+花园酒店	fa1yun4jau2dim3	f a: _1 . j y: n _4 . dz 6w _2 . d i: m _3
+花旗参	fa1kei4sam1	f a: _1 . k ej _4 . s 6 m _1
+花樽	fa1jeun1	f a: _1 . dz 9: n _1
+花洒头	fa1sa2tau4	f a: _1 . s a: _2 . t 6w _4
+花生油	fa1saang1yau4	f a: _1 . s a: N _1 . j 6w _4
+花盆	fa1pun4	f a: _1 . p u: n _4
+花胶汤	fa1gaau1tong1	f a: _1 . g a:w _1 . t O: N _1
+花蓝	fa1laam4	f a: _1 . l a: m _4
+花都	fa1dou1	f a: _1 . d ow _1
+花钱	fa1chin2	f a: _1 . ts i: n _2
+芳村	fong1chyun1	f O: N _1 . ts y: n _1
+芸	wan4	w 6 n _4
+苏	sou1	s ow _1
+若	yeuk6	j 9: k _6
+苦	fu2	f u: _2
+英国	ying1gok3	j i: N _1 . g O: k _3	j i: N _1 . gw O: k _3
+英姐	ying1je2	j i: N _1 . dz E: _2	j i: N _1 . dz E: _1
+英德	ying1dak1	j i: N _1 . d 6 k _1
+英文	ying1man2	j i: N _1 . m 6 n _2	j i: N _1 . m 6 n _4
+英文版	ying1man2baan2	j i: N _1 . m 6 n _2 . b a: n _2	j i: N _1 . m 6 n _4 . b a: n _2
+英语	ying1yu5	j i: N _1 . j y: _5
+英雄	ying1hung4	j i: N _1 . h u: N _4
+苹姐	ping4je2	p i: N _4 . dz E: _2	p i: N _4 . dz E: _1
+苹果	ping4go2	p i: N _4 . g O: _2	p i: N _4 . gw O: _2
+茂业	mau6yip6	m 6w _6 . j i: p _6
+茂名	mau6meng4	m 6w _6 . m E: N _4
+茶	cha4	ts a: _4
+茶包	cha4baau1	ts a: _4 . b a:w _1
+茶叶	cha4yip6	ts a: _4 . j i: p _6
+茶楼	cha4lau4	ts a: _4 . l 6w _4
+茶香居	cha4heung1geui1	ts a: _4 . h 9: N _1 . g 9y _1
+草	chou2	ts ow _2
+草皮	chou2pei4	ts ow _2 . p ej _4
+荒岛	fong1dou2	f O: N _1 . d ow _2
+荔枝	lai6ji1	l 6j _6 . dz i: _1
+荔枝木	lai6ji1muk6	l 6j _6 . dz i: _1 . m u: k _6
+荡	dong6	d O: N _6
+荣	wing4	w i: N _4
+荣华	wing4wa4	w i: N _4 . w a: _4
+荫	yam3	j 6 m _3	j 6 m _6
+药	yeuk6	j 9: k _6
+药专	yeuk6jyun1	j 9: k _6 . dz y: n _1
+药店	yeuk6dim3	j 9: k _6 . d i: m _3	j 9: k _6 . d i: n _3
+药管	yeuk6gun2	j 9: k _6 . g u: n _2
+药费	yeuk6fai3	j 9: k _6 . f 6j _3
+莲	lin4	l i: n _4
+菊花	guk1fa1	g u: k _1 . f a: _1
+菜	choi3	ts O:j _3
+菜叶	choi3yip6	ts O:j _3 . j i: p _6
+菜心	choi3sam1	ts O:j _3 . s 6 m _1
+菜油	choi3yau4	ts O:j _3 . j 6w _4
+萍	ping4	p i: N _4
+萍姐	ping4je2	p i: N _4 . dz E: _2
+萎缩	wai2suk1	w 6j _2 . s u: k _1
+萝卜	lo4buk1	l O: _4 . b u: k _1
+萝岗	lo4gong1	l O: _4 . g O: N _1
+营业	ying4yip6	j i: N _4 . j i: p _6
+营业厅	ying4yip6teng1	j i: N _4 . j i: p _6 . t E: N _1
+营业员	ying4yip6yun4	j i: N _4 . j i: p _6 . j y: n _4
+营销	ying4siu1	j i: N _4 . s iw _1
+营销策划	ying4siu1chaak3waak6	j i: N _4 . s iw _1 . ts a: k _3 . w a: k _6
+落	lok6	l O: k _6
+落不到	lok6bat1dou3	l O: k _6 . b 6 t _1 . d ow _3
+落力	lok6lik6	l O: k _6 . l i: k _6
+落去	lok6heui3	l O: k _6 . h 9y _3
+落叶归根	lok6yip6gwai1gan1	l O: k _6 . j i: p _6 . gw 6j _1 . g 6 n _1
+落嚟	lok6lai4	l O: k _6 . l 6j _4
+落地	lok6dei6	l O: k _6 . d ej _6
+落实	lok6sat6	l O: k _6 . s 6 t _6
+落岗	lok6gong1	l O: k _6 . g O: N _1
+落左班	lok6jo2baan1	l O: k _6 . dz O: _2 . b a: n _1
+落左雪	lok6jo2syut3	l O: k _6 . dz O: _2 . s y: t _3
+落机	lok6gei1	l O: k _6 . g ej _1
+落水	lok6seui2	l O: k _6 . s 9y _2
+落班	lok6baan1	l O: k _6 . b a: n _1
+落班未	lok6baan1mei6	l O: k _6 . b a: n _1 . m ej _6
+落课	lok6fo3	l O: k _6 . f O: _3
+落车	lok6che1	l O: k _6 . ts E: _1
+落雨	lok6yu5	l O: k _6 . j y: _5
+落雪	lok6syut3	l O: k _6 . s y: t _3
+葡萄糖	pou4tou4tong2	p ow _4 . t ow _4 . t O: N _2
+葡萄适	pou4tou4sik1	p ow _4 . t ow _4 . s i: k _1
+董	dung2	d u: N _2
+蒋	jeung2	dz 9: N _2
+蒋家灵	jeung2ga1ling4	dz 9: N _2 . g a: _1 . l i: N _4
+蒔蒔	si4si4	s i: _4 . s i: _4
+蒲	pou4	p ow _4
+蒸	jing1	dz i: N _1
+蓝天	laam4tin1	l a: m _4 . t i: n _1	l a: n _4 . t i: n _1
+蓝精灵	laam4jing1leng4	l a: m _4 . dz i: N _1 . l E: N _4	l a: n _4 . dz i: N _1 . l E: N _4
+蓝色	laam4sik1	l a: m _4 . s i: k _1	l a: n _4 . s i: k _1
+蔡玉莲	choi3yuk6lin4	ts O:j _3 . j y: k _6 . l i: n _4
+蔼婷	oi2ting4	O:j _2 . t i: N _4	N O:j _2 . t i: N _4
+蕉	jiu1	dz iw _1
+薪水	san1seui2	s 6 n _1 . s 9y _2
+薪酬	san1chau4	s 6 n _1 . ts 6w _4
+虫	chung4	ts u: N _4
+虽	seui1	s 9y _1
+虽然	seui1yin4	s 9y _1 . j i: n _4
+虾	ha1	h a: _1
+蚀	sik6	s i: k _6	s i: t _6
+蚀底	sit6dai2	s i: t _6 . d 6j _2	s i: k _6 . d 6j _2
+蚊	man1	m 6 n _1
+蚊仔	man1jai2	m 6 n _1 . dz 6j _2
+蚊纸	man1ji2	m 6 n _1 . dz i: _2
+蚊鸡	man1gai1	m 6 n _1 . g 6j _1
+蚯蚓	yau1yan5	j 6w _1 . j 6 n _5
+蛆	jeui1	dz 9y _1	ts 9y _1
+蛆虫	jeui1chung4	dz 9y _1 . ts u: N _4	ts 9y _1 . ts u: N _4
+蛋糕	daan6gou1	d a: n _6 . g ow _1
+蛤乸	gaap3la2	g a: p _3 . l a: _2
+蜗牛	wa1au4	w a: _1 . 6w _4	w a: _1 . N 6w _4
+螺丝	lo4si1	l O: _4 . s i: _1
+蠢	cheun2	ts 9: n _2
+行	haang4	h a: N _4	h O: N _4
+行下	haang4ha5	h a: N _4 . h a: _5	h 6 N _4 . h a: _5
+行下街	haang4ha2gaai1	h a: N _4 . h a: _2 . g a:j _1	h 6 N _4 . h a: _2 . g a:j _1
+行为学	hang4wai4hok6	h 6 N _4 . w 6j _4 . h O: k _6
+行去	haang4heui3	h a: N _4 . h 9y _3
+行尸走肉	hang4si1jau2yuk6	h 6 N _4 . s i: _1 . dz 6w _2 . j y: k _6
+行山	haang4saan1	h a: N _4 . s a: n _1	h 6 N _4 . s a: n _1
+行得到	haang4dak1dou3	h a: N _4 . d 6 k _1 . d ow _3
+行攞路	haang4gan2lou6	h a: N _4 . g 6 n _2 . l ow _6
+行政人员	hang4jing3yan4yun4	h 6 N _4 . dz i: N _3 . j 6 n _4 . j y: n _4
+行落	haang4lok6	h a: N _4 . l O: k _6	h 6 N _4 . l O: k _6
+行街	haang4gaai1	h a: N _4 . g a:j _1
+行路	haang4lou6	h a: N _4 . l ow _6	h 6 N _4 . l ow _6
+街	gaai1	g a:j _1
+街坊	gaai1fong1	g a:j _1 . f O: N _1
+街头	gaai1tau4	g a:j _1 . t 6w _4
+街尾	gaai1mei5	g a:j _1 . m ej _5
+街边	gaai1bin1	g a:j _1 . b i: n _1
+街铺	gaai1pou3	g a:j _1 . p ow _3
+衣服	yi1fuk6	j i: _1 . f u: k _6
+补	bou2	b ow _2
+补下仓	bou2ha5chong1	b ow _2 . h a: _5 . ts O: N _1
+补习	bou2jaap6	b ow _2 . dz a: p _6
+补习下	bou2jaap6ha5	b ow _2 . dz a: p _6 . h a: _5
+补习班	bou2jaap6baan1	b ow _2 . dz a: p _6 . b a: n _1
+补仓	bou2chong1	b ow _2 . ts O: N _1
+补充	bou2chung1	b ow _2 . ts u: N _1
+补助	bou2jo6	b ow _2 . dz O: _6
+补考	bou2haau2	b ow _2 . h a:w _2
+补贴	bou2tip3	b ow _2 . t i: p _3
+表	biu1	b iw _1	b iw _2
+表哥	biu2go1	b iw _2 . g O: _1
+表姑	biu2gu1	b iw _2 . g u: _1
+表婶	biu2sam2	b iw _2 . s 6 m _2
+表嫂	biu2sou2	b iw _2 . s ow _2
+表弟	biu2dai2	b iw _2 . d 6j _2	b iw _2 . d 6j _6
+表扬	biu2yeung4	b iw _2 . j 9: N _4
+表现	biu2yin6	b iw _2 . j i: n _6
+表示	biu2si6	b iw _2 . s i: _6
+表达	biu2daat6	b iw _2 . d a: t _6
+衫	saam1	s a: m _1
+衫袖	saam1jau6	s a: m _1 . dz 6w _6
+衬	chan3	ts 6 n _3
+衰	seui1	s 9y _1	ts 9y _1
+衰仔	seui1jai2	s 9y _1 . dz 6j _2
+衰女	seui1leui5	s 9y _1 . l 9y _5	s 9y _1 . n 9y _5
+袁海云	yun4hoi2wan4	j y: n _4 . h O:j _2 . w 6 n _4
+袋	doi6	d O:j _6	d O:j _2
+被	pei6	p ej _6
+被套	pei5tou3	p ej _5 . t ow _3
+被铺	pei6pou3	p ej _6 . p ow _3
+裁人	choi4yan4	ts O:j _4 . j 6 n _4
+裂	lit6	l i: t _6
+装	jong1	dz O: N _1
+装修	jong1sau1	dz O: N _1 . s 6w _1
+装到	jong1dou3	dz O: N _1 . d ow _3
+装左上	jong1jo2seung5	dz O: N _1 . dz O: _2 . s 9: N _5
+装左落	jong1jo2lok6	dz O: N _1 . dz O: _2 . l O: k _6
+装车	jong1che1	dz O: N _1 . ts E: _1
+装返	jong1faan1	dz O: N _1 . f a: n _1
+裕丰	yu6fung1	j y: _6 . f u: N _1
+裤	fu3	f u: _3
+褒	bou1	b ow _1
+褒水	bou1seui2	b ow _1 . s 9y _2
+褛	lau1	l 6w _1
+褪	tan3	t 6 n _3	t 9y _3
+西仔	sai1jai2	s 6j _1 . dz 6j _2
+西关	sai1gwaan1	s 6j _1 . gw a: n _1
+西瓜	sai1gwa1	s 6j _1 . gw a: _1
+要	yiu3	j iw _3
+要	yiu1	j iw _1
+要唔要	yiu3m4yiu3	j iw _3 . m _4 . j iw _3
+要求	yiu1kau4	j iw _1 . k 6w _4
+要点	yiu3dim2	j iw _3 . d i: m _2
+见	gin3	g i: n _3
+见一下	gin3yat1ha5	g i: n _3 . j 6 t _1 . h a: _5
+见习	gin3jaap6	g i: n _3 . dz a: p _6
+见使	gin3sai2	g i: n _3 . s 6j _2
+见到	gin3dou2	g i: n _3 . d ow _2	g i: n _3 . d ow _3
+见唔到	gin3m4dou2	g i: n _3 . m _4 . d ow _2
+见工	gin3gung1	g i: n _3 . g u: N _1
+见识	gin3sik1	g i: n _3 . s i: k _1
+观察下	gun1chaat3ha5	g u: n _1 . ts a: t _3 . h a: _5
+观望	gun1mong6	g u: n _1 . m O: N _6
+规定	kwai1ding6	kw 6j _1 . d i: N _6
+规模	kwai1mou4	kw 6j _1 . m ow _4
+规矩	kwai1geui2	kw 6j _1 . g 9y _2
+视频	si6pan4	s i: _6 . p 6 n _4
+觉	gok3	g O: k _3
+觉得	gok3dak1	g O: k _3 . d 6 k _1
+觉眼	gok3aan5	g O: k _3 . a: n _5
+角	gok3	g O: k _3
+角色	gok3sik1	g O: k _3 . s i: k _1
+解	gaai2	g a:j _2
+解决	gaai2kyut3	g a:j _2 . k y: t _3
+解封	gaai2fung1	g a:j _2 . f u: N _1
+言仔	yin4jai2	j i: n _4 . dz 6j _2
+譬如	pei3yu4	p ej _3 . j y: _4
+计	gai3	g 6j _3
+计下	gai3ha5	g 6j _3 . h a: _5
+计划	gai3waak6	g 6j _3 . w a: k _6
+计埋数	gai3maai4sou3	g 6j _3 . m a:j _4 . s ow _3
+计数	gai3sou3	g 6j _3 . s ow _3
+计算机	gai3syun3gei1	g 6j _3 . s y: n _3 . g ej _1
+订	deng6	d E: N _6	d i: N _6
+订左票	deng6jo2piu3	d E: N _6 . dz O: _2 . p iw _3
+认	ying6	j i: N _6
+认为	ying6wai4	j i: N _6 . w 6j _4
+讨论	tou2leun6	t ow _2 . l 9: n _6
+让球	yeung6kau4	j 9: N _6 . k 6w _4
+训	fan3	f 6 n _3
+训下	fan3ha5	f 6 n _3 . h a: _5
+训完觉	fan3yun4gaau3	f 6 n _3 . j y: n _4 . g a:w _3
+训攞觉	fan3gan2gaau3	f 6 n _3 . g 6 n _2 . g a:w _3
+训觉	fan3gok3	f 6 n _3 . g O: k _3
+训过笼	fan3go3lung4	f 6 n _3 . g O: _3 . l u: N _4	f 6 n _3 . gw O: _3 . l u: N _4
+训醒	fan3sing2	f 6 n _3 . s i: N _2
+讯号	seun3hou6	s 9: n _3 . h ow _6
+记	gei3	g ej _3
+记一记	gei3yat1gei3	g ej _3 . j 6 t _1 . g ej _3
+记住	gei3jyu6	g ej _3 . dz y: _6
+记唔记得	gei3m4gei3dak1	g ej _3 . m _4 . g ej _3 . d 6 k _1
+记得	gei3dak1	g ej _3 . d 6 k _1
+记忆力	gei3yik1lik6	g ej _3 . j i: k _1 . l i: k _6
+记错	gei3cho3	g ej _3 . ts O: _3
+讲	gong2	g O: N _2
+讲下	gong2ha2	g O: N _2 . h a: _2	g O: N _2 . h a: _5
+讲两句	gong2leung5geui3	g O: N _2 . l 9: N _5 . g 9y _3
+讲唔埋	gong2m4maai4	g O: N _2 . m _4 . m a:j _4
+讲唔定	gong2m4ding6	g O: N _2 . m _4 . d i: N _6
+讲埋	gong2maai4	g O: N _2 . m a:j _4
+讲明	gong2ming4	g O: N _2 . m i: N _4
+讲真	gong2jan1	g O: N _2 . dz 6 n _1
+讲笑	gong2siu3	g O: N _2 . s iw _3
+讲说话	gong2syut3wa6	g O: N _2 . s y: t _3 . w a: _6
+讲起	gong2hei2	g O: N _2 . h ej _2
+讲道理	gong2dou6lei5	g O: N _2 . d ow _6 . l ej _5
+讲野	gong2ye5	g O: N _2 . j E: _5
+讲错	gong2cho3	g O: N _2 . ts O: _3
+讴杰文	au1git6man4	6w _1 . g i: t _6 . m 6 n _4	N 6w _1 . g i: t _6 . m 6 n _4
+许留山	heui2lau4saan1	h 9y _2 . l 6w _4 . s a: n _1
+论	leun6	l 9: n _6
+论文	leun6man2	l 9: n _6 . m 6 n _2
+论语	leun6yu5	l 9: n _6 . j y: _5	l 9: n _4 . j y: _5
+设	chit3	ts i: t _3
+设备	chit3bei6	ts i: t _3 . b ej _6
+设施	chit3si1	ts i: t _3 . s i: _1
+设计	chit3gai3	ts i: t _3 . g 6j _3
+访问	fong2man6	f O: N _2 . m 6 n _6
+证	jing3	dz i: N _3
+证券	jing3gyun3	dz i: N _3 . g y: n _3
+证券公司	jing3gyun3gung1si1	dz i: N _3 . g y: n _3 . g u: N _1 . s i: _1
+证明	jing3ming4	dz i: N _3 . m i: N _4
+识	sik1	s i: k _1
+识人	sik1yan4	s i: k _1 . j 6 n _4
+识唔识	sik1m4sik1	s i: k _1 . m _4 . s i: k _1
+识路	sik1lou6	s i: k _1 . l ow _6
+试	si3	s i: _3
+试下	si3ha2	s i: _3 . h a: _2
+试业	si3yip6	s i: _3 . j i: p _6
+诚泰	sing4taai3	s i: N _4 . t a:j _3
+话	wa6	w a: _6
+话	wa2	w a: _2
+话下	wa6ha5	w a: _6 . h a: _5
+话为	wa6wai4	w a: _6 . w 6j _4
+话事	wa6si6	w a: _6 . s i: _6
+话唔埋	wa6m4maai4	w a: _6 . m _4 . m a:j _4
+话斋	wa6jaai1	w a: _6 . dz a:j _1	w a: _2 . dz a:j _1
+话时话	wa6si4wa6	w a: _6 . s i: _4 . w a: _6
+话明	wa6ming4	w a: _6 . m i: N _4
+话知	wa6ji1	w a: _6 . dz i: _1
+话费	wa2fai3	w a: _2 . f 6j _3	w a: _6 . f 6j _3
+话题	wa6tai4	w a: _6 . t 6j _4
+该	goi1	g O:j _1
+详细	cheung4sai3	ts 9: N _4 . s 6j _3
+语	yu5	j y: _5
+语文	yu5man4	j y: _5 . m 6 n _4
+语气	yu5hei3	j y: _5 . h ej _3
+语言	yu5yin4	j y: _5 . j i: n _4
+语音	yu5yam1	j y: _5 . j 6 m _1
+诱拐	yau5gwaai2	j 6w _5 . gw a:j _2
+诶	e6	E: _6
+请	cheng2	ts E: N _2
+请下	cheng2ha5	ts E: N _2 . h a: _5	ts i: N _2 . h a: _5
+请假	cheng2ga3	ts E: N _2 . g a: _3	ts i: N _2 . g a: _3
+请埋	cheng2maai4	ts E: N _2 . m a:j _4	ts i: N _2 . m a:j _4
+请讲	cheng2gong2	ts E: N _2 . g O: N _2	ts i: N _2 . g O: N _2
+请问	cheng2man6	ts E: N _2 . m 6 n _6	ts i: N _2 . m 6 n _6
+请饮	cheng2yam2	ts E: N _2 . j 6 m _2	ts i: N _2 . j 6 m _2
+诸多	jyu1do1	dz y: _1 . d O: _1
+读	duk6	d u: k _6
+读下书	duk6ha5syu1	d u: k _6 . h a: _5 . s y: _1
+读书	duk6syu1	d u: k _6 . s y: _1
+读到	duk6dou3	d u: k _6 . d ow _3
+读埋	duk6maai4	d u: k _6 . m a:j _4
+课	fo3	f O: _3
+课堂	fo3tong4	f O: _3 . t O: N _4
+课程	fo3ching4	f O: _3 . ts i: N _4
+谂	lam2	l 6 m _2
+谂下	lam2ha2	l 6 m _2 . h a: _2
+谂到	lam2dou3	l 6 m _2 . d ow _3
+谂唔到	lam2m4dou2	l 6 m _2 . m _4 . d ow _2	l 6 m _2 . m _4 . d ow _3
+谂定	sam2deng6	s 6 m _2 . d E: N _6
+谂法	lam2faat3	l 6 m _2 . f a: t _3
+谂谂	lam2lam2	l 6 m _2 . l 6 m _2
+谂起	lam2hei2	l 6 m _2 . h ej _2
+调	diu6	d iw _6	t iw _4
+调休	tiu6yau1	t iw _6 . j 6w _1	d iw _6 . j 6w _1
+调查	diu6cha4	d iw _6 . ts a: _4
+调理	tiu4lei5	t iw _4 . l ej _5
+谈英	taam4ying1	t a: m _4 . j i: N _1
+谎言	fong1yin4	f O: N _1 . j i: n _4
+谢	je6	dz E: _6
+谭仔	taam4jai2	t a: m _4 . dz 6j _2
+谭哥	taam4go1	t a: m _4 . g O: _1
+谭国生	taam4gok3saang1	t a: m _4 . g O: k _3 . s a: N _1
+谷	guk1	g u: k _1
+豆	dau6	d 6w _6	d 6w _2
+象	jeung6	dz 9: N _6
+象征式	jeung6jing1sik1	dz 9: N _6 . dz i: N _1 . s i: k _1
+象鼻山	jeung6bei6saan1	dz 9: N _6 . b ej _6 . s a: n _1
+豪	hou4	h ow _4
+负	fu6	f u: _6
+负担	fu6daam1	f u: _6 . d a: m _1
+负责	fu6jaak3	f u: _6 . dz a: k _3
+负载	fu6joi2	f u: _6 . dz O:j _2
+贡献	gung3hin3	g u: N _3 . h i: n _3
+财	choi4	ts O:j _4
+财仔	choi4jai2	ts O:j _4 . dz 6j _2
+财务部	choi4mou6bou6	ts O:j _4 . m ow _6 . b ow _6
+财经	choi4ging1	ts O:j _4 . g i: N _1
+贤	yin4	j i: n _4
+货	fo3	f O: _3
+货架	fo3ga3	f O: _3 . g a: _3
+货架晾空	fo3ga3long6hung1	f O: _3 . g a: _3 . l O: N _6 . h u: N _1
+质料	jat1liu2	dz 6 t _1 . l iw _2
+质量	jat1leung6	dz 6 t _1 . l 9: N _6
+贪	taam1	t a: m _1
+贴	tip3	t i: p _3
+贴纸	tip3ji2	t i: p _3 . dz i: _2
+贵	gwai3	gw 6j _3
+贵唔贵	gwai3m4gwai3	gw 6j _3 . m _4 . gw 6j _3
+贵野	gwai3ye5	gw 6j _3 . j E: _5
+贷款	taai3fun2	t a:j _3 . f u: n _2
+贸易	mau6yik6	m 6w _6 . j i: k _6
+费	fai3	f 6j _3
+费事	fai3si6	f 6j _3 . s i: _6
+费时	fai3si4	f 6j _3 . s i: _4
+费翔	fai3cheung4	f 6j _3 . ts 9: N _4
+费鬼事	fai3gwai2si6	f 6j _3 . gw 6j _2 . s i: _6
+资本	ji1bun2	dz i: _1 . b u: n _2
+资格	ji1gaak3	dz i: _1 . g a: k _3
+资讯	ji1seun3	dz i: _1 . s 9: n _3
+资金	ji1gam1	dz i: _1 . g 6 m _1
+赌博	dou2bok3	d ow _2 . b O: k _3
+赌钱	dou2chin2	d ow _2 . ts i: n _2
+赔	pui4	p u:j _4
+赖	laan5	l a: n _5
+赚	jaan6	dz a: n _6
+赚钱	jaan6chin2	dz a: n _6 . ts i: n _2
+赞助	jaan3jo6	dz a: n _3 . dz O: _6
+赞同	jaan3tung4	dz a: n _3 . t u: N _4
+赢	yeng4	j E: N _4
+赢左马	yeng4jo2ma5	j E: N _4 . dz O: _2 . m a: _5
+赤	chek3	ts E: k _3
+赤坎	chek3ham2	ts E: k _3 . h 6 m _2
+赤霞	chek3ha4	ts E: k _3 . h a: _4
+走	jau2	dz 6w _2
+走人	jau2yan4	dz 6w _2 . j 6 n _4
+走到	jau2dou3	dz 6w _2 . d ow _3	dz 6w _2 . d ow _2
+走去	jau2heui3	dz 6w _2 . h 9y _3
+走唔甩	jau2m4lap1	dz 6w _2 . m _4 . l 6 p _1
+走廊	jau2long4	dz 6w _2 . l O: N _4	dz 6w _2 . l O: N _2
+赶	gon2	g O: n _2
+赶住	gon2jyu6	g O: n _2 . dz y: _6
+赶唔赶	gon2m4gon2	g O: n _2 . m _4 . g O: n _2
+起	hei2	h ej _2
+起嚟	hei2lei4	h ej _2 . l ej _4
+起屋	hei2uk1	h ej _2 . u: k _1	h ej _2 . N u: k _1
+起床	hei2chong4	h ej _2 . ts O: N _4
+起得	hei2dak1	h ej _2 . d 6 k _1
+起码	hei2ma5	h ej _2 . m a: _5
+起身	hei2san1	h ej _2 . s 6 n _1
+趁	chan3	ts 6 n _3
+超	chiu1	ts iw _1
+超市	chiu1si5	ts iw _1 . s i: _5
+超级	chiu1kap1	ts iw _1 . k 6 p _1
+超载	chiu1joi3	ts iw _1 . dz O:j _3
+超过	chiu1go3	ts iw _1 . g O: _3	ts iw _1 . gw O: _3
+越	yut6	j y: t _6
+越南	yut6laam4	j y: t _6 . l a: m _4	j y: t _6 . n a: m _4
+越嚟越	yut6lei4yut6	j y: t _6 . l ej _4 . j y: t _6
+越开越	yut6hoi1yut6	j y: t _6 . h O:j _1 . j y: t _6
+越盾	yut6teun5	j y: t _6 . t 9: n _5
+越秀山	yut6sau3saan1	j y: t _6 . s 6w _3 . s a: n _1
+趟	tong3	t O: N _3
+足够	juk1gau3	dz u: k _1 . g 6w _3
+足球	juk1kau4	dz u: k _1 . k 6w _4
+足足	jeui3jeui3	dz 9y _3 . dz 9y _3
+趾	ji2	dz i: _2
+跌	dit3	d i: t _3
+跌一跤	dit3yat1gaau1	d i: t _3 . j 6 t _1 . g a:w _1
+跌价	dit3ga3	d i: t _3 . g a: _3
+跌倒	dit3dou2	d i: t _3 . d ow _2
+跌停	dit3ting4	d i: t _3 . t i: N _4
+跌落	dit3lok6	d i: t _3 . l O: k _6
+跌过	dit3go3	d i: t _3 . g O: _3	d i: t _3 . gw O: _3
+跌过价	dit3go3ga3	d i: t _3 . g O: _3 . g a: _3	d i: t _3 . gw O: _3 . g a: _3
+跑	paau2	p a:w _2
+跑东跑西	paau2dung1paau2sai1	p a:w _2 . d u: N _1 . p a:w _2 . s 6j _1
+跑唔郁	paau2m4yuk1	p a:w _2 . m _4 . j y: k _1
+距离	keui5lei4	k 9y _5 . l ej _4
+跟	gan1	g 6 n _1
+跟住	gan1jyu6	g 6 n _1 . dz y: _6
+跟尾	gan1mei5	g 6 n _1 . m ej _5
+跟得到	gan1dak1dou2	g 6 n _1 . d 6 k _1 . d ow _2
+路	lou6	l ow _6
+路兰	lou6laan4	l ow _6 . l a: n _4
+路边	lou6bin1	l ow _6 . b i: n _1
+路飞	lou6fei1	l ow _6 . f ej _1
+跳	tiu3	t iw _3
+跳槽	tiu3chou4	t iw _3 . ts ow _4
+跳舞	tiu3mou5	t iw _3 . m ow _5
+踎	mau1	m 6w _1
+踢	tek3	t E: k _3
+踩	chaai2	ts a:j _2	j a:j _2
+踩单车	chaai2daan1che1	ts a:j _2 . d a: n _1 . ts E: _1	j a:j _2 . d a: n _1 . ts E: _1
+踩场	chaai2cheung4	ts a:j _2 . ts 9: N _4
+身	san1	s 6 n _1
+身上	san1seung6	s 6 n _1 . s 9: N _6
+身份	san1fan2	s 6 n _1 . f 6 n _2
+身份证	san1fan2jing3	s 6 n _1 . f 6 n _2 . dz i: N _3
+身体	san1tai2	s 6 n _1 . t 6j _2
+身边	san1bin1	s 6 n _1 . b i: n _1
+车	che1	ts E: _1
+车	geui1	g 9y _1
+车声	che1seng1	ts E: _1 . s E: N _1	ts E: _1 . s i: N _1
+车尾箱	che1mei5seung1	ts E: _1 . m ej _5 . s 9: N _1
+车展	che1jin2	ts E: _1 . dz i: n _2
+车程	che1ching4	ts E: _1 . ts i: N _4
+车站	che1jaam6	ts E: _1 . dz a: m _6
+车费	che1fai3	ts E: _1 . f 6j _3
+车辘	che1luk1	ts E: _1 . l u: k _1
+车队	che1deui2	ts E: _1 . d 9y _2
+车龄	che1ling4	ts E: _1 . l i: N _4
+轨道	gwai2dou6	gw 6j _2 . d ow _6
+转	jyun2	dz y: n _2	dz y: n _3
+转圈	jyun3hyun1	dz y: n _3 . h y: n _1
+转头	jyun2tau4	dz y: n _2 . t 6w _4	dz y: n _3 . t 6w _4
+转弯位	jyun2waan1wai2	dz y: n _2 . w a: n _1 . w 6j _2
+转户	jyun2wu6	dz y: n _2 . w u: _6
+转换	jyun2wun6	dz y: n _2 . w u: n _6
+转车	jyun3che1	dz y: n _3 . ts E: _1	dz y: n _2 . ts E: _1
+轮	leun4	l 9: n _4
+软	yun5	j y: n _5
+软件	yun5gin2	j y: n _5 . g i: n _2
+轻	heng1	h E: N _1	h i: N _1
+轻举妄动	heng1geui2mong5dung6	h E: N _1 . g 9y _2 . m O: N _5 . d u: N _6
+轻松	hing1sung1	h i: N _1 . s u: N _1	h E: N _1 . s u: N _1
+轻轻	heng1heng1	h E: N _1 . h E: N _1	h i: N _1 . h i: N _1
+轻铁	hing1tit3	h i: N _1 . t i: t _3	h E: N _1 . t i: t _3
+载	joi2	dz O:j _2
+较	gaau3	g a:w _3
+辅导	fu6dou6	f u: _6 . d ow _6
+辅导员	fu6dou6yun4	f u: _6 . d ow _6 . j y: n _4
+辉	fai1	f 6j _1
+输	syu1	s y: _1
+输出	syu1cheut1	s y: _1 . ts 9: t _1
+辛亥革命	san1hoi6gaak3ming6	s 6 n _1 . h O:j _6 . g a: k _3 . m i: N _6
+辛唔辛苦	san1m4san1fu2	s 6 n _1 . m _4 . s 6 n _1 . f u: _2
+辛苦	san1fu2	s 6 n _1 . f u: _2
+辞	chi4	ts i: _4
+辞职	chi4jik1	ts i: _4 . dz i: k _1
+辣	laat6	l a: t _6
+辣椒	laat6jiu1	l a: t _6 . dz iw _1
+边	bin1	b i: n _1
+边个	bin1go3	b i: n _1 . g O: _3
+边位	bin1wai2	b i: n _1 . w 6j _2	b i: n _1 . w 6j _6
+边啲	bin1di1	b i: n _1 . d i: _1
+边场	bin1cheung4	b i: n _1 . ts 9: N _4
+边处	bin1chyu2	b i: n _1 . ts y: _2
+边度	bin1dou6	b i: n _1 . d ow _6
+边边	bin1bin1	b i: n _1 . b i: n _1
+达	daat6	d a: t _6
+达到	daat6dou3	d a: t _6 . d ow _3
+达唔到	daat6m4dou2	d a: t _6 . m _4 . d ow _2
+达成	daat6sing4	d a: t _6 . s i: N _4
+过	go3	g O: _3	gw O: _3
+过一过去	go3yat1go3heui3	g O: _3 . j 6 t _1 . g O: _3 . h 9y _3	gw O: _3 . j 6 t _1 . gw O: _3 . h 9y _3
+过一过嚟	go3yat1go3lei4	g O: _3 . j 6 t _1 . g O: _3 . l ej _4	gw O: _3 . j 6 t _1 . gw O: _3 . l ej _4
+过下	go3ha5	g O: _3 . h a: _5	gw O: _3 . h a: _5
+过下去	go3ha5heui3	g O: _3 . h a: _5 . h 9y _3	gw O: _3 . h a: _5 . h 9y _3
+过于	go3yu1	g O: _3 . j y: _1	gw O: _3 . j y: _1
+过关	go3gwaan1	g O: _3 . gw a: n _1	gw O: _3 . gw a: n _1
+过冬	go3dung1	g O: _3 . d u: N _1	gw O: _3 . d u: N _1
+过到	go3dou3	g O: _3 . d ow _3	gw O: _3 . d ow _3
+过到去	go3dou3heui3	g O: _3 . d ow _3 . h 9y _3	gw O: _3 . d ow _3 . h 9y _3
+过到嚟	go3dou3lai4	g O: _3 . d ow _3 . l 6j _4	gw O: _3 . d ow _3 . l 6j _4	gw O: _3 . d ow _3 . l ej _4
+过去	go3heui3	g O: _3 . h 9y _3	gw O: _3 . h 9y _3
+过后	go3hau6	g O: _3 . h 6w _6	gw O: _3 . h 6w _6
+过唔到	go3m4dou3	g O: _3 . m _4 . d ow _3	gw O: _3 . m _4 . d ow _3	gw O: _3 . m _4 . d ow _2
+过唔过	go3m4go3	g O: _3 . m _4 . g O: _3	gw O: _3 . m _4 . gw O: _3
+过唔过去	go3m4go3heui3	g O: _3 . m _4 . g O: _3 . h 9y _3	gw O: _3 . m _4 . gw O: _3 . h 9y _3
+过唔过嚟	go3m4go3lei4	g O: _3 . m _4 . g O: _3 . l ej _4	gw O: _3 . m _4 . gw O: _3 . l 6j _4	gw O: _3 . m _4 . gw O: _3 . l ej _4
+过嚟	go3lai4	g O: _3 . l 6j _4	gw O: _3 . l ej _4	gw O: _3 . l 6j _4
+过土	go3tou2	g O: _3 . t ow _2	gw O: _3 . t ow _2
+过埋	go3maai4	g O: _3 . m a:j _4	gw O: _3 . m a:j _4
+过多	go3do1	g O: _3 . d O: _1	gw O: _3 . d O: _1
+过头	go3tau4	g O: _3 . t 6w _4	gw O: _3 . t 6w _4
+过奖	go3jeung2	g O: _3 . dz 9: N _2	gw O: _3 . dz 9: N _2
+过左去	go3jo2heui3	g O: _3 . dz O: _2 . h 9y _3	gw O: _3 . dz O: _2 . h 9y _3
+过左年	go3jo2lin4	g O: _3 . dz O: _2 . l i: n _4	gw O: _3 . dz O: _2 . n i: n _4	gw O: _3 . dz O: _2 . l i: n _4
+过左期	go3jo2kei4	g O: _3 . dz O: _2 . k ej _4	gw O: _3 . dz O: _2 . k ej _4
+过年	go3lin4	g O: _3 . l i: n _4	gw O: _3 . n i: n _4	gw O: _3 . l i: n _4
+过得	go3dak1	g O: _3 . d 6 k _1	gw O: _3 . d 6 k _1
+过得去	go3dak1heui3	g O: _3 . d 6 k _1 . h 9y _3	gw O: _3 . d 6 k _1 . h 9y _3
+过来	go3loi4	g O: _3 . l O:j _4	gw O: _3 . l O:j _4
+过来人	go3loi4yan4	g O: _3 . l O:j _4 . j 6 n _4	gw O: _3 . l O:j _4 . j 6 n _4
+过桥	go3kiu4	g O: _3 . k iw _4	gw O: _3 . k iw _4
+过江	go3gong1	g O: _3 . g O: N _1	gw O: _3 . g O: N _1
+过江大道	go3gong1daai6dou6	g O: _3 . g O: N _1 . d a:j _6 . d ow _6	gw O: _3 . g O: N _1 . d a:j _6 . d ow _6
+过渡	go3dou6	g O: _3 . d ow _6	gw O: _3 . d ow _6
+过瘾	go3yan5	g O: _3 . j 6 n _5	gw O: _3 . j 6 n _5
+运动	wan6dung6	w 6 n _6 . d u: N _6
+运动会	wan6dung6wui5	w 6 n _6 . d u: N _6 . w u:j _5
+运动量	wan6dung6leung6	w 6 n _6 . d u: N _6 . l 9: N _6
+运气	wan6hei3	w 6 n _6 . h ej _3
+近	gan6	g 6 n _6	k 6 n _5
+近厨得食	gan6chyu4dak1sik6	g 6 n _6 . ts y: _4 . d 6 k _1 . s i: k _6	g 6 n _6 . ts 9y _4 . d 6 k _1 . s i: k _6
+近排	gan6paai4	g 6 n _6 . p a:j _4
+近视	gan6si6	g 6 n _6 . s i: _6
+近近	kan5kan5	k 6 n _5 . k 6 n _5	g 6 n _6 . g 6 n _6
+近近地	kan5kan5dei2	k 6 n _5 . k 6 n _5 . d ej _2	g 6 n _6 . g 6 n _6 . d ej _6	g 6 n _6 . g 6 n _6 . d ej _2	k 6 n _5 . k 6 n _5 . d ej _6
+返	faan1	f a: n _1
+返上	faan1seung5	f a: n _1 . s 9: N _5
+返入去	faan1yap6heui3	f a: n _1 . j 6 p _6 . h 9y _3
+返到	faan1dou3	f a: n _1 . d ow _3
+返到去	faan1dou3heui3	f a: n _1 . d ow _3 . h 9y _3
+返到嚟	faan1dou3lai4	f a: n _1 . d ow _3 . l 6j _4	f a: n _1 . d ow _3 . l ej _4
+返去	faan2heui3	f a: n _2 . h 9y _3
+返唔返	faan1m4faan1	f a: n _1 . m _4 . f a: n _1
+返唔返嚟	faan1m4faan1lai4	f a: n _1 . m _4 . f a: n _1 . l 6j _4	f a: n _1 . m _4 . f a: n _1 . l ej _4
+返嚟	faan1lai4	f a: n _1 . l 6j _4	f a: n _1 . l ej _4
+返学	faan1hok6	f a: n _1 . h O: k _6
+返屋企	faan1uk1kei5	f a: n _1 . u: k _1 . k ej _5
+返工	faan1gung1	f a: n _1 . g u: N _1
+返左学	faan1jo2hok6	f a: n _1 . dz O: _2 . h O: k _6
+返攞学	faan1gan2hok6	f a: n _1 . g 6 n _2 . h O: k _6
+返来	faan2loi4	f a: n _2 . l O:j _4
+返过屋企	faan1go3uk1kei2	f a: n _1 . g O: _3 . u: k _1 . k ej _2	f a: n _1 . gw O: _3 . u: k _1 . k ej _2	f a: n _1 . gw O: _3 . N u: k _1 . k ej _2
+还	waan4	w a: n _4
+还是	waan4si6	w a: n _4 . s i: _6
+这	je3	dz E: _3
+进入去	jeun3yap6heui3	dz 9: n _3 . j 6 p _6 . h 9y _3
+远	yun5	j y: n _5
+远唔远	yun5m4yun5	j y: n _5 . m _4 . j y: n _5
+远得滞	yun5dak1jai6	j y: n _5 . d 6 k _1 . dz 6j _6
+连	lin4	l i: n _4
+连埋	lin4maai4	l i: n _4 . m a:j _4
+连接	lin4jip3	l i: n _4 . dz i: p _3
+连连台	lin4lin4toi4	l i: n _4 . l i: n _4 . t O:j _4
+迟	chi4	ts i: _4
+迟到	chi4dou3	ts i: _4 . d ow _3
+迟早	chi4jou2	ts i: _4 . dz ow _2
+迟缓	chi4wun6	ts i: _4 . w u: n _6
+迫	baak1	b a: k _1	b i: k _1
+迷	mai4	m 6j _4
+迷你	mai4lei5	m 6j _4 . l ej _5	m 6j _4 . n ej _5
+追	jeui1	dz 9y _1
+追唔到	jeui1m4dou3	dz 9y _1 . m _4 . d ow _3	dz 9y _1 . m _4 . d ow _2
+追唔起	jeui1m4hei2	dz 9y _1 . m _4 . h ej _2
+追埋	jeui1maai4	dz 9y _1 . m a:j _4
+追求	jeui1kau4	dz 9y _1 . k 6w _4
+退	teui3	t 9y _3
+退休	teui3yau1	t 9y _3 . j 6w _1
+退单	teui3daan1	t 9y _3 . d a: n _1
+退埋休	teui3maai4yau1	t 9y _3 . m a:j _4 . j 6w _1
+退货	teui3fo3	t 9y _3 . f O: _3
+送	sung3	s u: N _3
+送上	sung3seung5	s u: N _3 . s 9: N _5
+送嫁	sung3ga3	s u: N _3 . g a: _3
+送货	sung3fo3	s u: N _3 . f O: _3
+送达	sung3daat6	s u: N _3 . d a: t _6
+适唔适应	sik1m4sik1ying3	s i: k _1 . m _4 . s i: k _1 . j i: N _3
+适宜	sik1yi4	s i: k _1 . j i: _4
+逃生	tou4saang1	t ow _4 . s a: N _1
+选择	syun2jaak6	s y: n _2 . dz a: k _6
+透	tau3	t 6w _3
+透露	tau3lou6	t 6w _3 . l ow _6
+逐啲	juk6di1	dz u: k _6 . d i: _1
+递	dai6	d 6j _6
+途径	tou4ging3	t ow _4 . g i: N _3
+逗	dau6	d 6w _6
+通	tung1	t u: N _1
+通信	tung1seun3	t u: N _1 . s 9: n _3
+通完话	tung1yun4wa6	t u: N _1 . j y: n _4 . w a: _6
+通左	tung1jo2	t u: N _1 . dz O: _2
+通常	tung1seung4	t u: N _1 . s 9: N _4
+通晒啦	tung1saai3la1	t u: N _1 . s a:j _3 . l a: _1
+通用	tung1yung6	t u: N _1 . j y: N _6
+通知	tung1ji1	t u: N _1 . dz i: _1
+通胀	tung1jeung3	t u: N _1 . dz 9: N _3
+通风	tung1fung1	t u: N _1 . f u: N _1
+逛	kwaang3	kw a: N _3	gw a: N _3
+逛街	kwaang3gaai1	kw a: N _3 . g a:j _1	gw a: N _3 . g a:j _1
+速	chuk1	ts u: k _1
+速度	chuk1dou6	ts u: k _1 . d ow _6
+速递	chuk1dai6	ts u: k _1 . d 6j _6
+造	jou3	dz ow _3
+逼	bik1	b i: k _1
+逼真	bik1jan1	b i: k _1 . dz 6 n _1
+逼迫	bik1baak1	b i: k _1 . b a: k _1
+遇到	yu6dou3	j y: _6 . d ow _3	j y: _6 . d ow _2
+道	dou6	d ow _6
+道行	dou6haang4	d ow _6 . h a: N _4	d ow _6 . h O: N _4
+遗传	wai4chyun4	w 6j _4 . ts y: n _4
+遮	je1	dz E: _1
+邀约	yiu1yeuk3	j iw _1 . j 9: k _3
+邋遢	laat6taap3	l a: t _6 . t a: p _3	l a: t _6 . t a: t _3
+邓心明	dang6sam1jeung1	d 6 N _6 . s 6 m _1 . dz 9: N _1
+那	la5	l a: _5	n a: _5
+那度	la5dou6	l a: _5 . d ow _6	n a: _5 . d ow _6
+那边	la5bin1	l a: _5 . b i: n _1	n a: _5 . b i: n _1
+邮局	yau4guk6	j 6w _4 . g u: k _6
+邻居	leun4geui1	l 9: n _4 . g 9y _1
+郁	yuk1	j y: k _1
+郁下	yuk1ha2	j y: k _1 . h a: _2	w 6 t _1 . h a: _2
+郑恒	jeng6han4	dz E: N _6 . h 6 n _4
+郑淑银	jeng6suk6an4	dz E: N _6 . s u: k _6 . 6 n _4
+郝	gok3	g O: k _3
+部	bou6	b ow _6
+部分	bou6fan6	b ow _6 . f 6 n _6
+郭天	gok3tin1	g O: k _3 . t i: n _1	gw O: k _3 . t i: n _1
+都	dou1	d ow _1
+配	pui3	p u:j _3
+配送	pui3sung3	p u:j _3 . s u: N _3
+酒	jau2	dz 6w _2
+酒仙	jau2sin1	dz 6w _2 . s i: n _1
+酒家	jau2ga1	dz 6w _2 . g a: _1
+酒店	jau2dim3	dz 6w _2 . d i: m _3	dz 6w _2 . d i: n _3
+酒楼	jau2lau4	dz 6w _2 . l 6w _4
+醒	sing2	s i: N _2
+醒目	sing2muk6	s i: N _2 . m u: k _6
+里	lei5	l ej _5	l 9y _5
+里边	leui5bin1	l 9y _5 . b i: n _1	l 9y _5 . b i: n _6
+里面	leui5min6	l 9y _5 . m i: n _6
+重	jung6	dz u: N _6
+重仓	chung4chong1	ts u: N _4 . ts O: N _1
+重修	chung4sau1	ts u: N _4 . s 6w _1
+重合	chung4hap6	ts u: N _4 . h 6 p _6
+重头	chung5tau4	ts u: N _5 . t 6w _4
+重新	chung4san1	ts u: N _4 . s 6 n _1
+重要	jung6yiu3	dz u: N _6 . j iw _3
+野	ye5	j E: _5
+野战	ye5jin3	j E: _5 . dz i: n _3
+野餐	ye5chaan1	j E: _5 . ts a: n _1
+量	leung6	l 9: N _6
+金	gam1	g 6 m _1
+金曲	gam1kuk1	g 6 m _1 . k u: k _1
+金梅	gam1gong1	g 6 m _1 . g O: N _1
+金沙	gam1sa1	g 6 m _1 . s a: _1
+金牌	gam1paai4	g 6 m _1 . p a:j _4
+金玫	gam1mui4	g 6 m _1 . m u:j _4
+金美	gam1mei5	g 6 m _1 . m ej _5
+金融	gam1yung4	g 6 m _1 . j y: N _4
+金额	gam1aak2	g 6 m _1 . a: k _2	g 6 m _1 . N a: k _2
+金鱼缸	gam1yu4gong1	g 6 m _1 . j y: _4 . g O: N _1	g 6 m _1 . j y: _2 . g O: N _1
+鈪	ngaak3	N a: k _3
+针	jam1	dz 6 m _1
+针对	jam1deui3	dz 6 m _1 . d 9y _3
+钉	deng1	d E: N _1
+钓	diu3	d iw _3
+钓到	diu3dou3	d iw _3 . d ow _3	d iw _3 . d ow _2
+钓鱼	diu3yu5	d iw _3 . j y: _5	d iw _3 . j y: _4
+钙质	koi3jat1	k O:j _3 . dz 6 t _1
+钟	jung1	dz u: N _1
+钟唔钟意	jung1m4jung1ji3	dz u: N _1 . m _4 . dz u: N _1 . dz i: _3
+钟头	jung1tau4	dz u: N _1 . t 6w _4
+钟意	jung1yi3	dz u: N _1 . j i: _3
+钟灵	jung1leng4	dz u: N _1 . l E: N _4
+钟表	jung1biu2	dz u: N _1 . b iw _2
+钱	chin2	ts i: n _2
+钻	jyun3	dz y: n _3
+钻机	jyun3gei1	dz y: n _3 . g ej _1
+铰剪	gaau3jin2	g a:w _3 . dz i: n _2
+银	an4	6 n _4	N 6 n _4
+银子	an4ji2	6 n _4 . dz i: _2
+银湖	an4wu4	6 n _4 . w u: _4	6 n _4 . w u: _2
+银盏	an4jaan2	6 n _4 . dz a: n _2
+银纸	an4ji2	6 n _4 . dz i: _2	N 6 n _4 . dz i: _2
+银行	an4hong4	6 n _4 . h O: N _4	N 6 n _4 . h O: N _4
+铺	pou3	p ow _3
+铺位	pou3wai2	p ow _3 . w 6j _2
+铺头	pou3tau4	p ow _3 . t 6w _4
+铺租	pou3jou1	p ow _3 . dz ow _1
+销售	siu1sau6	s iw _1 . s 6w _6
+锁住	so2jyu6	s O: _2 . dz y: _6
+错	cho3	ts O: _3
+锡	sek3	s E: k _3
+键	gin6	g i: n _6
+锯扒	geui3pa1	g 9y _3 . p a: _1
+锻炼	dyun3lin6	d y: n _3 . l i: n _6
+锻炼下	dyun3lin6ha5	d y: n _3 . l i: n _6 . h a: _5
+镜	geng3	g E: N _3
+镬	wok6	w O: k _6
+镯	juk6	dz u: k _6
+长	jeung2	dz 9: N _2
+长	cheung4	ts 9: N _4
+长假	cheung4ga3	ts 9: N _4 . g a: _3
+长寿路	cheung4sau6lou6	ts 9: N _4 . s 6w _6 . l ow _6
+长期	cheung4kei4	ts 9: N _4 . k ej _4
+长毛椗	cheung4mou4ding3	ts 9: N _4 . m ow _4 . d i: N _3
+长气	cheung4hei3	ts 9: N _4 . h ej _3
+长线	cheung4sin3	ts 9: N _4 . s i: n _3
+长辈	jeung2bui3	dz 9: N _2 . b u:j _3
+长长	cheung4cheung4	ts 9: N _4 . ts 9: N _4
+閪	hai1	h 6j _1
+閪野	hai1ye5	h 6j _1 . j E: _5
+门	mun4	m u: n _4
+门口	mun4hau2	m u: n _4 . h 6w _2
+门票	mun4piu3	m u: n _4 . p iw _3
+闪闪缩缩	sim2sim2suk1suk1	s i: m _2 . s i: m _2 . s u: k _1 . s u: k _1
+问	man6	m 6 n _6
+问下	man6ha5	m 6 n _6 . h a: _5
+问号	man6hou6	m 6 n _6 . h ow _6	m 6 n _6 . h ow _2
+问埋	man6maai4	m 6 n _6 . m a:j _4
+问问	man6man6	m 6 n _6 . m 6 n _6
+问题	man6tai4	m 6 n _6 . t 6j _4
+闲	haan4	h a: n _4
+间	gaan1	g a: n _1	g a: n _3
+间中	gaan3jung1	g a: n _3 . dz u: N _1
+间唔中	gaan3m4jung1	g a: n _3 . m _4 . dz u: N _1
+闷	mun6	m u: n _6
+闸	jaap6	dz a: p _6
+闹	laau6	l a:w _6	n a:w _6
+闹交	laau6gaau1	l a:w _6 . g a:w _1	n a:w _6 . g a:w _1
+闻到	man4dou3	m 6 n _4 . d ow _3	m 6 n _4 . d ow _2
+阔	fut3	f u: t _3
+阳光	yeung4gwong1	j 9: N _4 . gw O: N _1
+阳台	yeung4toi4	j 9: N _4 . t O:j _4
+阳朔	yeung4sok3	j 9: N _4 . s O: k _3
+阴	yam1	j 6 m _1
+阴功	yam1gung1	j 6 m _1 . g u: N _1
+阴毒	yam1duk6	j 6 m _1 . d u: k _6
+阵	jan6	dz 6 n _6
+阵时	jan6si4	dz 6 n _6 . s i: _4
+阵间	jan6gaan1	dz 6 n _6 . g a: n _1
+阶段	gaai1dyun6	g a:j _1 . d y: n _6
+阻	jo2	dz O: _2
+阻住	jo2jyu6	dz O: _2 . dz y: _6
+阻唔阻	jo2m4jo2	dz O: _2 . m _4 . dz O: _2
+阿	a3	a: _3
+阿仲春	a3jung6cheun1	a: _3 . dz u: N _6 . ts 9: n _1
+阿伟	a3wai5	a: _3 . w 6j _5
+阿吴姐	a3m4je2	a: _3 . m _4 . dz E: _2	a: _3 . m _4 . dz E: _1
+阿哥	a3go1	a: _3 . g O: _1
+阿大宝	a3daai6bou2	a: _3 . d a:j _6 . b ow _2
+阿妈	a3ma1	a: _3 . m a: _1
+阿姨	a3yi1	a: _3 . j i: _1
+阿嫂	a3sou2	a: _3 . s ow _2
+阿嫲	a3ma6	a: _3 . m a: _6	a: _3 . m a: _4
+阿宏	a3wang4	a: _3 . w 6 N _4
+阿小谭	a3siu2taam4	a: _3 . s iw _2 . t a: m _4
+阿峰	a3fung1	a: _3 . f u: N _1
+阿强	a3keung5	a: _3 . k 9: N _5	a: _3 . k 9: N _4
+阿捞	a3laau1	a: _3 . l a:w _1
+阿敏	a3man5	a: _3 . m 6 n _5
+阿文	a3man2	a: _3 . m 6 n _2
+阿斌	a3ban1	a: _3 . b 6 n _1
+阿明	a3ming4	a: _3 . m i: N _4
+阿杰	a3git6	a: _3 . g i: t _6
+阿波	a3bo1	a: _3 . b O: _1
+阿浩文	a3hou6man4	a: _3 . h ow _6 . m 6 n _4
+阿玲	a3ling4	a: _3 . l i: N _4
+阿珍	a3jan1	a: _3 . dz 6 n _1
+阿芬	a3fan1	a: _3 . f 6 n _1
+阿诗	a3si1	a: _3 . s i: _1
+附	fu6	f u: _6
+附属卡	fu6suk6ka1	f u: _6 . s u: k _6 . k a: _1	f u: _6 . s u: k _6 . k a: t _1
+附近	fu6gan6	f u: _6 . g 6 n _6
+陆	luk6	l u: k _6
+陈意涵	chan4yi3haam4	ts 6 n _4 . j i: _3 . h a: m _4
+陈村	chan4chyun1	ts 6 n _4 . ts y: n _1
+陌生	mak6sang1	m 6 k _6 . s 6 N _1
+降	gong3	g O: N _3
+降价	gong3ga3	g O: N _3 . g a: _3
+限	haan6	h a: n _6
+限制	haan6jai3	h a: n _6 . dz 6j _3
+限定	haan6ding6	h a: n _6 . d i: N _6
+限购	haan6kau3	h a: n _6 . k 6w _3
+限额	haan6aak2	h a: n _6 . a: k _2	h a: n _6 . N a: k _6
+除	cheui4	ts 9y _4
+除左	cheui4jo2	ts 9y _4 . dz O: _2
+除得到	cheui4dak1dou2	ts 9y _4 . d 6 k _1 . d ow _2	ts 9y _4 . d 6 k _1 . d ow _3
+除非	chyu4fei1	ts y: _4 . f ej _1
+陪	pui4	p u:j _4
+陪下	pui4ha5	p u:j _4 . h a: _5
+陶瓷	tou4chi4	t ow _4 . ts i: _4
+陶瓷厂	tou4chi4chong2	t ow _4 . ts i: _4 . ts O: N _2
+随	cheui4	ts 9y _4
+随便	cheui4bin2	ts 9y _4 . b i: n _2
+随时	cheui4si4	ts 9y _4 . s i: _4
+隔	gaak3	g a: k _3
+隔个	gaak3go3	g a: k _3 . g O: _3
+隔离	gaak3lei4	g a: k _3 . l ej _4
+隔篱	gaak3lei4	g a: k _3 . l ej _4
+难	laan6	l a: n _6	n a: n _6
+难听	laan6teng1	l a: n _6 . t E: N _1	n a: n _6 . t E: N _1
+难唔难	laan6m4laan6	l a: n _6 . m _4 . l a: n _6	n a: n _6 . m _4 . n a: n _6
+难度	laan4dou6	l a: n _4 . d ow _6	n a: n _4 . d ow _6
+难得	laan4dak1	l a: n _4 . d 6 k _1	n a: n _4 . d 6 k _1
+难忍	laan4yan2	l a: n _4 . j 6 n _2	n a: n _4 . j 6 n _2
+雀圣	jeuk3sing3	dz 9: k _3 . s i: N _3
+雅思	a5si1	a: _5 . s i: _1	N a: _5 . s i: _1
+雅源	a5yun4	a: _5 . j y: n _4	N a: _5 . j y: n _4
+集	jaap6	dz a: p _6
+集体	jaap6tai2	dz a: p _6 . t 6j _2
+雨	yu5	j y: _5
+雪	syut3	s y: t _3
+雪上加霜	syut3seung6ga1seung1	s y: t _3 . s 9: N _6 . g a: _1 . s 9: N _1
+雪碧	syut3bik1	s y: t _3 . b i: k _1
+雯	man4	m 6 n _4
+零	leng4	l E: N _4
+雷	leui4	l 9y _4
+雷诺	leui4nok6	l 9y _4 . n O: k _6
+雾峰山	mou6fung1saan1	m ow _6 . f u: N _1 . s a: n _1
+需要	seui1yiu3	s 9y _1 . j iw _3
+震	jan3	dz 6 n _3
+霎	saap3	s a: p _3
+霎气	saap3hei3	s a: p _3 . h ej _3
+霞山	ha4saan1	h a: _4 . s a: n _1
+露下	lou6ha2	l ow _6 . h a: _2
+霸	ba3	b a: _3
+青春	cheng1cheun1	ts E: N _1 . ts 9: n _1	ts i: N _1 . ts 9: n _1
+青秀山	cheng1sau3saan1	ts E: N _1 . s 6w _3 . s a: n _1
+青菜	cheng1choi3	ts E: N _1 . ts O:j _3	ts i: N _1 . ts O:j _3
+青藏	ching1jong6	ts i: N _1 . dz O: N _6
+靓	leng3	l E: N _3
+靓女	leng3neui2	l E: N _3 . n 9y _2	l E: N _3 . l 9y _2
+静	jing6	dz i: N _6
+静间	jing6gaan1	dz i: N _6 . g a: n _1
+静静	jing6jing6	dz i: N _6 . dz i: N _6
+非常	fei1seung4	f ej _1 . s 9: N _4
+靠	kaau3	k a:w _3
+靠边	kaau3bin1	k a:w _3 . b i: n _1
+面	min6	m i: n _6	m i: n _2
+面前	min6chin4	m i: n _6 . ts i: n _4
+面包车	min6baau1che1	m i: n _6 . b a:w _1 . ts E: _1
+面油	min6yau4	m i: n _6 . j 6w _4
+面试	min6si5	m i: n _6 . s i: _5
+面试官	min6si5gun1	m i: n _6 . s i: _5 . g u: n _1	m i: n _6 . s i: _3 . g u: n _1
+鞋	haai4	h a:j _4
+韩国	hon4gok3	h O: n _4 . g O: k _3	h O: n _4 . gw O: k _3
+音	yam1	j 6 m _1
+音乐	yam1ok6	j 6 m _1 . O: k _6	j 6 m _1 . N O: k _6
+音响	yam1heung2	j 6 m _1 . h 9: N _2
+音量	yam1leung6	j 6 m _1 . l 9: N _6
+韶关	siu4gwaan1	s iw _4 . gw a: n _1
+韶山	siu4saan1	s iw _4 . s a: n _1
+顶	deng2	d E: N _2
+顶唔顺	ding2m4seun6	d i: N _2 . m _4 . s 9: n _6
+顶多	ding2do1	d i: N _2 . d O: _1
+项	hong6	h O: N _6
+项目	hong6muk6	h O: N _6 . m u: k _6
+顺	seun6	s 9: n _6
+顺便	seun6bin6	s 9: n _6 . b i: n _6	s 9: n _6 . b i: n _2
+顺其自然	seun6kei4ji6yin4	s 9: n _6 . k ej _4 . dz i: _6 . j i: n _4
+顺德	seun6dak1	s 9: n _6 . d 6 k _1
+顺路	seun6lou6	s 9: n _6 . l ow _6
+顾	gu3	g u: _3
+顾客	gu3haak3	g u: _3 . h a: k _3
+顾家	gu3ga1	g u: _3 . g a: _1
+预先	yu6sin1	j y: _6 . s i: n _1
+预存	yu6chyun4	j y: _6 . ts y: n _4
+预料	yu6liu6	j y: _6 . l iw _6
+预约	yu6yeuk3	j y: _6 . j 9: k _3
+领	ling5	l i: N _5
+领事馆	ling5si6gun2	l i: N _5 . s i: _6 . g u: n _2
+领导	ling5dou6	l i: N _5 . d ow _6
+领证	ling5jing3	l i: N _5 . dz i: N _3
+颈	geng2	g E: N _2
+颈渴	geng2hot3	g E: N _2 . h O: t _3
+题	tai4	t 6j _4
+题目	tai4muk6	t 6j _4 . m u: k _6
+额	aak6	a: k _6	a: k _3	N a: k _6	N a: k _3
+风	fung1	f u: N _1
+风味	fung1mei6	f u: N _1 . m ej _6
+风哥	fung1go1	f u: N _1 . g O: _1
+风格	fung1gaak3	f u: N _1 . g a: k _3
+风车	fung1che1	f u: N _1 . ts E: _1
+飞	fei1	f ej _1
+飞利	fei1lei6	f ej _1 . l ej _6
+飞机	fei1gei1	f ej _1 . g ej _1
+飞行员	fei1haang4yun4	f ej _1 . h a: N _4 . j y: n _4
+飞龙	fei1lung4	f ej _1 . l u: N _4
+食	sik6	s i: k _6
+食下	sik6ha5	s i: k _6 . h a: _5
+食下野	sik6ha5ye5	s i: k _6 . h a: _5 . j E: _5
+食下饭	sik6ha5faan6	s i: k _6 . h a: _5 . f a: n _6
+食到	sik6dou3	s i: k _6 . d ow _3	s i: k _6 . d ow _2
+食品	sik6ban2	s i: k _6 . b 6 n _2
+食唔到	sik6m4dou3	s i: k _6 . m _4 . d ow _3
+食唔晒	sik6m4saai3	s i: k _6 . m _4 . s a:j _3
+食左饭	sik6jo2faan6	s i: k _6 . dz O: _2 . f a: n _6
+食攞饭	sik6gan2faan6	s i: k _6 . g 6 n _2 . f a: n _6
+食斋	sik6jaai1	s i: k _6 . dz a:j _1
+食油	sik6yau4	s i: k _6 . j 6w _4
+食过野	sik6go3ye5	s i: k _6 . g O: _3 . j E: _5	s i: k _6 . gw O: _3 . j E: _5
+食过饭	sik6go3faan6	s i: k _6 . g O: _3 . f a: n _6	s i: k _6 . gw O: _3 . f a: n _6
+食野	sik6ye5	s i: k _6 . j E: _5
+食量	sik6leung6	s i: k _6 . l 9: N _6
+食食	sik6sik6	s i: k _6 . s i: k _6
+食饭	sik6faan6	s i: k _6 . f a: n _6
+食饱	sik6baau2	s i: k _6 . b a:w _2
+食饱饭	sik6baau2faan6	s i: k _6 . b a:w _2 . f a: n _6
+餐	chaan1	ts a: n _1
+餐包	chaan1baau1	ts a: n _1 . b a:w _1
+餸	sung3	s u: N _3
+饭	faan6	f a: n _6
+饭堂	faan6tong4	f a: n _6 . t O: N _4
+饭店	faan6din3	f a: n _6 . d i: n _3	f a: n _6 . d i: m _3
+饭碗	faan6wun2	f a: n _6 . w u: n _2
+饮	yam2	j 6 m _2
+饮下	yam2ha2	j 6 m _2 . h a: _2
+饮下水	yam2ha5seui2	j 6 m _2 . h a: _5 . s 9y _2
+饮下茶	yam2ha5cha4	j 6 m _2 . h a: _5 . ts a: _4
+饮下酒	yam2ha5jau2	j 6 m _2 . h a: _5 . dz 6w _2
+饮到	yam2dou3	j 6 m _2 . d ow _3
+饮唔饮	yam2m4yam2	j 6 m _2 . m _4 . j 6 m _2
+饮奶	yam2naai5	j 6 m _2 . n a:j _5	l a:j _5 . l a:j _5
+饮得	yam2dak1	j 6 m _2 . d 6 k _1
+饮料	yam2liu2	j 6 m _2 . l iw _2
+饮水	yam2seui2	j 6 m _2 . s 9y _2
+饮水机	yam2seui2gei1	j 6 m _2 . s 9y _2 . g ej _1
+饮茶	yam2cha4	j 6 m _2 . ts a: _4
+饮酒	yam2jau2	j 6 m _2 . dz 6w _2
+饮野	yam2ye5	j 6 m _2 . j E: _5
+饮食	yam2sik6	j 6 m _2 . s i: k _6
+饮食店	yam2sik6dim3	j 6 m _2 . s i: k _6 . d i: m _3
+饰	sik1	s i: k _1
+饱	baau2	b a:w _2
+饺子	gaau2ji2	g a:w _2 . dz i: _2
+饼	beng2	b E: N _2
+饼票	beng2piu3	b E: N _2 . p iw _3
+饿	o6	O: _6	N O: _6
+饿得快	o6dak1faai3	O: _6 . d 6 k _1 . f a:j _3	N O: _6 . d 6 k _1 . f a:j _3
+馒头	maan6tau4	m a: n _6 . t 6w _4
+首	sau2	s 6w _2
+首先	sau2sin1	s 6w _2 . s i: n _1
+首尾	sau2mei5	s 6w _2 . m ej _5
+香	heung1	h 9: N _1
+香港	heung1gong2	h 9: N _1 . g O: N _2
+香港台	heung1gong2toi4	h 9: N _1 . g O: N _2 . t O:j _4
+香芋	heung1wu6	h 9: N _1 . w u: _6
+马	ma5	m a: _5
+马上	ma5seung6	m a: _5 . s 9: N _6
+马尔代夫	ma5yi5doi6fu1	m a: _5 . j i: _5 . d O:j _6 . f u: _1
+马文	ma5man4	m a: _5 . m 6 n _4
+马路	ma5lou6	m a: _5 . l ow _6
+马蹄	ma5tai4	m a: _5 . t 6j _4
+马骝	ma5lau1	m a: _5 . l 6w _1
+驱虫	keui1chung4	k 9y _1 . ts u: N _4
+驳	bok3	b O: k _3
+驳线	bok3sin3	b O: k _3 . s i: n _3
+驾校	ga3haau6	g a: _3 . h a:w _6
+驾照	ga3jiu3	g a: _3 . dz iw _3
+驾驶	ga3sai2	g a: _3 . s 6j _2
+驾驶证	ga3sai2jing3	g a: _3 . s 6j _2 . dz i: N _3
+验	yim6	j i: m _6
+验血	yim6hyut3	j i: m _6 . h y: t _3
+验过血	yim6go3hyut3	j i: m _6 . g O: _3 . h y: t _3	j i: m _6 . gw O: _3 . h y: t _3
+骨	gwat1	gw 6 t _1
+骨汤	gwat1tong1	gw 6 t _1 . t O: N _1
+髀	bei2	b ej _2
+高	gou1	g ow _1
+高中	gou1jung1	g ow _1 . dz u: N _1
+高丽	gou1lai6	g ow _1 . l 6j _6
+高兴	gou1hing1	g ow _1 . h i: N _1
+高升	gou1sing1	g ow _1 . s i: N _1
+高压煲	gou1ngaat3bou1	g ow _1 . N a: t _3 . b ow _1
+高唔高	gou1m4gou1	g ow _1 . m _4 . g ow _1
+高娃	gou1wa1	g ow _1 . w a: _1
+高峰期	gou1fung1kei4	g ow _1 . f u: N _1 . k ej _4
+高度	gou1dou6	g ow _1 . d ow _6
+高斗	gou1dau3	g ow _1 . d 6w _3	g ow _1 . d 6w _2
+高明区	gou1ming4keui1	g ow _1 . m i: N _4 . k 9y _1
+高窦	gou1dau6	g ow _1 . d 6w _6
+高端	gou1dyun1	g ow _1 . d y: n _1
+高等数学	gou1dang2sou3hok6	g ow _1 . d 6 N _2 . s ow _3 . h O: k _6
+高级	gou1kap1	g ow _1 . k 6 p _1
+高贵	gou1gwai3	g ow _1 . gw 6j _3
+高速路	gou1chuk1lou6	g ow _1 . ts u: k _1 . l ow _6
+高频	gou1pan4	g ow _1 . p 6 n _4
+鬼	gwai2	gw 6j _2
+鱼	yu4	j y: _4	j y: _2
+鱼仔	yu4jai2	j y: _4 . dz 6j _2
+鱼排	yu4paai4	j y: _4 . p a:j _4
+鱼缸	yu4gong1	j y: _4 . g O: N _1
+鱼骨汤	yu4gwat1tong1	j y: _4 . gw 6 t _1 . t O: N _1
+鱿鱼	yau4yu2	j 6w _4 . j y: _2
+鲜奶	sin1laai5	s i: n _1 . l a:j _5
+鳩	gau1	g 6w _1
+鸠	gau1	g 6w _1	k 6w _1
+鸡	gai1	g 6j _1
+鸡什	gai1jap3	g 6j _1 . dz 6 p _3
+鸡仔饼	gai1jai2beng2	g 6j _1 . dz 6j _2 . b E: N _2
+鸡油	gai1yau2	g 6j _1 . j 6w _2	g 6j _1 . j 6w _4
+鸡翼	gai1yik6	g 6j _1 . j i: k _6
+鸡肠	gai1cheung4	g 6j _1 . ts 9: N _4	g 6j _1 . ts 9: N _2
+鸡蛋	gai1daan2	g 6j _1 . d a: n _2	g 6j _1 . d a: n _4
+鸭仔饼	aap3jai2beng2	a: p _3 . dz 6j _2 . b E: N _2	N a: p _3 . dz 6j _2 . b E: N _2
+鸽	gaap3	g a: p _3
+鸽天下	gaap3tin1ha6	g a: p _3 . t i: n _1 . h a: _6
+鹤山	hok6saan1	h O: k _6 . s a: n _1
+鹿回头	luk6wui4tau4	l u: k _6 . w u:j _4 . t 6w _4
+麓景路	luk1ging2lou6	l u: k _1 . g i: N _2 . l ow _6	l u: k _6 . g i: N _2 . l ow _6
+麦当劳	mak6dong1lou4	m 6 k _6 . d O: N _1 . l ow _4
+麦片	mak6pin2	m 6 k _6 . p i: n _2	m 6 k _6 . p i: n _3
+麻村	ma4chyun1	m a: _4 . ts y: n _1
+麻烦	ma4faan4	m a: _4 . f a: n _4
+麻章	ma4jeung1	m a: _4 . dz 9: N _1
+麻雀	ma4jeuk3	m a: _4 . dz 9: k _3
+麻雀仔	ma4jeuk3jai2	m a: _4 . dz 9: k _3 . dz 6j _2
+麻鬼烦	ma4gwai2faan4	m a: _4 . gw 6j _2 . f a: n _4
+麻鸠烦	ma4gau1faan4	m a: _4 . g 6w _1 . f a: n _4
+麻麻	ma4ma4	m a: _4 . m a: _4
+黄埔大道	wong4bou3daai6dou6	w O: N _4 . b ow _3 . d a:j _6 . d ow _6
+黄山	wong4saan1	w O: N _4 . s a: n _1
+黄岗	wong4gong1	w O: N _4 . g O: N _1
+黄江	wong4gong1	w O: N _4 . g O: N _1
+黄花	wong4fa1	w O: N _4 . f a: _1
+黄钻	wong4jyun1	w O: N _4 . dz y: n _1
+黎少良	lai4siu2leung4	l 6j _4 . s iw _2 . l 9: N _4
+黐	chi1	ts i: _1
+黑	haak1	h a: k _1
+黑仔	haak1jai2	h a: k _1 . dz 6j _2
+黑色	haak1sik1	h a: k _1 . s i: k _1
+黑鼆鼆	haak1man4man4	h a: k _1 . m 6 n _4 . m 6 n _4
+鼎湖	ding2wu4	d i: N _2 . w u: _4
+鼻	bei6	b ej _6
+齐	chai4	ts 6j _4
+龙	lung4	l u: N _4
+龙华	lung4wa4	l u: N _4 . w a: _4
+龙哥	lung4go1	l u: N _4 . g O: _1
+龙塘	lung4tong4	l u: N _4 . t O: N _4
+龙头	lung4tau4	l u: N _4 . t 6w _4
+龙岗	lung4gong1	l u: N _4 . g O: N _1
+龙岗商场	lung4gong1seung1cheung4	l u: N _4 . g O: N _1 . s 9: N _1 . ts 9: N _4
+龙津路	lung4jeun1lou6	l u: N _4 . dz 9: n _1 . l ow _6
+龟	gau1	g 6w _1
+𠺪	hei3	h ej _3	h i: _1
+𢳂	bat1	b 6 t _1
+𨶙	lan2	l 6 n _2

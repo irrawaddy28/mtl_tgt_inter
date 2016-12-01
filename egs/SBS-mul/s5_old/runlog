@@ -1,0 +1,440 @@
+nohup: ignoring input
+./run_dnn_adapt_to_pt.sh --stage 2 --replace-softmax false SW exp/tri3b_map_SW_pt exp/dnn4_pretrain-outdbn_dnn/final.nnet data-fmllr-tri3b exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt
+soft-labels = "ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- |" 
+nnet_init = exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/nnet.init, train_iters = 5, l2 = 1.3887943864964e-11
+# Running on g34
+# Started at Tue Aug 11 15:49:27 UTC 2015
+# steps/nnet/train_pt.sh --nnet-init exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/nnet.init --hid-layers 0 --cmvn-opts "--norm-means=true --norm-vars=true" --delta-opts --delta-order=2 --splice 5 --learn-rate 0.008 --labels-trainf "ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- |" --labels-crossvf "ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- |" --copy-feats false --train-iters 5 --train-opts "--l2-penalty 1.3887943864964e-11" data-fmllr-tri3b/SW_pt/train_tr90 data-fmllr-tri3b/SW_pt/train_cv10 dummy_lang exp/tri3b_map_SW_pt exp/tri3b_map_SW_pt exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25 
+steps/nnet/train_pt.sh --nnet-init exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/nnet.init --hid-layers 0 --cmvn-opts --norm-means=true --norm-vars=true --delta-opts --delta-order=2 --splice 5 --learn-rate 0.008 --labels-trainf ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- | --labels-crossvf ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- | --copy-feats false --train-iters 5 --train-opts --l2-penalty 1.3887943864964e-11 data-fmllr-tri3b/SW_pt/train_tr90 data-fmllr-tri3b/SW_pt/train_cv10 dummy_lang exp/tri3b_map_SW_pt exp/tri3b_map_SW_pt exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25
+data = data-fmllr-tri3b/SW_pt/train_tr90
+		 data_cv = data-fmllr-tri3b/SW_pt/train_cv10
+		 lang = dummy_lang
+		 alidir = exp/tri3b_map_SW_pt
+		 alidir_cv = exp/tri3b_map_SW_pt
+		 dir = exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25
+		 labels_trainf = ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- |
+
+# INFO
+steps/nnet/train_pt.sh : Training Neural Network
+	 dir       : exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25 
+	 Train-set : data-fmllr-tri3b/SW_pt/train_tr90 exp/tri3b_map_SW_pt 
+	 CV-set    : data-fmllr-tri3b/SW_pt/train_cv10 exp/tri3b_map_SW_pt 
+
+### IS CUDA GPU AVAILABLE? 'g34' ###
+LOG (SelectGpuIdAuto():cu-device.cc:280) Selecting from 1 GPUs
+LOG (SelectGpuIdAuto():cu-device.cc:295) cudaSetDevice(0): GRID K520	free:4044M, used:51M, total:4095M, free/total:0.987462
+LOG (SelectGpuIdAuto():cu-device.cc:344) Trying to select device: 0 (automatically), mem_ratio: 0.987462
+LOG (SelectGpuIdAuto():cu-device.cc:363) Success selecting device 0 free mem ratio: 0.987462
+LOG (FinalizeActiveGpu():cu-device.cc:202) The active GPU is [0]: GRID K520	free:4031M, used:64M, total:4095M, free/total:0.984288 version 3.0
+LOG (PrintMemoryUsage():cu-device.cc:379) Memory used: 0 bytes.
+### HURRAY, WE GOT A CUDA GPU FOR COMPUTATION!!! ###
+
+# PREPARING ALIGNMENTS
+Using targets '' (by force)
+copy-transition-model --binary=false exp/tri3b_map_SW_pt/final.mdl exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/final.mdl 
+LOG (copy-transition-model:main():copy-transition-model.cc:62) Copied transition model.
+labels_tr = ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- |
+labels_cv = ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- |
+
+# PREPARING FEATURES
+Preparing train/cv lists :
+  412 exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/train.scp
+   51 exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/cv.scp
+  463 total
+Will use CMVN statistics : data-fmllr-tri3b/SW_pt/train_tr90/cmvn.scp, data-fmllr-tri3b/SW_pt/train_cv10/cmvn.scp
+add-deltas with --delta-order=2
+feats_tr: ark:copy-feats scp:exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/train.scp ark:- | apply-cmvn --norm-means=true --norm-vars=true --utt2spk=ark:data-fmllr-tri3b/SW_pt/train_tr90/utt2spk scp:data-fmllr-tri3b/SW_pt/train_tr90/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |
+Getting feature dim : 
+copy-feats scp:exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/train.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+apply-cmvn --norm-means=true --norm-vars=true --utt2spk=ark:data-fmllr-tri3b/SW_pt/train_tr90/utt2spk scp:data-fmllr-tri3b/SW_pt/train_tr90/cmvn.scp ark:- ark:- 
+WARNING (feat-to-dim:Close():kaldi-io.cc:446) Pipe copy-feats scp:exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/train.scp ark:- | apply-cmvn --norm-means=true --norm-vars=true --utt2spk=ark:data-fmllr-tri3b/SW_pt/train_tr90/utt2spk scp:data-fmllr-tri3b/SW_pt/train_tr90/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- | had nonzero return status 36096
+Feature dim is : 120
+Using splice +/- 5 , step 1
+Generated feature transform using splice = exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/tr_splice5-1.nnet
+Feature type : plain
+Renormalizing MLP input features into exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/tr_splice5-1_cmvn-g.nnet
+nnet-concat --binary=false exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/tr_splice5-1.nnet - exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/tr_splice5-1_cmvn-g.nnet 
+LOG (nnet-concat:main():nnet-concat.cc:53) Reading exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/tr_splice5-1.nnet
+LOG (nnet-concat:main():nnet-concat.cc:65) Concatenating -
+compute-cmvn-stats ark:- - 
+cmvn-to-nnet - - 
+LOG (compute-cmvn-stats:main():compute-cmvn-stats.cc:168) Wrote global CMVN stats to standard output
+LOG (compute-cmvn-stats:main():compute-cmvn-stats.cc:171) Done accumulating CMVN stats for 412 utterances; 0 had errors.
+LOG (cmvn-to-nnet:main():cmvn-to-nnet.cc:144) Written model to -
+LOG (nnet-concat:main():nnet-concat.cc:82) Written model to exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/tr_splice5-1_cmvn-g.nnet
+feat-to-dim 'ark:copy-feats scp:exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/train.scp ark:- | apply-cmvn --norm-means=true --norm-vars=true --utt2spk=ark:data-fmllr-tri3b/SW_pt/train_tr90/utt2spk scp:data-fmllr-tri3b/SW_pt/train_tr90/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- | nnet-forward exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/tr_splice5-1_cmvn-g.nnet ark:- ark:- |' - 
+apply-cmvn --norm-means=true --norm-vars=true --utt2spk=ark:data-fmllr-tri3b/SW_pt/train_tr90/utt2spk scp:data-fmllr-tri3b/SW_pt/train_tr90/cmvn.scp ark:- ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+copy-feats scp:exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/train.scp ark:- 
+nnet-forward exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/tr_splice5-1_cmvn-g.nnet ark:- ark:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:83) Manually selected to compute on CPU.
+WARNING (feat-to-dim:Close():kaldi-io.cc:446) Pipe copy-feats scp:exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/train.scp ark:- | apply-cmvn --norm-means=true --norm-vars=true --utt2spk=ark:data-fmllr-tri3b/SW_pt/train_tr90/utt2spk scp:data-fmllr-tri3b/SW_pt/train_tr90/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- | nnet-forward exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/tr_splice5-1_cmvn-g.nnet ark:- ark:- | had nonzero return status 36096
+feat dim (after applying feat transform) = 1320
+
+# NN-INITIALIZATION
+Using pre-initialized network 'exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/nnet.init'
+
+# RUNNING THE NN-TRAINING SCHEDULER
+steps/nnet/train_scheduler.sh --feature-transform exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/tr_splice5-1_cmvn-g.nnet --learn-rate 0.008 --randomizer-seed 777 --max-iters 5 --minibatch-size 256 --l2-penalty 1.3887943864964e-11 exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/nnet.init ark:copy-feats scp:exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/train.scp ark:- | apply-cmvn --norm-means=true --norm-vars=true --utt2spk=ark:data-fmllr-tri3b/SW_pt/train_tr90/utt2spk scp:data-fmllr-tri3b/SW_pt/train_tr90/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- | ark:copy-feats scp:exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/cv.scp ark:- | apply-cmvn --norm-means=true --norm-vars=true --utt2spk=ark:data-fmllr-tri3b/SW_pt/train_cv10/utt2spk scp:data-fmllr-tri3b/SW_pt/train_cv10/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- | ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- | ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- | exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25
+
+mlp_init=exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/nnet.init
+
+feats_tr=ark:copy-feats scp:exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/train.scp ark:- | apply-cmvn --norm-means=true --norm-vars=true --utt2spk=ark:data-fmllr-tri3b/SW_pt/train_tr90/utt2spk scp:data-fmllr-tri3b/SW_pt/train_tr90/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |
+
+feats_cv=ark:copy-feats scp:exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/cv.scp ark:- | apply-cmvn --norm-means=true --norm-vars=true --utt2spk=ark:data-fmllr-tri3b/SW_pt/train_cv10/utt2spk scp:data-fmllr-tri3b/SW_pt/train_cv10/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |
+
+labels_tr=ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- |
+
+labels_cv=ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- |
+
+dir=exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25
+
+Training Parameters:
+ 
+         mlp init = exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/nnet.init
+
+         learn rate = 0.008
+
+         max epochs = 5
+
+         minibatch size = 256
+
+         randomizer size = 32768
+
+         frame weights  = 
+
+         momentum = 0
+
+         l1-penalty = 0
+
+         l2-penalty = 1.3887943864964e-11
+
+CROSSVAL PRERUN AVG.LOSS 4.2793 (Xent),
+ITERATION 1: TRAIN AVG.LOSS 1.6956, (lrate0.008), CROSSVAL AVG.LOSS 2.1299, nnet accepted (nnet_iter1_learnrate0.008_tr1.6956_cv2.1299)
+ITERATION 2: TRAIN AVG.LOSS 1.3324, (lrate0.008), CROSSVAL AVG.LOSS 2.1893, nnet rejected (nnet_iter2_learnrate0.008_tr1.3324_cv2.1893_rejected)
+ITERATION 3: TRAIN AVG.LOSS 1.3004, (lrate0.004), CROSSVAL AVG.LOSS 2.1326, nnet rejected (nnet_iter3_learnrate0.004_tr1.3004_cv2.1326_rejected)
+finished, too small rel. improvement 0
+Succeeded training the Neural Network : exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/final.nnet
+Computing priors by doing a forward pass of the data through nnet ...
+steps/nnet/make_priors.sh --use-gpu yes data-fmllr-tri3b/SW_pt/train_tr90 exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25
+Accumulating prior stats by forwarding 'data-fmllr-tri3b/SW_pt/train_tr90' with 'exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25'
+Succeeded creating prior counts 'exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/prior_counts' from 'data-fmllr-tri3b/SW_pt/train_tr90'
+Done training nnet in: exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25
+ln: failed to create symbolic link `exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-8.0/nnet.init': File exists
+nnet_init = exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-8.0/nnet.init, train_iters = 5, l2 = 0.000335462627902512
+steps/nnet/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G --config conf/decode_dnn.config --acwt 0.2 exp/tri3b_map_SW_pt/SW/graph_oracle_LG data-fmllr-tri3b/SW_pt/dev exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/decode_dev_oracle_LG_SW
+steps/nnet/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G --config conf/decode_dnn.config --acwt 0.2 exp/tri3b_map_SW_pt/SW/graph_oracle_LG data-fmllr-tri3b/SW_pt/eval exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/decode_eval_oracle_LG_SW
+ITERATION 3: TRAIN AVG.LOSS 1.6300, (lrate0.004), CROSSVAL AVG.LOSS 2.1763, nnet rejected (nnet_iter3_learnrate0.004_tr1.6300_cv2.1763_rejected)
+finished, too small rel. improvement 0
+Succeeded training the Neural Network : exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-8.0/final.nnet
+Computing priors by doing a forward pass of the data through nnet ...
+steps/nnet/make_priors.sh --use-gpu yes data-fmllr-tri3b/SW_pt/train_tr90 exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-8.0
+Accumulating prior stats by forwarding 'data-fmllr-tri3b/SW_pt/train_tr90' with 'exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-8.0'
+Succeeded creating prior counts 'exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-8.0/prior_counts' from 'data-fmllr-tri3b/SW_pt/train_tr90'
+steps/nnet/train_pt.sh successfuly finished.. exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-8.0
+# Accounting: time=119 threads=1
+# Finished at Tue Aug 11 15:47:52 UTC 2015 with status 0
+steps/nnet/train_pt.sh successfuly finished.. exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25
+# Accounting: time=126 threads=1
+# Finished at Tue Aug 11 15:51:33 UTC 2015 with status 0
+Done training nnet in: exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-8.0
+nnet_init = exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/nnet.init, train_iters = 5, l2 = 0.000553084370147834
+steps/nnet/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G --config conf/decode_dnn.config --acwt 0.2 exp/tri3b_map_SW_pt/SW/graph_oracle_LG data-fmllr-tri3b/SW_pt/dev exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-8.0/decode_dev_oracle_LG_SW
+steps/nnet/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G --config conf/decode_dnn.config --acwt 0.2 exp/tri3b_map_SW_pt/SW/graph_oracle_LG data-fmllr-tri3b/SW_pt/eval exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-8.0/decode_eval_oracle_LG_SW
+# Running on g12
+# Started at Tue Aug 11 15:51:49 UTC 2015
+# steps/nnet/train_pt.sh --nnet-init exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/nnet.init --hid-layers 0 --cmvn-opts "--norm-means=true --norm-vars=true" --delta-opts --delta-order=2 --splice 5 --learn-rate 0.008 --labels-trainf "ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- |" --labels-crossvf "ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- |" --copy-feats false --train-iters 5 --train-opts "--l2-penalty 0.000553084370147834" data-fmllr-tri3b/SW_pt/train_tr90 data-fmllr-tri3b/SW_pt/train_cv10 dummy_lang exp/tri3b_map_SW_pt exp/tri3b_map_SW_pt exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5 
+steps/nnet/train_pt.sh --nnet-init exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/nnet.init --hid-layers 0 --cmvn-opts --norm-means=true --norm-vars=true --delta-opts --delta-order=2 --splice 5 --learn-rate 0.008 --labels-trainf ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- | --labels-crossvf ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- | --copy-feats false --train-iters 5 --train-opts --l2-penalty 0.000553084370147834 data-fmllr-tri3b/SW_pt/train_tr90 data-fmllr-tri3b/SW_pt/train_cv10 dummy_lang exp/tri3b_map_SW_pt exp/tri3b_map_SW_pt exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5
+data = data-fmllr-tri3b/SW_pt/train_tr90
+		 data_cv = data-fmllr-tri3b/SW_pt/train_cv10
+		 lang = dummy_lang
+		 alidir = exp/tri3b_map_SW_pt
+		 alidir_cv = exp/tri3b_map_SW_pt
+		 dir = exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5
+		 labels_trainf = ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- |
+
+# INFO
+steps/nnet/train_pt.sh : Training Neural Network
+	 dir       : exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5 
+	 Train-set : data-fmllr-tri3b/SW_pt/train_tr90 exp/tri3b_map_SW_pt 
+	 CV-set    : data-fmllr-tri3b/SW_pt/train_cv10 exp/tri3b_map_SW_pt 
+
+### IS CUDA GPU AVAILABLE? 'g12' ###
+LOG (SelectGpuIdAuto():cu-device.cc:280) Selecting from 1 GPUs
+LOG (SelectGpuIdAuto():cu-device.cc:295) cudaSetDevice(0): GRID K520	free:4044M, used:51M, total:4095M, free/total:0.987462
+LOG (SelectGpuIdAuto():cu-device.cc:344) Trying to select device: 0 (automatically), mem_ratio: 0.987462
+LOG (SelectGpuIdAuto():cu-device.cc:363) Success selecting device 0 free mem ratio: 0.987462
+LOG (FinalizeActiveGpu():cu-device.cc:202) The active GPU is [0]: GRID K520	free:4031M, used:64M, total:4095M, free/total:0.984288 version 3.0
+LOG (PrintMemoryUsage():cu-device.cc:379) Memory used: 0 bytes.
+### HURRAY, WE GOT A CUDA GPU FOR COMPUTATION!!! ###
+
+# PREPARING ALIGNMENTS
+Using targets '' (by force)
+copy-transition-model --binary=false exp/tri3b_map_SW_pt/final.mdl exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/final.mdl 
+LOG (copy-transition-model:main():copy-transition-model.cc:62) Copied transition model.
+labels_tr = ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- |
+labels_cv = ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- |
+
+# PREPARING FEATURES
+Preparing train/cv lists :
+  412 exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/train.scp
+   51 exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/cv.scp
+  463 total
+Will use CMVN statistics : data-fmllr-tri3b/SW_pt/train_tr90/cmvn.scp, data-fmllr-tri3b/SW_pt/train_cv10/cmvn.scp
+add-deltas with --delta-order=2
+feats_tr: ark:copy-feats scp:exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/train.scp ark:- | apply-cmvn --norm-means=true --norm-vars=true --utt2spk=ark:data-fmllr-tri3b/SW_pt/train_tr90/utt2spk scp:data-fmllr-tri3b/SW_pt/train_tr90/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |
+Getting feature dim : 
+add-deltas --delta-order=2 ark:- ark:- 
+apply-cmvn --norm-means=true --norm-vars=true --utt2spk=ark:data-fmllr-tri3b/SW_pt/train_tr90/utt2spk scp:data-fmllr-tri3b/SW_pt/train_tr90/cmvn.scp ark:- ark:- 
+copy-feats scp:exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/train.scp ark:- 
+WARNING (feat-to-dim:Close():kaldi-io.cc:446) Pipe copy-feats scp:exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/train.scp ark:- | apply-cmvn --norm-means=true --norm-vars=true --utt2spk=ark:data-fmllr-tri3b/SW_pt/train_tr90/utt2spk scp:data-fmllr-tri3b/SW_pt/train_tr90/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- | had nonzero return status 36096
+Feature dim is : 120
+Using splice +/- 5 , step 1
+Generated feature transform using splice = exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/tr_splice5-1.nnet
+Feature type : plain
+Renormalizing MLP input features into exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/tr_splice5-1_cmvn-g.nnet
+compute-cmvn-stats ark:- - 
+nnet-concat --binary=false exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/tr_splice5-1.nnet - exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/tr_splice5-1_cmvn-g.nnet 
+cmvn-to-nnet - - 
+LOG (nnet-concat:main():nnet-concat.cc:53) Reading exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/tr_splice5-1.nnet
+LOG (nnet-concat:main():nnet-concat.cc:65) Concatenating -
+LOG (compute-cmvn-stats:main():compute-cmvn-stats.cc:168) Wrote global CMVN stats to standard output
+LOG (compute-cmvn-stats:main():compute-cmvn-stats.cc:171) Done accumulating CMVN stats for 412 utterances; 0 had errors.
+LOG (cmvn-to-nnet:main():cmvn-to-nnet.cc:144) Written model to -
+LOG (nnet-concat:main():nnet-concat.cc:82) Written model to exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/tr_splice5-1_cmvn-g.nnet
+feat-to-dim 'ark:copy-feats scp:exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/train.scp ark:- | apply-cmvn --norm-means=true --norm-vars=true --utt2spk=ark:data-fmllr-tri3b/SW_pt/train_tr90/utt2spk scp:data-fmllr-tri3b/SW_pt/train_tr90/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- | nnet-forward exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/tr_splice5-1_cmvn-g.nnet ark:- ark:- |' - 
+copy-feats scp:exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/train.scp ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+apply-cmvn --norm-means=true --norm-vars=true --utt2spk=ark:data-fmllr-tri3b/SW_pt/train_tr90/utt2spk scp:data-fmllr-tri3b/SW_pt/train_tr90/cmvn.scp ark:- ark:- 
+nnet-forward exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/tr_splice5-1_cmvn-g.nnet ark:- ark:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:83) Manually selected to compute on CPU.
+WARNING (feat-to-dim:Close():kaldi-io.cc:446) Pipe copy-feats scp:exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/train.scp ark:- | apply-cmvn --norm-means=true --norm-vars=true --utt2spk=ark:data-fmllr-tri3b/SW_pt/train_tr90/utt2spk scp:data-fmllr-tri3b/SW_pt/train_tr90/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- | nnet-forward exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/tr_splice5-1_cmvn-g.nnet ark:- ark:- | had nonzero return status 36096
+feat dim (after applying feat transform) = 1320
+
+# NN-INITIALIZATION
+Using pre-initialized network 'exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/nnet.init'
+
+# RUNNING THE NN-TRAINING SCHEDULER
+steps/nnet/train_scheduler.sh --feature-transform exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/tr_splice5-1_cmvn-g.nnet --learn-rate 0.008 --randomizer-seed 777 --max-iters 5 --minibatch-size 256 --l2-penalty 0.000553084370147834 exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/nnet.init ark:copy-feats scp:exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/train.scp ark:- | apply-cmvn --norm-means=true --norm-vars=true --utt2spk=ark:data-fmllr-tri3b/SW_pt/train_tr90/utt2spk scp:data-fmllr-tri3b/SW_pt/train_tr90/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- | ark:copy-feats scp:exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/cv.scp ark:- | apply-cmvn --norm-means=true --norm-vars=true --utt2spk=ark:data-fmllr-tri3b/SW_pt/train_cv10/utt2spk scp:data-fmllr-tri3b/SW_pt/train_cv10/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- | ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- | ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- | exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5
+
+mlp_init=exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/nnet.init
+
+feats_tr=ark:copy-feats scp:exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/train.scp ark:- | apply-cmvn --norm-means=true --norm-vars=true --utt2spk=ark:data-fmllr-tri3b/SW_pt/train_tr90/utt2spk scp:data-fmllr-tri3b/SW_pt/train_tr90/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |
+
+feats_cv=ark:copy-feats scp:exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/cv.scp ark:- | apply-cmvn --norm-means=true --norm-vars=true --utt2spk=ark:data-fmllr-tri3b/SW_pt/train_cv10/utt2spk scp:data-fmllr-tri3b/SW_pt/train_cv10/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |
+
+labels_tr=ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- |
+
+labels_cv=ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- |
+
+dir=exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5
+
+Training Parameters:
+ 
+         mlp init = exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/nnet.init
+
+         learn rate = 0.008
+
+         max epochs = 5
+
+         minibatch size = 256
+
+         randomizer size = 32768
+
+         frame weights  = 
+
+         momentum = 0
+
+         l1-penalty = 0
+
+         l2-penalty = 0.000553084370147834
+
+CROSSVAL PRERUN AVG.LOSS 4.2793 (Xent),
+ITERATION 1: TRAIN AVG.LOSS 1.9547, (lrate0.008), CROSSVAL AVG.LOSS 2.3241, nnet accepted (nnet_iter1_learnrate0.008_tr1.9547_cv2.3241)
+ITERATION 2: TRAIN AVG.LOSS 2.2604, (lrate0.008), CROSSVAL AVG.LOSS 2.5543, nnet rejected (nnet_iter2_learnrate0.008_tr2.2604_cv2.5543_rejected)
+ITERATION 3: TRAIN AVG.LOSS 1.9566, (lrate0.004), CROSSVAL AVG.LOSS 2.3221, nnet accepted (nnet_iter3_learnrate0.004_tr1.9566_cv2.3221)
+finished, too small rel. improvement .0008691573
+Succeeded training the Neural Network : exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/final.nnet
+Computing priors by doing a forward pass of the data through nnet ...
+steps/nnet/make_priors.sh --use-gpu yes data-fmllr-tri3b/SW_pt/train_tr90 exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5
+Accumulating prior stats by forwarding 'data-fmllr-tri3b/SW_pt/train_tr90' with 'exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5'
+Succeeded creating prior counts 'exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/prior_counts' from 'data-fmllr-tri3b/SW_pt/train_tr90'
+                                                                                                                                                                                                 Done training nnet in: exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5
+nnet_init = exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/nnet.init, train_iters = 5, l2 = 0.000911881965554516
+steps/nnet/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G --config conf/decode_dnn.config --acwt 0.2 exp/tri3b_map_SW_pt/SW/graph_oracle_LG data-fmllr-tri3b/SW_pt/dev exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/decode_dev_oracle_LG_SW
+# Running on g12
+# Started at Tue Aug 11 15:53:43 UTC 2015
+# steps/nnet/train_pt.sh --nnet-init exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/nnet.init --hid-layers 0 --cmvn-opts "--norm-means=true --norm-vars=true" --delta-opts --delta-order=2 --splice 5 --learn-rate 0.008 --labels-trainf "ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- |" --labels-crossvf "ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- |" --copy-feats false --train-iters 5 --train-opts "--l2-penalty 0.000911881965554516" data-fmllr-tri3b/SW_pt/train_tr90 data-fmllr-tri3b/SW_pt/train_cv10 dummy_lang exp/tri3b_map_SW_pt exp/tri3b_map_SW_pt exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0 
+steps/nnet/train_pt.sh --nnet-init exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/nnet.init --hid-layers 0 --cmvn-opts --norm-means=true --norm-vars=true --delta-opts --delta-order=2 --splice 5 --learn-rate 0.008 --labels-trainf ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- | --labels-crossvf ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- | --copy-feats false --train-iters 5 --train-opts --l2-penalty 0.000911881965554516 data-fmllr-tri3b/SW_pt/train_tr90 data-fmllr-tri3b/SW_pt/train_cv10 dummy_lang exp/tri3b_map_SW_pt exp/tri3b_map_SW_pt exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0
+data = data-fmllr-tri3b/SW_pt/train_tr90
+		 data_cv = data-fmllr-tri3b/SW_pt/train_cv10
+		 lang = dummy_lang
+		 alidir = exp/tri3b_map_SW_pt
+		 alidir_cv = exp/tri3b_map_SW_pt
+		 dir = exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0
+		 labels_trainf = ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- |
+
+# INFO
+steps/nnet/train_pt.sh : Training Neural Network
+	 dir       : exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0 
+	 Train-set : data-fmllr-tri3b/SW_pt/train_tr90 exp/tri3b_map_SW_pt 
+	 CV-set    : data-fmllr-tri3b/SW_pt/train_cv10 exp/tri3b_map_SW_pt 
+
+### IS CUDA GPU AVAILABLE? 'g12' ###
+LOG (SelectGpuIdAuto():cu-device.cc:280) Selecting from 1 GPUs
+LOG (SelectGpuIdAuto():cu-device.cc:295) cudaSetDevice(0): GRID K520	free:4044M, used:51M, total:4095M, free/total:0.987462
+LOG (SelectGpuIdAuto():cu-device.cc:344) Trying to select device: 0 (automatically), mem_ratio: 0.987462
+LOG (SelectGpuIdAuto():cu-device.cc:363) Success selecting device 0 free mem ratio: 0.987462
+LOG (FinalizeActiveGpu():cu-device.cc:202) The active GPU is [0]: GRID K520	free:4031M, used:64M, total:4095M, free/total:0.984288 version 3.0
+LOG (PrintMemoryUsage():cu-device.cc:379) Memory used: 0 bytes.
+### HURRAY, WE GOT A CUDA GPU FOR COMPUTATION!!! ###
+
+# PREPARING ALIGNMENTS
+Using targets '' (by force)
+copy-transition-model --binary=false exp/tri3b_map_SW_pt/final.mdl exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/final.mdl 
+LOG (copy-transition-model:main():copy-transition-model.cc:62) Copied transition model.
+labels_tr = ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- |
+labels_cv = ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- |
+
+# PREPARING FEATURES
+Preparing train/cv lists :
+  412 exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/train.scp
+   51 exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/cv.scp
+  463 total
+Will use CMVN statistics : data-fmllr-tri3b/SW_pt/train_tr90/cmvn.scp, data-fmllr-tri3b/SW_pt/train_cv10/cmvn.scp
+add-deltas with --delta-order=2
+feats_tr: ark:copy-feats scp:exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/train.scp ark:- | apply-cmvn --norm-means=true --norm-vars=true --utt2spk=ark:data-fmllr-tri3b/SW_pt/train_tr90/utt2spk scp:data-fmllr-tri3b/SW_pt/train_tr90/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |
+Getting feature dim : 
+copy-feats scp:exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/train.scp ark:- 
+apply-cmvn --norm-means=true --norm-vars=true --utt2spk=ark:data-fmllr-tri3b/SW_pt/train_tr90/utt2spk scp:data-fmllr-tri3b/SW_pt/train_tr90/cmvn.scp ark:- ark:- 
+add-deltas --delta-order=2 ark:- ark:- 
+WARNING (feat-to-dim:Close():kaldi-io.cc:446) Pipe copy-feats scp:exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/train.scp ark:- | apply-cmvn --norm-means=true --norm-vars=true --utt2spk=ark:data-fmllr-tri3b/SW_pt/train_tr90/utt2spk scp:data-fmllr-tri3b/SW_pt/train_tr90/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- | had nonzero return status 36096
+Feature dim is : 120
+Using splice +/- 5 , step 1
+Generated feature transform using splice = exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/tr_splice5-1.nnet
+Feature type : plain
+Renormalizing MLP input features into exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/tr_splice5-1_cmvn-g.nnet
+nnet-concat --binary=false exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/tr_splice5-1.nnet - exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/tr_splice5-1_cmvn-g.nnet 
+LOG (nnet-concat:main():nnet-concat.cc:53) Reading exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/tr_splice5-1.nnet
+compute-cmvn-stats ark:- - 
+LOG (nnet-concat:main():nnet-concat.cc:65) Concatenating -
+cmvn-to-nnet - - 
+LOG (compute-cmvn-stats:main():compute-cmvn-stats.cc:168) Wrote global CMVN stats to standard output
+LOG (cmvn-to-nnet:main():cmvn-to-nnet.cc:144) Written model to -
+LOG (compute-cmvn-stats:main():compute-cmvn-stats.cc:171) Done accumulating CMVN stats for 412 utterances; 0 had errors.
+LOG (nnet-concat:main():nnet-concat.cc:82) Written model to exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/tr_splice5-1_cmvn-g.nnet
+feat-to-dim 'ark:copy-feats scp:exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/train.scp ark:- | apply-cmvn --norm-means=true --norm-vars=true --utt2spk=ark:data-fmllr-tri3b/SW_pt/train_tr90/utt2spk scp:data-fmllr-tri3b/SW_pt/train_tr90/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- | nnet-forward exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/tr_splice5-1_cmvn-g.nnet ark:- ark:- |' - 
+add-deltas --delta-order=2 ark:- ark:- 
+apply-cmvn --norm-means=true --norm-vars=true --utt2spk=ark:data-fmllr-tri3b/SW_pt/train_tr90/utt2spk scp:data-fmllr-tri3b/SW_pt/train_tr90/cmvn.scp ark:- ark:- 
+copy-feats scp:exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/train.scp ark:- 
+nnet-forward exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/tr_splice5-1_cmvn-g.nnet ark:- ark:- 
+LOG (nnet-forward:SelectGpuId():cu-device.cc:83) Manually selected to compute on CPU.
+WARNING (feat-to-dim:Close():kaldi-io.cc:446) Pipe copy-feats scp:exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/train.scp ark:- | apply-cmvn --norm-means=true --norm-vars=true --utt2spk=ark:data-fmllr-tri3b/SW_pt/train_tr90/utt2spk scp:data-fmllr-tri3b/SW_pt/train_tr90/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- | nnet-forward exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/tr_splice5-1_cmvn-g.nnet ark:- ark:- | had nonzero return status 36096
+feat dim (after applying feat transform) = 1320
+
+# NN-INITIALIZATION
+Using pre-initialized network 'exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/nnet.init'
+
+# RUNNING THE NN-TRAINING SCHEDULER
+steps/nnet/train_scheduler.sh --feature-transform exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/tr_splice5-1_cmvn-g.nnet --learn-rate 0.008 --randomizer-seed 777 --max-iters 5 --minibatch-size 256 --l2-penalty 0.000911881965554516 exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/nnet.init ark:copy-feats scp:exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/train.scp ark:- | apply-cmvn --norm-means=true --norm-vars=true --utt2spk=ark:data-fmllr-tri3b/SW_pt/train_tr90/utt2spk scp:data-fmllr-tri3b/SW_pt/train_tr90/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- | ark:copy-feats scp:exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/cv.scp ark:- | apply-cmvn --norm-means=true --norm-vars=true --utt2spk=ark:data-fmllr-tri3b/SW_pt/train_cv10/utt2spk scp:data-fmllr-tri3b/SW_pt/train_cv10/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- | ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- | ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- | exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0
+
+mlp_init=exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/nnet.init
+
+feats_tr=ark:copy-feats scp:exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/train.scp ark:- | apply-cmvn --norm-means=true --norm-vars=true --utt2spk=ark:data-fmllr-tri3b/SW_pt/train_tr90/utt2spk scp:data-fmllr-tri3b/SW_pt/train_tr90/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |
+
+feats_cv=ark:copy-feats scp:exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/cv.scp ark:- | apply-cmvn --norm-means=true --norm-vars=true --utt2spk=ark:data-fmllr-tri3b/SW_pt/train_cv10/utt2spk scp:data-fmllr-tri3b/SW_pt/train_cv10/cmvn.scp ark:- ark:- | add-deltas --delta-order=2 ark:- ark:- |
+
+labels_tr=ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- |
+
+labels_cv=ark:gunzip -c exp/tri3b_map_SW_pt/post.*.gz| post-to-pdf-post exp/tri3b_map_SW_pt/final.mdl ark:- ark:- |
+
+dir=exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0
+
+Training Parameters:
+ 
+         mlp init = exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/nnet.init
+
+         learn rate = 0.008
+
+         max epochs = 5
+
+         minibatch size = 256
+
+         randomizer size = 32768
+
+         frame weights  = 
+
+         momentum = 0
+
+         l1-penalty = 0
+
+         l2-penalty = 0.000911881965554516
+
+CROSSVAL PRERUN AVG.LOSS 4.2793 (Xent),
+ITERATION 1: TRAIN AVG.LOSS 2.2918, (lrate0.008), CROSSVAL AVG.LOSS 3.0991, nnet accepted (nnet_iter1_learnrate0.008_tr2.2918_cv3.0991)
+ITERATION 2: TRAIN AVG.LOSS 2.5825, (lrate0.008), CROSSVAL AVG.LOSS 3.1072, nnet rejected (nnet_iter2_learnrate0.008_tr2.5825_cv3.1072_rejected)
+ITERATION 3: TRAIN AVG.LOSS 2.2966, (lrate0.004), CROSSVAL AVG.LOSS 2.6781, nnet accepted (nnet_iter3_learnrate0.004_tr2.2966_cv2.6781)
+ITERATION 4: TRAIN AVG.LOSS 2.1214, (lrate0.002), CROSSVAL AVG.LOSS 2.4559, nnet accepted (nnet_iter4_learnrate0.002_tr2.1214_cv2.4559)
+ITERATION 5: TRAIN AVG.LOSS 2.0222, (lrate0.001),                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Done training nnet in: exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0
+ln: failed to create symbolic link `exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-5.5/nnet.init': File exists
+nnet_init = exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-5.5/nnet.init, train_iters = 5, l2 = 0.00408677143846407
+ITERATION 4: TRAIN AVG.LOSS 3.3445, (lrate0.002), CROSSVAL AVG.LOSS 3.2918, nnet accepted (nnet_iter4_learnrate0.002_tr3.3445_cv3.2918)
+ITERATION 5: TRAIN AVG.LOSS 3.2990, (lrate0.001), CROSSVAL AVG.LOSS 3.2753, nnet accepted (nnet_iter5_learnrate0.001_tr3.2990_cv3.2753)
+Succeeded training the Neural Network : exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-5.5/final.nnet
+Computing priors by doing a forward pass of the data through nnet ...
+steps/nnet/make_priors.sh --use-gpu yes data-fmllr-tri3b/SW_pt/train_tr90 exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-5.5
+Accumulating prior stats by forwarding 'data-fmllr-tri3b/SW_pt/train_tr90' with 'exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-5.5'
+Succeeded creating prior counts 'exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-5.5/prior_counts' from 'data-fmllr-tri3b/SW_pt/train_tr90'
+steps/nnet/train_pt.sh successfuly finished.. exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-5.5
+# Accounting: time=199 threads=1
+# Finished at Tue Aug 11 08:00:27 UTC 2015 with status 0
+steps/nnet/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G --config conf/decode_dnn.config --acwt 0.2 exp/tri3b_map_SW_pt/SW/graph_oracle_LG data-fmllr-tri3b/SW_pt/dev exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/decode_dev_oracle_LG_SW
+Succeeded creating prior counts 'exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/prior_counts' from 'data-fmllr-tri3b/SW_pt/train_tr90'
+steps/nnet/train_pt.sh successfuly finished.. exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0
+# Accounting: time=160 threads=1
+# Finished at Tue Aug 11 15:56:23 UTC 2015 with status 0
+Done training nnet in: exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-5.5
+ln: failed to create symbolic link `exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-5.0/nnet.init': File exists
+nnet_init = exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-5.0/nnet.init, train_iters = 5, l2 = 0.00673794699908547
+ITERATION 4: TRAIN AVG.LOSS 3.9476, (lrate0.002), CROSSVAL AVG.LOSS 3.9575, nnet accepted (nnet_iter4_learnrate0.002_tr3.9476_cv3.9575)
+ITERATION 5: TRAIN AVG.LOSS 3.9114, (lrate0.001), CROSSVAL AVG.LOSS 3.7999, nnet accepted (nnet_iter5_learnrate0.001_tr3.9114_cv3.7999)
+Succeeded training the Neural Network : exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-5.0/final.nnet
+Computing priors by doing a forward pass of the data through nnet ...
+steps/nnet/make_priors.sh --use-gpu yes data-fmllr-tri3b/SW_pt/train_tr90 exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-5.0
+Accumulating prior stats by forwarding 'data-fmllr-tri3b/SW_pt/train_tr90' with 'exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-5.0'
+Succeeded creating prior counts 'exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-5.0/prior_counts' from 'data-fmllr-tri3b/SW_pt/train_tr90'
+steps/nnet/train_pt.sh successfuly finished.. exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-5.0
+# Accounting: time=204 threads=1
+# Finished at Tue Aug 11 08:04:02 UTC 2015 with status 0
+steps/nnet/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G --config conf/decode_dnn.config --acwt 0.2 exp/tri3b_map_SW_pt/SW/graph_oracle_LG data-fmllr-tri3b/SW_pt/eval exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-5.5/decode_eval_oracle_LG_SW
+steps/nnet/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G --config conf/decode_dnn.config --acwt 0.2 exp/tri3b_map_SW_pt/SW/graph_oracle_LG data-fmllr-tri3b/SW_pt/dev exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-5.5/decode_dev_oracle_LG_SW
+Done training nnet in: exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-5.0
+steps/nnet/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G --config conf/decode_dnn.config --acwt 0.2 exp/tri3b_map_SW_pt/SW/graph_oracle_LG data-fmllr-tri3b/SW_pt/eval exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-5.0/decode_eval_oracle_LG_SW
+local/score.sh --min-lmwt 2 --max-lmwt 10 --cmd queue.pl -l mem_free=2G,ram_free=2G data-fmllr-tri3b/SW_pt/eval exp/tri3b_map_SW_pt/SW/graph_oracle_LG exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/decode_eval_oracle_LG_SW
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --min-lmwt 2 --max-lmwt 10 --cmd queue.pl -l mem_free=2G,ram_free=2G data-fmllr-tri3b/SW_pt/dev exp/tri3b_map_SW_pt/SW/graph_oracle_LG exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-25/decode_dev_oracle_LG_SW
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --min-lmwt 2 --max-lmwt 10 --cmd queue.pl -l mem_free=2G,ram_free=2G data-fmllr-tri3b/SW_pt/eval exp/tri3b_map_SW_pt/SW/graph_oracle_LG exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/decode_eval_oracle_LG_SW
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --min-lmwt 2 --max-lmwt 10 --cmd queue.pl -l mem_free=2G,ram_free=2G data-fmllr-tri3b/SW_pt/eval exp/tri3b_map_SW_pt/SW/graph_oracle_LG exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-8.0/decode_eval_oracle_LG_SW
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --min-lmwt 2 --max-lmwt 10 --cmd queue.pl -l mem_free=2G,ram_free=2G data-fmllr-tri3b/SW_pt/dev exp/tri3b_map_SW_pt/SW/graph_oracle_LG exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-8.0/decode_dev_oracle_LG_SW
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --min-lmwt 2 --max-lmwt 10 --cmd queue.pl -l mem_free=2G,ram_free=2G data-fmllr-tri3b/SW_pt/eval exp/tri3b_map_SW_pt/SW/graph_oracle_LG exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/decode_eval_oracle_LG_SW
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --min-lmwt 2 --max-lmwt 10 --cmd queue.pl -l mem_free=2G,ram_free=2G data-fmllr-tri3b/SW_pt/dev exp/tri3b_map_SW_pt/SW/graph_oracle_LG exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.0/decode_dev_oracle_LG_SW
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --min-lmwt 2 --max-lmwt 10 --cmd queue.pl -l mem_free=2G,ram_free=2G data-fmllr-tri3b/SW_pt/dev exp/tri3b_map_SW_pt/SW/graph_oracle_LG exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/decode_dev_oracle_LG_SW
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+**queue.pl: syncfile exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-7.5/decode_dev_oracle_LG_SW/scoring_kaldi/penalty_0.5/q/done.10153.10 was not created but job seems
+**to have finished OK.  Probably your file-system has problems.
+**This is just a warning.
+local/score.sh --min-lmwt 2 --max-lmwt 10 --cmd queue.pl -l mem_free=2G,ram_free=2G data-fmllr-tri3b/SW_pt/dev exp/tri3b_map_SW_pt/SW/graph_oracle_LG exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-5.0/decode_dev_oracle_LG_SW
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --min-lmwt 2 --max-lmwt 10 --cmd queue.pl -l mem_free=2G,ram_free=2G data-fmllr-tri3b/SW_pt/eval exp/tri3b_map_SW_pt/SW/graph_oracle_LG exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-5.5/decode_eval_oracle_LG_SW
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --min-lmwt 2 --max-lmwt 10 --cmd queue.pl -l mem_free=2G,ram_free=2G data-fmllr-tri3b/SW_pt/eval exp/tri3b_map_SW_pt/SW/graph_oracle_LG exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-5.0/decode_eval_oracle_LG_SW
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --min-lmwt 2 --max-lmwt 10 --cmd queue.pl -l mem_free=2G,ram_free=2G data-fmllr-tri3b/SW_pt/dev exp/tri3b_map_SW_pt/SW/graph_oracle_LG exp/dnn4_pretrain-outdbn_dnn/nnet_SW_pt_xentit_5_l2_-5.5/decode_dev_oracle_LG_SW
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0

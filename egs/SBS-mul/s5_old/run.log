@@ -1,0 +1,821 @@
+This shell script may run as-is on your system, but it is recommended 
+that you run the commands one by one by copying and pasting into the shell.
+Preparing data...
+Done.
+Language SW: Building train/test data...
+Done.
+Language AR: Building train/test data...
+Done.
+Language UR: Building train/test data...
+Done.
+Language DT: Building train/test data...
+Done.
+Language HG: Building train/test data...
+Done.
+Language MD: Building train/test data...
+Done.
+Finished data preparation.
+Building universal train/test data...
+dict prep
+Language - SW: preparing pronunciation lexicon ... Done
+Language - SW: extracting phone lists ... Done
+Language - AR: preparing pronunciation lexicon ... Done
+Language - AR: extracting phone lists ... Done
+Language - UR: preparing pronunciation lexicon ... Done
+Language - UR: extracting phone lists ... Done
+Language - DT: preparing pronunciation lexicon ... Done
+Language - DT: extracting phone lists ... Done
+Language - HG: preparing pronunciation lexicon ... Done
+Language - HG: extracting phone lists ... Done
+Language - MD: preparing pronunciation lexicon ... Done
+Language - MD: extracting phone lists ... Done
+preparing pronunciation lexicon ... Done
+extracting phone lists ... Done
+Finished dictionary preparation.
+lang prep: SW
+lang prep: AR
+lang prep: UR
+lang prep: DT
+lang prep: HG
+lang prep: MD
+LM prep: SW
+LM prep: AR
+LM prep: UR
+LM prep: DT
+LM prep: HG
+LM prep: MD
+universal lang
+universal LM
+MFCC prep
+steps/make_mfcc.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G data/UR/dev exp/UR/make_mfcc/dev mfcc/UR
+steps/make_mfcc.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G data/SW/dev exp/SW/make_mfcc/dev mfcc/SW
+steps/make_mfcc.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G data/UR/eval exp/UR/make_mfcc/eval mfcc/UR
+steps/make_mfcc.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G data/SW/train exp/SW/make_mfcc/train mfcc/SW
+steps/make_mfcc.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G data/DT/train exp/DT/make_mfcc/train mfcc/DT
+steps/make_mfcc.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G data/AR/eval exp/AR/make_mfcc/eval mfcc/AR
+steps/make_mfcc.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G data/SW/eval exp/SW/make_mfcc/eval mfcc/SW
+steps/make_mfcc.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G data/UR/train exp/UR/make_mfcc/train mfcc/UR
+steps/make_mfcc.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G data/DT/eval exp/DT/make_mfcc/eval mfcc/DT
+steps/make_mfcc.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G data/HG/train exp/HG/make_mfcc/train mfcc/HG
+steps/make_mfcc.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G data/AR/train exp/AR/make_mfcc/train mfcc/AR
+steps/make_mfcc.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G data/DT/dev exp/DT/make_mfcc/dev mfcc/DT
+steps/make_mfcc.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G data/AR/dev exp/AR/make_mfcc/dev mfcc/AR
+steps/make_mfcc.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G data/HG/eval exp/HG/make_mfcc/eval mfcc/HG
+steps/make_mfcc.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G data/HG/dev exp/HG/make_mfcc/dev mfcc/HG
+steps/make_mfcc.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G data/MD/dev exp/MD/make_mfcc/dev mfcc/MD
+steps/make_mfcc.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G data/MD/train exp/MD/make_mfcc/train mfcc/MD
+steps/make_mfcc.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G data/MD/eval exp/MD/make_mfcc/eval mfcc/MD
+utils/validate_data_dir.sh: Successfully validated data-directory data/HG/eval
+utils/validate_data_dir.sh: Successfully validated data-directory data/SW/dev
+utils/validate_data_dir.sh: Successfully validated data-directory data/SW/eval
+utils/validate_data_dir.sh: Successfully validated data-directory data/UR/eval
+utils/validate_data_dir.sh: Successfully validated data-directory data/DT/eval
+utils/validate_data_dir.sh: Successfully validated data-directory data/MD/eval
+utils/validate_data_dir.sh: Successfully validated data-directory data/AR/dev
+utils/validate_data_dir.sh: Successfully validated data-directory data/DT/train
+utils/validate_data_dir.sh: Successfully validated data-directory data/DT/dev
+utils/validate_data_dir.sh: Successfully validated data-directory data/UR/train
+utils/validate_data_dir.sh: Successfully validated data-directory data/UR/dev
+utils/validate_data_dir.sh: Successfully validated data-directory data/MD/train
+utils/validate_data_dir.sh: Successfully validated data-directory data/MD/dev
+utils/validate_data_dir.sh: Successfully validated data-directory data/HG/dev
+utils/validate_data_dir.sh: Successfully validated data-directory data/AR/eval
+utils/validate_data_dir.sh: Successfully validated data-directory data/AR/train
+utils/validate_data_dir.sh: Successfully validated data-directory data/HG/train
+utils/validate_data_dir.sh: Successfully validated data-directory data/SW/train
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+Succeeded creating MFCC features for eval
+fix_data_dir.sh: kept all 113 utterances.
+fix_data_dir.sh: old files are kept in data/MD/eval/.backup
+steps/compute_cmvn_stats.sh data/MD/eval exp/MD/make_mfcc/eval mfcc/MD
+Succeeded creating CMVN stats for eval
+fix_data_dir.sh: kept all 113 utterances.
+fix_data_dir.sh: old files are kept in data/MD/eval/.backup
+Succeeded creating MFCC features for dev
+Succeeded creating MFCC features for dev
+Succeeded creating MFCC features for eval
+Succeeded creating MFCC features for eval
+Succeeded creating MFCC features for eval
+Succeeded creating MFCC features for eval
+Succeeded creating MFCC features for dev
+fix_data_dir.sh: kept all 123 utterances.
+fix_data_dir.sh: kept all 94 utterances.
+fix_data_dir.sh: kept all 117 utterances.
+fix_data_dir.sh: kept all 117 utterances.
+fix_data_dir.sh: kept all 120 utterances.
+fix_data_dir.sh: kept all 120 utterances.
+Succeeded creating MFCC features for dev
+fix_data_dir.sh: old files are kept in data/SW/eval/.backup
+steps/compute_cmvn_stats.sh data/SW/eval exp/SW/make_mfcc/eval mfcc/SW
+fix_data_dir.sh: old files are kept in data/MD/dev/.backup
+fix_data_dir.sh: old files are kept in data/DT/eval/.backup
+fix_data_dir.sh: old files are kept in data/UR/eval/.backup
+fix_data_dir.sh: old files are kept in data/SW/dev/.backup
+fix_data_dir.sh: old files are kept in data/HG/eval/.backup
+steps/compute_cmvn_stats.sh data/MD/dev exp/MD/make_mfcc/dev mfcc/MD
+steps/compute_cmvn_stats.sh data/DT/eval exp/DT/make_mfcc/eval mfcc/DT
+Succeeded creating MFCC features for eval
+steps/compute_cmvn_stats.sh data/UR/eval exp/UR/make_mfcc/eval mfcc/UR
+steps/compute_cmvn_stats.sh data/SW/dev exp/SW/make_mfcc/dev mfcc/SW
+steps/compute_cmvn_stats.sh data/HG/eval exp/HG/make_mfcc/eval mfcc/HG
+fix_data_dir.sh: kept all 120 utterances.
+Succeeded creating CMVN stats for eval
+Succeeded creating CMVN stats for dev
+Succeeded creating CMVN stats for eval
+Succeeded creating CMVN stats for dev
+Succeeded creating CMVN stats for eval
+Succeeded creating CMVN stats for eval
+fix_data_dir.sh: kept all 120 utterances.
+Succeeded creating MFCC features for dev
+fix_data_dir.sh: old files are kept in data/UR/dev/.backup
+steps/compute_cmvn_stats.sh data/UR/dev exp/UR/make_mfcc/dev mfcc/UR
+Succeeded creating MFCC features for dev
+fix_data_dir.sh: kept all 112 utterances.
+fix_data_dir.sh: old files are kept in data/DT/dev/.backup
+steps/compute_cmvn_stats.sh data/DT/dev exp/DT/make_mfcc/dev mfcc/DT
+Succeeded creating CMVN stats for dev
+fix_data_dir.sh: old files are kept in data/AR/eval/.backup
+steps/compute_cmvn_stats.sh data/AR/eval exp/AR/make_mfcc/eval mfcc/AR
+Succeeded creating CMVN stats for dev
+fix_data_dir.sh: kept all 120 utterances.
+fix_data_dir.sh: kept all 117 utterances.
+fix_data_dir.sh: kept all 123 utterances.
+fix_data_dir.sh: kept all 94 utterances.
+fix_data_dir.sh: kept all 120 utterances.
+fix_data_dir.sh: kept all 117 utterances.
+fix_data_dir.sh: kept all 120 utterances.
+fix_data_dir.sh: kept all 120 utterances.
+fix_data_dir.sh: old files are kept in data/HG/dev/.backup
+fix_data_dir.sh: old files are kept in data/MD/dev/.backup
+fix_data_dir.sh: old files are kept in data/SW/eval/.backup
+fix_data_dir.sh: old files are kept in data/DT/eval/.backup
+fix_data_dir.sh: old files are kept in data/UR/eval/.backup
+steps/compute_cmvn_stats.sh data/HG/dev exp/HG/make_mfcc/dev mfcc/HG
+fix_data_dir.sh: old files are kept in data/AR/dev/.backup
+steps/compute_cmvn_stats.sh data/AR/dev exp/AR/make_mfcc/dev mfcc/AR
+fix_data_dir.sh: old files are kept in data/SW/dev/.backup
+fix_data_dir.sh: kept all 120 utterances.
+fix_data_dir.sh: old files are kept in data/HG/eval/.backup
+fix_data_dir.sh: kept all 120 utterances.
+Succeeded creating CMVN stats for dev
+fix_data_dir.sh: old files are kept in data/UR/dev/.backup
+fix_data_dir.sh: old files are kept in data/DT/dev/.backup
+fix_data_dir.sh: kept all 120 utterances.
+fix_data_dir.sh: old files are kept in data/HG/dev/.backup
+Succeeded creating CMVN stats for eval
+Succeeded creating CMVN stats for dev
+fix_data_dir.sh: kept all 120 utterances.
+fix_data_dir.sh: kept all 112 utterances.
+fix_data_dir.sh: old files are kept in data/AR/dev/.backup
+fix_data_dir.sh: old files are kept in data/AR/eval/.backup
+Succeeded creating MFCC features for train
+Succeeded creating MFCC features for train
+fix_data_dir.sh: kept all 468 utterances.
+fix_data_dir.sh: kept all 463 utterances.
+fix_data_dir.sh: old files are kept in data/SW/train/.backup
+fix_data_dir.sh: old files are kept in data/AR/train/.backup
+steps/compute_cmvn_stats.sh data/SW/train exp/SW/make_mfcc/train mfcc/SW
+steps/compute_cmvn_stats.sh data/AR/train exp/AR/make_mfcc/train mfcc/AR
+Succeeded creating CMVN stats for train
+Succeeded creating CMVN stats for train
+fix_data_dir.sh: kept all 468 utterances.
+fix_data_dir.sh: kept all 463 utterances.
+fix_data_dir.sh: old files are kept in data/AR/train/.backup
+fix_data_dir.sh: old files are kept in data/SW/train/.backup
+Succeeded creating MFCC features for train
+fix_data_dir.sh: kept all 467 utterances.
+fix_data_dir.sh: old files are kept in data/MD/train/.backup
+steps/compute_cmvn_stats.sh data/MD/train exp/MD/make_mfcc/train mfcc/MD
+Succeeded creating CMVN stats for train
+fix_data_dir.sh: kept all 467 utterances.
+fix_data_dir.sh: old files are kept in data/MD/train/.backup
+Succeeded creating MFCC features for train
+fix_data_dir.sh: kept all 463 utterances.
+Succeeded creating MFCC features for train
+fix_data_dir.sh: old files are kept in data/HG/train/.backup
+steps/compute_cmvn_stats.sh data/HG/train exp/HG/make_mfcc/train mfcc/HG
+fix_data_dir.sh: kept all 385 utterances.
+Succeeded creating CMVN stats for train
+fix_data_dir.sh: old files are kept in data/UR/train/.backup
+steps/compute_cmvn_stats.sh data/UR/train exp/UR/make_mfcc/train mfcc/UR
+Succeeded creating CMVN stats for train
+fix_data_dir.sh: kept all 463 utterances.
+fix_data_dir.sh: old files are kept in data/HG/train/.backup
+fix_data_dir.sh: kept all 385 utterances.
+fix_data_dir.sh: old files are kept in data/UR/train/.backup
+Succeeded creating MFCC features for train
+fix_data_dir.sh: kept all 464 utterances.
+fix_data_dir.sh: old files are kept in data/DT/train/.backup
+steps/compute_cmvn_stats.sh data/DT/train exp/DT/make_mfcc/train mfcc/DT
+Succeeded creating CMVN stats for train
+fix_data_dir.sh: kept all 464 utterances.
+fix_data_dir.sh: old files are kept in data/DT/train/.backup
+steps/make_mfcc.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G data/dev exp/make_mfcc/dev mfcc
+steps/make_mfcc.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G data/train exp/make_mfcc/train mfcc
+steps/make_mfcc.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G data/eval exp/make_mfcc/eval mfcc
+utils/validate_data_dir.sh: Successfully validated data-directory data/dev
+utils/validate_data_dir.sh: Successfully validated data-directory data/eval
+utils/validate_data_dir.sh: Successfully validated data-directory data/train
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+Succeeded creating MFCC features for eval
+Succeeded creating MFCC features for dev
+fix_data_dir.sh: kept all 123 utterances.
+fix_data_dir.sh: kept all 120 utterances.
+fix_data_dir.sh: old files are kept in data/eval/.backup
+fix_data_dir.sh: old files are kept in data/dev/.backup
+steps/compute_cmvn_stats.sh data/eval exp/make_mfcc/eval mfcc
+steps/compute_cmvn_stats.sh data/dev exp/make_mfcc/dev mfcc
+Succeeded creating CMVN stats for eval
+Succeeded creating CMVN stats for dev
+fix_data_dir.sh: kept all 123 utterances.
+fix_data_dir.sh: kept all 120 utterances.
+fix_data_dir.sh: old files are kept in data/eval/.backup
+fix_data_dir.sh: old files are kept in data/dev/.backup
+Succeeded creating MFCC features for train
+fix_data_dir.sh: kept all 2247 utterances.
+fix_data_dir.sh: old files are kept in data/train/.backup
+steps/compute_cmvn_stats.sh data/train exp/make_mfcc/train mfcc
+Succeeded creating CMVN stats for train
+fix_data_dir.sh: kept all 2247 utterances.
+fix_data_dir.sh: old files are kept in data/train/.backup
+steps/train_mono.sh --nj 8 --cmd queue.pl -l mem_free=2G,ram_free=2G data/train data/lang exp/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+1263 warnings in exp/mono/log/acc.*.*.log
+347 warnings in exp/mono/log/update.*.log
+21353 warnings in exp/mono/log/align.*.*.log
+Done
+fsttablecompose data/lang_test/L_disambig.fst data/lang_test/G.fst 
+fstdeterminizestar --use-log=true 
+fstminimizeencoded 
+fstisstochastic data/lang_test/tmp/LG.fst 
+0.000614791 -0.124538
+[info]: LG not stochastic.
+fstcomposecontext --context-size=1 --central-position=0 --read-disambig-syms=data/lang_test/phones/disambig.int --write-disambig-syms=data/lang_test/tmp/disambig_ilabels_1_0.int data/lang_test/tmp/ilabels_1_0 
+fstisstochastic data/lang_test/tmp/CLG_1_0.fst 
+0.00061476 -0.124538
+[info]: CLG not stochastic.
+make-h-transducer --disambig-syms-out=exp/mono/graph/disambig_tid.int --transition-scale=1.0 data/lang_test/tmp/ilabels_1_0 exp/mono/tree exp/mono/final.mdl 
+fsttablecompose exp/mono/graph/Ha.fst data/lang_test/tmp/CLG_1_0.fst 
+fstdeterminizestar --use-log=true 
+fstminimizeencoded 
+fstrmepslocal 
+fstrmsymbols exp/mono/graph/disambig_tid.int 
+fstisstochastic exp/mono/graph/HCLGa.fst 
+0.000614791 -0.124571
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/mono/final.mdl 
+steps/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/mono/graph data/SW/eval exp/mono/decode_eval_SW
+steps/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/mono/graph data/DT/eval exp/mono/decode_eval_DT
+steps/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/mono/graph data/AR/eval exp/mono/decode_eval_AR
+steps/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/mono/graph data/UR/eval exp/mono/decode_eval_UR
+steps/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/mono/graph data/HG/eval exp/mono/decode_eval_HG
+steps/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/mono/graph data/MD/eval exp/mono/decode_eval_MD
+decode.sh: feature type is delta
+decode.sh: feature type is delta
+decode.sh: feature type is delta
+decode.sh: feature type is delta
+decode.sh: feature type is delta
+decode.sh: feature type is delta
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/MD/eval exp/mono/graph exp/mono/decode_eval_MD
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/HG/eval exp/mono/graph exp/mono/decode_eval_HG
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/UR/eval exp/mono/graph exp/mono/decode_eval_UR
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/AR/eval exp/mono/graph exp/mono/decode_eval_AR
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/DT/eval exp/mono/graph exp/mono/decode_eval_DT
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/SW/eval exp/mono/graph exp/mono/decode_eval_SW
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/align_si.sh --nj 8 --cmd queue.pl -l mem_free=2G,ram_free=2G data/train data/lang exp/mono exp/mono_ali
+steps/align_si.sh: feature type is delta
+steps/align_si.sh: aligning data in data/train using model from exp/mono, putting alignments in exp/mono_ali
+steps/align_si.sh: done aligning data.
+steps/train_deltas.sh --boost-silence 1.25 --cmd queue.pl -l mem_free=2G,ram_free=2G 2000 9000 data/train data/lang exp/mono_ali exp/tri1
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+WARNING (gmm-init-model:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 1 with no stats; corresponding phone list: 2 
+** The warnings above about 'no stats' generally mean you have phones **
+** (or groups of phones) in your phone set that had no corresponding data. **
+** You should probably figure out whether something went wrong, **
+** or whether your data just doesn't happen to have examples of those **
+** phones. **
+steps/train_deltas.sh: converting alignments from exp/mono_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+45 warnings in exp/tri1/log/update.*.log
+1 warnings in exp/tri1/log/questions.log
+1284 warnings in exp/tri1/log/acc.*.*.log
+83 warnings in exp/tri1/log/init_model.log
+2457 warnings in exp/tri1/log/align.*.*.log
+1 warnings in exp/tri1/log/build_tree.log
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
+fstcomposecontext --context-size=3 --central-position=1 --read-disambig-syms=data/lang_test/phones/disambig.int --write-disambig-syms=data/lang_test/tmp/disambig_ilabels_3_1.int data/lang_test/tmp/ilabels_3_1 
+fstisstochastic data/lang_test/tmp/CLG_3_1.fst 
+0.000615288 -0.124538
+[info]: CLG not stochastic.
+make-h-transducer --disambig-syms-out=exp/tri1/graph/disambig_tid.int --transition-scale=1.0 data/lang_test/tmp/ilabels_3_1 exp/tri1/tree exp/tri1/final.mdl 
+fstrmepslocal 
+fstrmsymbols exp/tri1/graph/disambig_tid.int 
+fsttablecompose exp/tri1/graph/Ha.fst data/lang_test/tmp/CLG_3_1.fst 
+fstdeterminizestar --use-log=true 
+fstminimizeencoded 
+fstisstochastic exp/tri1/graph/HCLGa.fst 
+0.00110215 -0.124367
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri1/final.mdl 
+steps/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/tri1/graph data/SW/eval exp/tri1/decode_eval_SW
+steps/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/tri1/graph data/UR/eval exp/tri1/decode_eval_UR
+steps/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/tri1/graph data/HG/eval exp/tri1/decode_eval_HG
+steps/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/tri1/graph data/DT/eval exp/tri1/decode_eval_DT
+steps/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/tri1/graph data/AR/eval exp/tri1/decode_eval_AR
+steps/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/tri1/graph data/MD/eval exp/tri1/decode_eval_MD
+decode.sh: feature type is delta
+decode.sh: feature type is delta
+decode.sh: feature type is delta
+decode.sh: feature type is delta
+decode.sh: feature type is delta
+decode.sh: feature type is delta
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/MD/eval exp/tri1/graph exp/tri1/decode_eval_MD
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/HG/eval exp/tri1/graph exp/tri1/decode_eval_HG
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/UR/eval exp/tri1/graph exp/tri1/decode_eval_UR
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/AR/eval exp/tri1/graph exp/tri1/decode_eval_AR
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/DT/eval exp/tri1/graph exp/tri1/decode_eval_DT
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/SW/eval exp/tri1/graph exp/tri1/decode_eval_SW
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+**queue.pl: syncfile exp/tri1/decode_eval_DT/scoring_kaldi/penalty_1.0/q/done.16865.15 was not created but job seems
+**to have finished OK.  Probably your file-system has problems.
+**This is just a warning.
+steps/align_si.sh --nj 8 --cmd queue.pl -l mem_free=2G,ram_free=2G data/train data/lang exp/tri1 exp/tri1_ali
+steps/align_si.sh: feature type is delta
+steps/align_si.sh: aligning data in data/train using model from exp/tri1, putting alignments in exp/tri1_ali
+steps/align_si.sh: done aligning data.
+steps/train_lda_mllt.sh --cmd queue.pl -l mem_free=2G,ram_free=2G --splice-opts --left-context=3 --right-context=3 2000 9000 data/train data/lang exp/tri1_ali exp/tri2b
+Accumulating LDA statistics.
+rm: cannot remove `exp/tri2b/lda.*.acc': No such file or directory
+Accumulating tree stats
+Getting questions for tree clustering.
+Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+WARNING (gmm-init-model:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 1 with no stats; corresponding phone list: 2 
+This is a bad warning.
+Converting alignments from exp/tri1_ali to use current tree
+Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+Estimating MLLT
+Training pass 3
+Training pass 4
+Estimating MLLT
+Training pass 5
+Training pass 6
+Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+Training pass 30
+Aligning data
+Training pass 31
+Training pass 32
+Training pass 33
+Training pass 34
+1543 warnings in exp/tri2b/log/acc.*.*.log
+40 warnings in exp/tri2b/log/update.*.log
+1 warnings in exp/tri2b/log/questions.log
+2439 warnings in exp/tri2b/log/align.*.*.log
+1 warnings in exp/tri2b/log/build_tree.log
+80 warnings in exp/tri2b/log/init_model.log
+42 warnings in exp/tri2b/log/lda_acc.*.log
+Done training system with LDA+MLLT features in exp/tri2b
+make-h-transducer --disambig-syms-out=exp/tri2b/graph/disambig_tid.int --transition-scale=1.0 data/lang_test/tmp/ilabels_3_1 exp/tri2b/tree exp/tri2b/final.mdl 
+fstrmepslocal 
+fstminimizeencoded 
+fsttablecompose exp/tri2b/graph/Ha.fst data/lang_test/tmp/CLG_3_1.fst 
+fstrmsymbols exp/tri2b/graph/disambig_tid.int 
+fstdeterminizestar --use-log=true 
+fstisstochastic exp/tri2b/graph/HCLGa.fst 
+0.00110215 -0.124296
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri2b/final.mdl 
+steps/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/tri2b/graph data/AR/dev exp/tri2b/decode_dev_AR
+steps/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/tri2b/graph data/UR/eval exp/tri2b/decode_eval_UR
+steps/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/tri2b/graph data/SW/dev exp/tri2b/decode_dev_SW
+steps/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/tri2b/graph data/SW/eval exp/tri2b/decode_eval_SW
+steps/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/tri2b/graph data/MD/dev exp/tri2b/decode_dev_MD
+steps/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/tri2b/graph data/DT/dev exp/tri2b/decode_dev_DT
+steps/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/tri2b/graph data/HG/dev exp/tri2b/decode_dev_HG
+steps/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/tri2b/graph data/UR/dev exp/tri2b/decode_dev_UR
+steps/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/tri2b/graph data/HG/eval exp/tri2b/decode_eval_HG
+steps/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/tri2b/graph data/DT/eval exp/tri2b/decode_eval_DT
+steps/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/tri2b/graph data/MD/eval exp/tri2b/decode_eval_MD
+steps/decode.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/tri2b/graph data/AR/eval exp/tri2b/decode_eval_AR
+decode.sh: feature type is lda
+decode.sh: feature type is lda
+decode.sh: feature type is lda
+decode.sh: feature type is lda
+decode.sh: feature type is lda
+decode.sh: feature type is lda
+decode.sh: feature type is lda
+decode.sh: feature type is lda
+decode.sh: feature type is lda
+decode.sh: feature type is lda
+decode.sh: feature type is lda
+decode.sh: feature type is lda
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/MD/eval exp/tri2b/graph exp/tri2b/decode_eval_MD
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/MD/dev exp/tri2b/graph exp/tri2b/decode_dev_MD
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+**queue.pl: syncfile exp/tri2b/decode_eval_MD/scoring_kaldi/penalty_0.0/q/done.22165.12 was not created but job seems
+**to have finished OK.  Probably your file-system has problems.
+**This is just a warning.
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/HG/eval exp/tri2b/graph exp/tri2b/decode_eval_HG
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/HG/dev exp/tri2b/graph exp/tri2b/decode_dev_HG
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/AR/eval exp/tri2b/graph exp/tri2b/decode_eval_AR
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+**queue.pl: syncfile exp/tri2b/decode_eval_HG/scoring_kaldi/penalty_1.0/q/done.23566.9 was not created but job seems
+**to have finished OK.  Probably your file-system has problems.
+**This is just a warning.
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/UR/eval exp/tri2b/graph exp/tri2b/decode_eval_UR
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/DT/eval exp/tri2b/graph exp/tri2b/decode_eval_DT
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/UR/dev exp/tri2b/graph exp/tri2b/decode_dev_UR
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/DT/dev exp/tri2b/graph exp/tri2b/decode_dev_DT
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/SW/eval exp/tri2b/graph exp/tri2b/decode_eval_SW
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/AR/dev exp/tri2b/graph exp/tri2b/decode_dev_AR
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/SW/dev exp/tri2b/graph exp/tri2b/decode_dev_SW
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/align_si.sh --nj 8 --cmd queue.pl -l mem_free=2G,ram_free=2G --use-graphs true data/train data/lang exp/tri2b exp/tri2b_ali
+steps/align_si.sh: feature type is lda
+steps/align_si.sh: aligning data in data/train using model from exp/tri2b, putting alignments in exp/tri2b_ali
+steps/align_si.sh: done aligning data.
+steps/train_sat.sh --cmd queue.pl -l mem_free=2G,ram_free=2G 2000 9000 data/train data/lang exp/tri2b_ali exp/tri3b
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: obtaining initial fMLLR transforms since not present in exp/tri2b_ali
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+WARNING (gmm-init-model:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 1 with no stats; corresponding phone list: 2 
+This is a bad warning.
+steps/train_sat.sh: Converting alignments from exp/tri2b_ali to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+2375 warnings in exp/tri3b/log/align.*.*.log
+1 warnings in exp/tri3b/log/questions.log
+40 warnings in exp/tri3b/log/update.*.log
+1779 warnings in exp/tri3b/log/acc.*.*.log
+263 warnings in exp/tri3b/log/fmllr.*.*.log
+1 warnings in exp/tri3b/log/build_tree.log
+1 warnings in exp/tri3b/log/est_alimdl.log
+67 warnings in exp/tri3b/log/init_model.log
+steps/train_sat.sh: Likelihood evolution:
+-53.243 -52.763 -52.6292 -52.5095 -52.0202 -51.4566 -51.1046 -50.8772 -50.7104 -50.2133 -49.9996 -49.7573 -49.6134 -49.5098 -49.4141 -49.3195 -49.2293 -49.1384 -49.0545 -48.8978 -48.7695 -48.6983 -48.6361 -48.5763 -48.517 -48.4592 -48.4019 -48.3462 -48.2929 -48.1973 -48.1219 -48.0975 -48.0821 -48.0711 
+Done
+make-h-transducer --disambig-syms-out=exp/tri3b/graph/disambig_tid.int --transition-scale=1.0 data/lang_test/tmp/ilabels_3_1 exp/tri3b/tree exp/tri3b/final.mdl 
+fstdeterminizestar --use-log=true 
+fstminimizeencoded 
+fstrmsymbols exp/tri3b/graph/disambig_tid.int 
+fstrmepslocal 
+fsttablecompose exp/tri3b/graph/Ha.fst data/lang_test/tmp/CLG_3_1.fst 
+fstisstochastic exp/tri3b/graph/HCLGa.fst 
+0.00110215 -0.124752
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri3b/final.mdl 
+steps/decode_fmllr.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/tri3b/graph data/SW/dev exp/tri3b/decode_dev_SW
+steps/decode_fmllr.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/tri3b/graph data/HG/dev exp/tri3b/decode_dev_HG
+steps/decode_fmllr.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/tri3b/graph data/MD/dev exp/tri3b/decode_dev_MD
+steps/decode_fmllr.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/tri3b/graph data/AR/dev exp/tri3b/decode_dev_AR
+steps/decode_fmllr.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/tri3b/graph data/HG/eval exp/tri3b/decode_eval_HG
+steps/decode_fmllr.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/tri3b/graph data/DT/eval exp/tri3b/decode_eval_DT
+steps/decode_fmllr.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/tri3b/graph data/SW/eval exp/tri3b/decode_eval_SW
+steps/decode_fmllr.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/tri3b/graph data/DT/dev exp/tri3b/decode_dev_DT
+steps/decode_fmllr.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/tri3b/graph data/UR/eval exp/tri3b/decode_eval_UR
+steps/decode_fmllr.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/tri3b/graph data/AR/eval exp/tri3b/decode_eval_AR
+steps/decode_fmllr.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/tri3b/graph data/MD/eval exp/tri3b/decode_eval_MD
+steps/decode_fmllr.sh --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G exp/tri3b/graph data/UR/dev exp/tri3b/decode_dev_UR
+steps/decode.sh --verbose 0 --scoring-opts  --num-threads 1 --skip-scoring false --acwt 0.083333 --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G --beam 10.0 --model exp/tri3b/final.alimdl --max-active 2000 exp/tri3b/graph data/MD/eval exp/tri3b/decode_eval_MD.si
+steps/decode.sh --verbose 0 --scoring-opts  --num-threads 1 --skip-scoring false --acwt 0.083333 --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G --beam 10.0 --model exp/tri3b/final.alimdl --max-active 2000 exp/tri3b/graph data/MD/dev exp/tri3b/decode_dev_MD.si
+steps/decode.sh --verbose 0 --scoring-opts  --num-threads 1 --skip-scoring false --acwt 0.083333 --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G --beam 10.0 --model exp/tri3b/final.alimdl --max-active 2000 exp/tri3b/graph data/UR/dev exp/tri3b/decode_dev_UR.si
+steps/decode.sh --verbose 0 --scoring-opts  --num-threads 1 --skip-scoring false --acwt 0.083333 --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G --beam 10.0 --model exp/tri3b/final.alimdl --max-active 2000 exp/tri3b/graph data/HG/dev exp/tri3b/decode_dev_HG.si
+steps/decode.sh --verbose 0 --scoring-opts  --num-threads 1 --skip-scoring false --acwt 0.083333 --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G --beam 10.0 --model exp/tri3b/final.alimdl --max-active 2000 exp/tri3b/graph data/SW/dev exp/tri3b/decode_dev_SW.si
+steps/decode.sh --verbose 0 --scoring-opts  --num-threads 1 --skip-scoring false --acwt 0.083333 --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G --beam 10.0 --model exp/tri3b/final.alimdl --max-active 2000 exp/tri3b/graph data/DT/eval exp/tri3b/decode_eval_DT.si
+steps/decode.sh --verbose 0 --scoring-opts  --num-threads 1 --skip-scoring false --acwt 0.083333 --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G --beam 10.0 --model exp/tri3b/final.alimdl --max-active 2000 exp/tri3b/graph data/HG/eval exp/tri3b/decode_eval_HG.si
+steps/decode.sh --verbose 0 --scoring-opts  --num-threads 1 --skip-scoring false --acwt 0.083333 --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G --beam 10.0 --model exp/tri3b/final.alimdl --max-active 2000 exp/tri3b/graph data/UR/eval exp/tri3b/decode_eval_UR.si
+steps/decode.sh --verbose 0 --scoring-opts  --num-threads 1 --skip-scoring false --acwt 0.083333 --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G --beam 10.0 --model exp/tri3b/final.alimdl --max-active 2000 exp/tri3b/graph data/SW/eval exp/tri3b/decode_eval_SW.si
+steps/decode.sh --verbose 0 --scoring-opts  --num-threads 1 --skip-scoring false --acwt 0.083333 --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G --beam 10.0 --model exp/tri3b/final.alimdl --max-active 2000 exp/tri3b/graph data/AR/eval exp/tri3b/decode_eval_AR.si
+steps/decode.sh --verbose 0 --scoring-opts  --num-threads 1 --skip-scoring false --acwt 0.083333 --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G --beam 10.0 --model exp/tri3b/final.alimdl --max-active 2000 exp/tri3b/graph data/AR/dev exp/tri3b/decode_dev_AR.si
+steps/decode.sh --verbose 0 --scoring-opts  --num-threads 1 --skip-scoring false --acwt 0.083333 --nj 4 --cmd queue.pl -l mem_free=2G,ram_free=2G --beam 10.0 --model exp/tri3b/final.alimdl --max-active 2000 exp/tri3b/graph data/DT/dev exp/tri3b/decode_dev_DT.si
+decode.sh: feature type is lda
+decode.sh: feature type is lda
+decode.sh: feature type is lda
+decode.sh: feature type is lda
+decode.sh: feature type is lda
+decode.sh: feature type is lda
+decode.sh: feature type is lda
+decode.sh: feature type is lda
+decode.sh: feature type is lda
+decode.sh: feature type is lda
+decode.sh: feature type is lda
+decode.sh: feature type is lda
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/MD/eval exp/tri3b/graph exp/tri3b/decode_eval_MD.si
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/MD/dev exp/tri3b/graph exp/tri3b/decode_dev_MD.si
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/HG/eval exp/tri3b/graph exp/tri3b/decode_eval_HG.si
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/decode_fmllr.sh: feature type is lda
+steps/decode_fmllr.sh: getting first-pass fMLLR transforms.
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/AR/eval exp/tri3b/graph exp/tri3b/decode_eval_AR.si
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/decode_fmllr.sh: feature type is lda
+steps/decode_fmllr.sh: getting first-pass fMLLR transforms.
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/HG/dev exp/tri3b/graph exp/tri3b/decode_dev_HG.si
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/decode_fmllr.sh: doing main lattice generation phase
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/UR/eval exp/tri3b/graph exp/tri3b/decode_eval_UR.si
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/DT/eval exp/tri3b/graph exp/tri3b/decode_eval_DT.si
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/DT/dev exp/tri3b/graph exp/tri3b/decode_dev_DT.si
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/decode_fmllr.sh: doing main lattice generation phase
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/UR/dev exp/tri3b/graph exp/tri3b/decode_dev_UR.si
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/decode_fmllr.sh: feature type is lda
+steps/decode_fmllr.sh: getting first-pass fMLLR transforms.
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/AR/dev exp/tri3b/graph exp/tri3b/decode_dev_AR.si
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/decode_fmllr.sh: doing main lattice generation phase
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/SW/eval exp/tri3b/graph exp/tri3b/decode_eval_SW.si
+steps/decode_fmllr.sh: feature type is lda
+steps/decode_fmllr.sh: getting first-pass fMLLR transforms.
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/decode_fmllr.sh: estimating fMLLR transforms a second time.
+steps/decode_fmllr.sh: feature type is lda
+steps/decode_fmllr.sh: getting first-pass fMLLR transforms.
+steps/decode_fmllr.sh: feature type is lda
+steps/decode_fmllr.sh: getting first-pass fMLLR transforms.
+steps/decode_fmllr.sh: doing main lattice generation phase
+steps/decode_fmllr.sh: feature type is lda
+steps/decode_fmllr.sh: getting first-pass fMLLR transforms.
+steps/decode_fmllr.sh: feature type is lda
+steps/decode_fmllr.sh: getting first-pass fMLLR transforms.
+steps/decode_fmllr.sh: doing main lattice generation phase
+steps/decode_fmllr.sh: doing main lattice generation phase
+steps/decode_fmllr.sh: feature type is lda
+steps/decode_fmllr.sh: getting first-pass fMLLR transforms.
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/SW/dev exp/tri3b/graph exp/tri3b/decode_dev_SW.si
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/decode_fmllr.sh: doing main lattice generation phase
+steps/decode_fmllr.sh: feature type is lda
+steps/decode_fmllr.sh: getting first-pass fMLLR transforms.
+steps/decode_fmllr.sh: doing main lattice generation phase
+steps/decode_fmllr.sh: doing a final pass of acoustic rescoring.
+steps/decode_fmllr.sh: estimating fMLLR transforms a second time.
+steps/decode_fmllr.sh: estimating fMLLR transforms a second time.
+steps/decode_fmllr.sh: doing main lattice generation phase
+steps/decode_fmllr.sh: doing a final pass of acoustic rescoring.
+steps/decode_fmllr.sh: feature type is lda
+steps/decode_fmllr.sh: getting first-pass fMLLR transforms.
+steps/decode_fmllr.sh: doing main lattice generation phase
+steps/decode_fmllr.sh: estimating fMLLR transforms a second time.
+steps/decode_fmllr.sh: estimating fMLLR transforms a second time.
+steps/decode_fmllr.sh: doing a final pass of acoustic rescoring.
+steps/decode_fmllr.sh: estimating fMLLR transforms a second time.
+steps/decode_fmllr.sh: feature type is lda
+steps/decode_fmllr.sh: getting first-pass fMLLR transforms.
+steps/decode_fmllr.sh: doing main lattice generation phase
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/MD/eval exp/tri3b/graph exp/tri3b/decode_eval_MD
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/decode_fmllr.sh: doing a final pass of acoustic rescoring.
+steps/decode_fmllr.sh: doing a final pass of acoustic rescoring.
+steps/decode_fmllr.sh: estimating fMLLR transforms a second time.
+steps/decode_fmllr.sh: doing a final pass of acoustic rescoring.
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/HG/eval exp/tri3b/graph exp/tri3b/decode_eval_HG
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/decode_fmllr.sh: estimating fMLLR transforms a second time.
+steps/decode_fmllr.sh: estimating fMLLR transforms a second time.
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/MD/dev exp/tri3b/graph exp/tri3b/decode_dev_MD
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/decode_fmllr.sh: doing main lattice generation phase
+steps/decode_fmllr.sh: estimating fMLLR transforms a second time.
+steps/decode_fmllr.sh: estimating fMLLR transforms a second time.
+steps/decode_fmllr.sh: doing a final pass of acoustic rescoring.
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/AR/eval exp/tri3b/graph exp/tri3b/decode_eval_AR
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/decode_fmllr.sh: doing a final pass of acoustic rescoring.
+steps/decode_fmllr.sh: doing a final pass of acoustic rescoring.
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/HG/dev exp/tri3b/graph exp/tri3b/decode_dev_HG
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/decode_fmllr.sh: doing a final pass of acoustic rescoring.
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/UR/eval exp/tri3b/graph exp/tri3b/decode_eval_UR
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/decode_fmllr.sh: doing a final pass of acoustic rescoring.
+steps/decode_fmllr.sh: estimating fMLLR transforms a second time.
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/DT/dev exp/tri3b/graph exp/tri3b/decode_dev_DT
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/DT/eval exp/tri3b/graph exp/tri3b/decode_eval_DT
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/UR/dev exp/tri3b/graph exp/tri3b/decode_dev_UR
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/AR/dev exp/tri3b/graph exp/tri3b/decode_dev_AR
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/SW/eval exp/tri3b/graph exp/tri3b/decode_eval_SW
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/decode_fmllr.sh: doing a final pass of acoustic rescoring.
+local/score.sh --cmd queue.pl -l mem_free=2G,ram_free=2G data/SW/dev exp/tri3b/graph exp/tri3b/decode_dev_SW
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
