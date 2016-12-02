@@ -115,7 +115,32 @@ GSYMS
 # Everything above this line is borrowed from official Kaldi github repo
 # Everything below this line added for SBS related experiments
 
-# Ignore .zip files
+# This is to unignore the following zipped packages in version control:  
+# atlas, sctk, sph2pipe, openfst
+# The install script fetches these from the web by using wget. But sometimes
+# the web servers are down or busy. Hence, the zipped packages can act as a backup.
+!/tools/atlas3.8.3.tar.gz
+!/tools/sctk-2.4.9-20141015-1634Z.tar.bz2
+!/tools/sph2pipe_v2.5.tar.gz
+!/tools/openfst-1.3.4.tar.gz
+
+# Ignore compile.log, depend.log
+src/configure*.log
+src/compile*.log
+src/depend*.log
+src/test*.log
+src/valgrind*.log
+
+!src/compile.bak.log
+!src/depend.bak.log
+!src/test.bak.log
+!src/valgrind.bak.log
+
+
+tools/compile*.log
+!tools/compile.bak.log
+
+# Ignore src.zip and tools.zip files
 src.zip
 tools.zip
 
