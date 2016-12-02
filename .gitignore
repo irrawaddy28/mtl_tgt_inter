@@ -171,6 +171,15 @@ tools.zip
 
 # Add /eg/sSBS-mul/s5 (main SBS dir, currently set up for Swahili as the test language)
 !/egs/SBS-mul/s5
+/egs/SBS-mul/s5/data*
+/egs/SBS-mul/s5/exp*
+/egs/SBS-mul/s5/mfcc*
+/egs/SBS-mul/s5/.git
+/egs/SBS-mul/s5/.gitignore
+/egs/SBS-mul/s5/HungPriorityCorrectOrthMemory.txt
+/egs/SBS-mul/s5/conf/cantonese/*
+!/egs/SBS-mul/s5/conf/cantonese/phones.txt
+/egs/SBS-mul/s5/extra_oov.txt
 
 # Add /egs/SBS-mul/s5_old (experimental, mostly unused)
 !/egs/SBS-mul/s5_old
