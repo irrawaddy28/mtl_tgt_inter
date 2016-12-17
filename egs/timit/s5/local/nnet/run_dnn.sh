@@ -76,36 +76,36 @@ if [ $stage -le 2 ]; then
 fi
 
 
-# Sequence training using sMBR criterion, we do Stochastic-GD 
-# with per-utterance updates. We use usually good acwt 0.1
-dir=exp/dnn4_pretrain-dbn_dnn_smbr
-srcdir=exp/dnn4_pretrain-dbn_dnn
-acwt=0.2
+## Sequence training using sMBR criterion, we do Stochastic-GD 
+## with per-utterance updates. We use usually good acwt 0.1
+#dir=exp/dnn4_pretrain-dbn_dnn_smbr
+#srcdir=exp/dnn4_pretrain-dbn_dnn
+#acwt=0.2
 
-if [ $stage -le 3 ]; then
-  # First we generate lattices and alignments:
-  steps/nnet/align.sh --nj 20 --cmd "$train_cmd" \
-    $data_fmllr/train data/lang $srcdir ${srcdir}_ali || exit 1;
-  steps/nnet/make_denlats.sh --nj 20 --cmd "$decode_cmd" --acwt $acwt \
-    --lattice-beam 10.0 --beam 18.0 \
-    $data_fmllr/train data/lang $srcdir ${srcdir}_denlats || exit 1;
-fi
+#if [ $stage -le 3 ]; then
+  ## First we generate lattices and alignments:
+  #steps/nnet/align.sh --nj 20 --cmd "$train_cmd" \
+    #$data_fmllr/train data/lang $srcdir ${srcdir}_ali || exit 1;
+  #steps/nnet/make_denlats.sh --nj 20 --cmd "$decode_cmd" --acwt $acwt \
+    #--lattice-beam 10.0 --beam 18.0 \
+    #$data_fmllr/train data/lang $srcdir ${srcdir}_denlats || exit 1;
+#fi
 
-if [ $stage -le 4 ]; then
-  # Re-train the DNN by 6 iterations of sMBR 
-  steps/nnet/train_mpe.sh --cmd "$cuda_cmd" --num-iters 6 --acwt $acwt \
-    --do-smbr true \
-    $data_fmllr/train data/lang $srcdir ${srcdir}_ali ${srcdir}_denlats $dir || exit 1
-  # Decode
-  for ITER in 1 6; do
-    steps/nnet/decode.sh --nj 20 --cmd "$decode_cmd" \
-      --nnet $dir/${ITER}.nnet --acwt $acwt \
-      $gmmdir/graph $data_fmllr/test $dir/decode_test_it${ITER} || exit 1
-    steps/nnet/decode.sh --nj 20 --cmd "$decode_cmd" \
-      --nnet $dir/${ITER}.nnet --acwt $acwt \
-      $gmmdir/graph $data_fmllr/dev $dir/decode_dev_it${ITER} || exit 1
-  done 
-fi
+#if [ $stage -le 4 ]; then
+  ## Re-train the DNN by 6 iterations of sMBR 
+  #steps/nnet/train_mpe.sh --cmd "$cuda_cmd" --num-iters 6 --acwt $acwt \
+    #--do-smbr true \
+    #$data_fmllr/train data/lang $srcdir ${srcdir}_ali ${srcdir}_denlats $dir || exit 1
+  ## Decode
+  #for ITER in 1 6; do
+    #steps/nnet/decode.sh --nj 20 --cmd "$decode_cmd" \
+      #--nnet $dir/${ITER}.nnet --acwt $acwt \
+      #$gmmdir/graph $data_fmllr/test $dir/decode_test_it${ITER} || exit 1
+    #steps/nnet/decode.sh --nj 20 --cmd "$decode_cmd" \
+      #--nnet $dir/${ITER}.nnet --acwt $acwt \
+      #$gmmdir/graph $data_fmllr/dev $dir/decode_dev_it${ITER} || exit 1
+  #done 
+#fi
 
 echo Success
 exit 0
