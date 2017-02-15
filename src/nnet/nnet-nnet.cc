@@ -79,7 +79,8 @@ void Nnet::Propagate(const CuMatrixBase<BaseFloat> &in, CuMatrix<BaseFloat> *out
   propagate_buf_[0].CopyFromMat(in);
 
   for(int32 i=0; i<(int32)components_.size(); i++) {
-    components_[i]->Propagate(propagate_buf_[i], &propagate_buf_[i+1]);
+    components_[i]->Propagate(propagate_buf_[i], &propagate_buf_[i+1]); // propagate_buf_[i]   is the i/p to components_[i]
+    																	// propagate_buf_[i+1] is the o/p of components_[i]
   }
   
   (*out) = propagate_buf_[components_.size()];

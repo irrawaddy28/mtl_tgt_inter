@@ -76,9 +76,18 @@ void Xent::Eval(const VectorBase<BaseFloat> &frame_weights,
   // get frame_weights to GPU,
   frame_weights_ = frame_weights;
 
+#if 0
+  CuVector<BaseFloat> col_sum(net_out.NumRows());
+  col_sum.AddColSumMat(1.0, net_out, 0.0);
+  KALDI_LOG << " sum_j net_out(i, j), j = 1,...,  " << net_out.NumCols() << std::endl;
+  for (int32 i = 0; i < col_sum.Dim(); i++)
+    KALDI_LOG << col_sum(i) << " ";
+  KALDI_LOG << std::endl;
+#endif
+
   // compute derivative wrt. activations of last layer of neurons,
   *diff = net_out;
-  diff->AddMat(-1.0, target);
+  diff->AddMat(-1.0, target); // diff <-- (-1.0)*target + diff
   diff->MulRowsVec(frame_weights_); // weighting,
 
   // evaluate the frame-level classification,
@@ -554,12 +563,18 @@ void MultiTaskLoss::Eval(const VectorBase<BaseFloat> &frame_weights,
   // call the vector of loss functions,
   CuMatrix<BaseFloat> diff_aux;
   for (int32 i = 0; i < loss_vec_.size(); i++) {
+	//KALDI_LOG << "Evaluating Task  " << i + 1 << " , Weight = " << loss_weights_[i] << std::endl;
     loss_vec_[i]->Eval(frame_weights, 
       net_out.ColRange(loss_dim_offset_[i], loss_dim_[i]),
       tgt_mat_.ColRange(loss_dim_offset_[i], loss_dim_[i]),
       &diff_aux);
     // Scale the gradients,
     diff_aux.Scale(loss_weights_[i]);
+    //KALDI_LOG << "loss_dim_offset_[ " << i << "] = " << loss_dim_offset_[i] << "\n";
+    //KALDI_LOG << "loss_dim_[ " << i << "] = " << loss_dim_[i] << "\n";
+    //KALDI_LOG << "net_out = " << net_out.ColRange(loss_dim_offset_[i], loss_dim_[i]) << "\n";
+    //KALDI_LOG << "target mat = " << tgt_mat_.ColRange(loss_dim_offset_[i], loss_dim_[i]) << "\n";
+    //KALDI_LOG << "diff aux = " << diff_aux << "\n";
     // Copy to diff,
     diff->ColRange(loss_dim_offset_[i], loss_dim_[i]).CopyFromMat(diff_aux);
   }

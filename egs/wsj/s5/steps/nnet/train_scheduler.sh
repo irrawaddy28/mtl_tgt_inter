@@ -141,10 +141,16 @@ for iter in $(seq -w $max_iters); do
   
   loss_new=$(cat $dir/log/iter${iter}.cv.log | grep "AvgLoss:" | tail -n 1 | awk '{ print $4; }')
   echo -n "CROSSVAL AVG.LOSS $(printf "%.4f" $loss_new), "
+  
+  # for the first iter, just set an arbitrary high value for previous loss
+  if [ $iter -eq 1 ]; then
+	loss=50
+  else
+	loss_prev=$loss
+  fi	
 
   # accept or reject new parameters (based on objective function)
-  loss_prev=$loss
-  if [ 1 == $(bc <<< "$loss_new < $loss") -o $iter -le $keep_lr_iters -o $iter -le $min_iters ]; then
+  if [[ 1 == $(bc <<< "$loss_new < $loss") || $iter -le $keep_lr_iters || $iter -le $min_iters ]]; then
     loss=$loss_new
     mlp_best=$dir/nnet/${mlp_base}_iter${iter}_learnrate${learn_rate}_tr$(printf "%.4f" $tr_loss)_cv$(printf "%.4f" $loss_new)
     [ $iter -le $min_iters ] && mlp_best=${mlp_best}_min-iters-$min_iters

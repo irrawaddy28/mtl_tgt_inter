@@ -142,7 +142,10 @@ class AffineTransform : public UpdatableComponent {
            
   }
 
-
+  // in =  [# frames x in dim]
+  // out = in*W^T = [# frames x in dim] x [in dim x out dim] = [# frames x out dim]
+  // "in dim" = i/p dim of this component = feat dim for first layer or out dim of the previous component
+  // "out dim" = o/p dim of this component
   void PropagateFnc(const CuMatrixBase<BaseFloat> &in, CuMatrixBase<BaseFloat> *out) {
     // precopy bias
     out->AddVecToRows(1.0, bias_, 0.0);
@@ -150,6 +153,12 @@ class AffineTransform : public UpdatableComponent {
     out->AddMatMat(1.0, in, kNoTrans, linearity_, kTrans, 1.0);
   }
 
+  // in = input data to this component, out = fprop of input data through this component
+  // in, out are the same those in PropagateFnc()
+  // out_diff = errors from the next higher component = [# frames x out dim]
+  // in_diff = bprop of out_diff through this component = [# frames x in dim]
+  // "out dim" = o/p dim of this component = i/p dim of the next higher component
+  // "in dim" = i/p dim of this component
   void BackpropagateFnc(const CuMatrixBase<BaseFloat> &in, const CuMatrixBase<BaseFloat> &out,
                         const CuMatrixBase<BaseFloat> &out_diff, CuMatrixBase<BaseFloat> *in_diff) {
     // multiply error derivative by weights

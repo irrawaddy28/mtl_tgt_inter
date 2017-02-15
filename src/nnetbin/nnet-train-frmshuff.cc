@@ -246,6 +246,7 @@ int main(int argc, char *argv[]) {
         nnet.Propagate(nnet_in, &nnet_out);
 
         // evaluate objective function we've chosen
+        // obj_diff contains the error matrix. For e.g., in the case of MSE or XENT, obj_diff(t,k) = y(t,k) - d(t,k)
         if (objective_function == "xent") {
           // gradients re-scaled by weights in Eval,
           xent.Eval(frm_weights, nnet_out, nnet_tgt, &obj_diff); 

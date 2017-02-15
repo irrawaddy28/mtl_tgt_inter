@@ -443,6 +443,7 @@ steps/nnet/train_scheduler.sh \
   ${feature_transform:+ --feature-transform $feature_transform} \
   --learn-rate $learn_rate \
   --randomizer-seed $seed \
+  --randomizer-size 250000 \
   --max-iters $train_iters \
   --minibatch-size ${minibatch_size} \
   ${train_opts} \

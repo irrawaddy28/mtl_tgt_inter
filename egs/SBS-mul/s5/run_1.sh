@@ -38,8 +38,9 @@ splice_step_bn_stage2=2 # splice step of AM-DNN trained using BN+FMLLR feats
 
 . utils/parse_options.sh
 
+# Usage: ./run_1.sh "AM AR CA DI HG MD" "SW"
 TRAIN_LANG=$1  # Example: "AM AR CA HG MD SW"
-TEST_LANG=$2   # EXample: "DI"
+TEST_LANG=$2   # Example: "DI"
 UNILANG_CODE=$(echo $TRAIN_LANG |sed 's/ /_/g')
 
 dir_raw_pt=$dir_raw_pt/${TEST_LANG}
@@ -326,7 +327,7 @@ if [[ $stage -le 40 ]]; then
 #	"data-fmllr-tri3c/${TEST_LANG}/${TEST_LANG}/train:data-fmllr-tri3c/${TEST_LANG}/${UNILANG_CODE}/train" data-fmllr-tri3c/${TEST_LANG}/combined_fw${thresh}_cop${num_copies} \
 #	exp/dnn4_pretrain-dbn_dnn/${TEST_LANG}/multisoftmax_pt_fw${thresh}_cop${num_copies} &
 	
-for thresh in 0.5 0.6 0.7 0.8 ; do # full range: 0.5 0.6 0.7 0.8 0.9
+for thresh in 0.5 0.6 0.7 0.8; do # full range: 0.5 0.6 0.7 0.8 0.9
   for num_copies in 0 1 ; do # full range: 0 1 2 3 4  
     if $use_bn; then
 	  data_fmllr_cop_dir=${data_fmllr_dir}/combined_bn_stage1_fw${thresh}_cop${num_copies}
@@ -385,17 +386,20 @@ for thresh in 0.5 0.6 0.7 0.8 ; do # full range: 0.5 0.6 0.7 0.8 0.9
 	    wait
 	  done # splice step
 	else
-	  (./run_dnn_multilingual.sh --dnn-init "${dnn_dir}/monosoftmax_dt/final.nnet" --data-type-csl "pt:dt"  --lang-weight-csl "1.0:1.0"  \
+	  nnet_outdir=${dnn_dir}/multisoftmax_pt_fw${thresh}_cop${num_copies}
+	  ( ./run_dnn_multilingual.sh --dnn-init "${dnn_dir}/monosoftmax_dt/final.nnet" --data-type-csl "pt:dt"  --lang-weight-csl "1.0:1.0"  \
 		--threshold-csl "${thresh}:0.0" --lat-dir-csl "${lats_pt_dir}:-" --dup-and-merge-csl "${num_copies}>>1:0>>0" \
+		--renew-nnet-type "parallel" \
 		"${TEST_LANG}:${UNILANG_CODE}" "${ali_pt_dir}:${ali_dt_dir}" \
 		"${data_fmllr_dir}/${TEST_LANG}/train:${data_fmllr_dir}/${UNILANG_CODE}/train" ${data_fmllr_dir}/combined_fw${thresh}_cop${num_copies} \
-		${dnn_dir}/multisoftmax_pt_fw${thresh}_cop${num_copies} || exit 1; ) &
-	fi		
+		${nnet_outdir} | tee ${nnet_outdir}/run_dnn_multilingual.log || exit 1; ) &
+	fi
   done  # num_copies
+  wait
 done # thresh
 fi
 # =========================================
-
+exit 0;
 # =========================================
 ## Demonstrate the efficacy of a multisoftmax DNN trained with PT, DT, and unsupervised data (PT:DT:Unsup).
 nutts=4000

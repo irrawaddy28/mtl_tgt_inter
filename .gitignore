@@ -139,6 +139,9 @@ src/valgrind*.log
 
 tools/compile*.log
 !tools/compile.bak.log
+tools/pfile_utils-v0_51
+tools/quicknet-v3_33
+
 
 # Ignore src.zip and tools.zip files
 src.zip
@@ -162,6 +165,9 @@ tools.zip
 # Ignore data*, exp* dirs
 /egs/*/s*/data*
 /egs/*/s*/exp*
+/egs/*/s*/*.log
+/egs/*/s*/kaldipdnn
+/egs/*/s*/pdnn
 
 # Ignore /egs/SBS
 /egs/SBS

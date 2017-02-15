@@ -17,7 +17,7 @@
 
 # Generated Nnet prototype, to be initialized by 'nnet-initialize'.
 
-import math, random, sys
+import math, random, sys, os
 
 ###
 ### Parse options
@@ -34,6 +34,9 @@ parser.add_option('--no-softmax', dest='with_softmax',
                    default=True, action='store_false');
 parser.add_option('--block-softmax-dims', dest='block_softmax_dims', 
                    help='Generate <BlockSoftmax> with dims D1:D2:D3 [default: %default]', 
+                   default="", type='string');
+parser.add_option('--parallel-net', dest='parallel_net', 
+                   help='Generate <ParallelComponent> with protos and dims proto1,D1:proto2,D2:proto3,D3 [default: %default]', 
                    default="", type='string');
 parser.add_option('--activation-type', dest='activation_type', 
                    help='Select type of activation function : (<Sigmoid>|<Tanh>) [default: %default]', 
@@ -136,8 +139,22 @@ if num_hid_layers == 0 and o.bottleneck_dim != 0:
 # Add only last layer (logistic regression)
 if num_hid_layers == 0:
   if o.with_proto_head : print "<NnetProto>" 
-  print "<AffineTransform> <InputDim> %d <OutputDim> %d <BiasMean> %f <BiasRange> %f <ParamStddev> %f" % \
+  if o.parallel_net == "":
+    print "<AffineTransform> <InputDim> %d <OutputDim> %d <BiasMean> %f <BiasRange> %f <ParamStddev> %f" % \
         (feat_dim, num_leaves, 0.0, 0.0, (o.param_stddev_factor * Glorot(feat_dim, num_leaves)))
+  else:
+    subnet_protos = [ net.split(',')[0] for net in o.parallel_net.split(':') ]
+    subnet_odims =  [ net.split(',')[1] for net in o.parallel_net.split(':') ]       
+    n_tasks = len(subnet_protos)
+    assert(n_tasks == len(subnet_odims))
+    for proto in subnet_protos:
+      assert(os.path.isfile(proto))
+    assert(num_leaves == sum(map(int, subnet_odims)))
+    parallel_indim = feat_dim*n_tasks
+    print "<Splice> <InputDim> %d <OutputDim> %d <BuildVector> %s </BuildVector> " %  \
+        (feat_dim, parallel_indim, ' '.join(str(s) for s in [0]*n_tasks))
+    print "<ParallelComponent> <InputDim> %d <OutputDim> %d <NestedNnetProto> %s  </NestedNnetProto> " % \
+        (parallel_indim, num_leaves, '  '.join(str(s) for s in subnet_protos))
   if o.with_softmax:
     if o.block_softmax_dims == "":
       print "<Softmax> <InputDim> %d <OutputDim> %d" % (num_leaves, num_leaves)

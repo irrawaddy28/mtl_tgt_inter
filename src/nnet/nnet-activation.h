@@ -89,7 +89,15 @@ class BlockSoftmax : public Component {
     for (int32 i=0; i<block_dims.size(); i++) {
       sum += block_dims[i];
     }
-    KALDI_ASSERT(sum == OutputDim()); 
+    KALDI_ASSERT(sum == OutputDim());
+
+    // Initializing block_offset array early to enable unit testing
+    // We repeat this initialization later in ReadData()
+    block_offset.resize(block_dims.size()+1, 0);
+    for (int32 i = 0; i < block_dims.size(); i++) {
+      block_offset[i+1] = block_offset[i] + block_dims[i];
+    }
+    KALDI_ASSERT(OutputDim() == block_offset[block_offset.size()-1]);
   }
 
   void ReadData(std::istream &is, bool binary) {
@@ -127,13 +135,19 @@ class BlockSoftmax : public Component {
     for (int32 bl = 0; bl < block_dims.size(); bl++) {
       CuSubMatrix<BaseFloat> diff_bl = in_diff->ColRange(block_offset[bl], block_dims[bl]);
       CuVector<BaseFloat> row_sum(diff_bl.NumRows());
+      // std::cout << "block index = " << bl << ", offset = " << block_offset[bl] << "\n";
+      // std::cout << "diff_bl (init) = " << diff_bl << "\n";
       row_sum.AddColSumMat(1.0, diff_bl, 0.0); // 0:keep, 1:zero-out
+      // std::cout << "row_sum = " << row_sum << "\n";
       // we'll scale rows by 0/1 masks
       CuVector<BaseFloat> row_diff_mask(row_sum);
       row_diff_mask.Scale(-1.0); // 0:keep, -1:zero-out
+      // std::cout << "row_diff_mask (scale) = " << row_diff_mask << "\n";
       row_diff_mask.Add(1.0); // 1:keep, 0:zero-out
+      // std::cout << "row_diff_mask (add) = " << row_diff_mask << "\n";
       // here we should have only 0 and 1
       diff_bl.MulRowsVec(row_diff_mask);
+      // std::cout << "diff_bl (final) = " << diff_bl << "\n";
     }
   }
 

@@ -137,6 +137,10 @@ class ParallelComponent : public UpdatableComponent {
     WriteToken(os, binary, "</ParallelComponent>");
   }
 
+  Nnet& GetNestedNnet(int32 id) { return nnet_.at(id); }
+
+  const Nnet& GetNestedNnet(int32 id) const { return nnet_.at(id); }
+
   int32 NumParams() const { 
     int32 num_params_sum = 0;
     for (int32 i=0; i<nnet_.size(); i++) 
@@ -209,7 +213,7 @@ class ParallelComponent : public UpdatableComponent {
 
   void BackpropagateFnc(const CuMatrixBase<BaseFloat> &in, const CuMatrixBase<BaseFloat> &out,
                         const CuMatrixBase<BaseFloat> &out_diff, CuMatrixBase<BaseFloat> *in_diff) {
-    int32 input_offset = 0, output_offset = 0;
+/*  int32 input_offset = 0, output_offset = 0;
     for (int32 i=0; i<nnet_.size(); i++) {
       CuSubMatrix<BaseFloat> src(out_diff.ColRange(output_offset, nnet_[i].OutputDim()));
       CuSubMatrix<BaseFloat> tgt(in_diff->ColRange(input_offset, nnet_[i].InputDim()));
@@ -220,7 +224,85 @@ class ParallelComponent : public UpdatableComponent {
       //
       input_offset += nnet_[i].InputDim();
       output_offset += nnet_[i].OutputDim();
+    }*/
+
+	std::vector<Component*> c;
+	for (int32 i=0; i<nnet_.size(); i++) {
+	  int32 last_component = nnet_[i].NumComponents() - 1;
+	  c.push_back(nnet_[i].GetComponent(last_component).Copy());
+	}
+
+	int32 input_offset = 0, output_offset = 0;
+	float eps = 1e-06;
+	std::vector<MatrixIndexT> softmax_indices;
+	int32 nrows = out_diff.NumRows();
+	int32 ncols = nnet_.size();
+	Matrix<BaseFloat> row_diff_mask(nrows,ncols,kSetZero);
+
+	// Set masks for those tasks whose last component is Softmax
+	for (int32 i=0; i<ncols; i++) {
+	  if (c[i]->GetType() == Component::kSoftmax) {
+		softmax_indices.push_back(i);
+	    CuSubMatrix<BaseFloat> src(out_diff.ColRange(output_offset, nnet_[i].OutputDim()));
+	    CuVector<BaseFloat> row_sum(src.NumRows());
+	    row_sum.AddColSumMat(1.0, src, 0.0); // 0:keep, 1:zero-out
+	    // KALDI_LOG << "row_sum[task " << i << "] = "   << row_sum << "\n";
+	    // Copy CuVector to Vector. Compute the masks in Vector class.
+	    Vector<BaseFloat> r_sum(row_sum.Dim());
+	    row_sum.CopyToVec(&r_sum);
+	    r_sum.ApplyAbs();
+	    r_sum.LowerThreshold(eps, 0);
+	    // Copy Vector to the i^th col of Matrix
+	    row_diff_mask.CopyColFromVec(r_sum, i);
+	    // Compute the masks in CuMatrix
+	    row_diff_mask.ColRange(i,1).Scale(-1.0); // 0:keep, -1:zero-out
+	    row_diff_mask.ColRange(i,1).Add(1.0); // 1:keep, 0:zero-out
+	    // KALDI_LOG << "row_diff_mask[" << i << "] = " << row_diff_mask << "\n";
+	  }
+	  output_offset += nnet_[i].OutputDim();
+	}
+
+	// Set the masks for those tasks whose last component is not Softmax
+	// Assume there is only ONE task with a non-Softmax component.
+	// Rule: If all the Softmax masks for a given frame were set to 0, then the frame must belong to
+	// the non-Softmax task. Thus, set the mask for this non-Softmax task to 1.
+	for (int32 i=0; i<ncols; i++) {
+	  if (c[i]->GetType() != Component::kSoftmax) {
+	    // check if softmax indices are all 0's
+		for (int32 j=0; j<nrows; j++) {
+		  bool softmax_inactive = true;
+		  for (int32 k=0; (k<softmax_indices.size()) && softmax_inactive; k++) {
+		    if (!row_diff_mask.Range(j,1,softmax_indices.at(k),1).IsZero())
+		      softmax_inactive = false;
+		  }
+		  if (softmax_inactive) row_diff_mask.Range(j,1,i,1).Set(1.0);
+	    }
+	    // KALDI_LOG << "row_diff_mask[" << i << "] (non-softmax)= " << row_diff_mask << "\n";
+	  }
     }
+
+	// KALDI_LOG << "out_diff = " << out_diff << "\n";
+	// KALDI_LOG << "row_diff_mask = " << row_diff_mask << "\n";
+	input_offset = 0, output_offset = 0;
+	CuMatrix<BaseFloat> row_diff_mask_cu(row_diff_mask);
+	for (int32 i=0; i<ncols; i++) {
+	  CuSubMatrix<BaseFloat> src(out_diff.ColRange(output_offset, nnet_[i].OutputDim()));
+	  CuSubMatrix<BaseFloat> tgt(in_diff->ColRange(input_offset, nnet_[i].InputDim()));
+	  CuMatrix<BaseFloat> src_masked(src, kNoTrans);
+	  //
+	  CuVector<BaseFloat> row_mask(nrows);
+	  row_mask.CopyColFromMat(row_diff_mask_cu,i);
+	  src_masked.MulRowsVec(row_mask);
+	  CuMatrix<BaseFloat> tgt_aux;
+	  nnet_[i].Backpropagate(src_masked, &tgt_aux);
+	  tgt.CopyFromMat(tgt_aux);
+	  //
+	  input_offset += nnet_[i].InputDim();
+	  output_offset += nnet_[i].OutputDim();
+	  // KALDI_LOG << "out_diff[ " << i << "] = " << src << "\n";
+  	  // KALDI_LOG << "out_diff[ " << i << "] (masked) = " << src_masked << "\n";
+  	  // KALDI_LOG << "bprop o/p of task " << i << " = " << tgt << "\n";
+	}
   }
 
   void Update(const CuMatrixBase<BaseFloat> &input, const CuMatrixBase<BaseFloat> &diff) {

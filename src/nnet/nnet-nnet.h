@@ -137,7 +137,7 @@ class Nnet {
   /// the components are for example: AffineTransform, Sigmoid, Softmax
   std::vector<Component*> components_; 
 
-  std::vector<CuMatrix<BaseFloat> > propagate_buf_; ///< buffers for forward pass
+  std::vector<CuMatrix<BaseFloat> > propagate_buf_; ///< buffers for forward pass, where the matrix in the "lth" pos has size = [# frames x in dim], where "in dim" = either feat dim or "out dim" of (l-1)th layer
   std::vector<CuMatrix<BaseFloat> > backpropagate_buf_; ///< buffers for backward pass
 
   /// Option class with hyper-parameters passed to UpdatableComponent(s)

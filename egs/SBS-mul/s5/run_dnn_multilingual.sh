@@ -34,6 +34,8 @@ lang_weight_csl="1.0:1.0:1.0"
 lat_dir_csl="-:-:-"    # lattices obtained after decoding PT or unsup data
 data_type_csl="dt:dt:dt"
 dup_and_merge_csl="0>>1:0>>2:0>>3" # x>>y means: create x copies of data and use those to train the softmax layer in block y
+renew_nnet_type="parallel"  # can be "parallel", "blocksoftmax", or an empty string (single softmax for all tasks)
+renew_nnet_opts=            # options for the renew nnnet. Details about these options in local/nnet/renew_nnet_* scripts. For e.g., In case of parallel net, option could be "--parallel-nhl-opts 3:3 --parallel-nhn-opts 1024:1024 "; 
 
 # Frame weighting options
 threshold_default=0.7
@@ -433,9 +435,19 @@ if [ $stage -le 2 ]; then
     dnn_small)
     # 4 hidden layers, 1024 sigmoid neurons
     if [[ ! -z ${dnn_init} ]]; then
-	  nnet_init=$dir/nnet.init      
-      perl local/nnet/renew_nnet_softmax.sh --softmax-dim ${output_dim} --remove-last-components $remove_last_components ${ali_dir[0]}/final.mdl ${dnn_init} ${nnet_init}
-      
+	  nnet_init=$dir/nnet.init
+	  
+      if [ $renew_nnet_type == "parallel" ]; then
+        # create a generic network for each task
+	    local/nnet/renew_nnet_parallel.sh --remove-last-components $remove_last_components ${renew_nnet_opts} ${ali_dim_csl} ${dnn_init} ${nnet_init}
+	  elif [ $renew_nnet_type == "blocksoftmax" ]; then
+	    # create a softmax layer for each task
+	    local/nnet/renew_nnet_blocksoftmax.sh --remove-last-components $remove_last_components ${renew_nnet_opts} ${ali_dim_csl} ${dnn_init} ${nnet_init}
+	  else
+	    # create a single softmax layer across all tasks
+	    local/nnet/renew_nnet_softmax.sh --softmax-dim ${output_dim} --remove-last-components $remove_last_components ${renew_nnet_opts} ${ali_dir[0]}/final.mdl ${dnn_init} ${nnet_init}
+	  fi
+	        
       $cuda_cmd $dir/log/train_nnet.log \
       local/nnet/train_pt.sh  ${nnet_init:+ --nnet-init "$nnet_init" --hid-layers 0} \
 		--learn-rate 0.008 \
@@ -446,7 +458,6 @@ if [ $stage -le 2 ]; then
         --frame-weights  "scp:$dir/ali-post/frame_weights_combined.scp" \
         --num-tgt $output_dim \
         --copy-feats "false" \
-        --proto-opts "--block-softmax-dims=${ali_dim_csl}" \
         --train-tool "nnet-train-frmshuff --objective-function=$objective_function" \
         ${data_tr90} ${data_cv10} lang-dummy ${ali_dir[0]} ${ali_dir[0]} $dir			# ${ali_dir[0]} is used only to copy the HMM transition model
         
@@ -462,7 +473,6 @@ if [ $stage -le 2 ]; then
         --frame-weights  "scp:$dir/ali-post/frame_weights_block_2.scp" \
         --num-tgt $output_dim \
         --copy-feats "false" \
-        --proto-opts "--block-softmax-dims=${ali_dim_csl}" \
         --train-tool "nnet-train-frmshuff --objective-function=$objective_function" \
         ${data_tr90} ${data_cv10} lang-dummy ${ali_dir[0]} ${ali_dir[0]} $dir
         fi
@@ -477,7 +487,6 @@ if [ $stage -le 2 ]; then
         --frame-weights  "scp:$dir/ali-post/frame_weights_combined.scp" \
         --num-tgt $output_dim \
         --copy-feats "false" \
-        --proto-opts "--block-softmax-dims=${ali_dim_csl}" \
         --train-tool "nnet-train-frmshuff --objective-function=$objective_function" \
         ${data_tr90} ${data_cv10} lang-dummy ${ali_dir[0]} ${ali_dir[0]} $dir			# ${ali_dir[0]} is used only to copy the HMM transition model        
     fi    
@@ -502,7 +511,7 @@ fi
 
 L=${lang_code[0]}     # the first lang is the test language
 exp_dir=${ali_dir[0]} # this should be a gmm dir
-# Decoding stage 
+# Decoding stage
 if [ $stage -le 3 ]; then
   case $nnet_type in
     dnn_small)
@@ -510,10 +519,17 @@ if [ $stage -le 3 ]; then
       for active_block in ${test_block[@]}; do  #$(seq 1 $num_langs)
         graph_dir=$exp_dir/graph_text_G_$L
 	    [[ -d $graph_dir ]] || { mkdir -p $graph_dir; utils/mkgraph.sh data/$L/lang_test_text_G $exp_dir $graph_dir || exit 1; }
-        for type in "dev" "eval"; do		
+        for type in "dev" "eval"; do
           decode_dir=$dir/decode_block_${active_block}_${type}_text_G_$L
-          # extract the active softmax from block softmax
-		  local/nnet/make_activesoftmax_from_blocksoftmax.sh $dir/final.nnet "$(echo ${ali_dim_csl}|tr ':' ',')" $active_block $decode_dir/final.nnet
+          if [[ $renew_nnet_type == "parallel" ]]; then
+            # extract the active network from the parallel network
+            local/nnet/make_activesoftmax_from_parallel.sh --remove-last-components $remove_last_components $dir/final.nnet $active_block $decode_dir/final.nnet
+          elif [[ $renew_nnet_type == "blocksoftmax" ||  -z $renew_nnet_type ]]; then
+            # extract the active softmax from block softmax
+		    local/nnet/make_activesoftmax_from_blocksoftmax.sh $dir/final.nnet "$(echo ${ali_dim_csl}|tr ':' ',')" $active_block $decode_dir/final.nnet
+		  else
+		    echo "Decoding with $renew_nnet_type not supported" && exit 1
+		  fi
 		  # make other necessary dependencies available
           (cd $decode_dir; ln -s ../{final.mdl,final.feature_transform,norm_vars,cmvn_opts,delta_opts} . ;)
           # create "prior_counts"        
