@@ -103,6 +103,12 @@ sed -e 's:\-.*$::' $tmpdir/downsample/unsup_basenames_wav | \
   paste -d' ' $tmpdir/downsample/unsup_basenames_wav - | sort -t' ' -k1,1 \
   > data/${LCODE}/local/data/unsup_utt2spk
 
+# Map the utterance "swahili_141216_380113-47" to speaker "swahili_141216" instead of "swahili_141216_380113"
+# sed -e 's:\-.*$::' $tmpdir/downsample/${x}_basenames_wav |awk -F'_' '{$NF=""; print $0}'|gawk 'BEGIN { OFS="_" }; {$1=$1; print $0}' | \
+#	paste -d' ' $tmpdir/downsample/${x}_basenames_wav - | sort -t' ' -k1,1 \
+#    > data/${LCODE}/local/data/${x}_utt2spk
+  
+
 ./utils/utt2spk_to_spk2utt.pl data/${LCODE}/local/data/unsup_utt2spk > data/${LCODE}/local/data/unsup_spk2utt || exit 1;
 
 mkdir -p data/$LCODE/unsup

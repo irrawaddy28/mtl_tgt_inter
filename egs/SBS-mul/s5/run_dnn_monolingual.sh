@@ -21,6 +21,11 @@
 . ./path.sh ## Source the tools/utils (import the queue.pl)
 
 stage=0 # resume training with --stage=N
+cmvn_opts=      # speaker specific cmvn for i/p features. For mean+var normalization, use "--norm-means=true --norm-vars=true"
+delta_order=0   # Use 1 for delta, 2 for delta-delta
+splice=5
+splice_step=1
+
 feats_nj=4
 train_nj=8
 decode_nj=4
@@ -105,8 +110,7 @@ if [ $stage -le 2 ]; then
   # Train
   $cuda_cmd $dir/log/train_nnet.log \
     steps/nnet/train.sh --feature-transform $feature_transform --dbn $dbn --hid-layers 0 --learn-rate 0.008 \
-    --cmvn-opts "--norm-means=true --norm-vars=true" \
-    --delta-opts "--delta-order=2" --splice 5 \
+    ${cmvn_opts:+ --cmvn-opts "$cmvn_opts"} --delta-opts "--delta-order=$delta_order" --splice $splice --splice-step $splice_step \
     $data_fmllr/train_tr90 $data_fmllr/train_cv10 data/$lang/lang $ali $ali $dir
 
   # Decode (reuse HCLG graph)

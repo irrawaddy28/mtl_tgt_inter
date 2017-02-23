@@ -28,6 +28,8 @@ precomp_dbn=
 precomp_dnn=
 hid_layers=6
 hid_dim=1024
+cmvn_opts=       # speaker specific cmvn for i/p features. For mean+var normalization, use "--norm-means=true --norm-vars=true"
+delta_order=0    # Use 1 for delta, 2 for delta-delta
 splice=5         # temporal splicing
 splice_step=1    # stepsize of the splicing (1 == no gap between frames)
 bn_dim=
@@ -100,7 +102,7 @@ if [ $stage -le 1 ]; then
     # split the data : 90% train 10% cross-validation (held-out)
     utils/subset_data_dir_tr_cv.sh $dir ${dir}_tr90 ${dir}_cv10 || exit 1
   done
-fi  
+fi
 
 if [ $stage -le 2 ]; then
 	if $train_dbn ; then
@@ -125,16 +127,13 @@ if [ $stage -le 2 ]; then
 	    if [[ ! -z $bn_layer ]]; then
 	      $cuda_cmd $nnetinitdir/log/pretrain_dbn.log \
 		  local/nnet/pretrain_dbn.sh --nn-depth $hid_layers --hid-dim $hid_dim \
-		    --bn-layer $bn_layer --bn-dim $bn_dim	--splice $splice --splice-step $splice_step	\
-		    --cmvn-opts "--norm-means=true --norm-vars=true" \
-		    --delta-opts "--delta-order=2" --splice 5 \
+		    --bn-layer $bn_layer --bn-dim $bn_dim	\
+		    ${cmvn_opts:+ --cmvn-opts "$cmvn_opts"} --delta-opts "--delta-order=$delta_order" --splice $splice --splice-step $splice_step \
 		    --rbm-iter 20 $data_fmllr/${UNILANG_CODE}/train $nnetinitdir || exit 1;
 	    else
 		  $cuda_cmd $nnetinitdir/log/pretrain_dbn.log \
 		  steps/nnet/pretrain_dbn.sh --nn-depth $hid_layers --hid-dim $hid_dim \
-		  --splice $splice --splice-step $splice_step \
-		    --cmvn-opts "--norm-means=true --norm-vars=true" \
-			--delta-opts "--delta-order=2" --splice 5 \
+		  ${cmvn_opts:+ --cmvn-opts "$cmvn_opts"} --delta-opts "--delta-order=$delta_order" --splice $splice --splice-step $splice_step \
 			--rbm-iter 20 $data_fmllr/${UNILANG_CODE}/train $nnetinitdir || exit 1;
 	    fi  
 	   fi
@@ -154,8 +153,7 @@ if [ $stage -le 3 ]; then
   dbn=${nnetinitdir}/${hid_layers}.dbn
   $cuda_cmd $dir/log/train_nnet.log \
   steps/nnet/train.sh  --dbn $dbn --hid-layers 0 \
-	--cmvn-opts "--norm-means=true --norm-vars=true" \
-    --delta-opts "--delta-order=2" --splice $splice --splice-step $splice_step \
+    ${cmvn_opts:+ --cmvn-opts "$cmvn_opts"} --delta-opts "--delta-order=$delta_order" --splice $splice --splice-step $splice_step \
     --learn-rate 0.008 \
     $data_fmllr/${UNILANG_CODE}/train_tr90 $data_fmllr/${UNILANG_CODE}/train_cv10 data/${UNILANG_CODE}/lang $ali $ali $dir || exit 1;
      
@@ -178,8 +176,7 @@ if [ $stage -le 3 ]; then
 		#feature_transform_opt=$(echo "--feature-transform $feature_transform")
 		$cuda_cmd $dir/log/train_nnet.log \
 		steps/nnet/train.sh --nnet-init ${nnet_init} --hid-layers 0 \
-			--cmvn-opts "--norm-means=true --norm-vars=true" \
-			--delta-opts "--delta-order=2" --splice $splice --splice-step $splice_step \
+		  ${cmvn_opts:+ --cmvn-opts "$cmvn_opts"} --delta-opts "--delta-order=$delta_order" --splice $splice --splice-step $splice_step \
 			--learn-rate 0.008 \
 			$data_fmllr/${UNILANG_CODE}/train_tr90 $data_fmllr/${UNILANG_CODE}/train_cv10 data/${UNILANG_CODE}/lang $ali $ali $dir || exit 1;
 	 else
@@ -187,8 +184,7 @@ if [ $stage -le 3 ]; then
 	    $cuda_cmd $dir/log/train_nnet.log \
 		steps/nnet/train.sh --hid-layers $hid_layers --hid-dim $hid_dim \
 			${bn_dim:+ --bn-dim $bn_dim} \
-			--cmvn-opts "--norm-means=true --norm-vars=true" \
-			--delta-opts "--delta-order=2" --splice $splice --splice-step $splice_step \
+			${cmvn_opts:+ --cmvn-opts "$cmvn_opts"} --delta-opts "--delta-order=$delta_order" --splice $splice --splice-step $splice_step \
 			--learn-rate 0.008 \
 			$data_fmllr/${UNILANG_CODE}/train_tr90 $data_fmllr/${UNILANG_CODE}/train_cv10 data/${UNILANG_CODE}/lang $ali $ali $dir || exit 1;
 	 fi

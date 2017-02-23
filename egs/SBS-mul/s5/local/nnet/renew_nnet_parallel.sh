@@ -6,9 +6,9 @@
 remove_last_components=2
 parallel_softmax_opts=
 parallel_nhl_opts=
-parallel_nhl=0  # no. of hidden layers in the tasks, Default 0 hidden layers
 parallel_nhn_opts=
-parallel_nhn=1024  # no. of hidden neurons in the tasks, Default 1024 neurons
+parallel_nhl=0  # no. of hidden layers in the tasks, Default 0 hidden layers for all tasks
+parallel_nhn=1024  # no. of hidden neurons in the tasks, Default 1024 neurons for all tasks
 # End of config.
 
 echo "$0 $@"  # Print the command line for logging
@@ -19,7 +19,7 @@ echo "$0 $@"  # Print the command line for logging
 usage="Usage: $0 <csl parallel odims> <input network> <output_network>"
 # E.g.(a) To create a parallel network consisting of a 3 tasks where task1 and task2 use softmax layers
 # and task3 has a single affine xform (no softmax), use
-# renew_nnet_parallel.sh --parallel-opts "::--no-softmax"  500:500:1000 nnet.old nnet.new
+# renew_nnet_parallel.sh --parallel-softmax-opts "::--no-softmax"  500:500:1000 nnet.old nnet.new
 # (b) To create 3 hidden layers for each task with hidden neurons 1024, 1024, 2048 resp., use
 # renew_nnet_parallel.sh --parallel-softmax-opts "::--no-softmax" --parallel-nhl-opts "3:3:3" --parallel-nhn-opts "1024:1024:2048" 500:500:1000 nnet.old nnet.new
 

@@ -14,6 +14,7 @@ feature_transform= # provide feature transform (=splice,rescaling,...) (don't bu
 pytel_transform=   # use external transform defined in python (BUT specific)
 network_type=dnn   # (dnn,cnn1d,cnn2d,lstm) select type of neural network
 cnn_proto_opts=     # extra options for 'make_cnn_proto.py'
+skip_nnet_train=false   # compute only the feature transform, skip nnet train (thus, labels can be dummy)
 #
 hid_layers=4       # nr. of hidden layers (prior to sotfmax or bottleneck)
 hid_dim=1024       # select hidden dimension
@@ -53,7 +54,8 @@ train_opts=        # options, passed to the training script
 train_tool=        # optionally change the training tool
 frame_weights=     # per-frame weights for gradient weighting
 train_iters=20
-minibatch_size=256
+randomizer_size=32768
+minibatch_size=256    # num frames per mini-batch (usually 256)
 
 # OTHER
 seed=777    # seed value used for training data shuffling and initialization
@@ -198,7 +200,7 @@ if [ "$copy_feats" == "true" ]; then
 fi
 
 #create a 10k utt subset for global cmvn estimates
-head -n 10000 $dir/train.scp > $dir/train.scp.10k
+head -n 30000 $dir/train.scp > $dir/train.scp.10k
 
 
 ###### PREPARE FEATURE PIPELINE ######
@@ -350,6 +352,7 @@ fi
 num_fea=$(feat-to-dim "$feats_tr nnet-forward $feature_transform ark:- ark:- |" - )
 echo "feat dim (after applying feat transform) = $num_fea"
 
+$skip_nnet_train && echo "$feats_tr" > $dir/feats_cmd && exit 0
 ###### INITIALIZE THE NNET ######
 echo 
 echo "# NN-INITIALIZATION"
@@ -443,8 +446,8 @@ steps/nnet/train_scheduler.sh \
   ${feature_transform:+ --feature-transform $feature_transform} \
   --learn-rate $learn_rate \
   --randomizer-seed $seed \
-  --randomizer-size 250000 \
   --max-iters $train_iters \
+  --randomizer-size ${randomizer_size} \
   --minibatch-size ${minibatch_size} \
   ${train_opts} \
   ${train_tool:+ --train-tool "$train_tool"} \

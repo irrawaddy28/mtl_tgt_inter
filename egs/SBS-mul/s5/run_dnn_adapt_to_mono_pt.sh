@@ -26,6 +26,8 @@ train_nj=8
 decode_nj=4
 train_iters=20
 l2_penalty=0
+cmvn_opts=       # speaker specific cmvn for i/p features. For mean+var normalization, use "--norm-means=true --norm-vars=true"
+delta_order=0    # Use 1 for delta, 2 for delta-delta
 splice=5         # temporal splicing
 splice_step=1    # stepsize of the splicing (1 == no gap between frames)
 hid_dim=
@@ -132,15 +134,13 @@ if [ $stage -le 2 ]; then
 	      $cuda_cmd $nnetinitdir/log/pretrain_dbn.log \
 		  local/nnet/pretrain_dbn.sh --nn-depth $hid_layers --hid-dim $hid_dim \
 		    --bn-layer $bn_layer --bn-dim $bn_dim		\
-		    --cmvn-opts "--norm-means=true --norm-vars=true" \
-		    --delta-opts "--delta-order=2" --splice $splice --splice-step $splice_step \
+		    ${cmvn_opts:+ --cmvn-opts "$cmvn_opts"} --delta-opts "--delta-order=$delta_order" --splice $splice --splice-step $splice_step \
 		    --rbm-iter 20 $data_fmllr/${UNILANG_CODE}/train $nnetinitdir || exit 1;
 	    else
 		  $cuda_cmd $nnetinitdir/log/pretrain_dbn.log \
 		  steps/nnet/pretrain_dbn.sh --nn-depth $hid_layers --hid-dim $hid_dim \
-		    --cmvn-opts "--norm-means=true --norm-vars=true" \
-			--delta-opts "--delta-order=2" --splice $splice --splice-step $splice_step \
-			--rbm-iter 20 $data_fmllr/${UNILANG_CODE}/train $nnetinitdir || exit 1;
+		    ${cmvn_opts:+ --cmvn-opts "$cmvn_opts"} --delta-opts "--delta-order=$delta_order" --splice $splice --splice-step $splice_step \
+			  --rbm-iter 20 $data_fmllr/${UNILANG_CODE}/train $nnetinitdir || exit 1;
 	    fi  
 	   fi
 	fi
@@ -160,15 +160,14 @@ if [ $stage -le 3 ]; then
 	  echo "using DBN to start DNN training"
 	  dbn=${nnetinitdir}/${hid_layers}.dbn
 	  $cuda_cmd $dir/log/train_nnet.log \
-	    local/nnet/train_pt.sh  --dbn $dbn --hid-layers 0 \
-	    --cmvn-opts "--norm-means=true --norm-vars=true" \
-	    --delta-opts "--delta-order=2" --splice $splice --splice-step $splice_step \
+	  local/nnet/train_pt.sh  --dbn $dbn --hid-layers 0 \
+	    ${cmvn_opts:+ --cmvn-opts "$cmvn_opts"} --delta-opts "--delta-order=$delta_order" --splice $splice --splice-step $splice_step \
 	    --learn-rate 0.008 \
 	    --labels-trainf  ${labels_trf} \
-		--labels-crossvf ${labels_cvf} \
-		--copy-feats "false" \
-		--train-iters ${train_iters} \
-		--train-opts "--l2-penalty ${l2_penalty}" \
+		  --labels-crossvf ${labels_cvf} \
+		  --copy-feats "false" \
+		  --train-iters ${train_iters} \
+		  --train-opts "--l2-penalty ${l2_penalty}" \
 	    $data_fmllr/${TEST_LANG}/train_tr90 $data_fmllr/${TEST_LANG}/train_cv10 data/${TEST_LANG}/lang $ali $ali $dir || exit 1;
   elif [[ -f $precomp_dnn ]]; then
       echo "using pre-computed dnn ${precomp_dnn} to start DNN training"		
@@ -177,7 +176,7 @@ if [ $stage -le 3 ]; then
 	  nnet_init=$nnetinitdir/nnet.init
 	  if [[ ${replace_softmax} == "true" ]]; then
 	   echo "replacing the softmax layer of $precomp_dnn"
-	   perl local/nnet/renew_nnet_softmax.sh $gmmdir/final.mdl ${precomp_dnn} ${nnet_init}
+	   local/nnet/renew_nnet_softmax.sh $gmmdir/final.mdl ${precomp_dnn} ${nnet_init}
 	  else
 	   echo "not replacing the softmax layer of $precomp_dnn"
 	   cp ${precomp_dnn} ${nnet_init}
@@ -186,29 +185,27 @@ if [ $stage -le 3 ]; then
 	  #Initialize NN training with the hidden layers of a DNN
 	  $cuda_cmd $dir/log/train_nnet.log \
 	  local/nnet/train_pt.sh --nnet-init ${nnet_init} --hid-layers 0 \
-		--cmvn-opts "--norm-means=true --norm-vars=true" \
-		--delta-opts "--delta-order=2" --splice $splice --splice-step $splice_step \
-		--learn-rate 0.008 \
-		--labels-trainf  ${labels_trf} \
-		--labels-crossvf ${labels_cvf} \
-		--copy-feats "false" \
-		--train-iters ${train_iters} \
-		--train-opts "--l2-penalty ${l2_penalty}" \
-	  $data_fmllr/${TEST_LANG}/train_tr90 $data_fmllr/${TEST_LANG}/train_cv10 dummy_lang $ali $ali $dir || exit 1;
+	    ${cmvn_opts:+ --cmvn-opts "$cmvn_opts"} --delta-opts "--delta-order=$delta_order" --splice $splice --splice-step $splice_step \
+		  --learn-rate 0.008 \
+		  --labels-trainf  ${labels_trf} \
+		  --labels-crossvf ${labels_cvf} \
+		  --copy-feats "false" \
+		  --train-iters ${train_iters} \
+		  --train-opts "--l2-penalty ${l2_penalty}" \
+	    $data_fmllr/${TEST_LANG}/train_tr90 $data_fmllr/${TEST_LANG}/train_cv10 dummy_lang $ali $ali $dir || exit 1;
   else # sometimes we may not have precomputed DNN in which case let train_pt.sh initialize it	  
 	  #Initialize NN training with the hidden layers of a DNN
 	  $cuda_cmd $dir/log/train_nnet.log \
 	  local/nnet/train_pt.sh --hid-layers $hid_layers --hid-dim  $hid_dim \
 	    ${bn_dim:+ --bn-dim $bn_dim} \
-		--cmvn-opts "--norm-means=true --norm-vars=true" \
-		--delta-opts "--delta-order=2" --splice $splice --splice-step $splice_step \
-		--learn-rate 0.008 \
-		--labels-trainf  ${labels_trf} \
-		--labels-crossvf ${labels_cvf} \
-		--copy-feats "false" \
-		--train-iters ${train_iters} \
-		--train-opts "--l2-penalty ${l2_penalty}" \
-	  $data_fmllr/${TEST_LANG}/train_tr90 $data_fmllr/${TEST_LANG}/train_cv10 dummy_lang $ali $ali $dir || exit 1; 
+		  ${cmvn_opts:+ --cmvn-opts "$cmvn_opts"} --delta-opts "--delta-order=$delta_order" --splice $splice --splice-step $splice_step \
+			--learn-rate 0.008 \
+		  --labels-trainf  ${labels_trf} \
+		  --labels-crossvf ${labels_cvf} \
+		  --copy-feats "false" \
+		  --train-iters ${train_iters} \
+		  --train-opts "--l2-penalty ${l2_penalty}" \
+	    $data_fmllr/${TEST_LANG}/train_tr90 $data_fmllr/${TEST_LANG}/train_cv10 dummy_lang $ali $ali $dir || exit 1; 
   fi
   echo "Done training nnet in: $nnetoutdir"
 fi

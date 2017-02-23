@@ -25,15 +25,18 @@ remove_last_components=2
 dnn_init=
 hid_layers=
 hid_dim=
+cmvn_opts=   # speaker specific cmvn for i/p features. For mean+var normalization, use "--norm-means=true --norm-vars=true"
+delta_order=0
 splice=5         # temporal splicing
 splice_step=1    # stepsize of the splicing (1 == no gap between frames)
 test_block_csl=1
 
 # Multi-task training options
+objective_csl="xent:xent:xent"
 lang_weight_csl="1.0:1.0:1.0"
-lat_dir_csl="-:-:-"    # lattices obtained after decoding PT or unsup data
+lat_dir_csl="-:-:-"    # pt or semisup lattices
 data_type_csl="dt:dt:dt"
-dup_and_merge_csl="0>>1:0>>2:0>>3" # x>>y means: create x copies of data and use those to train the softmax layer in block y
+dup_and_merge_csl="0>>1:0>>2:0>>3" # x>>y means: create x copies of data and use them to train the task in block y
 renew_nnet_type="parallel"  # can be "parallel", "blocksoftmax", or an empty string (single softmax for all tasks)
 renew_nnet_opts=            # options for the renew nnnet. Details about these options in local/nnet/renew_nnet_* scripts. For e.g., In case of parallel net, option could be "--parallel-nhl-opts 3:3 --parallel-nhn-opts 1024:1024 "; 
 
@@ -54,16 +57,11 @@ echo "$0 $@"  # Print the command line for logging
 set -euo pipefail
 
 # The first language in csl should always be the test language
-#$0 --dnn-init "exp/dnn4_pretrain-dbn_dnn/SW/multisoftmax/decode_dev_text_G_SW/final.nnet" --lang-weight-csl "1.0:1.0:1.0" --threshold-csl "0.7:1.0:0.8" --lat-dir-csl "exp/tri3cpt_ali/SW/decode_train:-:exp/dnn4_pretrain-dbn_dnn/SW/multisoftmax/decode_unsup_4k_SW"
-# --data-type-csl "pt:dt:unsup" --dup-and-merge-csl "4>>1:0>>0:1>>1"
-# "SW:AR_CA_HG_MD_UR:SW" "exp/tri3cpt_ali/SW:exp/tri3b_ali/SW:exp/tri3cpt_ali/SW"
-# "data-fmllr-tri3c_map/SW/SW/train:data-fmllr-tri3b/SW/AR_CA_HG_MD_UR/train:data-fmllr-tri3c_map/SW/SW/unsup_4k_SW" 
-# "data-fmllr-tri3c_map/SW/combined" "exp/dnn4_pretrain-dbn_dnn/SW/multisoftmax2b"
+# ./run_multilingual.sh --dnn-init "exp/dnn4_pretrain-dbn_dnn/SW/multisoftmax/decode_dev_text_G_SW/final.nnet" --data-type-csl "pt:dt:unsup" --lang-weight-csl "1.0:1.0:0.0" --threshold-csl "0.7:1.0:0.8" --lat-dir-csl "exp/tri3cpt_ali/SW/decode_train:-:exp/dnn4_pretrain-dbn_dnn/SW/multisoftmax/decode_unsup_4k_SW" --dup-and-merge-csl "4>>1:0>>0:1>>1" "SW:AR_CA_HG_MD_UR:SW" "exp/tri3cpt_ali/SW:exp/tri3b_ali/SW:exp/tri3cpt_ali/SW" "data-fmllr-tri3c/SW/SW/train:data-fmllr-tri3b/SW/AR_CA_HG_MD_UR/train:data-fmllr-tri3c/SW/SW/unsup_4k_SW" "data-fmllr-tri3c_map/SW/combined" "exp/dnn4_pretrain-dbn_dnn/SW/multisoftmax2c"
 
-# ./run_multilingual.sh --dnn-init "exp/dnn4_pretrain-dbn_dnn/SW/multisoftmax/decode_dev_text_G_SW/final.nnet" --lang-weight-csl "1.0:1.0:0.0" --threshold-csl "0.7:1.0:0.8" --lat-dir-csl "exp/tri3cpt_ali/SW/decode_train:-:exp/dnn4_pretrain-dbn_dnn/SW/multisoftmax/decode_unsup_4k_SW" --data-type-csl "pt:dt:unsup" --dup-and-merge-csl "4>>1:0>>0:1>>1" "SW:AR_CA_HG_MD_UR:SW" "exp/tri3cpt_ali/SW:exp/tri3b_ali/SW:exp/tri3cpt_ali/SW" "data-fmllr-tri3c/SW/SW/train:data-fmllr-tri3b/SW/AR_CA_HG_MD_UR/train:data-fmllr-tri3c/SW/SW/unsup_4k_SW" "data-fmllr-tri3c_map/SW/combined" "exp/dnn4_pretrain-dbn_dnn/SW/multisoftmax2c"
 if [ $# != 5 ]; then
    echo "Usage: $0 [options] <lang code csl> <ali dir csl> <data dir csl> <data output dir> <nnet output dir>" 
-   echo "e.g.: $0 --dnn-init nnet.init --lang-weight-csl 1.0:1.0 SW:HG exp/tri3b_ali/SW:exp/tri3b_ali/HG data-fmllr-tri3b/SW/train:data-fmllr-tri3b/HG/train data-fmllr-tri3b/combined exp/dnn4_pretrain-dbn_dnn/SW/multisoftmax "
+   echo "e.g.: $0 --dnn-init nnet.init --lang-weight-csl 1.0:1.0 SW:HG exp/tri3b_ali/SW:exp/tri3b_ali/HG data-fmllr-tri3b/SW/train:data-fmllr-tri3b/HG/train data-fmllr-tri3b/combined exp/dnn "
    echo ""
 fi
 
@@ -73,82 +71,83 @@ data_dir_csl=$3  # data-fmllr-tri3c/SW/SW/train:data-fmllr-tri3c/SW/AR_CA_HG_MD_
 data=$4          # this is where we'll save the combined data for multisoftmax training 
 nnet_dir=$5      # o/p dir of multisoftmax nnet
 
-# Convert 'csl' to bash array (accept separators ',' ':'),
+# Convert csl string to bash array (accept separators ',' ':'),
 lang_code=($(echo $lang_code_csl | tr ',:' ' ')) 
 ali_dir=($(echo $ali_dir_csl | tr ',:' ' '))
 data_dir=($(echo $data_dir_csl | tr ',:' ' '))
 
-# Make sure we have same number of items in lists,
+# Make sure we have same number of items in the lists,
 ! [ ${#lang_code[@]} -eq ${#ali_dir[@]} -a ${#lang_code[@]} -eq ${#data_dir[@]} ] && \
   echo "Non-matching number of 'csl' items: lang_code ${#lang_code[@]}, ali_dir ${#ali_dir[@]}, data_dir ${#data_dir[@]}" && \
   exit 1
 num_langs=${#lang_code[@]}
 
-# Convert csls to bash arrays
-if [ -z "$lang_weight_csl" ]; then 
-  for ((i=0; i<$num_langs; i++)); do 
-    lang_weight_csl="$lang_weight_csl:1.0"
-  done
-  lang_weight_csl=${lang_weight_csl#*:}  
+# Parse objective function csl
+if [ -z "$objective_csl" ]; then
+  objective_csl=$(echo $(printf "%s:" $(for i in `seq 1 $num_langs`; do echo xent; done))|sed 's/.$//')
 fi
 
+# Parse lang weight csl
+if [ -z "$lang_weight_csl" ]; then
+  lang_weight_csl=$(echo $(printf "%s:" $(for i in `seq 1 $num_langs`; do echo 1; done))|sed 's/.$//')
+fi
+
+# Parse data type csl
 if [ -z "$data_type_csl" ]; then
-  for ((i=0; i<$num_langs; i++)); do 
-    data_type_csl="$data_type_csl:dt"    
-  done
-  data_type_csl=${data_type_csl#*:}
+  data_type_csl=$(echo $(printf "%s:" $(for i in `seq 1 $num_langs`; do echo dt; done))|sed 's/.$//')
 fi
 data_type=($(echo $data_type_csl | tr ',:' ' '))
 for ((i=0; i<$num_langs; i++)); do
   type=${data_type[$i]}
-  if ! [ "$type" == "pt" -o "$type" == "unsup" -o "$type" == "dt" ]; then
+  if ! [ "$type" == "dt" -o "$type" == "pt" -o "$type" == "semisup" -o "$type" == "unsup"  ]; then
     echo "data type at position $((i + 1)) is \"$type\" is not supported"
     exit 1
   fi
 done
 
+# Parse label confidence threshold csl
 if [ -z "$threshold_csl" ]; then
   for ((i=0; i<$num_langs; i++)); do
     if [ "${data_type[$i]}" ==  "dt" ]; then
       threshold_csl="$threshold_csl:0.0"
     else
       threshold_csl="${threshold_csl}:${threshold_default}"
-    fi  
+    fi
   done  
   threshold_csl=${threshold_csl#*:}
-fi  
+fi
 threshold_list=($(echo $threshold_csl | tr ',:' ' '))
 for ((i=0; i<$num_langs; i++)); do
   type=${data_type[$i]}
-  threshold=${threshold_list[$i]}  
+  threshold=${threshold_list[$i]}
   if [ "$type" ==  "dt" -a "$threshold" != "0.0" ]; then
     echo "data type at position $((i + 1)) is \"dt\" but threshold has a non-zero value $threshold"
     exit 1
-  fi  
+  fi
 done
 
+# Parse duplicate copies csl
 make_num_copies="false"
-if [ -z "$dup_and_merge_csl" ]; then 
-  for ((i=0; i<$num_langs; i++)); do
-    dup_and_merge_csl="$dup_and_merge_csl:0>>0"
-  done
-  dup_and_merge_csl=${dup_and_merge_csl#*:}
+if [ -z "$dup_and_merge_csl" ]; then
+  dup_and_merge_csl=$(echo $(printf "%s:" $(for i in `seq 1 $num_langs`; do echo "0>>0"; done))|sed 's/.$//')
 fi
 dup_and_merge=($(echo $dup_and_merge_csl | tr ',:' ' '))
 
-if [ "$num_langs" -ne "${#data_type[@]}" -o "$num_langs" -ne "${#dup_and_merge[@]}" ]; then
-  echo "Non-matching number of 'csl' items: data_type ${#data_type[@]}, dup_and_merge ${#dup_and_merge[@]}"
-  exit 1;
-fi
-
+# Parse the decoding task csl
 test_block=($(echo $test_block_csl | tr ',:' ' '))
 for ((i=0; i<${#test_block[@]}; i++)); do
     [ "${test_block[$i]}" -lt "0" ] && echo "test_block[$i]=${test_block[$i]} cannot be less than 0" && exit 1;
     [ "${test_block[$i]}" -gt "$num_langs" ] && echo "test_block[$i]=${test_block[$i]} cannot be greater than $num_langs" && exit 1;
 done
 
+# Check if all the parsed arrays have the same number of elements
+if [ "$num_langs" -ne "${#data_type[@]}" -o "$num_langs" -ne "${#dup_and_merge[@]}" ]; then
+  echo "Non-matching number of 'csl' items: data_type ${#data_type[@]}, dup_and_merge ${#dup_and_merge[@]}"
+  exit 1;
+fi
 
 # Check if all the input directories exist,
+echo ""
 lat_dir=($(echo "$lat_dir_csl" | tr ',:' ' '))
 for i in $(seq 0 $[num_langs-1]); do
   echo "lang = ${lang_code[$i]}, type = ${data_type[$i]}, alidir = ${ali_dir[$i]}, datadir = ${data_dir[$i]}, latdir = ${lat_dir[$i]}, dup_and_merge = ${dup_and_merge[$i]}"
@@ -156,71 +155,102 @@ for i in $(seq 0 $[num_langs-1]); do
   [ ! -d ${ali_dir[$i]} ] && echo  "Missing ${ali_dir[$i]}" && exit 1
   [ ! -d ${data_dir[$i]} ] && echo "Missing ${data_dir[$i]}" && exit 1
   
-  # if data_type is pt or unsup, then lat_dir must exist. 
-  # if data_type is dt, then lat_dir should be set to - (meaning empty)
-  if [ "${data_type[$i]}" ==  "pt" -o "${data_type[$i]}" ==  "unsup" ]; then
+  # if data_type is pt or semisup, then lat_dir must exist. 
+  # if data_type is dt or unsup, then lat_dir should be set to - (meaning empty)
+  if [ "${data_type[$i]}" ==  "pt" -o "${data_type[$i]}" ==  "semisup" ]; then
     [ ! -d ${lat_dir[$i]} ] && echo  "Missing ${lat_dir[$i]}" && exit 1
-  elif   [ "${data_type[$i]}" ==  "dt" ]; then
-    [ ${lat_dir[$i]} != "-" ] && echo  "latdir should be set to a hyphen to indicate empty directory" && exit 1
+  elif [ "${data_type[$i]}" ==  "dt" -o "${data_type[$i]}" ==  "unsup" ]; then
+    [ ${lat_dir[$i]} != "-" ] && echo  "For data type = ${data_type[$i]}, latdir should be set to a hyphen to indicate empty directory" && exit 1  
   fi
 done
-
+echo ""
 
 # Make the features,
 data_tr90=$data/combined_tr90
 data_cv10=$data/combined_cv10
-if [ $stage -le 0 ]; then
-  # Make local copy of data-dirs (while adding language-code),
+set +e
+semisup_present=$(echo ${data_type[@]}|grep -wc "semisup")
+unsup_present=$(echo ${data_type[@]}|grep -wc "unsup")
+echo "semisup = $semisup_present, unsup = $unsup_present"
+set -e
+if [ $stage -le 0 ]; then    
+  # Make local copy of data-dirs (while adding language-code),  
   tr90=""
-  cv10=""  
-  rm -rf $data
+  cv10=""	  
   for i in $(seq 0 $[num_langs-1]); do
-    code=${lang_code[$i]}
-    dir=${data_dir[$i]}
-    tgt_dir=$data/${code}_$(basename $dir)
-    type=${data_type[$i]}
-    
-    utils/copy_data_dir.sh $dir $tgt_dir 
-    
-    ## extract features, get cmvn stats,
-    #steps/make_fbank_pitch.sh --nj 30 --cmd "$train_cmd -tc 10" $tgt_dir{,/log,/data}
-    #steps/compute_cmvn_stats.sh $tgt_dir{,/log,/data}
-    
-    # Split lists 90% train / 10% held-out only for supervised datasets like pt, dt.
-    # For unsupervised dataset, we use 100% train / 0% held-out.
-    if [ "${data_type[$i]}" !=  "unsup" ]; then
-      utils/subset_data_dir_tr_cv.sh $tgt_dir ${tgt_dir}_tr90 ${tgt_dir}_cv10
-      tr90="$tr90 ${tgt_dir}_tr90"
-      cv10="$cv10 ${tgt_dir}_cv10"
-    else
-      utils/copy_data_dir.sh $tgt_dir ${tgt_dir}_tr90
-      tr90="$tr90 ${tgt_dir}_tr90"
-    fi
+	code=${lang_code[$i]}
+	dir=${data_dir[$i]}
+	tgt_dir=$data/${code}_$(basename $dir)
+	type=${data_type[$i]}
+	
+	echo -e "\nLanguage = $code, Type = $type, Src feat = $dir, Tgt feat = $tgt_dir"
+	
+	# Check if feat dir already exists, If so do not recreate it
+	# Useful when multiple jobs are accessing the same feat dir
+	invalid=1
+	[ -d $tgt_dir ] && \
+	{
+	 if [ "$type" ==  "unsup" ]; then
+	   utils/validate_data_dir.sh --no-text ${tgt_dir} && invalid=$?
+	 else
+	   utils/validate_data_dir.sh ${tgt_dir} && invalid=$?
+	 fi
+	}
+	
+	# If invalid is still non-zero value, it means we need to create the feat dir
+	if [ $invalid != 0 ]; then
+	  utils/copy_data_dir.sh $dir $tgt_dir
+	  
+	  # Create CV set (10% held-out) only for pt or dt data types
+	  # We do not use unsup or semisup in CV.
+	  if [ "$type" !=  "semisup" -a "$type" !=  "unsup" ]; then
+	    utils/subset_data_dir_tr_cv.sh $tgt_dir ${tgt_dir}_tr90 ${tgt_dir}_cv10
+	    tr90="$tr90 ${tgt_dir}_tr90"
+	    cv10="$cv10 ${tgt_dir}_cv10"
+	  else
+	    utils/copy_data_dir.sh $tgt_dir ${tgt_dir}_tr90
+	    tr90="$tr90 ${tgt_dir}_tr90"
+	    #tr90="$tr90 ${tgt_dir}"
+	  fi
+	else
+	  echo "$tgt_dir already exists and was validated. Skip recreating it"
+	fi
+	
   done
   
-  ## Merge the datasets,  
-  set +e;
-  unsup_present=$(echo ${data_type[@]}|grep -w "unsup")
-  set -e;
-  echo -e "\ntr90 list = \"$tr90\", unsup_present = \" ${unsup_present}\""
-  if [ ! -z "${unsup_present}" ]; then
-    ## If we don't specify skip-fix true, the combined scp will exclude utts which do not have text
-    utils/combine_data.sh --skip-fix "true" $data_tr90 $tr90
-    utils/combine_data.sh --skip-fix "true" $data_cv10 $cv10
-  else    
-    utils/combine_data.sh  $data_tr90 $tr90
-    utils/combine_data.sh  $data_cv10 $cv10    
-    ## Validate,
-    utils/validate_data_dir.sh $data_tr90
-    utils/validate_data_dir.sh $data_cv10
-  fi
-  echo "combined \"$tr90\" and saved in $data_tr90"
-  echo "combined \"$cv10\" and saved in $data_cv10"
+  ## Merge the datasets,
+  if [ $invalid != 0 ]; then
+    if [[ "${semisup_present}" -gt 0  || "${unsup_present}" -gt 0 ]]; then
+	  ## If we don't specify skip-fix true, the combined scp will exclude utts which do not have text
+	  utils/combine_data.sh --skip-fix "true" $data_tr90 $tr90
+	  utils/combine_data.sh --skip-fix "true" $data_cv10 $cv10
+    else
+	  utils/combine_data.sh  $data_tr90 $tr90
+	  utils/combine_data.sh  $data_cv10 $cv10
+	  ## Validate,
+	  utils/validate_data_dir.sh $data_tr90
+	  utils/validate_data_dir.sh $data_cv10
+    fi
+  
+    echo $tr90 | tr ' ' '\n' > $data_tr90/datasets
+    echo $cv10 | tr ' ' '\n' > $data_cv10/datasets
+    
+    echo -e "\nCombined \"$tr90\" and saved in $data_tr90"
+    echo -e "\nCombined \"$cv10\" and saved in $data_cv10" 
+  fi  
 fi
 
 # Extract the tied-state numbers from transition models,
 for i in $(seq 0 $[num_langs-1]); do
-  ali_dim[i]=$(hmm-info ${ali_dir[i]}/final.mdl | grep pdfs | awk '{ print $NF }')
+  # If data is dt/pt/semisup, alignments exist. If data is unsup, 
+  # alignments don't exist and hence we'll use feat dim as the ali dim.
+  if [ "${data_type[$i]}" !=  "unsup" ]; then
+    ali_dim[i]=$(hmm-info ${ali_dir[i]}/final.mdl | grep pdfs | awk '{ print $NF }')
+  else
+    feat_dim=$(feat-to-dim --print-args=false "ark:copy-feats scp:${data_dir[i]}/feats.scp ark:- |" - )
+    ali_dim[i]=$((feat_dim*(delta_order+1)*(2*splice+1)))
+    echo "${data_dir[i]}, raw dim = $feat_dim, network indim = ${ali_dim[i]}"
+  fi
 done
 ali_dim_csl=$(echo ${ali_dim[@]} | tr ' ' ':')
 
@@ -230,7 +260,7 @@ echo "Total number of DNN outputs: $output_dim = $(echo ${ali_dim[@]} | sed 's: 
 
 # Objective function string (per-language weights are imported from '$lang_weight_csl'),
 objective_function="multitask$(echo ${ali_dim[@]} | tr ' ' '\n' | \
-  awk -v w=$lang_weight_csl 'BEGIN{ split(w,w_arr,/[,:]/); } { printf(",xent,%d,%s", $1, w_arr[NR]); }')"
+  awk -v crit=$objective_csl -v w=$lang_weight_csl 'BEGIN{ split(w,w_arr,/[,:]/); split(crit,crit_arr,/[,:]/); } { printf(",%s,%d,%s", crit_arr[NR], $1, w_arr[NR]); }')"
 echo "Multitask objective function: $objective_function"
 
 # DNN training will be in $dir, the alignments are prepared beforehand,
@@ -238,8 +268,9 @@ echo "Multitask objective function: $objective_function"
 dir=$nnet_dir
 [ ! -e $dir ] && mkdir -p $dir
 echo -e "$0 $@\n\n\n 
-Experiment Settings:\n 
-lang_code_csl = $lang_code_csl\n   
+Experiment Settings:\n
+lang_code_csl = $lang_code_csl\n
+objective_csl = $objective_csl\n
 lang_weight_csl = $lang_weight_csl\n
 ali_dir_csl  = $ali_dir_csl\n
 data_dir_csl = $data_dir_csl\n
@@ -255,139 +286,33 @@ dnn init = $dnn_init\n
 remove last components = $remove_last_components\n
 dnn out = $dir" > $dir/config 
 
-# Prepare the merged targets,
+# Make the features and targets for MTL
 if [ $stage -le 1 ]; then
-  [ ! -e $dir/ali-post ] && mkdir -p $dir/ali-post
-  tr90="" # save all training dirs, including num_copies, in this list
-  # re-saving the ali in posterior format, indexed by 'scp',
-  for i in $(seq 0 $[num_langs-1]); do
-    code=${lang_code[$i]}
-    tgt_dir=$data/${code}_$(basename ${data_dir[$i]})
-    type=${data_type[$i]}
-    threshold=${threshold_list[$i]}
-    ali=${ali_dir[$i]}
-    lat=${lat_dir[$i]}
-    dam=($(echo ${dup_and_merge[$i]}|tr '>>' ' '))
-    dup=${dam[0]}
-    blockid="block_$((i+1))"
-    
-    echo "==================================="
-    echo "Generating posteriors and frame weights for: lang = $code, type = $type, ali = $ali, lat = $lat, num copies = $dup"
-    echo "==================================="
-    
-    postdir=$dir/ali-post/$code/$type/post_train_thresh${threshold:+_$threshold}
-    [ -d $postdir ] || mkdir -p $postdir
-    best_path_dir=$dir/ali-post/$code/$type/bestpath_ali
-    if [ "$type" == "pt" -o "$type" == "unsup" ]; then
-      # pt or unsupervised data
-      decode_dir=$lat
-	  
-      local/posts_and_best_path_weights.sh --acwt $acwt --threshold $threshold \
-	    --use-soft-counts $use_soft_counts --disable-upper-cap $disable_upper_cap \
-        $ali $decode_dir $best_path_dir $postdir
-    else
-      # dt data      
-      ali-to-pdf $ali/final.mdl "ark:gunzip -c ${ali}/ali.*.gz |" ark,t:- | \
-        ali-to-post ark:- ark,scp:$postdir/post.ark,$postdir/post.scp
-      
-      ali-to-pdf $ali/final.mdl "ark:gunzip -c ${ali}/ali.*.gz |" ark,t:- | \
-       awk '{printf $1" ["; for (i=2; i<=NF; i++) { printf " "1; }; print " ]";}' | \
-         copy-vector ark,t:- ark,t,scp:$postdir/frame_weights.ark,$postdir/frame_weights.scp || exit 1;      
-    fi
-    
-    (cd $dir/ali-post; rm -f post_${blockid}.scp frame_weights_${blockid}.scp;
-        cp $code/$type/post_train_thresh${threshold:+_$threshold}/post.scp post_${blockid}.scp;
-        cp $code/$type/post_train_thresh${threshold:+_$threshold}/frame_weights.scp frame_weights_${blockid}.scp)
-        
-    # If dup copies were requested by the user, make num_copies of posteriors, frame weights and data 
-    num_copies=$dup
-    if [ $num_copies -gt 0 ]; then
-      make_num_copies="true"
-      
-      awk -v num_copies=$num_copies \
-      '{for (i=0; i<num_copies; i++) { print i"-"$1" "$2 } }' \
-      $postdir/post.scp > $postdir/post_${num_copies}x.scp
+  # Step 1: Prepare the feature scp, target posterior scp, and frame weight scp for each task in MTL,
+  # Generate the following:
+  # (a) Features: $data/combined_tr90/feats.scp, $data/combined_cv10/feats.scp
+  # (b) Target posteriors: $dir/ali-post/post_task_<d>.scp
+  # (c) Frame weights: $dir/ali-post/frame_weights_task_<d>.scp
+  local/make_task_scps.sh --acwt $acwt --use-soft-counts $use_soft_counts --disable-upper-cap $disable_upper_cap \
+  ${cmvn_opts:+ --cmvn-opts "$cmvn_opts"} --delta-order $delta_order --splice $splice --splice-step $splice_step \
+  $lang_code_csl $data_type_csl $data_dir_csl  \
+  $ali_dir_csl   $lat_dir_csl   $threshold_csl \
+  $dup_and_merge_csl $data $dir/ali-post
   
-      awk -v num_copies=$num_copies \
-      '{for (i=0; i<num_copies; i++) { print i"-"$1" "$2 } }' \
-      $postdir/frame_weights.scp > $postdir/frame_weights_${num_copies}x.scp
-
-      copied_data_dirs=
-      for i in `seq 0 $[num_copies-1]`; do
-        utils/copy_data_dir.sh --utt-prefix ${i}- --spk-prefix ${i}- ${tgt_dir}_tr90 \
-        ${tgt_dir}_tr90_$i || exit 1
-        copied_data_dirs="$copied_data_dirs ${tgt_dir}_tr90_$i"
-      done
-      utils/combine_data.sh ${tgt_dir}_tr90_${num_copies}x $copied_data_dirs || exit 1
-      tr90="$tr90 ${tgt_dir}_tr90 ${tgt_dir}_tr90_${num_copies}x" # add the base dir + num_copies dir to the list
-    else
-      tr90="$tr90 ${tgt_dir}_tr90"
-    fi
-  done
-  
-  # If dup copies were requested by the user, merge num_copies of the data to the combined data dir  
-  echo -e "\n\nall dirs list = $tr90"
-  if $make_num_copies ; then
-    ## Merge the datasets
-    set +e;
-    unsup_present=$(echo ${data_type[@]}|grep -w "unsup")
-    set -e;
-    if [ ! -z "${unsup_present}" ]; then
-      ## If we don't specify skip-fix true, the combined scp will exclude utts which do not have text
-      utils/combine_data.sh --skip-fix "true" $data_tr90 $tr90
-    else
-      utils/combine_data.sh  $data_tr90 $tr90
-      ## Validate,
-      utils/validate_data_dir.sh $data_tr90
-    fi
-  fi
-  
-  # If dup copies were requested by the user, merge num_copies of the posteriors and frame weights  
-  if $make_num_copies ; then
-    for i in $(seq 0 $[num_langs-1]); do      
-      dam=($(echo ${dup_and_merge[$i]}|tr '>>' ' '))
-      dup=${dam[0]}
-      dstnblk=${dam[1]}
-      threshold=${threshold_list[$i]}
-      num_copies=$dup
-      if [ $num_copies -gt 0 -a $dstnblk -gt 0 ]; then
-        dstnblk=$((dstnblk - 1)); # this is the block where we want to send the targets to
-        srccode=${lang_code[$i]}
-        srctype=${data_type[$i]}            
-        dstncode=${lang_code[$dstnblk]}
-        dstntype=${data_type[$dstnblk]}
-        blockid="block_$((dstnblk+1))"
-        threshold=${threshold_list[$i]}
-        
-        echo -e "\nGenerating post.scp for $blockid: src lang = $srccode, src type = $srctype, dstn lang = $dstncode, dstn type = $dstntype, num_copies = $dup"                
-        srcpostscp=$dir/ali-post/$srccode/$srctype/post_train_thresh${threshold:+_$threshold}/post_${num_copies}x.scp
-        srcfwscp=$dir/ali-post/$srccode/$srctype/post_train_thresh${threshold:+_$threshold}/frame_weights_${num_copies}x.scp
-        dstnpostscp=$dir/ali-post/post_${blockid}.scp
-        dstnfwscp=$dir/ali-post/frame_weights_${blockid}.scp        
-        echo "srcpostscp = $srcpostscp, dstnpostscp = $dstnpostscp"
-        echo "srcfwscp = $srcfwscp, dstnfwscp = $dstnfwscp"
-        sort -k1,1 $srcpostscp $dstnpostscp -o $dstnpostscp
-        sort -k1,1 $srcfwscp $dstnfwscp   -o $dstnfwscp
-      fi
-    done
-  fi
-      
+  # Step 2: Combine the task specific target posteriors and frame weights into a single MTL task,
   # pasting the ali's, adding language-specific offsets to the posteriors,
   featlen="ark:feat-to-len 'scp:cat $data_tr90/feats.scp $data_cv10/feats.scp |' ark,t:- |" # get number of frames for every utterance,
-  #post_scp_list=$(paste  <(echo ${lang_code[@]} | tr ' ' '\n') <(echo  ${data_type[@]} | tr ' ' '\n') | awk -v d=$dir '{ printf(" scp:%s/ali-post/post_%s_%s.scp", d, $1, $2); }')
-  post_scp_list=$( echo $(seq 1 $num_langs)| tr ' ' '\n' | awk -v d=$dir '{ printf(" scp:%s/ali-post/post_block_%s.scp", d, $1); }')
+  post_scp_list=$( echo $(seq 1 $num_langs)| tr ' ' '\n' | awk -v d=$dir '{ printf(" scp:%s/ali-post/post_task_%s.scp", d, $1); }')
   echo -e "\npost_scp_list = $post_scp_list"
   paste-post --allow-partial=true "$featlen" "${ali_dim_csl}" ${post_scp_list} \
-    ark,t,scp:$dir/ali-post/post_combined.ark,$dir/ali-post/post_combined.scp
-	
+    ark,scp:$dir/ali-post/post_combined.ark,$dir/ali-post/post_combined.scp || exit 1
   # pasting the frame weights
-  #frame_weights_scp_list=$(paste  <(echo ${lang_code[@]} | tr ' ' '\n') <(echo  ${data_type[@]} | tr ' ' '\n') | awk -v d=$dir '{ printf(" %s/ali-post/frame_weights_%s_%s.scp", d, $1, $2); }')
-  frame_weights_scp_list=$( echo $(seq 1 $num_langs)| tr ' ' '\n' | awk -v d=$dir '{ printf(" %s/ali-post/frame_weights_block_%s.scp", d, $1); }')
+  frame_weights_scp_list=$( echo $(seq 1 $num_langs)| tr ' ' '\n' | awk -v d=$dir '{ printf(" %s/ali-post/frame_weights_task_%s.scp", d, $1); }')
   echo -e "\nframe_weights_scp_list = $frame_weights_scp_list"
   copy-vector "scp:cat ${frame_weights_scp_list}|" ark,t,scp:$dir/ali-post/frame_weights_combined.ark,$dir/ali-post/frame_weights_combined.scp || exit 1
 fi
 
-# Train the <BlockSoftmax> system, 1st stage of Stacked-Bottleneck-Network,
+# Train the DNN
 if [ $stage -le 2 ]; then
   case $nnet_type in
     bn)
@@ -446,13 +371,12 @@ if [ $stage -le 2 ]; then
 	  else
 	    # create a single softmax layer across all tasks
 	    local/nnet/renew_nnet_softmax.sh --softmax-dim ${output_dim} --remove-last-components $remove_last_components ${renew_nnet_opts} ${ali_dir[0]}/final.mdl ${dnn_init} ${nnet_init}
-	  fi
-	        
+	  fi	  
+  
       $cuda_cmd $dir/log/train_nnet.log \
       local/nnet/train_pt.sh  ${nnet_init:+ --nnet-init "$nnet_init" --hid-layers 0} \
 		--learn-rate 0.008 \
-        --cmvn-opts "--norm-means=true --norm-vars=true" \
-        --delta-opts "--delta-order=2" --splice $splice --splice-step $splice_step \
+        ${cmvn_opts:+ --cmvn-opts "$cmvn_opts"} --delta-opts "--delta-order=$delta_order" --splice $splice --splice-step $splice_step \
         --labels-trainf "scp:$dir/ali-post/post_combined.scp" \
         --labels-crossvf "scp:$dir/ali-post/post_combined.scp" \
         --frame-weights  "scp:$dir/ali-post/frame_weights_combined.scp" \
@@ -466,8 +390,7 @@ if [ $stage -le 2 ]; then
         local/nnet/make_activesoftmax_from_blocksoftmax.sh $dir/final.nnet "$(echo ${ali_dim_csl}|tr ':' ',')" $active_block $decode_dir/final.nnet
         local/nnet/train_stackedsoftmax.sh  ${nnet_init:+ --nnet-init "$dir/final.nnet" --hid-layers 0} \
 		--learn-rate 0.008 \
-        --cmvn-opts "--norm-means=true --norm-vars=true" \
-        --delta-opts "--delta-order=2" --splice $splice --splice-step $splice_step \
+        ${cmvn_opts:+ --cmvn-opts "$cmvn_opts"} --delta-opts "--delta-order=$delta_order" --splice $splice --splice-step $splice_step \
         --labels-trainf "scp:$dir/ali-post/post_block_2.scp" \
         --labels-crossvf "scp:$dir/ali-post/post_block_2.scp" \
         --frame-weights  "scp:$dir/ali-post/frame_weights_block_2.scp" \
@@ -480,8 +403,7 @@ if [ $stage -le 2 ]; then
       $cuda_cmd $dir/log/train_nnet.log \
       local/nnet/train_pt.sh  --hid-layers $hid_layers --hid-dim $hid_dim  \
 		--learn-rate 0.008 \
-        --cmvn-opts "--norm-means=true --norm-vars=true" \
-        --delta-opts "--delta-order=2" --splice $splice --splice-step $splice_step \
+        ${cmvn_opts:+ --cmvn-opts "$cmvn_opts"} --delta-opts "--delta-order=$delta_order" --splice $splice --splice-step $splice_step \
         --labels-trainf "scp:$dir/ali-post/post_combined.scp" \
         --labels-crossvf "scp:$dir/ali-post/post_combined.scp" \
         --frame-weights  "scp:$dir/ali-post/frame_weights_combined.scp" \
@@ -496,8 +418,7 @@ if [ $stage -le 2 ]; then
     $cuda_cmd $dir/log/train_nnet.log \
       steps/nnet/train.sh --learn-rate 0.008 \
         --hid-layers 6 --hid-dim 2048 \
-        --cmvn-opts "--norm-means=true --norm-vars=false" \
-        --delta-opts "--delta-order=2" --splice 5 \
+        ${cmvn_opts:+ --cmvn-opts "$cmvn_opts"} --delta-opts "--delta-order=$delta_order" --splice $splice --splice-step $splice_step \
         --labels "scp:$dir/ali-post/combined.scp" --num-tgt $output_dim \
         --proto-opts "--block-softmax-dims=${ali_dim_csl}" \
         --train-tool "nnet-train-frmshuff --objective-function=$objective_function" \

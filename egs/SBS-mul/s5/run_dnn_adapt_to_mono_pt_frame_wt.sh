@@ -25,6 +25,8 @@ decode_nj=4
 train_iters=20
 l2_penalty=0
 transform_dir_train=
+cmvn_opts=       # speaker specific cmvn for i/p features. For mean+var normalization, use "--norm-means=true --norm-vars=true"
+delta_order=0    # Use 1 for delta, 2 for delta-delta
 splice=5         # temporal splicing
 splice_step=1    # stepsize of the splicing (1 == no gap between frames)
 hid_dim=
@@ -70,7 +72,7 @@ done
 
 if [ $stage -le 0 ]; then
   graph_dir=$gmmdir/graph_text_G_${TEST_LANG}
-  [[ -d $graph_dir ]] || { mkdir -p $graph_dir; utils/mkgraph.sh data/${TEST_LANG}/lang_test_text_G $gmmdir $graph_dir >& $graph_dir/mkgraph.log; }  
+  [[ -d $graph_dir ]] || { mkdir -p $graph_dir; utils/mkgraph.sh data/${TEST_LANG}/lang_test_text_G $gmmdir $graph_dir >& $graph_dir/mkgraph.log; }
 fi
 
 if [ $stage -le 1 ]; then
@@ -114,8 +116,7 @@ decode_dir=$ptlatdir  # this is where pt lattices are expected lat.*.gz. Usually
 best_path_dir=$nnet_dir/bestpath_ali 
 postdir=$nnet_dir/post_train_thresh${threshold:+_$threshold}  
 # Get frame posteriors of the best path in the PT lattice
-if [ $stage -le 2 ]; then
-  
+if [ $stage -le 2 ]; then  
   local/posts_and_best_path_weights.sh --acwt $acwt --threshold $threshold \
   --use-soft-counts $use_soft_counts --disable-upper-cap $disable_upper_cap \
   $gmmdir $decode_dir $best_path_dir $postdir  
@@ -139,8 +140,7 @@ if [ $stage -le 3 ]; then
   dbn=${precomp_dbn}
   $cuda_cmd $dir/log/train_nnet.log \
     local/nnet/train_pt.sh  --dbn $dbn --hid-layers 0 \
-    --cmvn-opts "--norm-means=true --norm-vars=true" \
-    --delta-opts "--delta-order=2" --splice $splice --splice-step $splice_step \
+    ${cmvn_opts:+ --cmvn-opts "$cmvn_opts"} --delta-opts "--delta-order=$delta_order" --splice $splice --splice-step $splice_step \
     --learn-rate 0.008 \
     --labels-trainf  ${labels_trf} \
 	--labels-crossvf ${labels_cvf} \
@@ -152,7 +152,7 @@ if [ $stage -le 3 ]; then
   elif [[ -f $precomp_dnn ]]; then	  	
 	  if [[ ${replace_softmax} == "true" ]]; then
 	   echo "replacing the softmax layer of $precomp_dnn"
-	   perl local/nnet/renew_nnet_softmax.sh $gmmdir/final.mdl ${precomp_dnn} ${nnet_init}
+	   local/nnet/renew_nnet_softmax.sh $gmmdir/final.mdl ${precomp_dnn} ${nnet_init}
 	  else
 	   echo "not replacing the softmax layer of $precomp_dnn"
 	   cp ${precomp_dnn} ${nnet_init}
@@ -162,8 +162,7 @@ if [ $stage -le 3 ]; then
 	  #Initialize NN training with the hidden layers of a DNN
 	  $cuda_cmd $dir/log/train_nnet.log \
 	  local/nnet/train_pt.sh --nnet-init ${nnet_init} --hid-layers 0 \
-		--cmvn-opts "--norm-means=true --norm-vars=true" \
-		--delta-opts "--delta-order=2" --splice $splice --splice-step $splice_step \
+		${cmvn_opts:+ --cmvn-opts "$cmvn_opts"} --delta-opts "--delta-order=$delta_order" --splice $splice --splice-step $splice_step \
 		--learn-rate 0.008 \
 		--labels-trainf  ${labels_trf} \
 		--labels-crossvf ${labels_cvf} \
@@ -178,8 +177,7 @@ if [ $stage -le 3 ]; then
 	  $cuda_cmd $dir/log/train_nnet.log \
 	  local/nnet/train_pt.sh --hid-layers $hid_layers --hid-dim  $hid_dim \
 		${bn_dim:+ --bn-dim $bn_dim} \
-		--cmvn-opts "--norm-means=true --norm-vars=true" \
-		--delta-opts "--delta-order=2" --splice $splice --splice-step $splice_step \
+		${cmvn_opts:+ --cmvn-opts "$cmvn_opts"} --delta-opts "--delta-order=$delta_order" --splice $splice --splice-step $splice_step \
 		--learn-rate 0.008 \
 		--labels-trainf  ${labels_trf} \
 		--labels-crossvf ${labels_cvf} \
