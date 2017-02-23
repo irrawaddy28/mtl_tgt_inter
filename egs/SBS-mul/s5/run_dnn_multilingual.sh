@@ -185,20 +185,22 @@ if [ $stage -le 0 ]; then
 	
 	echo -e "\nLanguage = $code, Type = $type, Src feat = $dir, Tgt feat = $tgt_dir"
 	
-	# Check if feat dir already exists, If so do not recreate it
+	# Check if feat tgt dir already exists, If so do not recreate it
 	# Useful when multiple jobs are accessing the same feat dir
 	invalid=1
-	[ -d $tgt_dir ] && \
-	{
-	 if [ "$type" ==  "unsup" ]; then
-	   utils/validate_data_dir.sh --no-text ${tgt_dir} && invalid=$?
-	 else
-	   utils/validate_data_dir.sh ${tgt_dir} && invalid=$?
-	 fi
-	}
-	
+	if [ -d $tgt_dir ]; then
+	  echo "tgt dir = $tgt_dir : exists"
+	  if [ "$type" ==  "unsup" ]; then
+	    utils/validate_data_dir.sh --no-text ${tgt_dir}
+	  else
+	    utils/validate_data_dir.sh ${tgt_dir}
+	  fi
+	  invalid=$?
+	fi
+		
 	# If invalid is still non-zero value, it means we need to create the feat dir
-	if [ $invalid != 0 ]; then
+	if [ $invalid -ne 0 ]; then
+	  echo "tgt dir = $tgt_dir : create new "
 	  utils/copy_data_dir.sh $dir $tgt_dir
 	  
 	  # Create CV set (10% held-out) only for pt or dt data types
@@ -219,7 +221,7 @@ if [ $stage -le 0 ]; then
   done
   
   ## Merge the datasets,
-  if [ $invalid != 0 ]; then
+  if [ $invalid -ne 0 ]; then
     if [[ "${semisup_present}" -gt 0  || "${unsup_present}" -gt 0 ]]; then
 	  ## If we don't specify skip-fix true, the combined scp will exclude utts which do not have text
 	  utils/combine_data.sh --skip-fix "true" $data_tr90 $tr90
