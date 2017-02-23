@@ -352,7 +352,7 @@ if [[ $stage -le 40 ]]; then
     
 for thresh in 0.5 0.6 0.7; do # full range: 0.5 0.6 0.7 0.8 0.9
   for num_copies_dt in 0 2 4; do # full range: 0 2 4 6
-    for num_copies in 3 4 5; do # full range: 0 1 2 3 4
+    for num_copies in 0 2 4; do # full range: 0 1 2 3 4
       if $use_bn; then
         data_fmllr_cop_dir=${data_fmllr_dir}/combined_bn_stage1_fw${thresh}_cop${num_copies}
         bn_dnn_dir=${dnn_dir}/multisoftmax_pt_bn_stage1_fw${thresh}_cop${num_copies}
