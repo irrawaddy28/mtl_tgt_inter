@@ -96,6 +96,7 @@ if [ $stage -le 1 ]; then
   steps/nnet/pretrain_dbn.sh --nn-depth 6 --hid-dim 1024 \
 	--cmvn-opts "--norm-means=true --norm-vars=true" \
 	--delta-opts "--delta-order=2" --splice 5 \
+	--rbm-extra-opts "--use-gpu=wait" \
 	--rbm-iter 20 $data_fmllr/train $dir || exit 1;
 fi
 

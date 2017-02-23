@@ -129,11 +129,13 @@ if [ $stage -le 2 ]; then
 		  local/nnet/pretrain_dbn.sh --nn-depth $hid_layers --hid-dim $hid_dim \
 		    --bn-layer $bn_layer --bn-dim $bn_dim	\
 		    ${cmvn_opts:+ --cmvn-opts "$cmvn_opts"} --delta-opts "--delta-order=$delta_order" --splice $splice --splice-step $splice_step \
+		    --rbm-extra-opts "--use-gpu=wait" \
 		    --rbm-iter 20 $data_fmllr/${UNILANG_CODE}/train $nnetinitdir || exit 1;
 	    else
 		  $cuda_cmd $nnetinitdir/log/pretrain_dbn.log \
 		  steps/nnet/pretrain_dbn.sh --nn-depth $hid_layers --hid-dim $hid_dim \
 		  ${cmvn_opts:+ --cmvn-opts "$cmvn_opts"} --delta-opts "--delta-order=$delta_order" --splice $splice --splice-step $splice_step \
+		  --rbm-extra-opts "--use-gpu=wait" \
 			--rbm-iter 20 $data_fmllr/${UNILANG_CODE}/train $nnetinitdir || exit 1;
 	    fi  
 	   fi
