@@ -44,7 +44,8 @@ parallel_nhl_opts=  # no. of hidden layers in the MTL tasks, Default 0 hidden la
 parallel_nhn_opts=  # no. of hidden neurons in the MTL tasks, Default 1024 neurons for all tasks
 randomizer_size=32768  # Maximum number of samples we want to have in memory at once
 minibatch_size=256     # num samples per mini-batch
-use_gpu="yes"
+use_gpu="wait"
+parallel_opts="--num-threads 6"
 
 # Frame weighting options
 threshold_default=0.7
@@ -53,7 +54,6 @@ threshold_csl=   # If provided, use frame thresholding -- keep only frames whose
 use_soft_counts=true    # Use soft-posteriors as targets for PT data
 disable_upper_cap=true
 acwt=0.2
-parallel_opts="--num-threads 6"
 # End of config.
 
 echo "$0 $@"  # Print the command line for logging

@@ -37,6 +37,8 @@ precomp_dnn=
 bn_dim=
 replace_softmax=true
 train_dbn=false
+parallel_opts="--num-threads 6"
+use_gpu="wait"
 # End of config.
 
 echo "$0 $@"  # Print the command line for logging
@@ -221,9 +223,9 @@ if [ $stage -le 4 ]; then
     graph_dir=${exp_dir}/graph_text_G_$L
     [[ -d $graph_dir ]] || { mkdir -p $graph_dir; utils/mkgraph.sh data/$L/lang_test_text_G $exp_dir $graph_dir || exit 1; }
   
-    (steps/nnet/decode.sh --nj 4 --cmd "$decode_cmd" --config conf/decode_dnn.config --acwt 0.2 \
+    (steps/nnet/decode.sh --nj 4 ${parallel_opts} --cmd "$decode_cmd" --use-gpu ${use_gpu} --config conf/decode_dnn.config --acwt 0.2 \
 	  $graph_dir $data_fmllr/$L/dev $dir/decode_dev_text_G_$L || exit 1;) &
-    (steps/nnet/decode.sh --nj 4 --cmd "$decode_cmd" --config conf/decode_dnn.config --acwt 0.2 \
+    (steps/nnet/decode.sh --nj 4 ${parallel_opts} --cmd "$decode_cmd" --use-gpu ${use_gpu} --config conf/decode_dnn.config --acwt 0.2 \
       $graph_dir $data_fmllr/$L/eval $dir/decode_eval_text_G_$L || exit 1;) &     
     (cd $dir; ln -s  decode_dev_text_G_$L decode_dev_$L; ln -s decode_eval_text_G_$L decode_eval_$L)    
   done
