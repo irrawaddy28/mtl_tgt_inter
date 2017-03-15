@@ -213,7 +213,7 @@ class ParallelComponent : public UpdatableComponent {
 
   void BackpropagateFnc(const CuMatrixBase<BaseFloat> &in, const CuMatrixBase<BaseFloat> &out,
                         const CuMatrixBase<BaseFloat> &out_diff, CuMatrixBase<BaseFloat> *in_diff) {
-/*  int32 input_offset = 0, output_offset = 0;
+    int32 input_offset = 0, output_offset = 0;
     for (int32 i=0; i<nnet_.size(); i++) {
       CuSubMatrix<BaseFloat> src(out_diff.ColRange(output_offset, nnet_[i].OutputDim()));
       CuSubMatrix<BaseFloat> tgt(in_diff->ColRange(input_offset, nnet_[i].InputDim()));
@@ -224,8 +224,9 @@ class ParallelComponent : public UpdatableComponent {
       //
       input_offset += nnet_[i].InputDim();
       output_offset += nnet_[i].OutputDim();
-    }*/
+    }
 
+    #if 0
 	std::vector<Component*> c;
 	for (int32 i=0; i<nnet_.size(); i++) {
 	  int32 last_component = nnet_[i].NumComponents() - 1;
@@ -252,7 +253,7 @@ class ParallelComponent : public UpdatableComponent {
 	    row_sum.CopyToVec(&r_sum);
 	    r_sum.ApplyAbs();
 	    r_sum.LowerThreshold(eps, 0);
-	    // Copy Vector to the i^th col of Matrix
+	    // Copy Vector to the i^th col of CuMatrix
 	    row_diff_mask.CopyColFromVec(r_sum, i);
 	    // Compute the masks in CuMatrix
 	    row_diff_mask.ColRange(i,1).Scale(-1.0); // 0:keep, -1:zero-out
@@ -262,18 +263,20 @@ class ParallelComponent : public UpdatableComponent {
 	  output_offset += nnet_[i].OutputDim();
 	}
 
-	// Set the masks for those tasks whose last component is not Softmax
-	// Assume there is only ONE task with a non-Softmax component.
-	// Rule: If all the Softmax masks for a given frame were set to 0, then the frame must belong to
-	// the non-Softmax task. Thus, set the mask for this non-Softmax task to 1.
+	// Determine the masks for those tasks whose last component is not Softmax
+	// Assume there is only ONE task with a non-Softmax component
+	// Mask: 1 = Task active, 0 = Task inactive
+	// Rule: If all the masks for a given frame were set to 0, then the frame must belong to
+	// the task whose last component is not Softmax. Thus, set the mask for this task to 1.
 	for (int32 i=0; i<ncols; i++) {
 	  if (c[i]->GetType() != Component::kSoftmax) {
-	    // check if softmax indices are all 0's
+	    // check if mask for softmask based tasks are all 0's (0 = inactive)
 		for (int32 j=0; j<nrows; j++) {
 		  bool softmax_inactive = true;
 		  for (int32 k=0; (k<softmax_indices.size()) && softmax_inactive; k++) {
-		    if (!row_diff_mask.Range(j,1,softmax_indices.at(k),1).IsZero())
-		      softmax_inactive = false;
+		    if (!row_diff_mask.Range(j,1,softmax_indices.at(k),1).IsZero(eps))
+		      softmax_inactive = false; // frame j belongs to a softmax task
+		      break;
 		  }
 		  if (softmax_inactive) row_diff_mask.Range(j,1,i,1).Set(1.0);
 	    }
@@ -284,7 +287,7 @@ class ParallelComponent : public UpdatableComponent {
 	// KALDI_LOG << "out_diff = " << out_diff << "\n";
 	// KALDI_LOG << "row_diff_mask = " << row_diff_mask << "\n";
 	input_offset = 0, output_offset = 0;
-	CuMatrix<BaseFloat> row_diff_mask_cu(row_diff_mask);
+	CuMatrix<BaseFloat> row_diff_mask_cu(row_diff_mask, kNoTrans);
 	for (int32 i=0; i<ncols; i++) {
 	  CuSubMatrix<BaseFloat> src(out_diff.ColRange(output_offset, nnet_[i].OutputDim()));
 	  CuSubMatrix<BaseFloat> tgt(in_diff->ColRange(input_offset, nnet_[i].InputDim()));
@@ -303,6 +306,7 @@ class ParallelComponent : public UpdatableComponent {
   	  // KALDI_LOG << "out_diff[ " << i << "] (masked) = " << src_masked << "\n";
   	  // KALDI_LOG << "bprop o/p of task " << i << " = " << tgt << "\n";
 	}
+    #endif
   }
 
   void Update(const CuMatrixBase<BaseFloat> &input, const CuMatrixBase<BaseFloat> &diff) {

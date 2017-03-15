@@ -54,8 +54,8 @@ train_opts=        # options, passed to the training script
 train_tool=        # optionally change the training tool
 frame_weights=     # per-frame weights for gradient weighting
 train_iters=20
-randomizer_size=32768
-minibatch_size=256    # num frames per mini-batch (usually 256)
+randomizer_size=32768  # Maximum number of samples we want to have in memory at once
+minibatch_size=256     # num samples per mini-batch
 
 # OTHER
 seed=777    # seed value used for training data shuffling and initialization

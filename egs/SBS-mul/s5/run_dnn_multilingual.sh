@@ -36,9 +36,15 @@ objective_csl="xent:xent:xent"
 lang_weight_csl="1.0:1.0:1.0"
 lat_dir_csl="-:-:-"    # pt or semisup lattices
 data_type_csl="dt:dt:dt"
+label_type_csl="s:s:s" # s = senone, p = monophone, f = feature (for unsup data, feats acts as labels)
 dup_and_merge_csl="0>>1:0>>2:0>>3" # x>>y means: create x copies of data and use them to train the task in block y
 renew_nnet_type="parallel"  # can be "parallel", "blocksoftmax", or an empty string (single softmax for all tasks)
-renew_nnet_opts=            # options for the renew nnnet. Details about these options in local/nnet/renew_nnet_* scripts. For e.g., In case of parallel net, option could be "--parallel-nhl-opts 3:3 --parallel-nhn-opts 1024:1024 "; 
+renew_nnet_opts=            # options for the renew nnnet. Details about these options in local/nnet/renew_nnet_*.sh scripts. For e.g., for parallel nnet, refer to the examples in local/nnet/renew_nnet_parallel.sh;
+parallel_nhl_opts=  # no. of hidden layers in the MTL tasks, Default 0 hidden layers for all tasks
+parallel_nhn_opts=  # no. of hidden neurons in the MTL tasks, Default 1024 neurons for all tasks
+randomizer_size=32768  # Maximum number of samples we want to have in memory at once
+minibatch_size=256     # num samples per mini-batch
+use_gpu="yes"
 
 # Frame weighting options
 threshold_default=0.7
@@ -57,7 +63,7 @@ echo "$0 $@"  # Print the command line for logging
 set -euo pipefail
 
 # The first language in csl should always be the test language
-# ./run_multilingual.sh --dnn-init "exp/dnn4_pretrain-dbn_dnn/SW/multisoftmax/decode_dev_text_G_SW/final.nnet" --data-type-csl "pt:dt:unsup" --lang-weight-csl "1.0:1.0:0.0" --threshold-csl "0.7:1.0:0.8" --lat-dir-csl "exp/tri3cpt_ali/SW/decode_train:-:exp/dnn4_pretrain-dbn_dnn/SW/multisoftmax/decode_unsup_4k_SW" --dup-and-merge-csl "4>>1:0>>0:1>>1" "SW:AR_CA_HG_MD_UR:SW" "exp/tri3cpt_ali/SW:exp/tri3b_ali/SW:exp/tri3cpt_ali/SW" "data-fmllr-tri3c/SW/SW/train:data-fmllr-tri3b/SW/AR_CA_HG_MD_UR/train:data-fmllr-tri3c/SW/SW/unsup_4k_SW" "data-fmllr-tri3c_map/SW/combined" "exp/dnn4_pretrain-dbn_dnn/SW/multisoftmax2c"
+# ./run_multilingual.sh --dnn-init "exp/dnn4_pretrain-dbn_dnn/SW/multisoftmax/decode_dev_text_G_SW/final.nnet" --data-type-csl "pt:dt:unsup" --lang-weight-csl "1.0:1.0:0.0" --threshold-csl "0.7:1.0:0.8" --lat-dir-csl "exp/tri3cpt_ali/SW/decode_train:-:exp/dnn4_pretrain-dbn_dnn/SW/multisoftmax/decode_unsup_4k_SW" --dup-and-merge-csl "4>>1:0>>2:1>>3" "SW:AR_CA_HG_MD_UR:SW" "exp/tri3cpt_ali/SW:exp/tri3b_ali/SW:exp/tri3cpt_ali/SW" "data-fmllr-tri3c/SW/SW/train:data-fmllr-tri3b/SW/AR_CA_HG_MD_UR/train:data-fmllr-tri3c/SW/SW/unsup_4k_SW" "data-fmllr-tri3c_map/SW/combined" "exp/dnn4_pretrain-dbn_dnn/SW/multisoftmax2c"
 
 if [ $# != 5 ]; then
    echo "Usage: $0 [options] <lang code csl> <ali dir csl> <data dir csl> <data output dir> <nnet output dir>" 
@@ -101,6 +107,19 @@ for ((i=0; i<$num_langs; i++)); do
   type=${data_type[$i]}
   if ! [ "$type" == "dt" -o "$type" == "pt" -o "$type" == "semisup" -o "$type" == "unsup"  ]; then
     echo "data type at position $((i + 1)) is \"$type\" is not supported"
+    exit 1
+  fi
+done
+
+# Parse label type csl
+if [ -z "$label_type_csl" ]; then
+  label_type_csl=$(echo $(printf "%s:" $(for i in `seq 1 $num_langs`; do echo s; done))|sed 's/.$//')
+fi
+label_type=($(echo $label_type_csl | tr ',:' ' '))
+for ((i=0; i<$num_langs; i++)); do
+  type=${label_type[$i]}
+  if ! [ "$type" == "s" -o "$type" == "p" -o "$type" == "f" ]; then
+    echo "label type at position $((i + 1)) is \"$type\" is not supported"
     exit 1
   fi
 done
@@ -180,10 +199,11 @@ if [ $stage -le 0 ]; then
   for i in $(seq 0 $[num_langs-1]); do
 	code=${lang_code[$i]}
 	dir=${data_dir[$i]}
-	tgt_dir=$data/${code}_$(basename $dir)
+	lab=${label_type[$i]}
 	type=${data_type[$i]}
+	tgt_dir=$data/${code}_${lab}_$(basename $dir)
 	
-	echo -e "\nLanguage = $code, Type = $type, Src feat = $dir, Tgt feat = $tgt_dir"
+	echo -e "\nLanguage = $code, Data type = $type, Label Type = $lab, Src feat = $dir, Tgt feat = $tgt_dir"
 	
 	# Check if feat tgt dir already exists, If so do not recreate it
 	# Useful when multiple jobs are accessing the same feat dir
@@ -200,20 +220,30 @@ if [ $stage -le 0 ]; then
 		
 	# If invalid is still non-zero value, it means we need to create the feat dir
 	if [ $invalid -ne 0 ]; then
-	  echo "tgt dir = $tgt_dir : create new "
-	  utils/copy_data_dir.sh $dir $tgt_dir
-	  
-	  # Create CV set (10% held-out) only for pt or dt data types
-	  # We do not use unsup or semisup in CV.
-	  if [ "$type" !=  "semisup" -a "$type" !=  "unsup" ]; then
-	    utils/subset_data_dir_tr_cv.sh $tgt_dir ${tgt_dir}_tr90 ${tgt_dir}_cv10
-	    tr90="$tr90 ${tgt_dir}_tr90"
-	    cv10="$cv10 ${tgt_dir}_cv10"
+	
+	  echo "tgt dir = $tgt_dir : create new"
+	  # if label type is phone, prefix the utt id with "p"
+	  if [ "$lab" != "p" ]; then
+	    utils/copy_data_dir.sh $dir $tgt_dir || exit 1
 	  else
-	    utils/copy_data_dir.sh $tgt_dir ${tgt_dir}_tr90
-	    tr90="$tr90 ${tgt_dir}_tr90"
-	    #tr90="$tr90 ${tgt_dir}"
-	  fi
+	    utils/copy_data_dir.sh --utt-prefix ${lab}- --spk-prefix ${lab}- $dir $tgt_dir || exit 1
+      fi      
+	  
+	  # Create CV set (10% held-out) only for pt or dt data types; No unsup/semisup in CV
+	  #if [ "$type" !=  "semisup" -a "$type" !=  "unsup" ]; then
+	  #  utils/subset_data_dir_tr_cv.sh $tgt_dir ${tgt_dir}_tr90 ${tgt_dir}_cv10
+	  #  tr90="$tr90 ${tgt_dir}_tr90"
+	  #  cv10="$cv10 ${tgt_dir}_cv10"
+	  #else
+	  #  utils/copy_data_dir.sh $tgt_dir ${tgt_dir}_tr90
+	  #  tr90="$tr90 ${tgt_dir}_tr90"
+	  #  #tr90="$tr90 ${tgt_dir}"
+	  #fi
+	  	  
+	  # Create CV set (10% held-out); Allow unsup/semisup in CV
+	  utils/subset_data_dir_tr_cv.sh $tgt_dir ${tgt_dir}_tr90 ${tgt_dir}_cv10
+	  tr90="$tr90 ${tgt_dir}_tr90"
+	  cv10="$cv10 ${tgt_dir}_cv10"
 	else
 	  echo "$tgt_dir already exists and was validated. Skip recreating it"
 	fi
@@ -223,13 +253,13 @@ if [ $stage -le 0 ]; then
   ## Merge the datasets,
   if [ $invalid -ne 0 ]; then
     if [[ "${semisup_present}" -gt 0  || "${unsup_present}" -gt 0 ]]; then
-	  ## If we don't specify skip-fix true, the combined scp will exclude utts which do not have text
+	  ## If we don't specify --skip-fix "true", the combined scp will exclude utts which do not have text
 	  utils/combine_data.sh --skip-fix "true" $data_tr90 $tr90
 	  utils/combine_data.sh --skip-fix "true" $data_cv10 $cv10
     else
 	  utils/combine_data.sh  $data_tr90 $tr90
 	  utils/combine_data.sh  $data_cv10 $cv10
-	  ## Validate,
+	  ## Validate
 	  utils/validate_data_dir.sh $data_tr90
 	  utils/validate_data_dir.sh $data_cv10
     fi
@@ -265,6 +295,15 @@ objective_function="multitask$(echo ${ali_dim[@]} | tr ' ' '\n' | \
   awk -v crit=$objective_csl -v w=$lang_weight_csl 'BEGIN{ split(w,w_arr,/[,:]/); split(crit,crit_arr,/[,:]/); } { printf(",%s,%d,%s", crit_arr[NR], $1, w_arr[NR]); }')"
 echo "Multitask objective function: $objective_function"
 
+# Process the $renew_nnet_opts string: add double quotes before and after the right value 
+# e.g. --nnet-proto-opts -:--no-softmax:--output-activation-type <Tanh> --> --nnet-proto-opts "-:--no-softmax:--output-activation-type <Tanh>"
+if [ ! -z "$renew_nnet_opts" ]; then
+  #renew_nnet_opts=$(echo $renew_nnet_opts |sed -e 's:nnet-proto-opts:nnet-proto-opts :' -e 's/$//')
+  #renew_nnet_opts="--nnet-proto-opts -:-:--output-activation-type<Tanh>"
+  #renew_nnet_opts="--nnet-proto-opts \"-:-:--no-softmax\""
+  echo "renew_nnet_opts = $renew_nnet_opts"
+fi
+
 # DNN training will be in $dir, the alignments are prepared beforehand,
 #dir=exp/dnn4g-multilingual${num_langs}-$(echo $lang_code_csl | tr ',' '-')-${nnet_type} 
 dir=$nnet_dir
@@ -286,31 +325,33 @@ test_block_csl = $test_block_csl\n
 feat dir = $data\n
 dnn init = $dnn_init\n
 remove last components = $remove_last_components\n
-dnn out = $dir" > $dir/config 
+renew_nnet_type = $renew_nnet_type\n
+renew_nnet_opts = $renew_nnet_opts\n
+dnn out = $dir" > $dir/config
 
 # Make the features and targets for MTL
 if [ $stage -le 1 ]; then
   # Step 1: Prepare the feature scp, target posterior scp, and frame weight scp for each task in MTL,
   # Generate the following:
   # (a) Features: $data/combined_tr90/feats.scp, $data/combined_cv10/feats.scp
-  # (b) Target posteriors: $dir/ali-post/post_task_<d>.scp
-  # (c) Frame weights: $dir/ali-post/frame_weights_task_<d>.scp
+  # (b) Target posteriors: $dir/ali-post/post_task_<d>.scp, where d = 1, 2, 3  etc
+  # (c) Frame weights: $dir/ali-post/frame_weights_task_<d>.scp, where d = 1, 2, 3  etc
   local/make_task_scps.sh --acwt $acwt --use-soft-counts $use_soft_counts --disable-upper-cap $disable_upper_cap \
   ${cmvn_opts:+ --cmvn-opts "$cmvn_opts"} --delta-order $delta_order --splice $splice --splice-step $splice_step \
-  $lang_code_csl $data_type_csl $data_dir_csl  \
+  $lang_code_csl $data_type_csl $label_type_csl $data_dir_csl  \
   $ali_dir_csl   $lat_dir_csl   $threshold_csl \
-  $dup_and_merge_csl $data $dir/ali-post
+  $dup_and_merge_csl $data $dir/ali-post  
   
   # Step 2: Combine the task specific target posteriors and frame weights into a single MTL task,
   # pasting the ali's, adding language-specific offsets to the posteriors,
   featlen="ark:feat-to-len 'scp:cat $data_tr90/feats.scp $data_cv10/feats.scp |' ark,t:- |" # get number of frames for every utterance,
   post_scp_list=$( echo $(seq 1 $num_langs)| tr ' ' '\n' | awk -v d=$dir '{ printf(" scp:%s/ali-post/post_task_%s.scp", d, $1); }')
-  echo -e "\npost_scp_list = $post_scp_list"
+  echo "post_scp_list =========== $post_scp_list"| tr ' ' '\n'; echo -e "\n"
   paste-post --allow-partial=true "$featlen" "${ali_dim_csl}" ${post_scp_list} \
     ark,scp:$dir/ali-post/post_combined.ark,$dir/ali-post/post_combined.scp || exit 1
   # pasting the frame weights
   frame_weights_scp_list=$( echo $(seq 1 $num_langs)| tr ' ' '\n' | awk -v d=$dir '{ printf(" %s/ali-post/frame_weights_task_%s.scp", d, $1); }')
-  echo -e "\nframe_weights_scp_list = $frame_weights_scp_list"
+  echo "frame_weights_scp_list =========== $frame_weights_scp_list" | tr ' ' '\n'; echo -e "\n"
   copy-vector "scp:cat ${frame_weights_scp_list}|" ark,t,scp:$dir/ali-post/frame_weights_combined.ark,$dir/ali-post/frame_weights_combined.scp || exit 1
 fi
 
@@ -326,6 +367,7 @@ if [ $stage -le 2 ]; then
         --feat-type "traps" --splice 5 --traps-dct-basis 6 \
         --labels "scp:$dir/ali-post/combined.scp" --num-tgt $output_dim \
         --proto-opts "--block-softmax-dims=${ali_dim_csl}" \
+        --randomizer-size ${randomizer_size} --minibatch-size ${minibatch_size} \
         --train-tool "nnet-train-frmshuff --objective-function=$objective_function" \
         ${data_tr90} ${data_cv10} lang-dummy ali-dummy ali-dummy $dir
     ;;
@@ -342,6 +384,7 @@ if [ $stage -le 2 ]; then
         --feat-type "traps" --splice 5 --traps-dct-basis 6 \
         --labels "scp:$dir/ali-post/combined.scp" --num-tgt $output_dim \
         --proto-opts "--block-softmax-dims=${ali_dim_csl}" \
+        --randomizer-size ${randomizer_size} --minibatch-size ${minibatch_size} \
         --train-tool "nnet-train-frmshuff --objective-function=$objective_function" \
         ${data_tr90} ${data_cv10} lang-dummy ali-dummy ali-dummy $dir_part1
     # Compose feature_transform for 2nd part,
@@ -356,24 +399,27 @@ if [ $stage -le 2 ]; then
         --hid-layers 2 --hid-dim 1500 --bn-dim $bn2_dim \
         --labels "scp:$dir/ali-post/combined.scp" --num-tgt $output_dim \
         --proto-opts "--block-softmax-dims=${ali_dim_csl}" \
+        --randomizer-size ${randomizer_size} --minibatch-size ${minibatch_size} \
         --train-tool "nnet-train-frmshuff --objective-function=$objective_function" \
         ${data_tr90} ${data_cv10} lang-dummy ali-dummy ali-dummy $dir
     ;;
     dnn_small)
     # 4 hidden layers, 1024 sigmoid neurons
     if [[ ! -z ${dnn_init} ]]; then
-	  nnet_init=$dir/nnet.init
-	  
+	  nnet_init=$dir/nnet.init	  
       if [ $renew_nnet_type == "parallel" ]; then
         # create a generic network for each task
-	    local/nnet/renew_nnet_parallel.sh --remove-last-components $remove_last_components ${renew_nnet_opts} ${ali_dim_csl} ${dnn_init} ${nnet_init}
+	    local/nnet/renew_nnet_parallel.sh --remove-last-components $remove_last_components \
+          ${renew_nnet_opts:+ $renew_nnet_opts} \
+          ${parallel_nhl_opts:+ --parallel-nhl-opts "$parallel_nhl_opts"} ${parallel_nhn_opts:+ --parallel-nhn-opts "$parallel_nhn_opts"} \
+          ${ali_dim_csl} ${dnn_init} ${nnet_init}
 	  elif [ $renew_nnet_type == "blocksoftmax" ]; then
 	    # create a softmax layer for each task
 	    local/nnet/renew_nnet_blocksoftmax.sh --remove-last-components $remove_last_components ${renew_nnet_opts} ${ali_dim_csl} ${dnn_init} ${nnet_init}
 	  else
 	    # create a single softmax layer across all tasks
 	    local/nnet/renew_nnet_softmax.sh --softmax-dim ${output_dim} --remove-last-components $remove_last_components ${renew_nnet_opts} ${ali_dir[0]}/final.mdl ${dnn_init} ${nnet_init}
-	  fi	  
+	  fi
   
       $cuda_cmd $dir/log/train_nnet.log \
       local/nnet/train_pt.sh  ${nnet_init:+ --nnet-init "$nnet_init" --hid-layers 0} \
@@ -384,6 +430,7 @@ if [ $stage -le 2 ]; then
         --frame-weights  "scp:$dir/ali-post/frame_weights_combined.scp" \
         --num-tgt $output_dim \
         --copy-feats "false" \
+        --randomizer-size ${randomizer_size} --minibatch-size ${minibatch_size} \
         --train-tool "nnet-train-frmshuff --objective-function=$objective_function" \
         ${data_tr90} ${data_cv10} lang-dummy ${ali_dir[0]} ${ali_dir[0]} $dir			# ${ali_dir[0]} is used only to copy the HMM transition model
         
@@ -398,6 +445,7 @@ if [ $stage -le 2 ]; then
         --frame-weights  "scp:$dir/ali-post/frame_weights_block_2.scp" \
         --num-tgt $output_dim \
         --copy-feats "false" \
+        --randomizer-size ${randomizer_size} --minibatch-size ${minibatch_size} \
         --train-tool "nnet-train-frmshuff --objective-function=$objective_function" \
         ${data_tr90} ${data_cv10} lang-dummy ${ali_dir[0]} ${ali_dir[0]} $dir
         fi
@@ -411,6 +459,7 @@ if [ $stage -le 2 ]; then
         --frame-weights  "scp:$dir/ali-post/frame_weights_combined.scp" \
         --num-tgt $output_dim \
         --copy-feats "false" \
+        --randomizer-size ${randomizer_size} --minibatch-size ${minibatch_size} \
         --train-tool "nnet-train-frmshuff --objective-function=$objective_function" \
         ${data_tr90} ${data_cv10} lang-dummy ${ali_dir[0]} ${ali_dir[0]} $dir			# ${ali_dir[0]} is used only to copy the HMM transition model        
     fi    
@@ -423,6 +472,7 @@ if [ $stage -le 2 ]; then
         ${cmvn_opts:+ --cmvn-opts "$cmvn_opts"} --delta-opts "--delta-order=$delta_order" --splice $splice --splice-step $splice_step \
         --labels "scp:$dir/ali-post/combined.scp" --num-tgt $output_dim \
         --proto-opts "--block-softmax-dims=${ali_dim_csl}" \
+        --randomizer-size ${randomizer_size} --minibatch-size ${minibatch_size} \
         --train-tool "nnet-train-frmshuff --objective-function=$objective_function" \
         ${data_tr90} ${data_cv10} lang-dummy ali-dummy ali-dummy $dir
     ;;
@@ -440,9 +490,11 @@ if [ $stage -le 3 ]; then
     dnn_small)
       echo "Decoding $L"
       for active_block in ${test_block[@]}; do  #$(seq 1 $num_langs)
+        
         graph_dir=$exp_dir/graph_text_G_$L
 	    [[ -d $graph_dir ]] || { mkdir -p $graph_dir; utils/mkgraph.sh data/$L/lang_test_text_G $exp_dir $graph_dir || exit 1; }
-        for type in "dev" "eval"; do
+	    
+        for type in "eval"; do # "dev" "eval"
           decode_dir=$dir/decode_block_${active_block}_${type}_text_G_$L
           if [[ $renew_nnet_type == "parallel" ]]; then
             # extract the active network from the parallel network
@@ -452,15 +504,16 @@ if [ $stage -le 3 ]; then
 		    local/nnet/make_activesoftmax_from_blocksoftmax.sh $dir/final.nnet "$(echo ${ali_dim_csl}|tr ':' ',')" $active_block $decode_dir/final.nnet
 		  else
 		    echo "Decoding with $renew_nnet_type not supported" && exit 1
-		  fi
+		  fi		  
 		  # make other necessary dependencies available
           (cd $decode_dir; ln -s ../{final.mdl,final.feature_transform,norm_vars,cmvn_opts,delta_opts} . ;)
-          # create "prior_counts"        
-          steps/nnet/make_priors.sh --use-gpu "yes" $data_tr90 $decode_dir
+          # create "prior_counts"          
+          steps/nnet/make_priors.sh --use-gpu ${use_gpu} $data_tr90 $decode_dir
           # finally, decode
-          (steps/nnet/decode.sh --nj 4 --cmd "$decode_cmd" --config conf/decode_dnn.config --acwt 0.2 --srcdir $decode_dir \
+          (steps/nnet/decode.sh --nj 4 ${parallel_opts} --cmd "$decode_cmd" --use-gpu ${use_gpu} --config conf/decode_dnn.config --acwt 0.2 --srcdir $decode_dir \
 	        $graph_dir $(dirname ${data_dir[0]})/$type $decode_dir || exit 1;) &
-	    done	    
+	    done
+	    	    
 	  done
     ;;
     *)

@@ -32,6 +32,9 @@ parser.add_option('--no-proto-head', dest='with_proto_head',
 parser.add_option('--no-softmax', dest='with_softmax', 
                    help='Do not put <SoftMax> in the prototype [default: %default]', 
                    default=True, action='store_false');
+parser.add_option('--output-activation-type', dest='output_activation_type', 
+                   help='Select type of activation function at the final layer (nnet output): (<Sigmoid>|<Tanh>) [default: %default]', 
+                   default="", type='string');
 parser.add_option('--block-softmax-dims', dest='block_softmax_dims', 
                    help='Generate <BlockSoftmax> with dims D1:D2:D3 [default: %default]', 
                    default="", type='string');
@@ -126,11 +129,13 @@ if num_hid_layers == 0 and o.bottleneck_dim != 0:
    (num_hid_neurons, num_leaves, 0.0, 0.0, \
     (o.param_stddev_factor * Glorot(num_hid_neurons, num_leaves)), 1.0, 0.1)
   # Optionaly append softmax
-  if o.with_softmax:
+  if o.with_softmax and o.output_activation_type == "":
     if o.block_softmax_dims == "":
       print "<Softmax> <InputDim> %d <OutputDim> %d" % (num_leaves, num_leaves)
     else:
       print "<BlockSoftmax> <InputDim> %d <OutputDim> %d <BlockDims> %s" % (num_leaves, num_leaves, o.block_softmax_dims)
+  elif o.output_activation_type != "":
+    print "%s <InputDim> %d <OutputDim> %d" % (o.output_activation_type, num_leaves, num_leaves) # Non-linearity
   print "</NnetProto>"
   # We are done!
   sys.exit(0)
@@ -155,11 +160,13 @@ if num_hid_layers == 0:
         (feat_dim, parallel_indim, ' '.join(str(s) for s in [0]*n_tasks))
     print "<ParallelComponent> <InputDim> %d <OutputDim> %d <NestedNnetProto> %s  </NestedNnetProto> " % \
         (parallel_indim, num_leaves, '  '.join(str(s) for s in subnet_protos))
-  if o.with_softmax:
+  if o.with_softmax and o.output_activation_type == "":
     if o.block_softmax_dims == "":
       print "<Softmax> <InputDim> %d <OutputDim> %d" % (num_leaves, num_leaves)
     else:
       print "<BlockSoftmax> <InputDim> %d <OutputDim> %d <BlockDims> %s" % (num_leaves, num_leaves, o.block_softmax_dims)
+  elif o.output_activation_type != "":
+    print "%s <InputDim> %d <OutputDim> %d" % (o.output_activation_type, num_leaves, num_leaves) # Non-linearity
   print "</NnetProto>"
   # We are done!
   sys.exit(0)
@@ -218,11 +225,13 @@ print "<AffineTransform> <InputDim> %d <OutputDim> %d <BiasMean> %f <BiasRange> 
        (o.param_stddev_factor * Glorot(num_hid_neurons, num_leaves)), 1.0, 0.1)
 
 # Optionaly append softmax
-if o.with_softmax:
+if o.with_softmax and o.output_activation_type == "":
   if o.block_softmax_dims == "":
     print "<Softmax> <InputDim> %d <OutputDim> %d" % (num_leaves, num_leaves)
   else:
     print "<BlockSoftmax> <InputDim> %d <OutputDim> %d <BlockDims> %s" % (num_leaves, num_leaves, o.block_softmax_dims)
+elif o.output_activation_type != "":
+    print "%s <InputDim> %d <OutputDim> %d" % (o.output_activation_type, num_leaves, num_leaves) # Non-linearity
 
 # End the prototype
 print "</NnetProto>"

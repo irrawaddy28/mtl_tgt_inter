@@ -79,6 +79,7 @@ class Xent : public LossItf {
 
   /// Get loss value (frame average),
   BaseFloat AvgLoss() {
+	if (frames_ == 0) return 0.0;
     return (loss_ - entropy_) / frames_;
   }
 
@@ -183,6 +184,7 @@ class Mse : public LossItf {
 
   /// Get loss value (frame average),
   BaseFloat AvgLoss() {
+	if (frames_ == 0) return 0.0;
     return loss_ / frames_;
   }
 

@@ -27,7 +27,7 @@ max_mem=50000000 # approx. limit to memory consumption during minimization in by
 nnet_forward_opts="--no-softmax=true --prior-scale=1.0"
 
 skip_scoring=false
-scoring_opts="--min-lmwt 4 --max-lmwt 15"
+scoring_opts="--min-lmwt 2 --max-lmwt 15"
 
 num_threads=1 # if >1, will use latgen-faster-parallel
 parallel_opts=   # Ignored now.

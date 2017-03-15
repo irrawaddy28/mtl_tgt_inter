@@ -37,20 +37,23 @@ usage="Usage: $0 <language csl> <data type csl> <feat dir csl> <ali csl> <lattic
 #  data-fmllr-tri3c/combined_fw \
 #  exp/dnn4_pretrain-dbn_dnn/mtl/ali-post
 
-[[ $# -eq 9 ]] || { echo $usage; exit 1; }
+[[ $# -eq 10 ]] || { echo $usage; exit 1; }
 
 lang_csl=$1    #
-dtype_csl=$2   #
-ddir_csl=$3    #
-ali_csl=$4     #  
-lat_csl=$5     #
-thresh_csl=$6  # 
-dup_and_merge_csl=$7  #
-feat_dir=$8    # dir to save features
-dir=$9         # dir to save target posteriors and frame weights
+dtype_csl=$2   # data type: pt, dt, unsup
+ltype_csl=$3   # label type: s (senone), p (monophone), f (feature)
+ddir_csl=$4    #
+ali_csl=$5     #  
+lat_csl=$6     #
+thresh_csl=$7  # 
+dup_and_merge_csl=$8  #
+feat_dir=$9    # dir to save features
+dir=${10}      # dir to save target posteriors and frame weights
+
 
 lang_list=($(echo $lang_csl | tr ':' ' '))
 dtype_list=($(echo $dtype_csl | tr ':' ' '))
+ltype_list=($(echo $ltype_csl | tr ':' ' '))
 ddir_list=($(echo $ddir_csl | tr ':' ' '))
 ali_list=($(echo $ali_csl | tr ':' ' '))
 lat_list=($(echo $lat_csl | tr ':' ' '))
@@ -64,6 +67,7 @@ for i in $(seq 0 $[n_tasks-1]); do
 	echo "============="
 	echo "Language   : ${lang_list[$i]}"
 	echo "Data Type  : ${dtype_list[$i]}"
+    echo "Label Type : ${ltype_list[$i]}"
 	echo "Feat Dir   : ${ddir_list[$i]}"
 	echo "Posterior Threshold  : ${thresh_list[$i]}"
 	echo "HMM Dir    : ${ali_list[$i]}"
@@ -88,16 +92,17 @@ for i in $(seq 0 $[n_tasks-1]); do
     taskid="task_$((i+1))"
     lang=${lang_list[$i]}
     dtype=${dtype_list[$i]}
-    feat_task_dir=${feat_dir}/${lang}_$(basename ${ddir_list[$i]})    
+    ltype=${ltype_list[$i]}
+    feat_task_dir=${feat_dir}/${lang}_${ltype}_$(basename ${ddir_list[$i]})
     dam=($(echo ${dup_and_merge_list[$i]}|tr '>>' ' '))
     num_copies=${dam[0]}
 
     [ $dtype == "unsup" ] && tr90_unsup_scps="${feat_task_dir}_tr90/feats.scp" # include the base scp, save for future use
 
-    # Make copies of features    
+    # Make copies of features
     if [ $num_copies -gt 0 ]; then
       echo "==================================="
-      echo "Making $num_copies copies of features for: lang = $lang, data type = $dtype"
+      echo "Making $num_copies copies of features for: lang = $lang, data type = $dtype, label type = $ltype"
       echo "==================================="
       make_num_copies="true"
 
@@ -140,7 +145,6 @@ if $make_num_copies ; then
 fi
 [[ `cat $feat_dir_tr90/feats.scp|wc -l` -ne $tr90_nutts_tot ]] && echo "$feat_dir_tr90/feats.scp does not have $tr90_nutts_tot utterances" && exit 1
 
-
 # Z-normalization of the unsup data: Compute the global CMVN (final.feature_transform) of the combined features using nnet; then apply cmvn to the unsup feats
 if [ ${unsup_present} -gt 0 ]; then
   nnet_dir=$dir/local/feat_transform_nnet
@@ -155,9 +159,9 @@ if [ ${unsup_present} -gt 0 ]; then
       --copy-feats "false" \
       ${feat_dir_tr90} ${feat_dir_cv10} lang-dummy ${ali_list[0]} ${ali_list[0]} $nnet_dir || exit 1
 
-  # Save the scp for unsup feats in nnet_dir. This will be used during feed-forward of feats through the Z-norm transform  
+  # Save the scp for unsup feats in nnet_dir. This will be used during feed-forward of feats through the Z-norm transform
   utils/filter_scp.pl <(awk '{print $1}' $tr90_unsup_scps) $feat_dir_tr90/feats.scp > $nnet_dir/feats_unsup_raw.scp # filter the tr90 scp with the unsup feats scp
-  #nnet-forward  $nnet_dir/final.feature_transform "$feats_unsup_tr" ark,scp:$nnet_dir/feats_unsup_znorm.ark,$nnet_dir/feats_unsup_znorm.scp  
+  #nnet-forward  $nnet_dir/final.feature_transform "$feats_unsup_tr" ark,scp:$nnet_dir/feats_unsup_znorm.ark,$nnet_dir/feats_unsup_znorm.scp
 fi
 
 # Make label(target) posteriors and frame weights of task specific feature directories
@@ -166,22 +170,25 @@ for i in $(seq 0 $[n_tasks-1]); do
 	  taskid="task_$((i+1))"
     lang=${lang_list[$i]}
     dtype=${dtype_list[$i]}
-    feat_task_dir=${feat_dir}/${lang}_$(basename ${ddir_list[$i]})
+    ltype=${ltype_list[$i]}
+    feat_task_dir=${feat_dir}/${lang}_${ltype}_$(basename ${ddir_list[$i]})
     ali=${ali_list[$i]}
     lat=${lat_list[$i]}
     thresh=${thresh_list[$i]}
     dam=($(echo ${dup_and_merge_list[$i]}|tr '>>' ' '))
     num_copies=${dam[0]}
     
-    echo ""
-    echo "==================================="
-    echo "Generating posteriors and frame weights for: lang = $lang, data type = $dtype, ali = $ali, lat = $lat, num copies = $num_copies"
-    echo "==================================="
-    
-    postsubdir=local/$lang/$dtype/post_train_thresh${thresh:+_$thresh}
+    postsubdir=local/${lang}_${dtype}_${ltype}/post_train_thresh${thresh:+_$thresh}
     postdir=$dir/$postsubdir
     [ -d $postdir ] || mkdir -p $postdir
     best_path_dir=`dirname $postdir`/bestpath_ali
+
+    echo ""
+    echo "==================================="
+    echo "Generating posteriors and frame weights for: lang = $lang, data type = $dtype, label type = $ltype, ali = $ali, lat = $lat, num copies = $num_copies, posterior dir = $postdir"
+    echo "==================================="
+
+    
     if [ "$dtype" == "pt" -o "$dtype" == "semisup" ]; then
       # pt or semisupervised data
       decode_dir=$lat
@@ -191,12 +198,23 @@ for i in $(seq 0 $[n_tasks-1]); do
         $ali $decode_dir $best_path_dir $postdir
     elif [ "$dtype" == "dt" ]; then
       # dt data
-      ali-to-pdf $ali/final.mdl "ark:gunzip -c ${ali}/ali.*.gz |" ark,t:- | \
-        ali-to-post ark:- ark,scp:$postdir/post.ark,$postdir/post.scp
+      # for monophones, append the label type to the utt id. E.g. amharic_140901_358053-1 --> p-amharic_140901_358053-1
+      # for senones, do not append anything to the utt id.
+      if [ "$ltype" != "p" ]; then
+        ali-to-pdf $ali/final.mdl "ark:gunzip -c ${ali}/ali.*.gz |" ark,t:- | \
+          ali-to-post ark:- ark,scp:$postdir/post.ark,$postdir/post.scp
       
-      ali-to-pdf $ali/final.mdl "ark:gunzip -c ${ali}/ali.*.gz |" ark,t:- | \
-       awk '{printf $1" ["; for (i=2; i<=NF; i++) { printf " "1; }; print " ]";}' | \
-       copy-vector ark,t:- ark,t,scp:$postdir/frame_weights.ark,$postdir/frame_weights.scp || exit 1;
+        ali-to-pdf $ali/final.mdl "ark:gunzip -c ${ali}/ali.*.gz |" ark,t:- | \
+         awk '{printf $1" ["; for (i=2; i<=NF; i++) { printf " "1; }; print " ]";}' | \
+         copy-vector ark,t:- ark,t,scp:$postdir/frame_weights.ark,$postdir/frame_weights.scp || exit 1;
+      else
+         ali-to-pdf $ali/final.mdl "ark:gunzip -c ${ali}/ali.*.gz |" ark,t:- | awk -v label="$ltype" '{print   label"-"$0}' | \
+          ali-to-post ark:- ark,scp:$postdir/post.ark,$postdir/post.scp
+      
+        ali-to-pdf $ali/final.mdl "ark:gunzip -c ${ali}/ali.*.gz |" ark,t:- | awk -v label="$ltype" '{print   label"-"$0}' | \
+         awk '{printf $1" ["; for (i=2; i<=NF; i++) { printf " "1; }; print " ]";}' | \
+         copy-vector ark,t:- ark,t,scp:$postdir/frame_weights.ark,$postdir/frame_weights.scp || exit 1;
+      fi
     elif [ "$dtype" == "unsup" ]; then
       # unsup data
       # Do a feed-forward of the unsup data to generate Z-normalized features      
@@ -244,7 +262,7 @@ for i in $(seq 0 $[n_tasks-1]); do
       '{for (i=1; i<num_copies+1; i++) { print i"-"$1" "$2 } }' \
        $postdir/frame_weights.scp > $postdir/frame_weights_${num_copies}x.scp
     fi
-done   
+done
 
 # Merge copies of task specific posteriors and weights to their specific destination tasks
 if $make_num_copies ; then
@@ -259,13 +277,13 @@ if $make_num_copies ; then
 	dstn_task=$((dstn_task - 1)); # this is the task where we want the targets to be sent to
 
 	  
-	src_lang=${lang_list[$i]}; src_dtype=${dtype_list[$i]}
+	src_lang=${lang_list[$i]}; src_dtype=${dtype_list[$i]}; src_ltype=${ltype_list[$i]}
 	dstn_lang=${lang_list[$dstn_task]}; dstn_dtype=${dtype_list[$dstn_task]}
 	  
 	if [ $num_copies -gt 0 -a ${dam[1]} -gt 0 ]; then
-	  echo -e "\nTask $((i+1)): src lang = $src_lang, src type = $src_dtype, threshold = $thresh, dstn lang = $dstn_lang, dstn type = $dstn_dtype, num_copies = $num_copies"
+	  echo -e "\nTask $((i+1)): src lang = $src_lang, src data type = $src_dtype, src label type = $src_ltype, threshold = $thresh, dstn lang = $dstn_lang, dstn type = $dstn_dtype, num_copies = $num_copies"
 	    
-	  src_post_subdir=local/$src_lang/$src_dtype/post_train_thresh${thresh:+_$thresh}
+	  src_post_subdir=local/${src_lang}_${src_dtype}_${src_ltype}/post_train_thresh${thresh:+_$thresh}
 	  src_post_scp=$dir/$src_post_subdir/post_${num_copies}x.scp
 	  src_fwt_scp=$dir/$src_post_subdir/frame_weights_${num_copies}x.scp
 
