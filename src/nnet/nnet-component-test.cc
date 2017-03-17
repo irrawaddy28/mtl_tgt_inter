@@ -573,6 +573,91 @@ namespace nnet1 {
 
   }
 
+  void UnitTestTargetInterpolation() {
+
+	  MultiTaskLoss multitask;
+	  std::string objective_function = "multitask,xent,5,1.0,xent,5,0.5";
+	  std::string tgt_interp_mode = "soft"; // can be "soft"|"hard"|"none"
+	  float tgt_interp_wt = 0.8; // number between 0 and 1
+
+	  CuMatrix<BaseFloat> nnet_out, obj_diff;
+	  ReadCuMatrixFromString("[   0.2   0.1   0.4   0.1   0.2   0.2   0.1   0.4   0.1   0.2 ;  \
+	  							  0.4   0.3   0.0   0.2   0.1   0.4   0.3   0.0   0.2   0.1 ;  \
+	  							  0.1   0.1   0.2   0.1   0.5   0.1   0.1   0.2   0.1   0.5 ;  \
+	  							  0.2   0.1   0.3   0.4   0.0   0.2   0.1   0.3   0.4   0.0;   \
+	  	                          0.3   0.1   0.2   0.2   0.2   0.3   0.1   0.2   0.2   0.2;   \
+	  						      0.0   0.0   0.2   0.1   0.7   0.0   0.0   0.2   0.1   0.7]", &nnet_out); // keeping net_out equal for both tasks (only for debugging purposes!)
+	  // Labels for task 1  = {0,..,4}. Labels for task 2  = {5,..,9}
+	  Posterior nnet_tgt(nnet_out.NumRows());
+	  nnet_tgt[0].push_back(std::make_pair(0, 1.0)); // frame 0, target = 0 (task 1)
+	  nnet_tgt[1].push_back(std::make_pair(3, 1.0)); // frame 1, target = 3 (task 1)
+	  nnet_tgt[2].push_back(std::make_pair(1, 1.0)); // frame 2, target = 1 (task 1)
+	  nnet_tgt[3].push_back(std::make_pair(5, 1.0)); // frame 3, target = 5 (task 2)
+	  nnet_tgt[4].push_back(std::make_pair(7, 1.0)); // frame 4, target = 7 (task 2)
+	  nnet_tgt[5].push_back(std::make_pair(9, 1.0)); // frame 5, target = 9 (task 2)
+
+	  // convert posterior to matrix,
+	  CuMatrix<BaseFloat> mat_tgt;
+	  PosteriorToMatrix(nnet_tgt, nnet_out.NumCols(), &mat_tgt);
+
+	  // create frame weights
+	  Vector<BaseFloat> frm_weights(nnet_out.NumRows());
+	  frm_weights.Set(1);
+
+	  KALDI_LOG << " Target Interp Mode = " << tgt_interp_mode << ", Target Interp Wt = " << tgt_interp_wt << "\n";
+	  KALDI_LOG << "nnet_out = " << nnet_out << "\n";
+	  KALDI_LOG << "targets = " << mat_tgt << "\n";
+	  KALDI_LOG << "frame weights = " << frm_weights << "\n";
+
+	  if (0 == objective_function.compare(0,9,"multitask")) {
+	     // objective_function contains something like :
+	     // 'multitask,xent,2456,1.0,mse,440,0.001'
+	     //
+	     // the meaning is following:
+	     // 'multitask,<type1>,<dim1>,<weight1>,...,<typeN>,<dimN>,<weightN>'
+	     multitask.InitFromString(objective_function);
+	     multitask.Set_Target_Interp(tgt_interp_mode, tgt_interp_wt);
+	     multitask.Eval(frm_weights, nnet_out, nnet_tgt, &obj_diff);
+	  }
+	  KALDI_LOG << "obj_diff = " << obj_diff << "\n";
+
+	  // Hand-computed values
+	  CuMatrix<BaseFloat> obj_diff_ref;
+#if 0
+	  if ((tgt_interp_mode.compare("soft") == 0) && (tgt_interp_wt == 0.8)) {
+	    ReadCuMatrixFromString("[ -0.64  0.08 0.32 0.08 0.16 0 0 0 0 0; \
+		    		               0.32  0.24 0   -0.64 0.08 0 0 0 0 0; \
+		    		               0.08 -0.72 0.16 0.08 0.4  0 0 0 0 0; \
+		    		               0  0 0 0  0 -0.4 0.05 0.15 0.2 0; \
+		    			           0 0 0 0 0 0.15 0.05 -0.4 0.1 0.1; \
+		    			           0 0 0 0 0 0 0 0.1 0.05 -0.15; ]" , &obj_diff_ref);
+	  } else if ((tgt_interp_mode.compare("hard") == 0) && (tgt_interp_wt == 0.2)) {
+		  ReadCuMatrixFromString("[ -0.6 0.1 0.2 0.1 0.2 0 0 0 0 0; \
+                                     0.2 0.3 0 -0.6 0.1 0 0 0 0 0; \
+                                     0.1 -0.7 0.2 0.1 0.3 0 0 0 0 0; \
+                                     0 0 0 0 0 -0.4 0.05 0.15 0.2 0; \
+                                     0 0 0 0 0 0.15 0.05 -0.4 0.1 0.1 \
+                                     0 0 0 0 0 0 0 0.1 0.05 -0.15 ]" , &obj_diff_ref);
+	  } else if (tgt_interp_mode.compare("none") == 0) {
+		  ReadCuMatrixFromString("[ -0.8 0.1 0.4 0.1 0.2 0 0 0 0 0; \
+		  		    		         0.4 0.3 0 -0.8 0.1 0 0 0 0 0; \
+		  		    		         0.1 -0.9 0.2 0.1 0.5 0 0 0 0 0; \
+		  		    		         0 0 0 0 0 -0.4 0.05 0.15 0.2 0; \
+		  		    			     0 0 0 0 0 0.15 0.05 -0.4 0.1 0.1; \
+		  		    			     0 0 0 0 0 0 0 0.1 0.05 -0.15; ]" , &obj_diff_ref);
+	  }
+
+	  KALDI_LOG << "obj_diff_ref = " << obj_diff_ref << "\n";
+	  KALDI_LOG << " rows = " << obj_diff_ref.NumRows() << ", cols = " << obj_diff_ref.NumCols() << "\n";
+
+	  CuMatrix<BaseFloat> err(obj_diff_ref);
+	  err.AddMat(-1.0, obj_diff);
+	  KALDI_LOG << " Target Interp Mode = " << tgt_interp_mode << ", Target Interp Wt = " << tgt_interp_wt << "\n";
+	  KALDI_LOG << "error = " << err << "\n";
+	  KALDI_LOG << "Frobenius norm of err " " = " <<  err.FrobeniusNorm() << "\n";
+#endif
+  }
+
 } // namespace nnet1
 } // namespace kaldi
 
@@ -580,7 +665,7 @@ int main() {
   using namespace kaldi;
   using namespace kaldi::nnet1;
 
-  for (int32 loop = 0; loop < 2; loop++) {
+  for (int32 loop = 0; loop < 1; loop++) {
 #if HAVE_CUDA == 1
     if (loop == 0)
       CuDevice::Instantiate().SelectGpuId("no"); // use no GPU
@@ -597,9 +682,10 @@ int main() {
     UnitTestAveragePooling2DComponent();
 #endif
     // UnitTestParallelComponent();
-    UnitTestParallelComponent_WithMSE();
+    // UnitTestParallelComponent_WithMSE();
     // UnitTestParallelComponent_WithMSE(2);
     // UnitTestBlockSoftmaxComponent();
+    UnitTestTargetInterpolation();
     // end of unit-tests,
     if (loop == 0)
         KALDI_LOG << "Tests without GPU use succeeded.";

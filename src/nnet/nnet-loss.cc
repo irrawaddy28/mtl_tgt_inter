@@ -85,22 +85,48 @@ void Xent::Eval(const VectorBase<BaseFloat> &frame_weights,
   KALDI_LOG << std::endl;
 #endif
 
+  // evaluate the frame-level classification,
+    double correct;
+    net_out.FindRowMaxId(&max_id_out_); // find max in nn-output
+    target.FindRowMaxId(&max_id_tgt_); // find max in targets
+    CountCorrectFramesWeighted(max_id_out_, max_id_tgt_, frame_weights, &correct);
+    
+    CuMatrix<BaseFloat> target_interp(target, kNoTrans);
+
+    // Linearly interpolate targets for the primary task if interpolation wt < 1.0
+  	if (tgt_interp_mode_.compare("none") != 0 && tgt_interp_wt_ > 0 && tgt_interp_wt_ < 1.0) {
+      target_interp.Scale(tgt_interp_wt_);
+  	  if (tgt_interp_mode_.compare("soft") == 0) {
+  	    // soft interpolation: wt*t_k + (1 - wt)*y_k
+        target_interp.AddMat(1 - tgt_interp_wt_, net_out, kNoTrans);
+  	  } else if (tgt_interp_mode_.compare("hard") == 0) {
+  		// hard interpolation: wt*t_k + (1 - wt)*1_{max y_k}
+  		Matrix<BaseFloat> net_out_hard(net_out.NumRows(), net_out.NumCols(), kSetZero);
+  		// net_out.CopyToMat(&net_out_hard, kNoTrans);
+  		// net_out_hard.SetZero();
+  		std::vector<int32> max_id_out(net_out.NumRows());
+  		max_id_out_.CopyToVec(&max_id_out);
+  		// Set the "hard" matrix s.t. M(i, max_id_out(i)) = 1 and all other elements set to 0
+  		for(int32 ri=0; ri<net_out_hard.NumRows(); ri++) {
+  		  net_out_hard(ri, max_id_out[ri]) = 1.0;
+  		}
+  		CuMatrix<BaseFloat> net_out_hard_cu(net_out_hard, kNoTrans);
+  		target_interp.AddMat(1 - tgt_interp_wt_, net_out_hard_cu, kNoTrans);
+  	  }
+  	}
+
   // compute derivative wrt. activations of last layer of neurons,
   *diff = net_out;
-  diff->AddMat(-1.0, target); // diff <-- (-1.0)*target + diff
+  //diff->AddMat(-1.0, target); // diff <-- (-1.0)*target + diff
+  diff->AddMat(-1.0, target_interp);
   diff->MulRowsVec(frame_weights_); // weighting,
-
-  // evaluate the frame-level classification,
-  double correct; 
-  net_out.FindRowMaxId(&max_id_out_); // find max in nn-output
-  target.FindRowMaxId(&max_id_tgt_); // find max in targets
-  CountCorrectFramesWeighted(max_id_out_, max_id_tgt_, frame_weights, &correct);
 
   // calculate cross_entropy (in GPU),
   xentropy_aux_ = net_out; // y
   xentropy_aux_.Add(1e-20); // avoid log(0)
   xentropy_aux_.ApplyLog(); // log(y)
-  xentropy_aux_.MulElements(target); // t*log(y)
+  //xentropy_aux_.MulElements(target); // t*log(y)
+  xentropy_aux_.MulElements(target_interp); // t*log(y)
   xentropy_aux_.MulRowsVec(frame_weights_); // w*t*log(y) 
   double cross_entropy = -xentropy_aux_.Sum();
   
@@ -587,10 +613,20 @@ void MultiTaskLoss::Eval(const VectorBase<BaseFloat> &frame_weights,
   // call the vector of loss functions,
   CuMatrix<BaseFloat> diff_aux;
   for (int32 l = 0; l < loss_vec_.size(); l++) {
-    loss_vec_[l]->Eval(frmwei_have_tgt[l],
-      net_out.ColRange(loss_dim_offset_[l], loss_dim_[l]),
-      tgt_mat_.ColRange(loss_dim_offset_[l], loss_dim_[l]),
-      &diff_aux);
+    if (tgt_interp_mode_.compare("none") != 0 && l == 0) {
+      loss_vec_[l]->Set_Target_Interp(tgt_interp_mode_, tgt_interp_wt_);
+      loss_vec_[l]->Eval(frmwei_have_tgt[l],
+        net_out.ColRange(loss_dim_offset_[l], loss_dim_[l]),
+        tgt_mat_.ColRange(loss_dim_offset_[l], loss_dim_[l]),
+        &diff_aux);
+	} else {
+	  loss_vec_[l]->Set_Target_Interp("none", 1.0);
+	  loss_vec_[l]->Eval(frmwei_have_tgt[l],
+	    net_out.ColRange(loss_dim_offset_[l], loss_dim_[l]),
+	    tgt_mat_.ColRange(loss_dim_offset_[l], loss_dim_[l]),
+		&diff_aux);
+	}
+
     // Scale the gradients,
     diff_aux.Scale(loss_weights_[l]);
     // Copy to diff,

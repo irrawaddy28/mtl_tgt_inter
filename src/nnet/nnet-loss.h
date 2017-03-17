@@ -53,12 +53,17 @@ class LossItf {
 
   /// Get loss value (frame average),
   virtual BaseFloat AvgLoss() = 0;
+
+  /// Set target interpolation mode and weight
+  virtual void Set_Target_Interp(const std::string tgt_interp_mode,
+		    const float tgt_interp_wt) = 0;
 };
 
 
 class Xent : public LossItf {
  public:
-  Xent() : frames_(0.0), correct_(0.0), loss_(0.0), entropy_(0.0), 
+  Xent() : frames_(0.0), correct_(0.0), loss_(0.0), entropy_(0.0),
+           tgt_interp_mode_("none"), tgt_interp_wt_(1.0),
            frames_progress_(0.0), loss_progress_(0.0), entropy_progress_(0.0) { }
   ~Xent() { }
 
@@ -83,11 +88,23 @@ class Xent : public LossItf {
     return (loss_ - entropy_) / frames_;
   }
 
+  /// Set target interpolation mode and weight
+  void Set_Target_Interp(const std::string tgt_interp_mode="none", const float tgt_interp_wt=1.0) {
+	  tgt_interp_mode_ = tgt_interp_mode;
+	  if (tgt_interp_mode.compare("none") == 0) {
+	    tgt_interp_wt_ = 1.0;
+	  } else {
+	  	  tgt_interp_wt_   = tgt_interp_wt;
+	  }
+  }
+
  private: 
   double frames_;
   double correct_;
   double loss_;
   double entropy_;
+  std::string tgt_interp_mode_;
+  float tgt_interp_wt_;
 
   // partial results during training
   double frames_progress_;
@@ -188,6 +205,9 @@ class Mse : public LossItf {
     return loss_ / frames_;
   }
 
+  /// Set target interpolation mode and weight: No interpolation for MSE
+  void Set_Target_Interp(const std::string tgt_interp_mode="none", const float tgt_interp_wt=1.0) {};
+
  private:
   double frames_;
   double loss_;
@@ -204,7 +224,7 @@ class Mse : public LossItf {
 
 class MultiTaskLoss : public LossItf {
  public:
-  MultiTaskLoss() { }
+  MultiTaskLoss() : tgt_interp_mode_("none"), tgt_interp_wt_(1.0) { }
   ~MultiTaskLoss() {
     while (loss_vec_.size() > 0) {
       delete loss_vec_.back();
@@ -239,7 +259,19 @@ class MultiTaskLoss : public LossItf {
   /// Get loss value (frame average),
   BaseFloat AvgLoss();
 
+  /// Set target interpolation mode and weight
+  void Set_Target_Interp(const std::string tgt_interp_mode="none", const float tgt_interp_wt=1.0) {
+	  tgt_interp_mode_ =   tgt_interp_mode;
+	  if (tgt_interp_mode.compare("none") == 0) {
+		  tgt_interp_wt_ = 1.0;
+	  } else {
+	    tgt_interp_wt_   =   tgt_interp_wt;
+	  }
+  };
+
  private:
+  std::string tgt_interp_mode_;
+  float tgt_interp_wt_;
   std::vector<LossItf*>  loss_vec_;
   std::vector<int32>     loss_dim_;
   std::vector<BaseFloat> loss_weights_;

@@ -65,6 +65,12 @@ int main(int argc, char *argv[]) {
     std::string use_gpu="yes";
     po.Register("use-gpu", &use_gpu, "yes|no|optional, only has effect if compiled with CUDA");
     
+    std::string tgt_interp_mode="none";
+    po.Register("tgt-interp-mode", &tgt_interp_mode, "none|soft|hard, Modify targets by interpolating with a function of n/w outputs");
+
+    float tgt_interp_wt = 1.0;
+    po.Register("tgt-interp-wt", &tgt_interp_wt, "Wt*(ground truth target) + (1 - Wt)*function(n/w output)");
+
     po.Register("use-xent-in-xentregent", &XentRegMCE::use_xent, "1|0, 1 if we consider xent while minimizing MCE");
     po.Register("eta-xentregent", &XentRegMCE::eta_mce, "regularization constant of MCE term");
     po.Register("verbosity-xentregent", &XentRegMCE::verbosity, "verbosity level during MCE evaluation");
@@ -142,6 +148,7 @@ int main(int argc, char *argv[]) {
       // the meaning is following:
       // 'multitask,<type1>,<dim1>,<weight1>,...,<typeN>,<dimN>,<weightN>'
       multitask.InitFromString(objective_function);
+      multitask.Set_Target_Interp(tgt_interp_mode, tgt_interp_wt);
     }
     
     CuMatrix<BaseFloat> feats_transf, nnet_out, obj_diff;
